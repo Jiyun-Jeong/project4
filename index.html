@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> JIyun Jeong </title>
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
   <div id="skip">
@@ -14,16 +16,84 @@
     <header id="header">
       <h1 class="logo">
         <a href="index.html">
-          <img src="" alt="로고">
+          <img src="assets/img/common/JIYUNJEONG.svg" alt="로고">
           <div class="blind-b">Jiyun Jeong's portfolio</div>
         </a>
       </h1>
+      <div class="util">
+        <button type="button" class="btn_open">
+          <img src="assets/img/icon/open.svg" alt="메뉴열기">
+          <span class="blind-b">메뉴열기</span>
+        </button>
+        <div class="navWrap">
+          <div class="navigation">
+            <nav id="gnb">
+              <ul>
+                <li>
+                  <a href="">HOME</a>
+                </li>
+                <li>
+                  <a href="">WORKS</a>
+                </li>
+                <li>
+                  <a href="">ABOUT</a>
+                </li>
+                <li>
+                  <a href="">CONTACTS</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sns">
+            <p>Social</p>
+            <ul>
+              <li>
+                <a href="">Instagram</a>
+              </li>
+              <li>
+                <a href="">Youtube</a>
+              </li>
+              <li>
+                <a href="">Github</a>
+              </li>
+            </ul>
+          </div>
+          <div class="email">
+            <p>Hit me up!</p>
+            <a href="">rijamong0830@naver.com</a>
+            <!-- 링크 누르면 메일 작성으로 이동 -->
+          </div>
+        </div>
+        <button type="button" class="btn_close">
+          <img src="assets/img/icon/close.svg" alt="메뉴닫기">
+          <span class="blind-b">메뉴닫기</span>
+        </button>
+      </div>
     </header>
-    <div class="util">
-      <button type="button" class="btn_open">
-        <span class="blind-b">메뉴열기</span>
-      </button>
-    </div>
+
+      <section class="section" id="cnt1">
+        <h2 class="blind-b">포트폴리오 첫 화면</h2>
+        <div class="pageSwipe">
+          <div class="about">
+            <div class="btn_circle"> <!-- 가상요소로 세로 라인만들기 -->
+              <img src="" alt="자기소개">About
+            </div>
+          </div>
+          <div class="works">
+              <div class="btn_circle"> <!-- 가상요소로 가로 라인만들기 -->
+                <img src="" alt="자기소개">Works
+              </div>
+          </div>
+        </div>
+        <div class="decorate">
+          <img src="assets/img/main/sunflower.png" alt="해바라기" class="sunflower">
+          <img src="assets/img/main/cnt1Circle.png" alt="노란 동그라미" class="yellowCircle">
+        </div>
+      </section>
+
+      <section class="section" id="cnt2">
+
+      </section>
   </div>
 </body>
 </html>
