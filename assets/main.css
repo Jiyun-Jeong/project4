@@ -1,0 +1,317 @@
+#cnt1 {
+  position: relative;
+  width: 100vw;
+  height: 100vh; }
+  #cnt1 .pageSwipe button, #cnt1 p {
+    font-family: "Fugaz One";
+    color: #fff; }
+  #cnt1 .pageSwipe .about {
+    position: absolute;
+    top: 35.15625vw;
+    left: 140px;
+    width: 200px;
+    height: 72px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    #cnt1 .pageSwipe .about::after {
+      content: "";
+      display: block;
+      clear: both;
+      position: absolute;
+      top: 103%;
+      left: 50%;
+      width: 1px;
+      height: 100vw;
+      background: #fff;
+      z-index: 500; }
+    #cnt1 .pageSwipe .about button {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      font-size: 29px;
+      border: 1px solid #fff;
+      width: 100%;
+      line-height: 72px; }
+  #cnt1 .pageSwipe .works {
+    position: absolute;
+    top: 220px;
+    right: 110px;
+    width: 200px;
+    height: 72px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    #cnt1 .pageSwipe .works::after {
+      content: "";
+      display: block;
+      clear: both;
+      position: absolute;
+      top: 50%;
+      left: 68%;
+      width: 100vw;
+      height: 1px;
+      background: #fff;
+      z-index: 500; }
+    #cnt1 .pageSwipe .works button {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      font-size: 29px;
+      border: 1px solid #fff;
+      width: 200px;
+      line-height: 72px; }
+  #cnt1 span, #cnt1 p {
+    text-align: right; }
+  #cnt1 span {
+    display: block;
+    font-family: Chonburi;
+    font-size: 250px;
+    line-height: 250px;
+    padding-top: 149px;
+    padding-right: 14.5833vw;
+    color: #FAF2A7; }
+  #cnt1 p {
+    font-size: 38px;
+    line-height: 38px;
+    padding-right: 634px; }
+  #cnt1 .decorate .sunflower {
+    position: absolute;
+    top: -13.5417vw;
+    left: 248px;
+    width: 27.96875vw;
+    animation: moveSunflower 5s ease-in-out infinite; }
+  #cnt1 .decorate .yellowCircle {
+    position: absolute;
+    top: 22.65625vw;
+    left: 60.9375vw;
+    z-index: -1;
+    animation: moveCircle 10s ease;
+    transform-origin: 50% 50%; }
+
+/* @keyframes moveSunflower {
+    0% {transform: translateY(-600px); }
+    60% {transform: translateY(-100px);}
+    100% {transform: translateY(50px); }
+} */
+/* @keyframes moveCircle {
+    0%   { transform: scale(0.5)   translate(10px, -30px); }
+    38%  { transform: scale(0.7, 0.7) translate(80vw, 30vh) rotate(80deg); }
+    40%  { transform: scale(0.8, 0.5) translate(80vw, 30vh) rotate(80deg); }
+    78%  { transform: scale(0.6, 0.9) translate(0vw, 50vh) rotate(-20deg); }
+    80%  { transform: scale(0.8) translate(0vw, 50vh) rotate(-20deg); }
+    100% { transform: scale(5, 5) translate(0, 0); }
+  } */
+#cnt2 {
+  position: relative;
+  background: #FAF2A7;
+  width: 100%;
+  height: 100vh; }
+  #cnt2 .cnt2Deco {
+    position: relative;
+    /*         @keyframes purpleCircle {
+    
+            } */ }
+    #cnt2 .cnt2Deco img {
+      position: absolute; }
+    #cnt2 .cnt2Deco .purpleCircle {
+      top: -150px;
+      left: -150px;
+      height: 51.0417vw;
+      width: 70.3125vw;
+      animation: purpleCircle 10s ease infinite;
+      transform-origin: 50% 50%; }
+    #cnt2 .cnt2Deco .gradiCircle {
+      top: 29.9479vw;
+      left: 41.9792vw;
+      width: 21.3021vw;
+      height: 335px; }
+    #cnt2 .cnt2Deco .profile {
+      top: 0;
+      left: 850px;
+      width: 61.9792vw; }
+    #cnt2 .cnt2Deco .ballon {
+      top: 94px;
+      right: 47px;
+      width: 403px;
+      height: 186px; }
+    #cnt2 .cnt2Deco .twinkle1 {
+      -webkit-transition: opacity(1) 0.3;
+      -moz-transition: opacity(1) 0.3;
+      -o-transition: opacity(1) 0.3;
+      transition: opacity(1) 0.3;
+      top: 77.5px;
+      left: 150px;
+      opacity: 0; }
+    #cnt2 .cnt2Deco .twinkle2 {
+      top: 206px;
+      right: 804.5px; }
+    #cnt2 .cnt2Deco .twinkle3 {
+      top: 826px;
+      right: 752px; }
+    #cnt2 .cnt2Deco .twinkle4 {
+      top: 837px;
+      right: 134px; }
+    #cnt2 .cnt2Deco .beam {
+      top: -15px;
+      right: 560px; }
+  #cnt2 .profileText {
+    position: absolute; }
+    #cnt2 .profileText .aboutMe {
+      -webkit-transform: rotate(8deg);
+      -moz-transform: rotate(8deg);
+      -o-transform: rotate(8deg);
+      -ms-transform: rotate(8deg);
+      transform: rotate(8deg);
+      position: absolute;
+      top: 239px;
+      left: 414px;
+      width: 529px;
+      font-family: "Fugaz one";
+      font-size: 110px;
+      color: #222; }
+    #cnt2 .profileText span {
+      display: block;
+      padding-left: 154px;
+      margin-top: 317.5px;
+      font-size: 150px;
+      font-family: "Fugaz one"; }
+    #cnt2 .profileText p:last-child {
+      position: absolute;
+      top: 411px;
+      left: 169px;
+      width: 650px;
+      z-index: 700;
+      font-size: 29px;
+      line-height: 55px;
+      text-align: right; }
+      #cnt2 .profileText p:last-child strong {
+        font-size: 36px; }
+
+#cnt3 {
+  background: #FAF2A7; }
+  #cnt3 .myStory {
+    position: relative;
+    height: 224px;
+    line-height: 224px;
+    width: 100%;
+    background: #fff; }
+    #cnt3 .myStory::before {
+      content: "";
+      clear: both;
+      position: absolute;
+      border-top: 3px dashed #4e4e4e;
+      top: -2px;
+      left: 0;
+      width: 100%; }
+    #cnt3 .myStory img {
+      position: absolute;
+      top: -32px;
+      left: 0; }
+    #cnt3 .myStory p {
+      text-align: center;
+      font-size: 62px;
+      font-family: "Fugaz one"; }
+  #cnt3 .data {
+    position: relative;
+    z-index: 700; }
+    #cnt3 .data img {
+      position: absolute;
+      left: 210px;
+      top: 100px; }
+    #cnt3 .data > p {
+      font-family: Chonburi;
+      font-size: 29px;
+      position: absolute;
+      left: 278px;
+      top: 111px; }
+  #cnt3 .firstDiary {
+    position: relative;
+    margin-top: 188px;
+    padding-left: 470px;
+    padding-bottom: 87px; }
+    #cnt3 .firstDiary .windowWrap {
+      position: relative;
+      width: 600px;
+      height: 800px;
+      overflow: hidden; }
+    #cnt3 .firstDiary .emptyFrame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10; }
+    #cnt3 .firstDiary img {
+      width: 600px;
+      height: 800px; }
+    #cnt3 .firstDiary img:nth-child(2) {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #cnt3 .firstDiary .showImg {
+      width: 4000px;
+      font-size: 0; }
+    #cnt3 .firstDiary .diary {
+      position: absolute;
+      top: 0;
+      right: 250px;
+      width: 600px;
+      height: 800px;
+      background: #fff;
+      font-family: DXPnM;
+      font-size: 25px;
+      text-align: right; }
+      #cnt3 .firstDiary .diary strong {
+        font-size: 31px;
+        padding-top: 99px;
+        padding-right: 55px; }
+      #cnt3 .firstDiary .diary p {
+        padding-top: 76px;
+        padding-right: 55px; }
+        #cnt3 .firstDiary .diary p::before {
+          content: "";
+          position: absolute;
+          clear: both;
+          width: 100%;
+          height: 1px; }
+
+#cnt4 .data {
+  position: relative;
+  background: #B4CAFA; }
+  #cnt4 .data img {
+    position: absolute;
+    top: -32px;
+    left: 0; }
+  #cnt4 .data p {
+    text-align: center;
+    font-size: 62px;
+    font-family: "Fugaz one"; }
+#cnt4 .secondDiary .diary {
+  position: absolute;
+  top: 0;
+  right: 250px;
+  width: 600px;
+  height: 800px;
+  background: #fff;
+  font-family: DXPnM;
+  font-size: 25px;
+  text-align: right; }
+  #cnt4 .secondDiary .diary strong {
+    font-size: 31px;
+    padding-top: 99px;
+    padding-right: 55px; }
+  #cnt4 .secondDiary .diary p {
+    padding-top: 76px;
+    padding-right: 55px; }
+    #cnt4 .secondDiary .diary p::before {
+      content: "";
+      position: absolute;
+      clear: both;
+      width: 100%;
+      height: 1px; }
+
+/*# sourceMappingURL=main.css.map */
