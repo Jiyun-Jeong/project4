@@ -1,12 +1,30 @@
 @charset "utf-8";
-@import "_var";
+@import "_var", "_mixin";
 
 #cnt1 {
     position: relative; width: 100vw;height: 100vh;
     .pageSwipe button, p {font-family: "Fugaz One";color: #fff; }
     .pageSwipe {
-        font-size: 29px;
-        .about {border: 1px solid #fff; border-radius: 50%;width: 200px;
+        .about {
+            position: absolute; top: 675px; left: 140px; width: 200px; height: 72px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+            &::after {
+                content:""; display: block; clear: both; position: absolute; top: 103%; left: 50%; width: 1px; height: 100vw; background: #fff; z-index: 500;
+            }
+            button {
+                @include border-radius(50%);
+                font-size: 29px; border: 1px solid #fff; width: 100%; line-height: 72px;
+            }
+        }
+        .works {
+            position: absolute; top: 220px; right: 110px; width: 200px;height: 72px;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+            &::after {
+                content:""; display: block; clear: both; position: absolute; top: 50%; left: 68%; width: 100vw;height: 1px; background: #fff; z-index: 500;
+            }
+            button {
+                @include border-radius(50%);
+                @include transform( rotate(-90deg) );
+                font-size: 29px; border: 1px solid #fff; width: 200px; line-height: 72px;
+            }
         }
     }
     span, p {text-align: right;}
@@ -15,16 +33,90 @@
     p {font-size: 38px;line-height: 38px;padding-right: 634px;}
     .decorate {
         .sunflower {
-            position: absolute; top: -250px; left: 248px; width: 537px;animation: moveSunflower 5s ease infinite fill-mode;}
-        .yellowCircle {position: absolute; top: 470px; left: 1354px;z-index: -1;animation: moveCircle 10s ease-in-out infinite;/* transform-origin: 50% 50%; */}
+            position: absolute; top: -260px; left: 248px; width: 537px;animation: moveSunflower 5s ease-in-out infinite;}
+        .yellowCircle {
+            position: absolute; top: 22.65625vw/* 435px */; left: 60.9375vw/* 1180px */; z-index: -1; animation: moveCircle 10s ease;transform-origin: 50% 50%;
+        }
       }
 }
-
-/* @keyframes moveCircle {
+/* @keyframes moveSunflower {
+    0% {transform: translateY(-600px); }
+    60% {transform: translateY(-100px);}
+    100% {transform: translateY(50px); }
+} */
+@keyframes moveCircle {
     0%   { transform: scale(0.5)   translate(10px, -30px); }
-    38%  { transform: scale(0.5, 0.1) translate(80vw, 30vh) rotate(160deg); }
-    40%  { transform: scale(0.8, 0.5) translate(80vw, 30vh) rotate(160deg); }
+    38%  { transform: scale(0.7, 0.7) translate(80vw, 30vh) rotate(80deg); }
+    40%  { transform: scale(0.8, 0.5) translate(80vw, 30vh) rotate(80deg); }
     78%  { transform: scale(0.6, 0.9) translate(0vw, 50vh) rotate(-20deg); }
     80%  { transform: scale(0.8) translate(0vw, 50vh) rotate(-20deg); }
-    100% { transform: scale(0.5, 0.5)   translate(10px, -30px); }
-  } */
+    100% { transform: scale(5, 5) translate(0, 0); }
+  }
+
+#cnt2 {
+    position: relative; background: $lightyellow; width: 100%; height: 100vh;
+    .cnt2Deco {
+        position: relative;
+        img {position: absolute; }
+        .purpleCircle {
+            top: -150px; left: -150px; height: 980px;width: 1350px; animation: purpleCircle 10s ease infinite;transform-origin: 50% 50%;
+        }
+        .gradiCircle {top: 575px; left: 806px; width: 409px;height: 335px;}
+        .profile {top: 0; left: 850px;width: 1190px;}
+        .ballon {top: 94px; right: 47px; width: 403px;height: 186px;}
+        .twinkle1 {
+            @include transition(opacity(1) 0.3);
+            top: 77.5px; left: 150px;opacity: 0;}
+        .twinkle2 {top: 206px; right: 804.5px;}
+        .twinkle3 {top: 826px; right: 752px;}
+        .twinkle4 {top: 837px; right: 134px;}
+        .beam {
+            top: -15px; right: 560px;}
+/*         @keyframes purpleCircle {
+
+        } */
+    }
+    .profileText {
+        position: absolute;
+        .aboutMe {
+            @include transform(rotate(8deg));
+            position: absolute; top: 239px; left: 414px; width: 529px;font-family: "Fugaz one";font-size: 110px; color: #222;
+        }
+        span {display: block; padding-left: 154px; margin-top: 317.5px; font-size: 150px;font-family: "Fugaz one";}
+        p:last-child {
+           position: absolute; top: 411px; left: 169px; width: 650px; z-index: 700; font-size: 29px; line-height: 55px; text-align: right;
+           strong {font-size: 36px;}
+        }
+    }
+}
+
+#cnt3 {
+    background: $lightyellow;
+    .myStory {
+        position: relative; height: 224px; line-height: 224px; width: 100%; background: #fff;
+        &::before {
+            content:""; clear: both; position: absolute;border-top: 3px dashed #4e4e4e; top: -2px; left: 0; width: 100%;
+        }
+        img {position: absolute; top: -32px; left: 0; }
+        p {text-align: center; font-size: 62px; font-family: "Fugaz one";}
+    }
+    .data {
+        position: relative; z-index: 700; 
+        img {position: absolute; left: 210px; top: 100px;}
+        > p {font-family: Chonburi; font-size: 29px; position: absolute; left: 278px; top: 111px;}
+    }
+    .firstDiary {
+        position: relative;margin-top: 188px; padding-left: 453px; padding-bottom: 87px;
+        .windowWrap {
+            position: relative;width: 600px; height: 800px; overflow: hidden;
+        }
+        .emptyFrame {position: absolute; top: 0; left: 0;z-index: 10;}
+        img {width: 600px; height: 800px;}
+        img:nth-child(2) {position: absolute;top: 0; left: 0;}
+        .showImg {width: 4000px; font-size: 0;}
+        .diary {
+            position: absolute; top: 0; right: 250px;  width: 600px; height: 800px; background: #fff; font-family: DXPnM; font-size: 25px; text-align: right;
+            strong {font-size: 31px;}
+        }
+    }
+}

@@ -50,7 +50,7 @@ header, nav, section, footer {display: block;}
 
 /* body */
 body {
-  font-family: KoreanDREAM3, "맑은 고딕", "Malgun Gothic"; font-weight: 400; background-color: #B4CAFA;color: #000;overflow: hidden;
+  font-family: KoreanDREAM3, "맑은 고딕", "Malgun Gothic"; font-weight: 400; background-color: #B4CAFA;color: #000; overflow-x: hidden;
 }
 
 /* skip */
@@ -65,7 +65,10 @@ body {
 #wrap {
   position: relative; 
   .logo {display: none; position: absolute; top: 29px; left: 32px;width: 131px;height: 77px;}
-  .util {position: absolute; top: 17px; right: 22px;width: 44px;height: 44px; }
+  .util {
+    position: absolute; top: 17px; right: 22px; 
+    > .btn_open img {width: 44px;height: 44px;cursor: pointer; }
+  }
   .navWrap {
       display: none; position: relative; width: 100vw;height: 100vh;top: 0; right: 0px; background: orange;
       #gnb {
