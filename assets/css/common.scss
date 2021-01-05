@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "_var";
 
 @import url(https://fonts.googleapis.com/css?family=VT323:regular);
 @import url(https://fonts.googleapis.com/css?family=Chonburi:regular);
@@ -49,7 +50,7 @@ header, nav, section, footer {display: block;}
 
 /* body */
 body {
-  font-family: KoreanDREAM3, "맑은 고딕", "Malgun Gothic"; font-weight: 400; background-color: #B4CAFA;color: #000;
+  font-family: KoreanDREAM3, "맑은 고딕", "Malgun Gothic"; font-weight: 400; background-color: #B4CAFA;color: #000;overflow: hidden;
 }
 
 /* skip */
@@ -60,3 +61,29 @@ body {
   }
 }
 
+/* logo & 네비게이션 */
+#wrap {
+  position: relative; 
+  .logo {display: none; position: absolute; top: 29px; left: 32px;width: 131px;height: 77px;}
+  .util {position: absolute; top: 17px; right: 22px;width: 44px;height: 44px; }
+  .navWrap {
+      display: none; position: relative; width: 100vw;height: 100vh;top: 0; right: 0px; background: orange;
+      #gnb {
+          position: absolute; text-align: left; left: 204px; top: 268px; width: 901px;height: 618px;
+          ul {
+              font-size: 115px;line-height: 160px;font-family: Chonburi; color: $lightyellow;
+          }
+      }
+  }
+  .sns, .email {position: absolute; color: #fff;left: 1245px;}
+  .sns p, .email p {padding-bottom: 18px;font-size: 21px;}
+  .sns {
+      top: 540px; right: 534px; 
+      ul li {font-size: 32px;letter-spacing: 0.61px;}
+  }
+  .email{
+      bottom: 221px; 
+  }
+  .btn_close {display: none;}
+
+}

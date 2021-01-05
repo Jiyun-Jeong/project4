@@ -1,0 +1,30 @@
+@charset "utf-8";
+@import "_var";
+
+#cnt1 {
+    position: relative; width: 100vw;height: 100vh;
+    .pageSwipe button, p {font-family: "Fugaz One";color: #fff; }
+    .pageSwipe {
+        font-size: 29px;
+        .about {border: 1px solid #fff; border-radius: 50%;width: 200px;
+        }
+    }
+    span, p {text-align: right;}
+    span {
+        display: block; font-family: Chonburi;font-size: 250px;line-height: 250px;padding-top: 149px; padding-right: 280px;color: $lightyellow;}
+    p {font-size: 38px;line-height: 38px;padding-right: 634px;}
+    .decorate {
+        .sunflower {
+            position: absolute; top: -250px; left: 248px; width: 537px;animation: moveSunflower 5s ease infinite fill-mode;}
+        .yellowCircle {position: absolute; top: 470px; left: 1354px;z-index: -1;animation: moveCircle 10s ease-in-out infinite;/* transform-origin: 50% 50%; */}
+      }
+}
+
+/* @keyframes moveCircle {
+    0%   { transform: scale(0.5)   translate(10px, -30px); }
+    38%  { transform: scale(0.5, 0.1) translate(80vw, 30vh) rotate(160deg); }
+    40%  { transform: scale(0.8, 0.5) translate(80vw, 30vh) rotate(160deg); }
+    78%  { transform: scale(0.6, 0.9) translate(0vw, 50vh) rotate(-20deg); }
+    80%  { transform: scale(0.8) translate(0vw, 50vh) rotate(-20deg); }
+    100% { transform: scale(0.5, 0.5)   translate(10px, -30px); }
+  } */

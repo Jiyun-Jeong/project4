@@ -65,7 +65,8 @@ body {
   font-family: KoreanDREAM3, "맑은 고딕", "Malgun Gothic";
   font-weight: 400;
   background-color: #B4CAFA;
-  color: #000; }
+  color: #000;
+  overflow: hidden; }
 
 /* skip */
 #skip a {
@@ -83,5 +84,59 @@ body {
     font-size: 25px;
     height: 50px;
     line-height: 50px; }
+
+/* logo & 네비게이션 */
+#wrap {
+  position: relative; }
+  #wrap .logo {
+    display: none;
+    position: absolute;
+    top: 29px;
+    left: 32px;
+    width: 131px;
+    height: 77px; }
+  #wrap .util {
+    position: absolute;
+    top: 17px;
+    right: 22px;
+    width: 44px;
+    height: 44px; }
+  #wrap .navWrap {
+    display: none;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0px;
+    background: orange; }
+    #wrap .navWrap #gnb {
+      position: absolute;
+      text-align: left;
+      left: 204px;
+      top: 268px;
+      width: 901px;
+      height: 618px; }
+      #wrap .navWrap #gnb ul {
+        font-size: 115px;
+        line-height: 160px;
+        font-family: Chonburi;
+        color: #FAF2A7; }
+  #wrap .sns, #wrap .email {
+    position: absolute;
+    color: #fff;
+    left: 1245px; }
+  #wrap .sns p, #wrap .email p {
+    padding-bottom: 18px;
+    font-size: 21px; }
+  #wrap .sns {
+    top: 540px;
+    right: 534px; }
+    #wrap .sns ul li {
+      font-size: 32px;
+      letter-spacing: 0.61px; }
+  #wrap .email {
+    bottom: 221px; }
+  #wrap .btn_close {
+    display: none; }
 
 /*# sourceMappingURL=common.css.map */
