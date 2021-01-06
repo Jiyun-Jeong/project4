@@ -186,7 +186,17 @@
     }
     .dashboard {
         @include border-radius(50px);
-        width: 91.5625vw/* 1758px */; height: 42.2917vw/* 812px */; background: #fff; position: absolute; left: 0; right: 0; top: 136px; 
+        display: flex; width: 91.5625vw/* 1758px */; height: 42.2917vw/* 812px */; background: #fff; margin: 0 auto; margin-top: 136px;
+        
         .dashboardTitle {font-size: 35px; padding-top: 73px;}
+        .puzzle {
+            @include border-radius(50px);
+            flex-direction: row; width: 407px; height: 604px; line-height: 604px; background: pink;
+            p {font-family: "fugaz one"; font-size: 40px; line-height: 47px; text-align: center;}
+        }
+        .efficiency {}
+        .producitivity {}
+        .relieveStress {}
+        .skillView {}
     }
 }

@@ -408,15 +408,28 @@
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
+    display: flex;
     width: 91.5625vw;
     height: 42.2917vw;
     background: #fff;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 136px; }
+    margin: 0 auto;
+    margin-top: 136px; }
     #cnt4 .dashboard .dashboardTitle {
       font-size: 35px;
       padding-top: 73px; }
+    #cnt4 .dashboard .puzzle {
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+      flex-direction: row;
+      width: 407px;
+      height: 604px;
+      line-height: 604px;
+      background: pink; }
+      #cnt4 .dashboard .puzzle p {
+        font-family: "fugaz one";
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
