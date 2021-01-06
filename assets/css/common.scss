@@ -111,7 +111,14 @@ footer {
     }
   }
   .bigEmail {
-    font-size: 110px; color: #444242; text-decoration: underline; padding-top: 410px; padding-left: 127px;
+    font-size: 110px; color: #444242; text-decoration: underline; padding: 410px 0 0 127px;
   }
-  .phoneImg { width: 566px; height: 576px; }
+  .sns {
+    display: flex; position: absolute; bottom: 197px; left: 127px; text-decoration: underline; font-family: Chonburi; font-size: 40px; 
+    a {flex-direction: row; display: block;}
+    a + a {margin-left: 130px;}
+  }
+  .phoneImg { 
+    position: absolute; width: 566px; height: 576px; top: 64px; right: 0;
+  }
 }

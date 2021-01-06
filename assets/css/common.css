@@ -191,10 +191,25 @@ footer {
     font-size: 110px;
     color: #444242;
     text-decoration: underline;
-    padding-top: 410px;
-    padding-left: 127px; }
+    padding: 410px 0 0 127px; }
+  footer .sns {
+    display: flex;
+    position: absolute;
+    bottom: 197px;
+    left: 127px;
+    text-decoration: underline;
+    font-family: Chonburi;
+    font-size: 40px; }
+    footer .sns a {
+      flex-direction: row;
+      display: block; }
+    footer .sns a + a {
+      margin-left: 130px; }
   footer .phoneImg {
+    position: absolute;
     width: 566px;
-    height: 576px; }
+    height: 576px;
+    top: 64px;
+    right: 0; }
 
 /*# sourceMappingURL=common.css.map */
