@@ -89,7 +89,8 @@ body {
 
 /* Logo & navigation */
 #wrap {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   #wrap #header .logo {
     display: none;
     position: absolute;
@@ -197,9 +198,9 @@ footer {
     position: absolute;
     bottom: 197px;
     left: 127px;
-    text-decoration: underline;
-    font-family: Chonburi;
-    font-size: 40px; }
+    font-family: "Fugaz one";
+    font-size: 40px;
+    color: #444242; }
     footer .sns a {
       flex-direction: row;
       display: block; }

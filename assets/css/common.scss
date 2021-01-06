@@ -66,7 +66,7 @@ body {
 
 /* Logo & navigation */
 #wrap {
-  position: relative;
+  position: relative; overflow: hidden;
   #header {
     .logo {display: none; position: absolute; top: 29px; left: 32px;width: 131px;height: 77px;}
     .util {
@@ -114,7 +114,7 @@ footer {
     font-size: 110px; color: #444242; text-decoration: underline; padding: 410px 0 0 127px;
   }
   .sns {
-    display: flex; position: absolute; bottom: 197px; left: 127px; text-decoration: underline; font-family: Chonburi; font-size: 40px; 
+    display: flex; position: absolute; bottom: 197px; left: 127px; font-family: "Fugaz one"; font-size: 40px; color: #444242;
     a {flex-direction: row; display: block;}
     a + a {margin-left: 130px;}
   }
