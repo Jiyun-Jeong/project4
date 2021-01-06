@@ -408,28 +408,256 @@
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
-    display: flex;
     width: 91.5625vw;
     height: 42.2917vw;
     background: #fff;
     margin: 0 auto;
-    margin-top: 136px; }
+    margin-top: 136px;
+    clear: both; }
     #cnt4 .dashboard .dashboardTitle {
+      display: block;
+      /* width: 1000px;  */
       font-size: 35px;
-      padding-top: 73px; }
-    #cnt4 .dashboard .puzzle {
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-      border-radius: 50px;
-      flex-direction: row;
-      width: 407px;
-      height: 604px;
-      line-height: 604px;
-      background: pink; }
-      #cnt4 .dashboard .puzzle p {
-        font-family: "fugaz one";
-        font-size: 40px;
-        line-height: 47px;
-        text-align: center; }
+      /* width: 246px;  */
+      height: 36px;
+      padding-top: 73px;
+      padding-left: 43px; }
+    #cnt4 .dashboard .leftBoard {
+      display: flex;
+      flex-wrap: wrap;
+      width: 1096px;
+      height: 678px;
+      padding-left: 43px;
+      padding-top: 53px; }
+      #cnt4 .dashboard .leftBoard > div + div {
+        margin-left: 27px; }
+      #cnt4 .dashboard .leftBoard div:nth-child(4) {
+        margin-top: 27px; }
+      #cnt4 .dashboard .leftBoard .puzzle {
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        position: relative;
+        flex-direction: row;
+        width: 407px;
+        height: 604px;
+        line-height: 604px;
+        background: pink;
+        border: 1px solid #444242;
+        box-sizing: border-box; }
+        #cnt4 .dashboard .leftBoard .puzzle span, #cnt4 .dashboard .leftBoard .puzzle p {
+          font-family: "fugaz one";
+          text-align: center; }
+        #cnt4 .dashboard .leftBoard .puzzle span {
+          display: block;
+          font-size: 40px;
+          line-height: 47px;
+          padding-top: 248px; }
+        #cnt4 .dashboard .leftBoard .puzzle .stripe {
+          /*  width: 407px; height: 600px; */ }
+          #cnt4 .dashboard .leftBoard .puzzle .stripe div {
+            /* @include transform(skew(45deg)); */
+            width: 100px;
+            height: 600px; }
+          #cnt4 .dashboard .leftBoard .puzzle .stripe div:first-child {
+            /* position: absolute; top: 0; left: 0;  */
+            background: #b89eff; }
+          #cnt4 .dashboard .leftBoard .puzzle .stripe .line + .line {
+            padding-left: 50px; }
+        #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile {
+          display: none;
+          width: 285px;
+          height: 407px;
+          margin: 0 auto;
+          position: absolute;
+          top: 0;
+          left: 62px;
+          margin-top: 75px; }
+          #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile img {
+            text-align: center;
+            padding-left: 6px;
+            padding-bottom: 60px; }
+          #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile > p {
+            position: absolute;
+            bottom: 0;
+            font-size: 29px;
+            line-height: 42px; }
+      #cnt4 .dashboard .leftBoard .efficiency {
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        position: relative;
+        flex-direction: row;
+        width: 317px;
+        height: 295px;
+        background: #a6fcbc; }
+        #cnt4 .dashboard .leftBoard .efficiency span {
+          display: block;
+          font-family: KoreanDREAM5;
+          font-size: 25px;
+          padding-left: 18px;
+          padding-top: 33px; }
+        #cnt4 .dashboard .leftBoard .efficiency img {
+          position: absolute;
+          left: calc(50% - 91px);
+          top: 113px; }
+        #cnt4 .dashboard .leftBoard .efficiency p:first-child {
+          font-size: 55px;
+          font-family: "Fugaz one"; }
+        #cnt4 .dashboard .leftBoard .efficiency p:last-child {
+          display: none;
+          font-size: 29px;
+          font-family: KoreanDREAM3; }
+      #cnt4 .dashboard .leftBoard .producitivity {
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        position: relative;
+        flex-direction: row;
+        width: 317px;
+        height: 295px;
+        background: #ffcfcf; }
+        #cnt4 .dashboard .leftBoard .producitivity span {
+          display: block;
+          font-family: KoreanDREAM5;
+          font-size: 25px;
+          padding-left: 18px;
+          padding-top: 33px; }
+        #cnt4 .dashboard .leftBoard .producitivity img {
+          position: absolute; }
+        #cnt4 .dashboard .leftBoard .producitivity p {
+          font-size: 15px;
+          font-family: KoreanDREAM3; }
+      #cnt4 .dashboard .leftBoard .relieveStress {
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        position: relative;
+        flex-flow: row-reverse nowrap;
+        width: 656px;
+        height: 289px;
+        border: 1px solid #444242;
+        background: #fff;
+        box-sizing: border-box; }
+        #cnt4 .dashboard .leftBoard .relieveStress span {
+          display: block;
+          font-family: KoreanDREAM5;
+          font-size: 25px;
+          padding-left: 18px;
+          padding-top: 33px; }
+        #cnt4 .dashboard .leftBoard .relieveStress .stressWrap {
+          padding-top: 25px; }
+          #cnt4 .dashboard .leftBoard .relieveStress .stressWrap .stressReliever1, #cnt4 .dashboard .leftBoard .relieveStress .stressWrap .stressReliever2 {
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;
+            width: 528px;
+            height: 62px;
+            font-family: "Fugaz one";
+            font-size: 25px;
+            line-height: 62px;
+            margin: 0 auto;
+            padding-left: 39px; }
+          #cnt4 .dashboard .leftBoard .relieveStress .stressWrap img {
+            display: none; }
+          #cnt4 .dashboard .leftBoard .relieveStress .stressWrap .stressReliever1 {
+            background: #ffd28d; }
+          #cnt4 .dashboard .leftBoard .relieveStress .stressWrap .stressReliever2 {
+            background: #c2e4ff;
+            margin-top: 35px; }
+    #cnt4 .dashboard .rightBoard {
+      float: right; }
+      #cnt4 .dashboard .rightBoard .skillView {
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        position: relative;
+        flex-direction: row-reverse;
+        width: 540px;
+        height: 745px;
+        background: #FAF2A7; }
+        #cnt4 .dashboard .rightBoard .skillView .switchWrap {
+          margin: 0 auto;
+          padding-bottom: 60px; }
+        #cnt4 .dashboard .rightBoard .skillView .switchToggle {
+          position: relative;
+          width: 70px;
+          height: 36px;
+          border-radius: 66px;
+          background: #444242;
+          display: inline-block; }
+          #cnt4 .dashboard .rightBoard .skillView .switchToggle button {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #fff;
+            top: 0;
+            left: 0; }
+        #cnt4 .dashboard .rightBoard .skillView .skillTitle {
+          display: inline-block; }
+          #cnt4 .dashboard .rightBoard .skillView .skillTitle div {
+            width: 190px;
+            height: 34px;
+            line-height: 34px;
+            border-radius: 20px;
+            background: #444242;
+            color: #fff;
+            text-align: center; }
+        #cnt4 .dashboard .rightBoard .skillView .skillCircle {
+          display: flex;
+          flex-direction: row; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle div {
+            flex: 1 0 auto;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 14px;
+            line-height: 21px; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle .css, #cnt4 .dashboard .rightBoard .skillView .skillCircle .scss {
+            width: 156px;
+            height: 156px; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle .css {
+            background: #993ef3; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle .html5 {
+            width: 195px;
+            height: 195px;
+            background: #ff9393; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle .scss {
+            background: #bd3ef3; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle .bootstrap {
+            width: 100px;
+            height: 100px;
+            background: #a6fcbc; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle .js {
+            width: 120px;
+            height: 120px;
+            background: #ffc293; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle .jq {
+            width: 128px;
+            height: 128px;
+            background: #ffe393; }
+        #cnt4 .dashboard .rightBoard .skillView .overview {
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          border-radius: 50px;
+          position: absolute;
+          top: 552px;
+          left: 0;
+          width: 540px;
+          height: 745px;
+          background: #fff; }
+          #cnt4 .dashboard .rightBoard .skillView .overview .overviewTitle {
+            display: block;
+            font-family: KoreanDREAM5;
+            font-size: 25px;
+            padding-top: 45px;
+            padding-left: 44px; }
+          #cnt4 .dashboard .rightBoard .skillView .overview p:last-child {
+            display: block;
+            font-family: KoreanDREAM3;
+            font-size: 15px;
+            color: #858585;
+            padding-top: 45px;
+            padding-left: 44px; }
 
 /*# sourceMappingURL=main.css.map */
