@@ -2,7 +2,7 @@
 @import "_var", "_mixin";
 
 #cnt1 {
-    position: relative; width: 100vw;height: 100vh;
+    position: relative; width: 100vw;height: 100vh; overflow: hidden;
     .pageSwipe button, p {font-family: "Fugaz One";color: #fff; }
     .pageSwipe {
         .about {
@@ -90,54 +90,82 @@
     }
 }
 
+
 #cnt3 {
-    background: $lightyellow;
-    .myStory {
-        position: relative; height: 224px; line-height: 224px; width: 100%; background: #fff;
-        &::before {
-            content:""; clear: both; position: absolute;border-top: 3px dashed #4e4e4e; top: -2px; left: 0; width: 100%;
+    width: 100%; height: 63.8542vw/* 1226px */;
+    .swiper-slide:nth-child(odd) {background: $lightyellow;}
+    /* .swiper-slide:nth-child(even) {} */
+    .slide1 {
+        .myStory {
+            position: relative; height: 224px; line-height: 224px; width: 100%; background: #fff;
+            &::before {
+                content:""; clear: both; position: absolute;border-top: 3px dashed #4e4e4e; top: -2px; left: 0; width: 100%;
+            }
+            img {position: absolute; top: -32px; left: 0; }
+            p {text-align: center; font-size: 62px; font-family: "Fugaz one";}
         }
-        img {position: absolute; top: -32px; left: 0; }
-        p {text-align: center; font-size: 62px; font-family: "Fugaz one";}
-    }
-    .data {
-        position: relative; z-index: 700; 
-        img {position: absolute; left: 210px; top: 100px;}
-        > p {font-family: Chonburi; font-size: 29px; position: absolute; left: 278px; top: 111px;}
-    }
-    .firstDiary {
-        position: relative;margin-top: 188px; padding-left: 470px; padding-bottom: 87px;
-        .windowWrap {
-            position: relative;width: 600px; height: 800px; overflow: hidden;
+        .data {
+            position: relative; z-index: 700; 
+            img {position: absolute; left: 210px; top: 100px;}
+            > p {font-family: Chonburi; font-size: 29px; position: absolute; left: 278px; top: 111px;}
         }
-        .emptyFrame {position: absolute; top: 0; left: 0;z-index: 10;}
-        img {width: 600px; height: 800px;}
-        img:nth-child(2) {position: absolute;top: 0; left: 0;}
-        .showImg {width: 4000px; font-size: 0;}
-        .diary {
-            position: absolute; top: 0; right: 250px; width: 600px; height: 800px; background: #fff; font-family: DXPnM; font-size: 25px; text-align: right;
-            strong {font-size: 31px; padding-top: 99px; padding-right: 55px;}
-            p {
-                padding-top: 76px; padding-right: 55px;
-                &::before {content: ""; position: absolute; clear: both; width: 100%; height: 1px;}
+        .firstDiary {
+            position: relative; margin-top: 188px; padding-left: 470px; padding-bottom: 87px;
+            .windowWrap {
+                position: relative; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; overflow: hidden;
+            }
+            .emptyFrame {position: absolute; top: 0; left: 0;z-index: 10;}
+            img {width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; }
+            img:nth-child(2) {position: absolute;top: 0; left: 0;}
+            .showImg {width: 208.3333vw/* 4000px */; font-size: 0;}
+            .diary {
+                position: absolute; top: 0; right: 250px; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; background: #fff; font-family: DXPnM; font-size: 25px; text-align: right;
+                strong {font-size: 31px; padding-top: 99px; padding-right: 55px;}
+                p {
+                    padding-top: 76px; padding-right: 55px;
+                    &::before {content: ""; position: absolute; clear: both; width: 100%; height: 1px;}
+                }
             }
         }
+    
     }
-}
-
-#cnt4 {
-  .data {
-      position: relative; background: $lightpurple;
-      img {position: absolute; top: -32px; left: 0; }
-      p {text-align: center; font-size: 62px; font-family: "Fugaz one";}
+    .slide2 {
+        .data {
+            position: relative; z-index: 700; 
+            img {position: absolute; left: 210px; top: 100px;}
+            > p {font-family: Chonburi; font-size: 29px; position: absolute; left: 278px; top: 111px;}
+        }
+        .secondDiary {
+            position: relative;
+            .diary {
+                position: absolute; top: 188px; left: 470px; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; background: #fff; font-family: DXPnM; font-size: 25px; text-align: right;
+                strong {
+                    font-size: 31px; padding-top: 99px; padding-right: 55px;
+                }
+                p {
+                    padding-top: 76px; padding-right: 55px;
+                    &::before {content: ""; position: absolute; clear: both; width: 100%; height: 1px;}
+                }
+            }
+            .diaryImg {position: absolute; top: 188px; right: 250px; width: 26.25vw; height: 41.6667vw/* 800px */;}
+        }
     }
-    .secondDiary {
-        .diary {
-            position: absolute; top: 0; right: 250px; width: 600px; height: 800px; background: #fff; font-family: DXPnM; font-size: 25px; text-align: right;
-            strong {font-size: 31px; padding-top: 99px; padding-right: 55px;}
-            p {
-                padding-top: 76px; padding-right: 55px;
-                &::before {content: ""; position: absolute; clear: both; width: 100%; height: 1px;}
+    .slide3 {
+        
+        .data {
+            position: relative; z-index: 700; 
+            img {position: absolute; left: 210px; top: 100px;}
+            > p {font-family: Chonburi; font-size: 29px; position: absolute; left: 278px; top: 111px;}
+        }
+        .thirdDiary {
+            position: relative;  margin-top: 188px; padding-left: 470px; padding-bottom: 87px;
+            .diary {
+                position: absolute; top: 0; right: 250px; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; background: #fff; font-family: DXPnM; font-size: 25px; text-align: right; margin-top: 188px;
+                strong {font-size: 31px; padding-top: 99px; padding-right: 55px;}
+                p {
+                    padding-top: 76px; padding-right: 55px;
+                    &::before {content: ""; position: absolute; clear: both; width: 100%; height: 1px;}
+                }
             }
         }
     }

@@ -1,7 +1,9 @@
 @charset "UTF-8";
+/* Google Web font CDN */
 @import url(https://fonts.googleapis.com/css?family=VT323:regular);
 @import url(https://fonts.googleapis.com/css?family=Chonburi:regular);
 @import url(https://fonts.googleapis.com/css?family=Fugaz+One:regular);
+/* Font face */
 @font-face {
   font-family: KoreanDREAM3;
   font-weight: 400;
@@ -20,7 +22,7 @@
   font-style: normal;
   src: url("../font/DXPnM-KSCpc-EUC-H.eot");
   src: url("../font/DXPnM-KSCpc-EUC-H.eot#iefix") format("embedded-opentype"), url("../font/DXPnM-KSCpc-EUC-H.woff2") format("woff2"), url("../font/DXPnM-KSCpc-EUC-H.woff") format("woff"), url("../font/DXPnM-KSCpc-EUC-H.ttf") format("truetype"); }
-/* tag reset */
+/* Tag reset CSS */
 body, div, ul, h1, h2, h3, h4, h5, h6, button, p {
   margin: 0;
   padding: 0; }
@@ -60,7 +62,7 @@ header, nav, section, footer {
   display: block;
   clear: both; }
 
-/* body */
+/* Default CSS */
 body {
   font-family: KoreanDREAM3, "맑은 고딕", "Malgun Gothic";
   font-weight: 400;
@@ -68,7 +70,7 @@ body {
   color: #000;
   overflow-x: hidden; }
 
-/* skip */
+/* Skip navigation */
 #skip a {
   position: absolute;
   left: -9999px;
@@ -85,25 +87,25 @@ body {
     height: 50px;
     line-height: 50px; }
 
-/* logo & 네비게이션 */
+/* Logo & navigation */
 #wrap {
   position: relative; }
-  #wrap .logo {
+  #wrap #header .logo {
     display: none;
     position: absolute;
     top: 29px;
     left: 32px;
     width: 131px;
     height: 77px; }
-  #wrap .util {
+  #wrap #header .util {
     position: absolute;
     top: 17px;
     right: 22px; }
-    #wrap .util > .btn_open img {
+    #wrap #header .util > .btn_open img {
       width: 44px;
       height: 44px;
       cursor: pointer; }
-  #wrap .navWrap {
+  #wrap #header .navWrap {
     display: none;
     position: relative;
     width: 100vw;
@@ -111,34 +113,88 @@ body {
     top: 0;
     right: 0px;
     background: orange; }
-    #wrap .navWrap #gnb {
+    #wrap #header .navWrap #gnb {
       position: absolute;
       text-align: left;
       left: 204px;
       top: 268px;
       width: 901px;
       height: 618px; }
-      #wrap .navWrap #gnb ul {
+      #wrap #header .navWrap #gnb ul {
         font-size: 115px;
         line-height: 160px;
         font-family: Chonburi;
         color: #FAF2A7; }
-  #wrap .sns, #wrap .email {
+  #wrap #header .sns, #wrap #header .email {
     position: absolute;
     color: #fff;
     left: 1245px; }
-  #wrap .sns p, #wrap .email p {
+  #wrap #header .sns p, #wrap #header .email p {
     padding-bottom: 18px;
     font-size: 21px; }
-  #wrap .sns {
+  #wrap #header .sns {
     top: 540px;
     right: 534px; }
-    #wrap .sns ul li {
+    #wrap #header .sns ul li {
       font-size: 32px;
       letter-spacing: 0.61px; }
-  #wrap .email {
+  #wrap #header .email {
     bottom: 221px; }
-  #wrap .btn_close {
+  #wrap #header .btn_close {
     display: none; }
+
+/* Footer */
+footer {
+  position: relative;
+  width: 100%;
+  height: 46.875vw;
+  background: #FAF2A7;
+  display: flex; }
+  footer .contact button, footer .bigEmail {
+    font-family: "Fugaz One"; }
+  footer .contact {
+    position: absolute;
+    top: 262px;
+    left: 140px;
+    width: 200px;
+    height: 72px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    footer .contact::before {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+      content: "";
+      display: block;
+      clear: both;
+      position: absolute;
+      top: -138%;
+      left: 50%;
+      width: 1px;
+      height: 261px;
+      background: #fff;
+      z-index: 500; }
+    footer .contact button {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      font-size: 29px;
+      border: 1px solid #fff;
+      width: 100%;
+      line-height: 72px;
+      background: #B4CAFA;
+      color: #fff; }
+  footer .bigEmail {
+    font-size: 110px;
+    color: #444242;
+    text-decoration: underline;
+    padding-top: 410px;
+    padding-left: 127px; }
+  footer .phoneImg {
+    width: 566px;
+    height: 576px; }
 
 /*# sourceMappingURL=common.css.map */

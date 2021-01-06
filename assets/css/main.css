@@ -1,7 +1,8 @@
 #cnt1 {
   position: relative;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
   #cnt1 .pageSwipe button, #cnt1 p {
     font-family: "Fugaz One";
     color: #fff; }
@@ -194,14 +195,18 @@
         font-size: 36px; }
 
 #cnt3 {
-  background: #FAF2A7; }
-  #cnt3 .myStory {
+  width: 100%;
+  height: 63.8542vw;
+  /* .swiper-slide:nth-child(even) {} */ }
+  #cnt3 .swiper-slide:nth-child(odd) {
+    background: #FAF2A7; }
+  #cnt3 .slide1 .myStory {
     position: relative;
     height: 224px;
     line-height: 224px;
     width: 100%;
     background: #fff; }
-    #cnt3 .myStory::before {
+    #cnt3 .slide1 .myStory::before {
       content: "";
       clear: both;
       position: absolute;
@@ -209,109 +214,160 @@
       top: -2px;
       left: 0;
       width: 100%; }
-    #cnt3 .myStory img {
+    #cnt3 .slide1 .myStory img {
       position: absolute;
       top: -32px;
       left: 0; }
-    #cnt3 .myStory p {
+    #cnt3 .slide1 .myStory p {
       text-align: center;
       font-size: 62px;
       font-family: "Fugaz one"; }
-  #cnt3 .data {
+  #cnt3 .slide1 .data {
     position: relative;
     z-index: 700; }
-    #cnt3 .data img {
+    #cnt3 .slide1 .data img {
       position: absolute;
       left: 210px;
       top: 100px; }
-    #cnt3 .data > p {
+    #cnt3 .slide1 .data > p {
       font-family: Chonburi;
       font-size: 29px;
       position: absolute;
       left: 278px;
       top: 111px; }
-  #cnt3 .firstDiary {
+  #cnt3 .slide1 .firstDiary {
     position: relative;
     margin-top: 188px;
     padding-left: 470px;
     padding-bottom: 87px; }
-    #cnt3 .firstDiary .windowWrap {
+    #cnt3 .slide1 .firstDiary .windowWrap {
       position: relative;
-      width: 600px;
-      height: 800px;
+      width: 31.25vw;
+      height: 41.6667vw;
       overflow: hidden; }
-    #cnt3 .firstDiary .emptyFrame {
+    #cnt3 .slide1 .firstDiary .emptyFrame {
       position: absolute;
       top: 0;
       left: 0;
       z-index: 10; }
-    #cnt3 .firstDiary img {
-      width: 600px;
-      height: 800px; }
-    #cnt3 .firstDiary img:nth-child(2) {
+    #cnt3 .slide1 .firstDiary img {
+      width: 31.25vw;
+      height: 41.6667vw; }
+    #cnt3 .slide1 .firstDiary img:nth-child(2) {
       position: absolute;
       top: 0;
       left: 0; }
-    #cnt3 .firstDiary .showImg {
-      width: 4000px;
+    #cnt3 .slide1 .firstDiary .showImg {
+      width: 208.3333vw;
       font-size: 0; }
-    #cnt3 .firstDiary .diary {
+    #cnt3 .slide1 .firstDiary .diary {
       position: absolute;
       top: 0;
       right: 250px;
-      width: 600px;
-      height: 800px;
+      width: 31.25vw;
+      height: 41.6667vw;
       background: #fff;
       font-family: DXPnM;
       font-size: 25px;
       text-align: right; }
-      #cnt3 .firstDiary .diary strong {
+      #cnt3 .slide1 .firstDiary .diary strong {
         font-size: 31px;
         padding-top: 99px;
         padding-right: 55px; }
-      #cnt3 .firstDiary .diary p {
+      #cnt3 .slide1 .firstDiary .diary p {
         padding-top: 76px;
         padding-right: 55px; }
-        #cnt3 .firstDiary .diary p::before {
+        #cnt3 .slide1 .firstDiary .diary p::before {
           content: "";
           position: absolute;
           clear: both;
           width: 100%;
           height: 1px; }
-
-#cnt4 .data {
-  position: relative;
-  background: #B4CAFA; }
-  #cnt4 .data img {
-    position: absolute;
-    top: -32px;
-    left: 0; }
-  #cnt4 .data p {
-    text-align: center;
-    font-size: 62px;
-    font-family: "Fugaz one"; }
-#cnt4 .secondDiary .diary {
-  position: absolute;
-  top: 0;
-  right: 250px;
-  width: 600px;
-  height: 800px;
-  background: #fff;
-  font-family: DXPnM;
-  font-size: 25px;
-  text-align: right; }
-  #cnt4 .secondDiary .diary strong {
-    font-size: 31px;
-    padding-top: 99px;
-    padding-right: 55px; }
-  #cnt4 .secondDiary .diary p {
-    padding-top: 76px;
-    padding-right: 55px; }
-    #cnt4 .secondDiary .diary p::before {
-      content: "";
+  #cnt3 .slide2 .data {
+    position: relative;
+    z-index: 700; }
+    #cnt3 .slide2 .data img {
       position: absolute;
-      clear: both;
-      width: 100%;
-      height: 1px; }
+      left: 210px;
+      top: 100px; }
+    #cnt3 .slide2 .data > p {
+      font-family: Chonburi;
+      font-size: 29px;
+      position: absolute;
+      left: 278px;
+      top: 111px; }
+  #cnt3 .slide2 .secondDiary {
+    position: relative; }
+    #cnt3 .slide2 .secondDiary .diary {
+      position: absolute;
+      top: 188px;
+      left: 470px;
+      width: 31.25vw;
+      height: 41.6667vw;
+      background: #fff;
+      font-family: DXPnM;
+      font-size: 25px;
+      text-align: right; }
+      #cnt3 .slide2 .secondDiary .diary strong {
+        font-size: 31px;
+        padding-top: 99px;
+        padding-right: 55px; }
+      #cnt3 .slide2 .secondDiary .diary p {
+        padding-top: 76px;
+        padding-right: 55px; }
+        #cnt3 .slide2 .secondDiary .diary p::before {
+          content: "";
+          position: absolute;
+          clear: both;
+          width: 100%;
+          height: 1px; }
+    #cnt3 .slide2 .secondDiary .diaryImg {
+      position: absolute;
+      top: 188px;
+      right: 250px;
+      width: 26.25vw;
+      height: 41.6667vw; }
+  #cnt3 .slide3 .data {
+    position: relative;
+    z-index: 700; }
+    #cnt3 .slide3 .data img {
+      position: absolute;
+      left: 210px;
+      top: 100px; }
+    #cnt3 .slide3 .data > p {
+      font-family: Chonburi;
+      font-size: 29px;
+      position: absolute;
+      left: 278px;
+      top: 111px; }
+  #cnt3 .slide3 .thirdDiary {
+    position: relative;
+    margin-top: 188px;
+    padding-left: 470px;
+    padding-bottom: 87px; }
+    #cnt3 .slide3 .thirdDiary .diary {
+      position: absolute;
+      top: 0;
+      right: 250px;
+      width: 31.25vw;
+      height: 41.6667vw;
+      background: #fff;
+      font-family: DXPnM;
+      font-size: 25px;
+      text-align: right;
+      margin-top: 188px; }
+      #cnt3 .slide3 .thirdDiary .diary strong {
+        font-size: 31px;
+        padding-top: 99px;
+        padding-right: 55px; }
+      #cnt3 .slide3 .thirdDiary .diary p {
+        padding-top: 76px;
+        padding-right: 55px; }
+        #cnt3 .slide3 .thirdDiary .diary p::before {
+          content: "";
+          position: absolute;
+          clear: both;
+          width: 100%;
+          height: 1px; }
 
 /*# sourceMappingURL=main.css.map */
