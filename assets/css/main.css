@@ -7,10 +7,10 @@
     color: #fff; }
   #cnt1 .pageSwipe .about {
     position: absolute;
-    top: 675px;
-    left: 140px;
-    width: 200px;
-    height: 72px;
+    top: 35.15625vw;
+    left: 7.2917vw;
+    width: 10.4167vw;
+    height: 3.75vw;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
@@ -29,10 +29,10 @@
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
-      font-size: 29px;
+      font-size: 1.5104vw;
       border: 1px solid #fff;
       width: 100%;
-      line-height: 72px; }
+      line-height: 3.75vw; }
   #cnt1 .pageSwipe .works {
     position: absolute;
     top: 220px;
@@ -71,20 +71,20 @@
   #cnt1 span {
     display: block;
     font-family: Chonburi;
-    font-size: 250px;
-    line-height: 250px;
-    padding-top: 149px;
-    padding-right: 280px;
+    font-size: 13.0208vw;
+    line-height: 13.0208vw;
+    padding-top: 7.7604vw;
+    padding-right: 14.5833vw;
     color: #FAF2A7; }
   #cnt1 p {
-    font-size: 38px;
-    line-height: 38px;
-    padding-right: 634px; }
+    font-size: 1.9791vw;
+    line-height: 1.9791vw;
+    padding-right: 33.0208vw; }
   #cnt1 .decorate .sunflower {
     position: absolute;
-    top: -260px;
-    left: 248px;
-    width: 537px;
+    top: -13.5417vw;
+    left: 12.9167vw;
+    width: 27.96875vw;
     animation: moveSunflower 5s ease-in-out infinite; }
   #cnt1 .decorate .yellowCircle {
     position: absolute;
@@ -99,19 +99,14 @@
     60% {transform: translateY(-100px);}
     100% {transform: translateY(50px); }
 } */
-@keyframes moveCircle {
-  0% {
-    transform: scale(0.5) translate(10px, -30px); }
-  38% {
-    transform: scale(0.7, 0.7) translate(80vw, 30vh) rotate(80deg); }
-  40% {
-    transform: scale(0.8, 0.5) translate(80vw, 30vh) rotate(80deg); }
-  78% {
-    transform: scale(0.6, 0.9) translate(0vw, 50vh) rotate(-20deg); }
-  80% {
-    transform: scale(0.8) translate(0vw, 50vh) rotate(-20deg); }
-  100% {
-    transform: scale(5, 5) translate(0, 0); } }
+/* @keyframes moveCircle {
+    0%   { transform: scale(0.5)   translate(10px, -30px); }
+    38%  { transform: scale(0.7, 0.7) translate(80vw, 30vh) rotate(80deg); }
+    40%  { transform: scale(0.8, 0.5) translate(80vw, 30vh) rotate(80deg); }
+    78%  { transform: scale(0.6, 0.9) translate(0vw, 50vh) rotate(-20deg); }
+    80%  { transform: scale(0.8) translate(0vw, 50vh) rotate(-20deg); }
+    100% { transform: scale(5, 5) translate(0, 0); }
+  } */
 #cnt2 {
   position: relative;
   background: #FAF2A7;
@@ -127,19 +122,19 @@
     #cnt2 .cnt2Deco .purpleCircle {
       top: -150px;
       left: -150px;
-      height: 980px;
-      width: 1350px;
+      height: 51.0417vw;
+      width: 70.3125vw;
       animation: purpleCircle 10s ease infinite;
       transform-origin: 50% 50%; }
     #cnt2 .cnt2Deco .gradiCircle {
-      top: 575px;
-      left: 806px;
-      width: 409px;
+      top: 29.9479vw;
+      left: 41.9792vw;
+      width: 21.3021vw;
       height: 335px; }
     #cnt2 .cnt2Deco .profile {
       top: 0;
       left: 850px;
-      width: 1190px; }
+      width: 61.9792vw; }
     #cnt2 .cnt2Deco .ballon {
       top: 94px;
       right: 47px;
@@ -199,7 +194,8 @@
         font-size: 36px; }
 
 #cnt3 {
-  background: #FAF2A7; }
+  width: 100%;
+  height: 67.8542vw; }
   #cnt3 .myStory {
     position: relative;
     height: 224px;
@@ -212,8 +208,8 @@
       position: absolute;
       border-top: 3px dashed #4e4e4e;
       top: -2px;
-      left: 0;
-      width: 100%; }
+      right: 0;
+      width: 97%; }
     #cnt3 .myStory img {
       position: absolute;
       top: -32px;
@@ -221,56 +217,461 @@
     #cnt3 .myStory p {
       text-align: center;
       font-size: 62px;
-      font-family: "Fugaz one"; }
-  #cnt3 .data {
-    position: relative;
-    z-index: 700; }
-    #cnt3 .data img {
-      position: absolute;
-      left: 210px;
-      top: 100px; }
-    #cnt3 .data > p {
-      font-family: Chonburi;
-      font-size: 29px;
-      position: absolute;
-      left: 278px;
-      top: 111px; }
-  #cnt3 .firstDiary {
-    position: relative;
-    margin-top: 188px;
-    padding-left: 453px;
-    padding-bottom: 87px; }
-    #cnt3 .firstDiary .windowWrap {
+      font-family: "Fugaz one";
+      color: #444242; }
+  #cnt3 .swiper-container {
+    width: 100%;
+    /* height: 100vh; */ }
+    #cnt3 .swiper-container .swiper-slide:nth-child(odd) {
+      background: #FAF2A7; }
+    #cnt3 .swiper-container .slide1 .data {
       position: relative;
-      width: 600px;
-      height: 800px;
-      overflow: hidden; }
-    #cnt3 .firstDiary .emptyFrame {
+      z-index: 700; }
+      #cnt3 .swiper-container .slide1 .data img {
+        position: absolute;
+        left: 210px;
+        top: 100px; }
+      #cnt3 .swiper-container .slide1 .data > p {
+        font-family: Chonburi;
+        font-size: 29px;
+        position: absolute;
+        left: 278px;
+        top: 111px; }
+    #cnt3 .swiper-container .slide1 .firstDiary {
+      position: relative;
+      margin-top: 188px;
+      padding-left: 24.479vw;
+      height: 46.3542vw; }
+      #cnt3 .swiper-container .slide1 .firstDiary .windowWrap {
+        position: relative;
+        width: 31.25vw;
+        height: 41.6667vw;
+        overflow: hidden; }
+      #cnt3 .swiper-container .slide1 .firstDiary .emptyFrame {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10; }
+      #cnt3 .swiper-container .slide1 .firstDiary img {
+        width: 31.25vw;
+        height: 41.6667vw; }
+      #cnt3 .swiper-container .slide1 .firstDiary img:nth-child(2) {
+        position: absolute;
+        top: 0;
+        left: 0; }
+      #cnt3 .swiper-container .slide1 .firstDiary .showImg {
+        width: 208.3333vw;
+        font-size: 0; }
+      #cnt3 .swiper-container .slide1 .firstDiary .diary {
+        position: absolute;
+        top: 0;
+        right: 250px;
+        width: 31.25vw;
+        height: 41.6667vw;
+        background: #fff;
+        font-family: DXPnM;
+        font-size: 25px;
+        text-align: right; }
+        #cnt3 .swiper-container .slide1 .firstDiary .diary strong {
+          display: block;
+          font-size: 31px;
+          padding-top: 25px;
+          padding-right: 55px; }
+        #cnt3 .swiper-container .slide1 .firstDiary .diary p {
+          padding-top: 35px;
+          padding-right: 55px; }
+          #cnt3 .swiper-container .slide1 .firstDiary .diary p::before {
+            content: "";
+            position: absolute;
+            clear: both;
+            width: 50%;
+            height: 1px;
+            background: #444242; }
+        #cnt3 .swiper-container .slide1 .firstDiary .diary span {
+          padding-right: 17px;
+          padding-bottom: 17px; }
+    #cnt3 .swiper-container .slide2 .data {
+      position: relative;
+      z-index: 700; }
+      #cnt3 .swiper-container .slide2 .data img {
+        position: absolute;
+        left: 210px;
+        top: 100px; }
+      #cnt3 .swiper-container .slide2 .data > p {
+        font-family: Chonburi;
+        font-size: 29px;
+        position: absolute;
+        left: 278px;
+        top: 111px; }
+    #cnt3 .swiper-container .slide2 .secondDiary {
+      position: relative; }
+      #cnt3 .swiper-container .slide2 .secondDiary .diary {
+        position: absolute;
+        top: 188px;
+        left: 470px;
+        width: 31.25vw;
+        height: 41.6667vw;
+        background: #fff;
+        font-family: DXPnM;
+        font-size: 25px;
+        text-align: right; }
+        #cnt3 .swiper-container .slide2 .secondDiary .diary strong {
+          font-size: 31px;
+          padding-top: 99px;
+          padding-right: 55px; }
+        #cnt3 .swiper-container .slide2 .secondDiary .diary p {
+          padding-top: 76px;
+          padding-right: 55px; }
+          #cnt3 .swiper-container .slide2 .secondDiary .diary p::before {
+            content: "";
+            position: absolute;
+            clear: both;
+            width: 100%;
+            height: 1px; }
+      #cnt3 .swiper-container .slide2 .secondDiary .diaryImg {
+        position: absolute;
+        top: 188px;
+        right: 250px;
+        width: 26.25vw;
+        height: 41.6667vw; }
+    #cnt3 .swiper-container .slide3 .data {
+      position: relative;
+      z-index: 700; }
+      #cnt3 .swiper-container .slide3 .data img {
+        position: absolute;
+        left: 210px;
+        top: 100px; }
+      #cnt3 .swiper-container .slide3 .data > p {
+        font-family: Chonburi;
+        font-size: 29px;
+        position: absolute;
+        left: 278px;
+        top: 111px; }
+    #cnt3 .swiper-container .slide3 .thirdDiary {
+      position: relative;
+      margin-top: 188px;
+      padding-left: 470px;
+      padding-bottom: 87px; }
+      #cnt3 .swiper-container .slide3 .thirdDiary .diary {
+        position: absolute;
+        top: 0;
+        right: 250px;
+        width: 31.25vw;
+        height: 41.6667vw;
+        background: #fff;
+        font-family: DXPnM;
+        font-size: 25px;
+        text-align: right;
+        margin-top: 188px; }
+        #cnt3 .swiper-container .slide3 .thirdDiary .diary strong {
+          font-size: 31px;
+          padding-top: 99px;
+          padding-right: 55px; }
+        #cnt3 .swiper-container .slide3 .thirdDiary .diary p {
+          padding-top: 76px;
+          padding-right: 55px; }
+          #cnt3 .swiper-container .slide3 .thirdDiary .diary p::before {
+            content: "";
+            position: absolute;
+            clear: both;
+            width: 100%;
+            height: 1px; }
+
+#cnt4 {
+  /* position: relative;  */
+  width: 100%;
+  height: 67.7083vw;
+  background: #B4CAFA; }
+  #cnt4 .stats {
+    position: relative;
+    height: 224px;
+    line-height: 224px;
+    width: 100%;
+    background: #fff; }
+    #cnt4 .stats::before {
+      content: "";
+      clear: both;
       position: absolute;
-      top: 0;
+      border-top: 3px dashed #4e4e4e;
+      top: -2px;
+      right: 0;
+      width: 97%;
+      z-index: 100; }
+    #cnt4 .stats img {
+      position: absolute;
+      top: -32px;
       left: 0;
-      z-index: 10; }
-    #cnt3 .firstDiary img {
-      width: 600px;
-      height: 800px; }
-    #cnt3 .firstDiary img:nth-child(2) {
-      position: absolute;
-      top: 0;
-      left: 0; }
-    #cnt3 .firstDiary .showImg {
-      width: 4000px;
-      font-size: 0; }
-    #cnt3 .firstDiary .diary {
-      position: absolute;
-      top: 0;
-      right: 250px;
-      width: 600px;
-      height: 800px;
-      background: #fff;
-      font-family: DXPnM;
-      font-size: 25px;
-      text-align: right; }
-      #cnt3 .firstDiary .diary strong {
-        font-size: 31px; }
+      z-index: 100; }
+    #cnt4 .stats p {
+      text-align: center;
+      font-size: 62px;
+      font-family: "Fugaz one";
+      color: #444242; }
+  #cnt4 .dashboard {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 91.5625vw;
+    height: 42.2917vw;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 136px;
+    clear: both; }
+    #cnt4 .dashboard .dashboardTitle {
+      display: block;
+      width: 100%;
+      font-family: KoreanDREAM5;
+      font-size: 35px;
+      /* width: 246px;  */
+      height: 36px;
+      padding-top: 73px;
+      padding-left: 43px; }
+    #cnt4 .dashboard .leftBoard {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 1096px;
+      height: 678px;
+      padding-top: 53px; }
+      #cnt4 .dashboard .leftBoard .puzzle {
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        position: relative;
+        width: 21.1979vw;
+        height: 31.4583vw;
+        line-height: 31.4583vw;
+        background: pink;
+        border: 1px solid #444242;
+        box-sizing: border-box; }
+        #cnt4 .dashboard .leftBoard .puzzle span, #cnt4 .dashboard .leftBoard .puzzle p {
+          font-family: "fugaz one";
+          text-align: center; }
+        #cnt4 .dashboard .leftBoard .puzzle span {
+          display: block;
+          font-size: 40px;
+          line-height: 47px;
+          padding-top: 248px; }
+        #cnt4 .dashboard .leftBoard .puzzle .stripe {
+          /*  width: 407px; height: 600px; */ }
+          #cnt4 .dashboard .leftBoard .puzzle .stripe div {
+            -webkit-transform: skew(45deg);
+            -moz-transform: skew(45deg);
+            -o-transform: skew(45deg);
+            -ms-transform: skew(45deg);
+            transform: skew(45deg);
+            width: 120px;
+            height: 31.25vw;
+            display: inline-block; }
+          #cnt4 .dashboard .leftBoard .puzzle .stripe div:first-child {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #b89eff; }
+          #cnt4 .dashboard .leftBoard .puzzle .stripe .line + .line {
+            padding-left: 50px; }
+        #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile {
+          /* display: none;  */
+          width: 285px;
+          height: 21.1979vw;
+          margin: 0 auto;
+          position: absolute;
+          top: 0;
+          left: 62px;
+          margin-top: 75px; }
+          #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile img {
+            text-align: center;
+            padding-left: 6px;
+            padding-bottom: 60px; }
+          #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile > p {
+            position: absolute;
+            bottom: 0;
+            font-size: 29px;
+            line-height: 42px; }
+      #cnt4 .dashboard .leftBoard .efficiency {
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        position: relative;
+        width: 16.5104vw;
+        height: 15.3646vw;
+        background: #a6fcbc;
+        /* .hiddenTriangle {
+            p {display: none; font-size: 36px; top: 66%; left: calc(50% - 36.5px);}
+        } */ }
+        #cnt4 .dashboard .leftBoard .efficiency span {
+          display: block;
+          font-family: KoreanDREAM5;
+          font-size: 25px;
+          padding-left: 18px;
+          padding-top: 33px; }
+        #cnt4 .dashboard .leftBoard .efficiency #drop1 {
+          position: absolute;
+          left: calc(50% - 91px);
+          top: 113px; }
+        #cnt4 .dashboard .leftBoard .efficiency p {
+          position: absolute;
+          font-size: 2.8646vw;
+          font-family: "Fugaz one";
+          top: 59%;
+          left: calc(50% - 18.5px); }
+      #cnt4 .dashboard .leftBoard .producitivity {
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        position: relative;
+        width: 16.5104vw;
+        height: 15.3646vw;
+        background: #ffcfcf; }
+        #cnt4 .dashboard .leftBoard .producitivity span {
+          display: block;
+          font-family: KoreanDREAM5;
+          font-size: 25px;
+          padding-left: 18px;
+          padding-top: 33px; }
+        #cnt4 .dashboard .leftBoard .producitivity #drop2 {
+          position: absolute;
+          top: 34%;
+          left: calc(50% - 137.5px);
+          width: 14.3229vw; }
+        #cnt4 .dashboard .leftBoard .producitivity p {
+          font-size: 15px;
+          font-family: KoreanDREAM3; }
+      #cnt4 .dashboard .leftBoard .relieveStress {
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        position: relative;
+        width: 34.1667vw;
+        height: 15.0521vw;
+        border: 1px solid #444242;
+        background: #fff;
+        box-sizing: border-box; }
+        #cnt4 .dashboard .leftBoard .relieveStress span {
+          display: block;
+          font-family: KoreanDREAM5;
+          font-size: 25px;
+          padding-left: 18px;
+          padding-top: 33px; }
+        #cnt4 .dashboard .leftBoard .relieveStress .stressWrap {
+          padding-top: 25px; }
+          #cnt4 .dashboard .leftBoard .relieveStress .stressWrap .stressReliever1, #cnt4 .dashboard .leftBoard .relieveStress .stressWrap .stressReliever2 {
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;
+            width: 528px;
+            height: 62px;
+            font-family: "Fugaz one";
+            font-size: 25px;
+            line-height: 62px;
+            margin: 0 auto;
+            padding-left: 39px; }
+          #cnt4 .dashboard .leftBoard .relieveStress .stressWrap img {
+            display: none; }
+          #cnt4 .dashboard .leftBoard .relieveStress .stressWrap .stressReliever1 {
+            background: #ffd28d; }
+          #cnt4 .dashboard .leftBoard .relieveStress .stressWrap .stressReliever2 {
+            background: #c2e4ff;
+            margin-top: 35px; }
+      #cnt4 .dashboard .leftBoard .droppableModel {
+        float: left; }
+        #cnt4 .dashboard .leftBoard .droppableModel .thunder #drop2Yes {
+          width: 14.3229vw; }
+    #cnt4 .dashboard .rightBoard {
+      float: right; }
+      #cnt4 .dashboard .rightBoard .skillView {
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        position: relative;
+        flex-direction: row-reverse;
+        width: 540px;
+        height: 745px;
+        background: #FAF2A7; }
+        #cnt4 .dashboard .rightBoard .skillView .switchWrap {
+          margin: 0 auto;
+          padding-bottom: 60px; }
+        #cnt4 .dashboard .rightBoard .skillView .switchToggle {
+          position: relative;
+          width: 70px;
+          height: 36px;
+          border-radius: 66px;
+          background: #444242;
+          display: inline-block; }
+          #cnt4 .dashboard .rightBoard .skillView .switchToggle button {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #fff;
+            top: 0;
+            left: 0; }
+        #cnt4 .dashboard .rightBoard .skillView .skillTitle {
+          display: inline-block; }
+          #cnt4 .dashboard .rightBoard .skillView .skillTitle div {
+            width: 190px;
+            height: 34px;
+            line-height: 34px;
+            border-radius: 20px;
+            background: #444242;
+            color: #fff;
+            text-align: center; }
+        #cnt4 .dashboard .rightBoard .skillView .skillCircle {
+          display: flex;
+          flex-direction: row; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle div {
+            flex: 1 0 auto;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 14px;
+            line-height: 21px; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle .css, #cnt4 .dashboard .rightBoard .skillView .skillCircle .scss {
+            width: 156px;
+            height: 156px; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle .css {
+            background: #993ef3; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle .html5 {
+            width: 195px;
+            height: 195px;
+            background: #ff9393; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle .scss {
+            background: #bd3ef3; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle .bootstrap {
+            width: 100px;
+            height: 100px;
+            background: #a6fcbc; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle .js {
+            width: 120px;
+            height: 120px;
+            background: #ffc293; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle .jq {
+            width: 128px;
+            height: 128px;
+            background: #ffe393; }
+        #cnt4 .dashboard .rightBoard .skillView .overview {
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          border-radius: 50px;
+          position: absolute;
+          top: 552px;
+          left: 0;
+          width: 540px;
+          height: 745px;
+          background: #fff; }
+          #cnt4 .dashboard .rightBoard .skillView .overview span {
+            display: block;
+            padding-left: 44px; }
+          #cnt4 .dashboard .rightBoard .skillView .overview .overviewTitle {
+            font-family: KoreanDREAM5;
+            font-size: 25px;
+            padding-top: 45px; }
+          #cnt4 .dashboard .rightBoard .skillView .overview span:last-child {
+            font-family: KoreanDREAM3;
+            font-size: 15px;
+            padding-top: 8px;
+            color: #858585; }
 
 /*# sourceMappingURL=main.css.map */

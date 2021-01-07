@@ -1,9 +1,12 @@
 @charset "utf-8";
-@import "_var";
+@import "_var", "_mixin";
 
+/* Google Web font CDN */
 @import url(https://fonts.googleapis.com/css?family=VT323:regular);
 @import url(https://fonts.googleapis.com/css?family=Chonburi:regular);
 @import url(https://fonts.googleapis.com/css?family=Fugaz+One:regular);
+
+/* Font face */
 @font-face {
   font-family: KoreanDREAM3;
   font-weight: 400;
@@ -15,7 +18,7 @@
        url("../font/KoreanDREAM3-R.ttf") format("truetype");
 }
 @font-face {
-  font-family: KoreanDREAM3;
+  font-family: KoreanDREAM5;
   font-weight: 400;
   font-style: normal;
   src: url("../font/KoreanDREAM5-R.eot");
@@ -34,7 +37,8 @@
        url("../font/DXPnM-KSCpc-EUC-H.woff") format("woff"),
        url("../font/DXPnM-KSCpc-EUC-H.ttf") format("truetype");
 }
-/* tag reset */
+
+/* Tag reset CSS */
 body, div, ul, h1, h2, h3, h4, h5, h6, button, p {margin: 0;padding: 0;}
 ul {list-style: none;}
 h1, h2, h3, h4, h5, h6 {font-size: inherit;}
@@ -47,13 +51,12 @@ header, nav, section, footer {display: block;}
 .blind-b {width: 1px;height: 1px;position: absolute; overflow: none; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%);}
 .clearfix::before, .clear::after {content: ""; display: block; clear:both;}
 
-
-/* body */
+/* Default CSS */
 body {
   font-family: KoreanDREAM3, "맑은 고딕", "Malgun Gothic"; font-weight: 400; background-color: #B4CAFA;color: #000; overflow-x: hidden;
 }
 
-/* skip */
+/* Skip navigation */
 #skip a {
   position: absolute; left: -9999px; top: 0; z-index: 1000;
   &:focus {
@@ -61,32 +64,61 @@ body {
   }
 }
 
-/* logo & 네비게이션 */
+/* Logo & navigation */
 #wrap {
-  position: relative; 
-  .logo {display: none; position: absolute; top: 29px; left: 32px;width: 131px;height: 77px;}
-  .util {
-    position: absolute; top: 17px; right: 22px; 
-    > .btn_open img {width: 44px;height: 44px;cursor: pointer; }
+  position: relative; overflow: hidden;
+  #header {
+    .logo {display: none; position: absolute; top: 29px; left: 32px;width: 131px;height: 77px;}
+    .util {
+      position: absolute; top: 17px; right: 22px; 
+      > .btn_open img {width: 44px;height: 44px;cursor: pointer; }
+    }
+    .navWrap {
+        display: none; position: relative; width: 100vw;height: 100vh;top: 0; right: 0px; background: orange;
+        #gnb {
+            position: absolute; text-align: left; left: 204px; top: 268px; width: 901px;height: 618px;
+            ul {
+                font-size: 115px;line-height: 160px;font-family: Chonburi; color: $lightyellow;
+            }
+        }
+    }
+    .sns, .email {position: absolute; color: #fff;left: 1245px;}
+    .sns p, .email p {padding-bottom: 18px;font-size: 21px;}
+    .sns {
+        top: 540px; right: 534px; 
+        ul li {font-size: 32px;letter-spacing: 0.61px;}
+    }
+    .email{
+        bottom: 221px; 
+    }
+    .btn_close {display: none;}
   }
-  .navWrap {
-      display: none; position: relative; width: 100vw;height: 100vh;top: 0; right: 0px; background: orange;
-      #gnb {
-          position: absolute; text-align: left; left: 204px; top: 268px; width: 901px;height: 618px;
-          ul {
-              font-size: 115px;line-height: 160px;font-family: Chonburi; color: $lightyellow;
-          }
-      }
-  }
-  .sns, .email {position: absolute; color: #fff;left: 1245px;}
-  .sns p, .email p {padding-bottom: 18px;font-size: 21px;}
-  .sns {
-      top: 540px; right: 534px; 
-      ul li {font-size: 32px;letter-spacing: 0.61px;}
-  }
-  .email{
-      bottom: 221px; 
-  }
-  .btn_close {display: none;}
+}
 
+/* Footer */
+footer {
+  position: relative; width: 100%; height: 46.875vw; background: $lightyellow; display: flex;
+  .contact button, .bigEmail {font-family: "Fugaz One"; }
+  .contact {
+    position: absolute; top: 262px; left: 140px; width: 200px; height: 72px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+    &::before {
+        @include transform(rotate(180deg));
+        content:""; display: block; clear: both; position: absolute; top: -138%; left: 50%; width: 1px; height: 261px; background: #fff; z-index: 500;
+    }
+    button {
+        @include border-radius(50%);
+        font-size: 29px; border: 1px solid #fff; width: 100%; line-height: 72px; background: $lightpurple; color: #fff;
+    }
+  }
+  .bigEmail {
+    font-size: 110px; color: #444242; text-decoration: underline; padding: 410px 0 0 127px;
+  }
+  .sns {
+    display: flex; position: absolute; bottom: 197px; left: 127px; font-family: "Fugaz one"; font-size: 40px; color: #444242;
+    a {flex-direction: row; display: block;}
+    a + a {margin-left: 130px;}
+  }
+  .phoneImg { 
+    position: absolute; width: 566px; height: 576px; top: 64px; right: 0;
+  }
 }
