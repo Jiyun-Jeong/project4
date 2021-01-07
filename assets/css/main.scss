@@ -67,7 +67,7 @@
         .profile {top: 0; left: 850px;width: 61.9792vw/* 1190px */;}
         .ballon {top: 94px; right: 47px; width: 403px;height: 186px;}
         .twinkle1 {
-            @include transition(opacity(1) 0.3);
+            @include transition(all 0.3);
             top: 77.5px; left: 150px;opacity: 0;}
         .twinkle2 {top: 206px; right: 804.5px;}
         .twinkle3 {top: 826px; right: 752px;}
@@ -105,74 +105,77 @@
     }
     .swiper-container {
         width: 100%; /* height: 100vh; */
-        .swiper-slide:nth-child(odd) {background: $lightyellow;}
-        .slide1 {
-            .data {
-                position: relative; z-index: 700; 
-                img {position: absolute; left: 210px; top: 100px;}
-                > p {font-family: Chonburi; font-size: 29px; position: absolute; left: 278px; top: 111px;}
+        .data {
+            position: relative; z-index: 700; 
+            img {position: absolute; left: 210px; top: 100px;}
+            > p {font-family: Chonburi; font-size: 29px; position: absolute; left: 278px; top: 111px;}
+        }
+        .slide:nth-child(odd) {
+            background: $lightyellow;
+            .diary {
+                position: absolute; top: 0; right: 250px; width: 31.25vw; height: 41.6667vw; background: #fff; font-family: DXPnM; font-size: 23px; text-align: right;
+                strong {
+                    display: block; font-size: 25px; padding-top: 53px; padding-right: 55px;
+                }
+                p {
+                    padding-top: 42px; padding-right: 55px;
+                    &::before {
+                        content: ""; position: absolute; clear: both; width: 100%; height: 1px; background: #444242;
+                    }
+                }
+                span {
+                    position: absolute; bottom: 0; right: 0; padding-right: 17px; padding-bottom: 17px;
+                }
             }
+        }
+        .slide1 {
             .firstDiary {
-                position: relative; margin-top: 188px; padding-left: 24.479vw/* 470px */; height: 46.3542vw/* 890px */;
+                position: relative; margin-top: 188px; padding-left: 24.479vw/* 470px */; height: 46.3542vw/* 890px */; 
                 .windowWrap {
                     position: relative; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; overflow: hidden;
                 }
                 .emptyFrame {position: absolute; top: 0; left: 0;z-index: 10;}
                 img {width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; }
-                img:nth-child(2) {position: absolute;top: 0; left: 0;}
+                img:nth-child(2) {position: absolute; top: 0; left: 0;}
                 .showImg {width: 208.3333vw/* 4000px */; font-size: 0;}
-                .diary {
-                    position: absolute; top: 0; right: 250px; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; background: #fff; font-family: DXPnM; font-size: 25px; text-align: right;
-                    strong {display: block; font-size: 31px; padding-top: 25px; padding-right: 55px;}
-                    p {
-                        padding-top: 35px; padding-right: 55px;
-                        &::before {content: ""; position: absolute; clear: both; width: 50%; height: 1px; background: #444242;}
-                    }
-                    span {padding-right: 17px; padding-bottom: 17px;}
-                }
             }
         
         }
         .slide2 {
-            .data {
-                position: relative; z-index: 700; 
-                img {position: absolute; left: 210px; top: 100px;}
-                > p {font-family: Chonburi; font-size: 29px; position: absolute; left: 278px; top: 111px;}
-            }
             .secondDiary {
-                position: relative;
+                position: relative; margin-top: 188px; padding-left: 24.479vw/* 470px */; height: 46.3542vw/* 890px */;
                 .diary {
-                    position: absolute; top: 188px; left: 470px; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; background: #fff; font-family: DXPnM; font-size: 25px; text-align: right;
+                    position: absolute; top: 0; left: 470px; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; background: #fff; font-family: DXPnM; font-size: 23px; text-align: left;
                     strong {
-                        font-size: 31px; padding-top: 99px; padding-right: 55px;
+                        display: block; font-size: 25px; padding-top: 53px; padding-left: 55px;
                     }
                     p {
-                        padding-top: 76px; padding-right: 55px;
-                        &::before {content: ""; position: absolute; clear: both; width: 100%; height: 1px;}
+                        padding-top: 42px; padding-left: 55px;
+                        &::before {
+                            content: ""; position: absolute; clear: both; width: 50%; height: 1px; background: #444242;
+                        }
+                    }
+                    span {
+                        position: absolute; bottom: 0; left: 0; padding-left: 17px; padding-bottom: 17px;
                     }
                 }
-                .diaryImg {position: absolute; top: 188px; right: 250px; width: 26.25vw; height: 41.6667vw/* 800px */;}
+                .diaryImg {position: absolute; top: 0; right: 250px; width: 26.25vw; height: 41.6667vw/* 800px */;}
             }
         }
         .slide3 {
-            
-            .data {
-                position: relative; z-index: 700; 
-                img {position: absolute; left: 210px; top: 100px;}
-                > p {font-family: Chonburi; font-size: 29px; position: absolute; left: 278px; top: 111px;}
-            }
+            background: $lightyellow;
             .thirdDiary {
-                position: relative;  margin-top: 188px; padding-left: 470px; padding-bottom: 87px;
-                .diary {
-                    position: absolute; top: 0; right: 250px; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; background: #fff; font-family: DXPnM; font-size: 25px; text-align: right; margin-top: 188px;
-                    strong {font-size: 31px; padding-top: 99px; padding-right: 55px;}
-                    p {
-                        padding-top: 76px; padding-right: 55px;
-                        &::before {content: ""; position: absolute; clear: both; width: 100%; height: 1px;}
-                    }
+                position: relative; margin-top: 188px; padding-left: 24.479vw/* 470px */; height: 46.3542vw; 
+                .viewWorksWrap {
+                    position: relative; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; overflow: hidden; background: #fff;
+                    button {position: absolute; top: 50%; left: 0; right: 0; margin: 0 auto; width: 300px; height: 87px;}
                 }
             }
+            .diary {
+                .bold {font-size: 29px !important; padding-top: 0 !important; padding-right: 0 !important; }
+            }
         }
+
     }
 }
 
@@ -194,38 +197,41 @@
             display: block; width: 100%; font-family: KoreanDREAM5; font-size: 35px; /* width: 246px;  */height: 36px; padding-top: 73px; padding-left: 43px;
         }
         .leftBoard {
-            display: flex; flex-wrap: wrap; justify-content: space-between; width: 1096px; height: 678px; padding-top: 53px;  
+            width: 21.1979vw/* 407px */; height: 31.4583vw/* 604px */; padding-top: 53px;  
             .puzzle {
                 @include border-radius(50px);
-                position: relative; width: 21.1979vw/* 407px */; height: 31.4583vw/* 604px */; line-height: 31.4583vw; background: pink; border: 1px solid #444242; box-sizing: border-box;
+                position: relative; width: 21.1979vw/* 407px */; height: 31.4583vw/* 604px */; line-height: 31.4583vw; background: pink; border: 1px solid #444242; box-sizing: border-box; overflow: hidden;
                 span, p {font-family: "fugaz one"; text-align: center; }
                 span {
                     display: block; font-size: 40px; line-height: 47px; padding-top: 248px;
                 }
                 .stripe {
-                   /*  width: 407px; height: 600px; */
+                    width: 407px; height: 600px;
                     div {
-                        @include transform(skew(45deg));
+                        /* @include transform(skew(45deg)); */
                         width: 120px; height: 31.25vw/* 600px */; display: inline-block;
                     }
-                    div:first-child {
+                    /* div:first-child {
                         position: absolute; top: 0; left: 0; background: #b89eff;
-                    }
+                    } */
                     .line + .line {padding-left: 50px;}
                 }
                 .hiddenProfile {
-                    /* display: none;  */width: 285px; height: 21.1979vw/* 407px */; margin: 0 auto; position: absolute; top: 0; left: 62px; margin-top: 75px;
+                    display: none; width: 285px; height: 21.1979vw/* 407px */; margin: 0 auto; position: absolute; top: 0; left: 0; right: 0; margin-top: 75px;
                     img {text-align: center; padding-left: 6px; padding-bottom: 60px;}
                     > p {position: absolute; bottom: 0; font-size: 29px; line-height: 42px;}
                 }
             }
+        }
+        .middleBoard {
+            display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; width: 660px; height: 650px; padding-top: 53px;
             .efficiency {
                 @include border-radius(50px);
                 position: relative; width: 16.5104vw/* 317px */; height: 15.3646vw/* 295px */; background: #a6fcbc;
                 span {
                     display: block; font-family: KoreanDREAM5; font-size: 25px; padding-left: 18px; padding-top: 33px;
                 }
-                #drop1 {position: absolute; left: calc(50% - 91px); top: 113px; }
+                #drop1 {position: absolute; top: 113px; left: 0; right: 0; margin: 0 auto; }
                 p {position: absolute; font-size: 2.8646vw/* 55px */; font-family: "Fugaz one"; top: 59%; left: calc(50% - 18.5px);}
                 /* .hiddenTriangle {
                     p {display: none; font-size: 36px; top: 66%; left: calc(50% - 36.5px);}
@@ -238,11 +244,12 @@
                     display: block; font-family: KoreanDREAM5; font-size: 25px; padding-left: 18px; padding-top: 33px;
                 }
                 #drop2 {position: absolute; top: 34%; left: calc(50% - 137.5px); width: 14.3229vw/* 275px */;}
-                p {font-size: 15px; font-family: KoreanDREAM3;}
+                p {position: absolute; left: 22px; bottom: 17px; font-size: 15px; font-family: KoreanDREAM3;}
+                p:last-child {left: 0; right: 31px;}
             }
             .relieveStress {
                 @include border-radius(50px);
-                position: relative; width: 34.1667vw/* 656px */; height: 15.0521vw/* 289px */; border: 1px solid #444242; background: #fff; box-sizing: border-box;
+                position: relative; width: 34.1667vw/* 656px */; height: 15.0521vw/* 289px */; border: 1px solid #444242; background: #fff; box-sizing: border-box; margin-top: 25px;
                 span {
                     display: block; font-family: KoreanDREAM5; font-size: 25px; padding-left: 18px; padding-top: 33px;
                 }
@@ -250,32 +257,34 @@
                     padding-top: 25px;
                     .stressReliever1, .stressReliever2 {
                         @include border-radius(50px);
-                        width: 528px; height: 62px; font-family: "Fugaz one"; font-size: 25px; line-height: 62px; margin: 0 auto; padding-left: 39px;
+                        width: 416px; height: 62px; font-family: "Fugaz one"; font-size: 21px; line-height: 62px; margin: 0 auto; padding-left: 39px;
                     }
                     img {display: none;}
                     .stressReliever1 {
                         background: #ffd28d;
                     }
                     .stressReliever2 {
-                        background: #c2e4ff; margin-top: 35px;
+                        background: #c2e4ff; margin-top: 17px;
                     }
                 }
             }
-            .droppableModel {
-                float: left;
-                .triangle {
-                    
-                }
-                .thunder {
-                    #drop2Yes {width: 14.3229vw/* 275px */;}
-                }
+        }
+        .droppableModel {
+            float: left;
+            .triangle {
+                
+            }
+            .thunder {
+                position: relative; 
+                #drag2Yes {position: absolute; top: 0; left: 0; width: 14.3229vw/* 275px */;}
+                #drag2After {position: absolute; top: 0; left: 0; width: 14.3229vw; }
             }
         }
         .rightBoard {
-            float: right;
+            margin-top: -78px;
             .skillView {
                 @include border-radius(50px);
-                position: relative; flex-direction: row-reverse; width: 540px; height: 745px; background: $lightyellow; 
+                position: relative; display: flex; flex-wrap: wrap; flex-direction: row-reverse; width: 540px; height: 745px; background: $lightyellow; 
                 .switchWrap {margin: 0 auto; padding-bottom: 60px;}
                 .switchToggle {
                     position: relative; width: 70px; height: 36px; border-radius: 66px; background: #444242; display: inline-block; 
@@ -287,7 +296,7 @@
                 }
                 .skillCircle {
                     display: flex; flex-direction: row;
-                    div {flex : 1 0 auto; text-align: center; border-radius: 50%; font-size: 14px; line-height: 21px;}
+                    div {position: absolute; top: 25%; left: 34%; flex : 1 0 auto; text-align: center; border-radius: 50%; font-size: 14px; line-height: 21px;}
                     .css, .scss {width: 156px; height: 156px;}
                     .css {background: #993ef3;}
                     .html5 {width: 195px; height: 195px; background: #ff9393; }
@@ -298,17 +307,52 @@
                 }
                 .overview {
                     @include border-radius(50px);
-                    position: absolute; top: 552px; left: 0; width: 540px; height: 745px; background: #fff;
-                    span {display: block; padding-left: 44px;}
-                    .overviewTitle {font-family: KoreanDREAM5; font-size: 25px; padding-top: 45px;}
-                    span:last-child {font-family: KoreanDREAM3; font-size: 15px; padding-top: 8px; color: #858585;}
+                    position: absolute; top: 552px; left: 0; width: 540px; height: 745px; background: #fff; padding-top: 8px;
+                    span {display: block; padding-left: 44px; font-size: 15px; margin-top: 7px;}
+                    .overviewTitle {
+                        font-family: KoreanDREAM5; font-size: 25px; padding-top: 45px;
+                    }
+                    span:last-child {
+                        font-family: KoreanDREAM3; font-size: 15px; padding-top: 8px; color: #858585;
+                    }
                     .stickGraph {
+                        position: relative; margin-top: 26px; z-index: 100;
                         .stickWrap {
-                            .whiteStick {}
+                            @include border-radius(50px);
+                            position: absolute; top: 0; left: 0; right: 0; width: 502px; height: 597px; background: $lightyellow; margin: 0 auto;
+                            div {
+                                @include border-radius(4px);
+                                width: 6px; height: 344px;
+                                
+                            div + div {padding-left: 38px;}
+                            .whiteStick {
+                                position: absolute; bottom: 165px; left: 50px; background: #fff;
+                            }
+                            .skills {
+                                position: absolute; bottom: 0; left: 0; background: #7ea0e9; width: 6px;
+                            }
+                            #html5 {height: 330px;}
+                            #css3 {height: 325px;}
+                            #scss {height: 330px;}
+                            #javaScript {height: 245px;}
+                            #jQuery {height: 280px;}
+                            #bootstrap {height: 195px;}
+                            #ps {height: 310px;}
+                            #ai {height: 335px;}
+                            #xd {height: 280px;}
+                            #zeplin {height: 280px;}
+                            #pr {height: 285px;}
+                            span {font-family: KoreanDREAM5; font-size: 11px; line-height: 13px; text-align: center;}
                         }
                     }
                 }
             }
         }
     }
+}
+}
+
+/* Works page */
+#work1 {
+    background: $lightpurple;
 }

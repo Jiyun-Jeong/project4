@@ -141,10 +141,10 @@
       width: 403px;
       height: 186px; }
     #cnt2 .cnt2Deco .twinkle1 {
-      -webkit-transition: opacity(1) 0.3;
-      -moz-transition: opacity(1) 0.3;
-      -o-transition: opacity(1) 0.3;
-      transition: opacity(1) 0.3;
+      -webkit-transition: all 0.3;
+      -moz-transition: all 0.3;
+      -o-transition: all 0.3;
+      transition: all 0.3;
       top: 77.5px;
       left: 150px;
       opacity: 0; }
@@ -222,21 +222,52 @@
   #cnt3 .swiper-container {
     width: 100%;
     /* height: 100vh; */ }
-    #cnt3 .swiper-container .swiper-slide:nth-child(odd) {
-      background: #FAF2A7; }
-    #cnt3 .swiper-container .slide1 .data {
+    #cnt3 .swiper-container .data {
       position: relative;
       z-index: 700; }
-      #cnt3 .swiper-container .slide1 .data img {
+      #cnt3 .swiper-container .data img {
         position: absolute;
         left: 210px;
         top: 100px; }
-      #cnt3 .swiper-container .slide1 .data > p {
+      #cnt3 .swiper-container .data > p {
         font-family: Chonburi;
         font-size: 29px;
         position: absolute;
         left: 278px;
         top: 111px; }
+    #cnt3 .swiper-container .slide:nth-child(odd) {
+      background: #FAF2A7; }
+      #cnt3 .swiper-container .slide:nth-child(odd) .diary {
+        position: absolute;
+        top: 0;
+        right: 250px;
+        width: 31.25vw;
+        height: 41.6667vw;
+        background: #fff;
+        font-family: DXPnM;
+        font-size: 23px;
+        text-align: right; }
+        #cnt3 .swiper-container .slide:nth-child(odd) .diary strong {
+          display: block;
+          font-size: 25px;
+          padding-top: 53px;
+          padding-right: 55px; }
+        #cnt3 .swiper-container .slide:nth-child(odd) .diary p {
+          padding-top: 42px;
+          padding-right: 55px; }
+          #cnt3 .swiper-container .slide:nth-child(odd) .diary p::before {
+            content: "";
+            position: absolute;
+            clear: both;
+            width: 100%;
+            height: 1px;
+            background: #444242; }
+        #cnt3 .swiper-container .slide:nth-child(odd) .diary span {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          padding-right: 17px;
+          padding-bottom: 17px; }
     #cnt3 .swiper-container .slide1 .firstDiary {
       position: relative;
       margin-top: 188px;
@@ -262,120 +293,73 @@
       #cnt3 .swiper-container .slide1 .firstDiary .showImg {
         width: 208.3333vw;
         font-size: 0; }
-      #cnt3 .swiper-container .slide1 .firstDiary .diary {
+    #cnt3 .swiper-container .slide2 .secondDiary {
+      position: relative;
+      margin-top: 188px;
+      padding-left: 24.479vw;
+      height: 46.3542vw; }
+      #cnt3 .swiper-container .slide2 .secondDiary .diary {
         position: absolute;
         top: 0;
-        right: 250px;
+        left: 470px;
         width: 31.25vw;
         height: 41.6667vw;
         background: #fff;
         font-family: DXPnM;
-        font-size: 25px;
-        text-align: right; }
-        #cnt3 .swiper-container .slide1 .firstDiary .diary strong {
+        font-size: 23px;
+        text-align: left; }
+        #cnt3 .swiper-container .slide2 .secondDiary .diary strong {
           display: block;
-          font-size: 31px;
-          padding-top: 25px;
-          padding-right: 55px; }
-        #cnt3 .swiper-container .slide1 .firstDiary .diary p {
-          padding-top: 35px;
-          padding-right: 55px; }
-          #cnt3 .swiper-container .slide1 .firstDiary .diary p::before {
+          font-size: 25px;
+          padding-top: 53px;
+          padding-left: 55px; }
+        #cnt3 .swiper-container .slide2 .secondDiary .diary p {
+          padding-top: 42px;
+          padding-left: 55px; }
+          #cnt3 .swiper-container .slide2 .secondDiary .diary p::before {
             content: "";
             position: absolute;
             clear: both;
             width: 50%;
             height: 1px;
             background: #444242; }
-        #cnt3 .swiper-container .slide1 .firstDiary .diary span {
-          padding-right: 17px;
+        #cnt3 .swiper-container .slide2 .secondDiary .diary span {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding-left: 17px;
           padding-bottom: 17px; }
-    #cnt3 .swiper-container .slide2 .data {
-      position: relative;
-      z-index: 700; }
-      #cnt3 .swiper-container .slide2 .data img {
-        position: absolute;
-        left: 210px;
-        top: 100px; }
-      #cnt3 .swiper-container .slide2 .data > p {
-        font-family: Chonburi;
-        font-size: 29px;
-        position: absolute;
-        left: 278px;
-        top: 111px; }
-    #cnt3 .swiper-container .slide2 .secondDiary {
-      position: relative; }
-      #cnt3 .swiper-container .slide2 .secondDiary .diary {
-        position: absolute;
-        top: 188px;
-        left: 470px;
-        width: 31.25vw;
-        height: 41.6667vw;
-        background: #fff;
-        font-family: DXPnM;
-        font-size: 25px;
-        text-align: right; }
-        #cnt3 .swiper-container .slide2 .secondDiary .diary strong {
-          font-size: 31px;
-          padding-top: 99px;
-          padding-right: 55px; }
-        #cnt3 .swiper-container .slide2 .secondDiary .diary p {
-          padding-top: 76px;
-          padding-right: 55px; }
-          #cnt3 .swiper-container .slide2 .secondDiary .diary p::before {
-            content: "";
-            position: absolute;
-            clear: both;
-            width: 100%;
-            height: 1px; }
       #cnt3 .swiper-container .slide2 .secondDiary .diaryImg {
-        position: absolute;
-        top: 188px;
-        right: 250px;
-        width: 26.25vw;
-        height: 41.6667vw; }
-    #cnt3 .swiper-container .slide3 .data {
-      position: relative;
-      z-index: 700; }
-      #cnt3 .swiper-container .slide3 .data img {
-        position: absolute;
-        left: 210px;
-        top: 100px; }
-      #cnt3 .swiper-container .slide3 .data > p {
-        font-family: Chonburi;
-        font-size: 29px;
-        position: absolute;
-        left: 278px;
-        top: 111px; }
-    #cnt3 .swiper-container .slide3 .thirdDiary {
-      position: relative;
-      margin-top: 188px;
-      padding-left: 470px;
-      padding-bottom: 87px; }
-      #cnt3 .swiper-container .slide3 .thirdDiary .diary {
         position: absolute;
         top: 0;
         right: 250px;
-        width: 31.25vw;
-        height: 41.6667vw;
-        background: #fff;
-        font-family: DXPnM;
-        font-size: 25px;
-        text-align: right;
-        margin-top: 188px; }
-        #cnt3 .swiper-container .slide3 .thirdDiary .diary strong {
-          font-size: 31px;
-          padding-top: 99px;
-          padding-right: 55px; }
-        #cnt3 .swiper-container .slide3 .thirdDiary .diary p {
-          padding-top: 76px;
-          padding-right: 55px; }
-          #cnt3 .swiper-container .slide3 .thirdDiary .diary p::before {
-            content: "";
+        width: 26.25vw;
+        height: 41.6667vw; }
+    #cnt3 .swiper-container .slide3 {
+      background: #FAF2A7; }
+      #cnt3 .swiper-container .slide3 .thirdDiary {
+        position: relative;
+        margin-top: 188px;
+        padding-left: 24.479vw;
+        height: 46.3542vw; }
+        #cnt3 .swiper-container .slide3 .thirdDiary .viewWorksWrap {
+          position: relative;
+          width: 31.25vw;
+          height: 41.6667vw;
+          overflow: hidden;
+          background: #fff; }
+          #cnt3 .swiper-container .slide3 .thirdDiary .viewWorksWrap button {
             position: absolute;
-            clear: both;
-            width: 100%;
-            height: 1px; }
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 300px;
+            height: 87px; }
+      #cnt3 .swiper-container .slide3 .diary .bold {
+        font-size: 29px !important;
+        padding-top: 0 !important;
+        padding-right: 0 !important; }
 
 #cnt4 {
   /* position: relative;  */
@@ -430,11 +414,8 @@
       padding-top: 73px;
       padding-left: 43px; }
     #cnt4 .dashboard .leftBoard {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: 1096px;
-      height: 678px;
+      width: 21.1979vw;
+      height: 31.4583vw;
       padding-top: 53px; }
       #cnt4 .dashboard .leftBoard .puzzle {
         -webkit-border-radius: 50px;
@@ -446,7 +427,8 @@
         line-height: 31.4583vw;
         background: pink;
         border: 1px solid #444242;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        overflow: hidden; }
         #cnt4 .dashboard .leftBoard .puzzle span, #cnt4 .dashboard .leftBoard .puzzle p {
           font-family: "fugaz one";
           text-align: center; }
@@ -456,31 +438,27 @@
           line-height: 47px;
           padding-top: 248px; }
         #cnt4 .dashboard .leftBoard .puzzle .stripe {
-          /*  width: 407px; height: 600px; */ }
+          width: 407px;
+          height: 600px;
+          /* div:first-child {
+              position: absolute; top: 0; left: 0; background: #b89eff;
+          } */ }
           #cnt4 .dashboard .leftBoard .puzzle .stripe div {
-            -webkit-transform: skew(45deg);
-            -moz-transform: skew(45deg);
-            -o-transform: skew(45deg);
-            -ms-transform: skew(45deg);
-            transform: skew(45deg);
+            /* @include transform(skew(45deg)); */
             width: 120px;
             height: 31.25vw;
             display: inline-block; }
-          #cnt4 .dashboard .leftBoard .puzzle .stripe div:first-child {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #b89eff; }
           #cnt4 .dashboard .leftBoard .puzzle .stripe .line + .line {
             padding-left: 50px; }
         #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile {
-          /* display: none;  */
+          display: none;
           width: 285px;
           height: 21.1979vw;
           margin: 0 auto;
           position: absolute;
           top: 0;
-          left: 62px;
+          left: 0;
+          right: 0;
           margin-top: 75px; }
           #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile img {
             text-align: center;
@@ -491,7 +469,15 @@
             bottom: 0;
             font-size: 29px;
             line-height: 42px; }
-      #cnt4 .dashboard .leftBoard .efficiency {
+    #cnt4 .dashboard .middleBoard {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 660px;
+      height: 650px;
+      padding-top: 53px; }
+      #cnt4 .dashboard .middleBoard .efficiency {
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         border-radius: 50px;
@@ -502,23 +488,25 @@
         /* .hiddenTriangle {
             p {display: none; font-size: 36px; top: 66%; left: calc(50% - 36.5px);}
         } */ }
-        #cnt4 .dashboard .leftBoard .efficiency span {
+        #cnt4 .dashboard .middleBoard .efficiency span {
           display: block;
           font-family: KoreanDREAM5;
           font-size: 25px;
           padding-left: 18px;
           padding-top: 33px; }
-        #cnt4 .dashboard .leftBoard .efficiency #drop1 {
+        #cnt4 .dashboard .middleBoard .efficiency #drop1 {
           position: absolute;
-          left: calc(50% - 91px);
-          top: 113px; }
-        #cnt4 .dashboard .leftBoard .efficiency p {
+          top: 113px;
+          left: 0;
+          right: 0;
+          margin: 0 auto; }
+        #cnt4 .dashboard .middleBoard .efficiency p {
           position: absolute;
           font-size: 2.8646vw;
           font-family: "Fugaz one";
           top: 59%;
           left: calc(50% - 18.5px); }
-      #cnt4 .dashboard .leftBoard .producitivity {
+      #cnt4 .dashboard .middleBoard .producitivity {
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         border-radius: 50px;
@@ -526,21 +514,27 @@
         width: 16.5104vw;
         height: 15.3646vw;
         background: #ffcfcf; }
-        #cnt4 .dashboard .leftBoard .producitivity span {
+        #cnt4 .dashboard .middleBoard .producitivity span {
           display: block;
           font-family: KoreanDREAM5;
           font-size: 25px;
           padding-left: 18px;
           padding-top: 33px; }
-        #cnt4 .dashboard .leftBoard .producitivity #drop2 {
+        #cnt4 .dashboard .middleBoard .producitivity #drop2 {
           position: absolute;
           top: 34%;
           left: calc(50% - 137.5px);
           width: 14.3229vw; }
-        #cnt4 .dashboard .leftBoard .producitivity p {
+        #cnt4 .dashboard .middleBoard .producitivity p {
+          position: absolute;
+          left: 22px;
+          bottom: 17px;
           font-size: 15px;
           font-family: KoreanDREAM3; }
-      #cnt4 .dashboard .leftBoard .relieveStress {
+        #cnt4 .dashboard .middleBoard .producitivity p:last-child {
+          left: 0;
+          right: 31px; }
+      #cnt4 .dashboard .middleBoard .relieveStress {
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         border-radius: 50px;
@@ -549,44 +543,57 @@
         height: 15.0521vw;
         border: 1px solid #444242;
         background: #fff;
-        box-sizing: border-box; }
-        #cnt4 .dashboard .leftBoard .relieveStress span {
+        box-sizing: border-box;
+        margin-top: 25px; }
+        #cnt4 .dashboard .middleBoard .relieveStress span {
           display: block;
           font-family: KoreanDREAM5;
           font-size: 25px;
           padding-left: 18px;
           padding-top: 33px; }
-        #cnt4 .dashboard .leftBoard .relieveStress .stressWrap {
+        #cnt4 .dashboard .middleBoard .relieveStress .stressWrap {
           padding-top: 25px; }
-          #cnt4 .dashboard .leftBoard .relieveStress .stressWrap .stressReliever1, #cnt4 .dashboard .leftBoard .relieveStress .stressWrap .stressReliever2 {
+          #cnt4 .dashboard .middleBoard .relieveStress .stressWrap .stressReliever1, #cnt4 .dashboard .middleBoard .relieveStress .stressWrap .stressReliever2 {
             -webkit-border-radius: 50px;
             -moz-border-radius: 50px;
             border-radius: 50px;
-            width: 528px;
+            width: 416px;
             height: 62px;
             font-family: "Fugaz one";
-            font-size: 25px;
+            font-size: 21px;
             line-height: 62px;
             margin: 0 auto;
             padding-left: 39px; }
-          #cnt4 .dashboard .leftBoard .relieveStress .stressWrap img {
+          #cnt4 .dashboard .middleBoard .relieveStress .stressWrap img {
             display: none; }
-          #cnt4 .dashboard .leftBoard .relieveStress .stressWrap .stressReliever1 {
+          #cnt4 .dashboard .middleBoard .relieveStress .stressWrap .stressReliever1 {
             background: #ffd28d; }
-          #cnt4 .dashboard .leftBoard .relieveStress .stressWrap .stressReliever2 {
+          #cnt4 .dashboard .middleBoard .relieveStress .stressWrap .stressReliever2 {
             background: #c2e4ff;
-            margin-top: 35px; }
-      #cnt4 .dashboard .leftBoard .droppableModel {
-        float: left; }
-        #cnt4 .dashboard .leftBoard .droppableModel .thunder #drop2Yes {
+            margin-top: 17px; }
+    #cnt4 .dashboard .droppableModel {
+      float: left; }
+      #cnt4 .dashboard .droppableModel .thunder {
+        position: relative; }
+        #cnt4 .dashboard .droppableModel .thunder #drag2Yes {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 14.3229vw; }
+        #cnt4 .dashboard .droppableModel .thunder #drag2After {
+          position: absolute;
+          top: 0;
+          left: 0;
           width: 14.3229vw; }
     #cnt4 .dashboard .rightBoard {
-      float: right; }
+      margin-top: -78px; }
       #cnt4 .dashboard .rightBoard .skillView {
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         border-radius: 50px;
         position: relative;
+        display: flex;
+        flex-wrap: wrap;
         flex-direction: row-reverse;
         width: 540px;
         height: 745px;
@@ -623,6 +630,9 @@
           display: flex;
           flex-direction: row; }
           #cnt4 .dashboard .rightBoard .skillView .skillCircle div {
+            position: absolute;
+            top: 25%;
+            left: 34%;
             flex: 1 0 auto;
             text-align: center;
             border-radius: 50%;
@@ -660,10 +670,13 @@
           left: 0;
           width: 540px;
           height: 745px;
-          background: #fff; }
+          background: #fff;
+          padding-top: 8px; }
           #cnt4 .dashboard .rightBoard .skillView .overview span {
             display: block;
-            padding-left: 44px; }
+            padding-left: 44px;
+            font-size: 15px;
+            margin-top: 7px; }
           #cnt4 .dashboard .rightBoard .skillView .overview .overviewTitle {
             font-family: KoreanDREAM5;
             font-size: 25px;
@@ -673,5 +686,71 @@
             font-size: 15px;
             padding-top: 8px;
             color: #858585; }
+          #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph {
+            position: relative;
+            margin-top: 26px;
+            z-index: 100; }
+            #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap {
+              -webkit-border-radius: 50px;
+              -moz-border-radius: 50px;
+              border-radius: 50px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              width: 502px;
+              height: 597px;
+              background: #FAF2A7;
+              margin: 0 auto; }
+              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div {
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+                width: 6px;
+                height: 344px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div div + div {
+                  padding-left: 38px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div .whiteStick {
+                  position: absolute;
+                  bottom: 165px;
+                  left: 50px;
+                  background: #fff; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div .skills {
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  background: #7ea0e9;
+                  width: 6px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div #html5 {
+                  height: 330px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div #css3 {
+                  height: 325px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div #scss {
+                  height: 330px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div #javaScript {
+                  height: 245px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div #jQuery {
+                  height: 280px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div #bootstrap {
+                  height: 195px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div #ps {
+                  height: 310px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div #ai {
+                  height: 335px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div #xd {
+                  height: 280px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div #zeplin {
+                  height: 280px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div #pr {
+                  height: 285px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div span {
+                  font-family: KoreanDREAM5;
+                  font-size: 11px;
+                  line-height: 13px;
+                  text-align: center; }
+
+/* Works page */
+#work1 {
+  background: #B4CAFA; }
 
 /*# sourceMappingURL=main.css.map */
