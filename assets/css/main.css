@@ -750,7 +750,101 @@
                   text-align: center; }
 
 /* Works page */
-#work1 {
-  background: #B4CAFA; }
+/* common class */
+#work {
+  background: #B4CAFA;
+  position: relative; }
+  #work .workSwiperWrap {
+    border: 1px solid #fff;
+    width: 1890px;
+    height: 700px;
+    text-align: right;
+    margin: 360px auto 0; }
+    #work .workSwiperWrap .workText {
+      position: relative;
+      border: 1px solid #fff;
+      width: 960px;
+      height: 675px;
+      margin-top: 12px;
+      margin-left: 14px;
+      box-sizing: border-box; }
+      #work .workSwiperWrap .workText h3 {
+        font-family: Chonburi;
+        font-size: 46px;
+        padding-bottom: 69px;
+        padding-top: 44px; }
+      #work .workSwiperWrap .workText p {
+        font-family: KoreaDREAM3;
+        font-size: 27px;
+        line-height: 57px; }
+      #work .workSwiperWrap .workText a {
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        position: absolute;
+        display: block;
+        text-align: center;
+        bottom: 54px;
+        width: 252px;
+        height: 74px;
+        line-height: 74px;
+        font-family: "Fugaz one";
+        font-size: 24px;
+        background: #fff; }
+    #work .workSwiperWrap .workText.left h3 {
+      padding-right: 29px; }
+    #work .workSwiperWrap .workText.left p {
+      padding-right: 53px;
+      text-align: right; }
+    #work .workSwiperWrap .workText.left a {
+      right: 51px; }
+    #work .workSwiperWrap .workText.right h3 {
+      padding-left: 29px; }
+    #work .workSwiperWrap .workText.right p {
+      padding-left: 53px;
+      text-align: left; }
+    #work .workSwiperWrap .workText.right a {
+      left: 51px; }
+    #work .workSwiperWrap .work1Swiper {
+      position: absolute;
+      top: 1px;
+      right: 14px;
+      margin-top: 12px;
+      margin-right: 14px;
+      border: 1px solid #fff;
+      width: 882px;
+      height: 675px;
+      box-sizing: border-box; }
+    #work .workSwiperWrap .controller {
+      position: absolute; }
+      #work .workSwiperWrap .controller .swiper-button-next, #work .workSwiperWrap .controller .swiper-button-prev {
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        background-size: cover !important;
+        position: static;
+        display: block;
+        background: no-repeat center;
+        width: 25px;
+        height: 43px;
+        top: 50%; }
+      #work .workSwiperWrap .controller .swiper-button-next {
+        background-image: url("../img/icon/leftButton.svg"); }
+      #work .workSwiperWrap .controller .swiper-button-next {
+        background-image: url("../img/icon/rightButton.svg"); }
+
+#work {
+  /* GoPro Porject */
+  /* Helinox Project */ }
+  #work .gopro .decoCircles img:first-child {
+    position: absolute;
+    top: -76%;
+    right: -1%; }
+  #work .gopro .decoCircles img:last-child {
+    position: absolute;
+    top: 15%;
+    left: -38%; }
+  #work .helinox .workSwiperWrap {
+    text-align: left;
+    margin: 0; }
 
 /*# sourceMappingURL=main.css.map */

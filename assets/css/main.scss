@@ -353,6 +353,64 @@
 }
 
 /* Works page */
-#work1 {
-    background: $lightpurple;
+
+/* common class */
+#work {
+    background: $lightpurple; position: relative;
+    .workSwiperWrap {
+        border: 1px solid #fff; width: 1890px; height: 700px; text-align: right; margin:360px auto 0;
+        .workText {
+            position: relative; border: 1px solid #fff; width: 960px; height: 675px; margin-top: 12px; margin-left: 14px; box-sizing: border-box;
+            h3 {
+                font-family: Chonburi; font-size: 46px; padding-bottom: 69px; padding-top: 44px; 
+            }
+            p {
+                font-family: KoreaDREAM3; font-size: 27px; line-height: 57px; 
+            }
+            a {
+                @include border-radius(50px);
+                position: absolute; display: block; text-align: center; bottom: 54px; width: 252px; height: 74px; line-height: 74px; font-family: "Fugaz one"; font-size: 24px; background: #fff;
+            }
+        }
+        .workText.left {
+            h3 { padding-right: 29px; }
+            p { padding-right: 53px; text-align: right; }
+            a { right: 51px; }
+        }
+        .workText.right {
+            h3 { padding-left: 29px;}
+            p { padding-left: 53px; text-align: left; }
+            a { left: 51px; }
+        }
+        .work1Swiper {
+            position: absolute; top: 1px; right: 14px; margin-top: 12px; margin-right: 14px; border: 1px solid #fff; width: 882px; height: 675px; box-sizing: border-box;
+        }
+        .controller {
+            position: absolute; 
+            .swiper-button-next, .swiper-button-prev {
+                @include bgsize(cover);
+                position: static; display: block; background: no-repeat center; width: 25px; height: 43px; top: 50%; 
+            }
+            .swiper-button-next {background-image: url("../img/icon/leftButton.svg");}
+            .swiper-button-next {background-image: url("../img/icon/rightButton.svg");}
+            
+
+        }
+    }
+}
+#work {
+    /* GoPro Porject */
+    .gopro {
+        
+        .decoCircles {
+            img:first-child {position: absolute; top: -76%; right: -1%;}
+            img:last-child {position: absolute; top: 15% ; left: -38%;}
+        }
+    }
+    /* Helinox Project */
+    .helinox {
+
+        .workSwiperWrap {text-align: left; margin: 0;
+    }
+}
 }
