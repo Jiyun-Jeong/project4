@@ -1,0 +1,55 @@
+@charset "utf-8";
+@import "_var", "_mixin";
+
+#cnt1 {
+  position: relative; width: 100%; height: 150vh; background: linear-gradient(#00E4F3,#005B61, #011D1F, #000000); 
+  .project1Main {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+    .mainCircleWrap {
+      position: relative; width: 670px; height: 670px; margin: 0 auto; 
+      div.bigMainCircle {
+        @include border-radius(50%);
+        width: 100%; height: 100%; background: #fff; margin: 217px auto 0;
+        &::before {
+          @include border-radius(50%);
+          position: absolute; border: 1px solid #fff; top: 0; left: 420px; }
+       }
+       img {position: absolute; top: 0; left: 0; top: 17%; left: -18%;}
+       /* .empty {
+        @include border-radius(50%);
+        width: 670px; height: 670px; border: 1px solid #fff; position: absolute; 
+       } */
+    }
+    p {
+      position: absolute; display: fixed; top: 455px; right: 150px; font-family: "Fugaz one"; font-size: 130px; color: #fff;
+    }
+  }
+  .simpleExplain {
+    position: absolute; bottom: 0; left: 0; background: #000; width: 100%; height: 190px; 
+    .sicssor {
+      position: relative; height: 224px; line-height: 224px; width: 100%; 
+      &::before {
+          content:""; clear: both; position: absolute; border-top: 3px dashed #fff; top: -2px; right: 0; width: 97%;
+      }
+      img {position: absolute; top: -32px; left: 0; fill: #fff;}
+      img.goproLogo {position: absolute; top: 30.5px; left: 241px; width: 283px; height: 161px; }
+      .explainText {
+        float: right; width: 1020.5px; height: 114.5px;
+        span {
+          display: inline-block; font-size: 17px; font-family: "Fugaz one"; padding-right: 87px; color: #fff;
+        }
+        p {text-align: left; font-size: 17px; font-family: "Fugaz one"; color: #fff; }
+  
+      }
+    }
+  }
+}
+
+h3 {font-family: KoreanDREAM5; font-size: 28px;}
+p { font-family: KoreanDREAM3; font-size: 15px; line-height: 22px;}
+#cnt2 {
+  background: #F6F6F6; width: 100%; height: 100%;
+  .designLeft {
+    h3 {}
+  }
+}
