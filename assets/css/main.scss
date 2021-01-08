@@ -6,13 +6,13 @@
     .pageSwipe button, p {font-family: "Fugaz One";color: #fff; }
     .pageSwipe {
         .about {
-            position: absolute; top: 35.15625vw/* 675px */; left: 140px; width: 200px; height: 72px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+            position: absolute; top: 35.15625vw/* 675px */; left: 7.2917vw/* 140px */; width: 10.4167vw/* 200px */; height: 3.75vw/* 72px */; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
             &::after {
                 content:""; display: block; clear: both; position: absolute; top: 103%; left: 50%; width: 1px; height: 100vw; background: #fff; z-index: 500;
             }
             button {
                 @include border-radius(50%);
-                font-size: 29px; border: 1px solid #fff; width: 100%; line-height: 72px;
+                font-size: 1.5104vw/* 29px */; border: 1px solid #fff; width: 100%; line-height: 3.75vw/* 72px */;
             }
         }
         .works {
@@ -29,11 +29,13 @@
     }
     span, p {text-align: right;}
     span {
-        display: block; font-family: Chonburi;font-size: 250px;line-height: 250px;padding-top: 149px; padding-right: 14.5833vw/* 280px */;color: $lightyellow;}
-    p {font-size: 38px;line-height: 38px;padding-right: 634px;}
+        display: block; font-family: Chonburi; font-size: 13.0208vw/* 250px */; line-height: 13.0208vw/* 250px */; padding-top: 7.7604vw/* 149px */; padding-right: 14.5833vw/* 280px */; color: $lightyellow;}
+    p {
+        font-size: 1.9791vw/* 38px */;line-height: 1.9791vw/* 38px */; padding-right: 33.0208vw/* 634px */;
+    }
     .decorate {
         .sunflower {
-            position: absolute; top: -13.5417vw/* -260px */; left: 248px; width: 27.96875vw/* 537px */;animation: moveSunflower 5s ease-in-out infinite;}
+            position: absolute; top: -13.5417vw/* -260px */; left: 12.9167vw/* 248px */; width: 27.96875vw/* 537px */;animation: moveSunflower 5s ease-in-out infinite;}
         .yellowCircle {
             position: absolute; top: 22.65625vw/* 435px */; left: 60.9375vw/* 1180px */; z-index: -1; animation: moveCircle 10s ease;transform-origin: 50% 50%;
         }
@@ -65,7 +67,7 @@
         .profile {top: 0; left: 850px;width: 61.9792vw/* 1190px */;}
         .ballon {top: 94px; right: 47px; width: 403px;height: 186px;}
         .twinkle1 {
-            @include transition(opacity(1) 0.3);
+            @include transition(all 0.3);
             top: 77.5px; left: 150px;opacity: 0;}
         .twinkle2 {top: 206px; right: 804.5px;}
         .twinkle3 {top: 826px; right: 752px;}
@@ -92,154 +94,162 @@
 
 
 #cnt3 {
-    width: 100%; height: 63.8542vw/* 1226px */;
+    width: 100%; height: 67.8542vw/* 1302px */;
     .myStory {
         position: relative; height: 224px; line-height: 224px; width: 100%; background: #fff;
         &::before {
-            content:""; clear: both; position: absolute;border-top: 3px dashed #4e4e4e; top: -2px; left: 0; width: 100%;
+            content:""; clear: both; position: absolute; border-top: 3px dashed #4e4e4e; top: -2px; right: 0; width: 97%;
         }
         img {position: absolute; top: -32px; left: 0; }
         p {text-align: center; font-size: 62px; font-family: "Fugaz one"; color: #444242;}
     }
     .swiper-container {
         width: 100%; /* height: 100vh; */
-        .swiper-slide:nth-child(odd) {background: $lightyellow;}
-        .slide1 {
-            .data {
-                position: relative; z-index: 700; 
-                img {position: absolute; left: 210px; top: 100px;}
-                > p {font-family: Chonburi; font-size: 29px; position: absolute; left: 278px; top: 111px;}
+        .data {
+            position: relative; z-index: 700; 
+            img {position: absolute; left: 210px; top: 100px;}
+            > p {font-family: Chonburi; font-size: 29px; position: absolute; left: 278px; top: 111px;}
+        }
+        .slide:nth-child(odd) {
+            background: $lightyellow;
+            .diary {
+                position: absolute; top: 0; right: 250px; width: 31.25vw; height: 41.6667vw; background: #fff; font-family: DXPnM; font-size: 23px; text-align: right;
+                strong {
+                    display: block; font-size: 25px; padding-top: 53px; padding-right: 55px;
+                }
+                p {
+                    padding-top: 42px; padding-right: 55px;
+                    &::before {
+                        content: ""; position: absolute; clear: both; width: 100%; height: 1px; background: #444242;
+                    }
+                }
+                span {
+                    position: absolute; bottom: 0; right: 0; padding-right: 17px; padding-bottom: 17px;
+                }
             }
+        }
+        .slide1 {
             .firstDiary {
-                position: relative; margin-top: 188px; padding-left: 470px; 
+                position: relative; margin-top: 188px; padding-left: 24.479vw/* 470px */; height: 46.3542vw/* 890px */; 
                 .windowWrap {
                     position: relative; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; overflow: hidden;
                 }
                 .emptyFrame {position: absolute; top: 0; left: 0;z-index: 10;}
                 img {width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; }
-                img:nth-child(2) {position: absolute;top: 0; left: 0;}
+                img:nth-child(2) {position: absolute; top: 0; left: 0;}
                 .showImg {width: 208.3333vw/* 4000px */; font-size: 0;}
-                .diary {
-                    position: absolute; top: 0; right: 250px; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; background: #fff; font-family: DXPnM; font-size: 25px; text-align: right;
-                    strong {display: block; font-size: 31px; padding-top: 25px; padding-right: 55px;}
-                    p {
-                        padding-top: 35px; padding-right: 55px;
-                        &::before {content: ""; position: absolute; clear: both; width: 50%; height: 1px; background: #444242;}
-                    }
-                    span {padding-right: 17px; padding-bottom: 17px;}
-                }
             }
         
         }
         .slide2 {
-            .data {
-                position: relative; z-index: 700; 
-                img {position: absolute; left: 210px; top: 100px;}
-                > p {font-family: Chonburi; font-size: 29px; position: absolute; left: 278px; top: 111px;}
-            }
             .secondDiary {
-                position: relative;
+                position: relative; margin-top: 188px; padding-left: 24.479vw/* 470px */; height: 46.3542vw/* 890px */;
                 .diary {
-                    position: absolute; top: 188px; left: 470px; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; background: #fff; font-family: DXPnM; font-size: 25px; text-align: right;
+                    position: absolute; top: 0; left: 470px; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; background: #fff; font-family: DXPnM; font-size: 23px; text-align: left;
                     strong {
-                        font-size: 31px; padding-top: 99px; padding-right: 55px;
+                        display: block; font-size: 25px; padding-top: 53px; padding-left: 55px;
                     }
                     p {
-                        padding-top: 76px; padding-right: 55px;
-                        &::before {content: ""; position: absolute; clear: both; width: 100%; height: 1px;}
+                        padding-top: 42px; padding-left: 55px;
+                        &::before {
+                            content: ""; position: absolute; clear: both; width: 50%; height: 1px; background: #444242;
+                        }
+                    }
+                    span {
+                        position: absolute; bottom: 0; left: 0; padding-left: 17px; padding-bottom: 17px;
                     }
                 }
-                .diaryImg {position: absolute; top: 188px; right: 250px; width: 26.25vw; height: 41.6667vw/* 800px */;}
+                .diaryImg {position: absolute; top: 0; right: 250px; width: 26.25vw; height: 41.6667vw/* 800px */;}
             }
         }
         .slide3 {
-            
-            .data {
-                position: relative; z-index: 700; 
-                img {position: absolute; left: 210px; top: 100px;}
-                > p {font-family: Chonburi; font-size: 29px; position: absolute; left: 278px; top: 111px;}
-            }
+            background: $lightyellow;
             .thirdDiary {
-                position: relative;  margin-top: 188px; padding-left: 470px; padding-bottom: 87px;
-                .diary {
-                    position: absolute; top: 0; right: 250px; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; background: #fff; font-family: DXPnM; font-size: 25px; text-align: right; margin-top: 188px;
-                    strong {font-size: 31px; padding-top: 99px; padding-right: 55px;}
-                    p {
-                        padding-top: 76px; padding-right: 55px;
-                        &::before {content: ""; position: absolute; clear: both; width: 100%; height: 1px;}
-                    }
+                position: relative; margin-top: 188px; padding-left: 24.479vw/* 470px */; height: 46.3542vw; 
+                .viewWorksWrap {
+                    position: relative; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; overflow: hidden; background: #fff;
+                    button {position: absolute; top: 50%; left: 0; right: 0; margin: 0 auto; width: 300px; height: 87px;}
                 }
             }
+            .diary {
+                .bold {font-size: 29px !important; padding-top: 0 !important; padding-right: 0 !important; }
+            }
         }
+
     }
 }
 
+
 #cnt4 {
-    position: relative; width: 100%; height: 67.7083vw/* 1300px */; background: $lightpurple;
+    /* position: relative;  */width: 100%; height: 67.7083vw/* 1300px */; background: $lightpurple;
     .stats {
         position: relative; height: 224px; line-height: 224px; width: 100%; background: #fff;
         &::before {
-            content:""; clear: both; position: absolute;border-top: 3px dashed #4e4e4e; top: -2px; left: 0; width: 100%;
+            content:""; clear: both; position: absolute; border-top: 3px dashed #4e4e4e; top: -2px; right: 0; width: 97%; z-index: 100;
         }
-        img {position: absolute; top: -32px; left: 0; }
+        img {position: absolute; top: -32px; left: 0; z-index: 100;}
         p {text-align: center; font-size: 62px; font-family: "Fugaz one"; color: #444242;} 
     }
     .dashboard {
         @include border-radius(50px);
-        width: 91.5625vw/* 1758px */; height: 42.2917vw/* 812px */; background: #fff; margin: 0 auto; margin-top: 136px; clear: both;
+        display: flex; flex-wrap: wrap; justify-content: space-evenly; width: 91.5625vw/* 1758px */; height: 42.2917vw/* 812px */; background: #fff; margin: 0 auto; margin-top: 136px; clear: both;
         .dashboardTitle {
-            display: block; /* width: 1000px;  */font-size: 35px; /* width: 246px;  */height: 36px; padding-top: 73px; padding-left: 43px;
+            display: block; width: 100%; font-family: KoreanDREAM5; font-size: 35px; /* width: 246px;  */height: 36px; padding-top: 73px; padding-left: 43px;
         }
         .leftBoard {
-            display: flex; flex-wrap: wrap; width: 1096px; height: 678px; padding-left: 43px; padding-top: 53px;  
-            > div + div {margin-left: 27px;}
-            div:nth-child(4) {margin-top: 27px;}
+            width: 21.1979vw/* 407px */; height: 31.4583vw/* 604px */; padding-top: 53px;  
             .puzzle {
                 @include border-radius(50px);
-                position: relative; flex-direction: row; width: 407px; height: 604px; line-height: 604px; background: pink; border: 1px solid #444242; box-sizing: border-box;
+                position: relative; width: 21.1979vw/* 407px */; height: 31.4583vw/* 604px */; line-height: 31.4583vw; background: pink; border: 1px solid #444242; box-sizing: border-box; overflow: hidden;
                 span, p {font-family: "fugaz one"; text-align: center; }
                 span {
                     display: block; font-size: 40px; line-height: 47px; padding-top: 248px;
                 }
                 .stripe {
-                   /*  width: 407px; height: 600px; */
+                    width: 407px; height: 600px;
                     div {
                         /* @include transform(skew(45deg)); */
-                        width: 100px; height: 600px;
+                        width: 120px; height: 31.25vw/* 600px */; display: inline-block;
                     }
-                    div:first-child {
-                        /* position: absolute; top: 0; left: 0;  */background: #b89eff;
-                    }
+                    /* div:first-child {
+                        position: absolute; top: 0; left: 0; background: #b89eff;
+                    } */
                     .line + .line {padding-left: 50px;}
                 }
                 .hiddenProfile {
-                    display: none; width: 285px; height: 407px; margin: 0 auto; position: absolute; top: 0; left: 62px; margin-top: 75px;
+                    display: none; width: 285px; height: 21.1979vw/* 407px */; margin: 0 auto; position: absolute; top: 0; left: 0; right: 0; margin-top: 75px;
                     img {text-align: center; padding-left: 6px; padding-bottom: 60px;}
                     > p {position: absolute; bottom: 0; font-size: 29px; line-height: 42px;}
                 }
             }
+        }
+        .middleBoard {
+            display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; width: 660px; height: 650px; padding-top: 53px;
             .efficiency {
                 @include border-radius(50px);
-                position: relative; flex-direction: row; width: 317px; height: 295px; background: #a6fcbc;
+                position: relative; width: 16.5104vw/* 317px */; height: 15.3646vw/* 295px */; background: #a6fcbc;
                 span {
                     display: block; font-family: KoreanDREAM5; font-size: 25px; padding-left: 18px; padding-top: 33px;
                 }
-                img {position: absolute; left: calc(50% - 91px); top: 113px; }
-                p:first-child {font-size: 55px; font-family: "Fugaz one";}
-                p:last-child {display: none; font-size: 29px;font-family: KoreanDREAM3;}
+                #drop1 {position: absolute; top: 113px; left: 0; right: 0; margin: 0 auto; }
+                p {position: absolute; font-size: 2.8646vw/* 55px */; font-family: "Fugaz one"; top: 59%; left: calc(50% - 18.5px);}
+                /* .hiddenTriangle {
+                    p {display: none; font-size: 36px; top: 66%; left: calc(50% - 36.5px);}
+                } */
             }
             .producitivity {
                 @include border-radius(50px);
-                position: relative; flex-direction: row; width: 317px; height: 295px; background: #ffcfcf;
+                position: relative; width: 16.5104vw/* 317px */; height: 15.3646vw/* 295px */; background: #ffcfcf;
                 span {
                     display: block; font-family: KoreanDREAM5; font-size: 25px; padding-left: 18px; padding-top: 33px;
                 }
-                img {position: absolute; }
-                p {font-size: 15px; font-family: KoreanDREAM3;}
+                #drop2 {position: absolute; top: 34%; left: calc(50% - 137.5px); width: 14.3229vw/* 275px */;}
+                p {position: absolute; left: 22px; bottom: 17px; font-size: 15px; font-family: KoreanDREAM3;}
+                p:last-child {left: 0; right: 31px;}
             }
             .relieveStress {
                 @include border-radius(50px);
-                position: relative; flex-flow: row-reverse nowrap; width: 656px; height: 289px; border: 1px solid #444242; background: #fff; box-sizing: border-box;
+                position: relative; width: 34.1667vw/* 656px */; height: 15.0521vw/* 289px */; border: 1px solid #444242; background: #fff; box-sizing: border-box; margin-top: 25px;
                 span {
                     display: block; font-family: KoreanDREAM5; font-size: 25px; padding-left: 18px; padding-top: 33px;
                 }
@@ -247,23 +257,34 @@
                     padding-top: 25px;
                     .stressReliever1, .stressReliever2 {
                         @include border-radius(50px);
-                        width: 528px; height: 62px; font-family: "Fugaz one"; font-size: 25px; line-height: 62px; margin: 0 auto; padding-left: 39px;
+                        width: 416px; height: 62px; font-family: "Fugaz one"; font-size: 21px; line-height: 62px; margin: 0 auto; padding-left: 39px;
                     }
                     img {display: none;}
                     .stressReliever1 {
                         background: #ffd28d;
                     }
                     .stressReliever2 {
-                        background: #c2e4ff; margin-top: 35px;
+                        background: #c2e4ff; margin-top: 17px;
                     }
                 }
             }
         }
+        .droppableModel {
+            float: left;
+            .triangle {
+                
+            }
+            .thunder {
+                position: relative; 
+                #drag2Yes {position: absolute; top: 0; left: 0; width: 14.3229vw/* 275px */;}
+                #drag2After {position: absolute; top: 0; left: 0; width: 14.3229vw; }
+            }
+        }
         .rightBoard {
-            float: right;
+            margin-top: -78px;
             .skillView {
                 @include border-radius(50px);
-                position: relative; flex-direction: row-reverse; width: 540px; height: 745px; background: $lightyellow; 
+                position: relative; display: flex; flex-wrap: wrap; flex-direction: row-reverse; width: 540px; height: 745px; background: $lightyellow; 
                 .switchWrap {margin: 0 auto; padding-bottom: 60px;}
                 .switchToggle {
                     position: relative; width: 70px; height: 36px; border-radius: 66px; background: #444242; display: inline-block; 
@@ -275,7 +296,7 @@
                 }
                 .skillCircle {
                     display: flex; flex-direction: row;
-                    div {flex : 1 0 auto; text-align: center; border-radius: 50%; font-size: 14px; line-height: 21px;}
+                    div {position: absolute; top: 25%; left: 34%; flex : 1 0 auto; text-align: center; border-radius: 50%; font-size: 14px; line-height: 21px;}
                     .css, .scss {width: 156px; height: 156px;}
                     .css {background: #993ef3;}
                     .html5 {width: 195px; height: 195px; background: #ff9393; }
@@ -286,11 +307,52 @@
                 }
                 .overview {
                     @include border-radius(50px);
-                    position: absolute; top: 552px; left: 0; width: 540px; height: 745px; background: #fff;
-                    .overviewTitle {display: block; font-family: KoreanDREAM5; font-size: 25px; padding-top: 45px; padding-left: 44px;}
-                    p:last-child {display: block; font-family: KoreanDREAM3; font-size: 15px; color: #858585; padding-top: 45px; padding-left: 44px;}
+                    position: absolute; top: 552px; left: 0; width: 540px; height: 745px; background: #fff; padding-top: 8px;
+                    span {display: block; padding-left: 44px; font-size: 15px; margin-top: 7px;}
+                    .overviewTitle {
+                        font-family: KoreanDREAM5; font-size: 25px; padding-top: 45px;
+                    }
+                    span:last-child {
+                        font-family: KoreanDREAM3; font-size: 15px; padding-top: 8px; color: #858585;
+                    }
+                    .stickGraph {
+                        position: relative; margin-top: 26px; z-index: 100;
+                        .stickWrap {
+                            @include border-radius(50px);
+                            position: absolute; top: 0; left: 0; right: 0; width: 502px; height: 597px; background: $lightyellow; margin: 0 auto;
+                            div {
+                                @include border-radius(4px);
+                                width: 6px; height: 344px;
+                                
+                            div + div {padding-left: 38px;}
+                            .whiteStick {
+                                position: absolute; bottom: 165px; left: 50px; background: #fff;
+                            }
+                            .skills {
+                                position: absolute; bottom: 0; left: 0; background: #7ea0e9; width: 6px;
+                            }
+                            #html5 {height: 330px;}
+                            #css3 {height: 325px;}
+                            #scss {height: 330px;}
+                            #javaScript {height: 245px;}
+                            #jQuery {height: 280px;}
+                            #bootstrap {height: 195px;}
+                            #ps {height: 310px;}
+                            #ai {height: 335px;}
+                            #xd {height: 280px;}
+                            #zeplin {height: 280px;}
+                            #pr {height: 285px;}
+                            span {font-family: KoreanDREAM5; font-size: 11px; line-height: 13px; text-align: center;}
+                        }
+                    }
                 }
             }
         }
     }
+}
+}
+
+/* Works page */
+#work1 {
+    background: $lightpurple;
 }
