@@ -756,15 +756,15 @@
   position: relative; }
   #work .workSwiperWrap {
     border: 1px solid #fff;
-    width: 1890px;
-    height: 700px;
+    width: 98.4375vw;
+    height: 36.4583vw;
     text-align: right;
     margin: 360px auto 0; }
     #work .workSwiperWrap .workText {
       position: relative;
       border: 1px solid #fff;
-      width: 929px;
-      height: 675px;
+      width: 48.3854vw;
+      height: 35.1562vw;
       margin-top: 12px;
       margin-left: 14px;
       box-sizing: border-box; }
@@ -812,25 +812,31 @@
       margin-top: 12px;
       margin-right: 14px;
       border: 1px solid #fff;
-      width: 929px;
-      height: 675px;
+      width: 48.3854vw;
+      height: 35.1562vw;
       box-sizing: border-box; }
-    #work .workSwiperWrap .controller {
-      position: absolute; }
-      #work .workSwiperWrap .controller .swiper-button-next, #work .workSwiperWrap .controller .swiper-button-prev {
-        -webkit-background-size: cover !important;
-        -moz-background-size: cover !important;
-        background-size: cover !important;
-        position: static;
-        display: block;
-        background: no-repeat center;
-        width: 25px;
-        height: 43px;
-        top: 50%; }
-      #work .workSwiperWrap .controller .swiper-button-next {
-        background-image: url("../img/icon/leftButton.svg"); }
-      #work .workSwiperWrap .controller .swiper-button-next {
-        background-image: url("../img/icon/rightButton.svg"); }
+      #work .workSwiperWrap .workSwiper .swiper-container {
+        width: 100%;
+        height: 100%; }
+      #work .workSwiperWrap .workSwiper .controller {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%; }
+        #work .workSwiperWrap .workSwiper .controller .swiper-button-next, #work .workSwiperWrap .workSwiper .controller .swiper-button-prev {
+          -webkit-background-size: cover !important;
+          -moz-background-size: cover !important;
+          background-size: cover !important;
+          position: static;
+          display: block;
+          background: no-repeat center;
+          width: 25px;
+          height: 43px;
+          top: 50%; }
+        #work .workSwiperWrap .workSwiper .controller .swiper-button-next {
+          background-image: url("../img/icon/leftButton.svg"); }
+        #work .workSwiperWrap .workSwiper .controller .swiper-button-next {
+          background-image: url("../img/icon/rightButton.svg"); }
 
 #work {
   /* GoPro Porject */
@@ -838,8 +844,8 @@
   /* Heyri Project */ }
   #work .gopro .decoCircles img:first-child {
     position: absolute;
-    top: -45%;
-    right: -1%; }
+    top: -55%;
+    right: 0%; }
   #work .gopro .decoCircles img:nth-child(2) {
     position: absolute;
     top: 15%;
@@ -862,16 +868,24 @@
     #work .helinox .work2Swiper {
       position: absolute;
       top: 1px;
-      right: 14px;
+      left: 14px;
+      right: 0;
       margin-top: 12px;
-      margin-right: 14px;
+      margin-right: 0;
+      margin-left: 14px;
       border: 1px solid #fff;
-      width: 929px;
-      height: 675px;
+      width: 48.3854vw;
+      height: 35.1562vw;
       box-sizing: border-box; }
+      #work .helinox .work2Swiper .swiper-container {
+        width: 100%;
+        height: 100%; }
   #work .heyri {
     position: relative; }
     #work .heyri .workSwiperWrap {
       margin: 0 auto; }
+      #work .heyri .workSwiperWrap .work3Swiper .swiper-container {
+        width: 100%;
+        height: 100%; }
 
 /*# sourceMappingURL=main.css.map */

@@ -356,11 +356,11 @@
 
 /* common class */
 #work {
-    background: $lightpurple; position: relative;
+    background: $lightpurple; position: relative; 
     .workSwiperWrap {
-        border: 1px solid #fff; width: 1890px; height: 700px; text-align: right; margin:360px auto 0;
+        border: 1px solid #fff; width: 98.4375vw/* 1890px */; height: 36.4583vw/* 700px */; text-align: right; margin:360px auto 0;
         .workText {
-            position: relative; border: 1px solid #fff; width: 929px; height: 675px; margin-top: 12px; margin-left: 14px; box-sizing: border-box;
+            position: relative; border: 1px solid #fff; width:48.3854vw /* 929px */; height: 35.1562vw/* 675px */; margin-top: 12px; margin-left: 14px; box-sizing: border-box;
             h3 {
                 font-family: Chonburi; font-size: 46px; padding-bottom: 69px; padding-top: 44px; 
             }
@@ -383,18 +383,17 @@
             a { left: 51px; }
         }
         .workSwiper {
-            position: absolute; top: 1px; right: 14px; margin-top: 12px; margin-right: 14px; border: 1px solid #fff; width: 929px; height: 675px; box-sizing: border-box;
-        }
-        .controller {
-            position: absolute; 
-            .swiper-button-next, .swiper-button-prev {
-                @include bgsize(cover);
-                position: static; display: block; background: no-repeat center; width: 25px; height: 43px; top: 50%; 
+            position: absolute; top: 1px; right: 14px; margin-top: 12px; margin-right: 14px; border: 1px solid #fff; width:48.3854vw /* 929px */; height: 35.1562vw/* 675px */; box-sizing: border-box;
+            .swiper-container {width: 100%; height: 100%;}
+            .controller {
+                position: absolute; top: 50%; left: 0; width: 100%;
+                .swiper-button-next, .swiper-button-prev {
+                    @include bgsize(cover);
+                    position: static; display: block; background: no-repeat center; width: 25px; height: 43px; top: 50%; 
+                }
+                .swiper-button-next {background-image: url("../img/icon/leftButton.svg");}
+                .swiper-button-next {background-image: url("../img/icon/rightButton.svg");}
             }
-            .swiper-button-next {background-image: url("../img/icon/leftButton.svg");}
-            .swiper-button-next {background-image: url("../img/icon/rightButton.svg");}
-            
-
         }
     }
 }
@@ -403,7 +402,7 @@
     .gopro {
         
         .decoCircles {
-            img:first-child {position: absolute; top: -45%; right: -1%;}
+            img:first-child {position: absolute; top: -55%; right: 0%;}
             img:nth-child(2) {position: absolute; top: 15% ; left: -38%;}
             img:last-child {position: absolute; top: 65% ; right: -15%;}
         }
@@ -416,12 +415,19 @@
             position: absolute; top: 0; right: 14px; margin-left: 0; margin-right: 14px;
         }
         .work2Swiper {
-            position: absolute; top: 1px; right: 14px; margin-top: 12px; margin-right: 14px; border: 1px solid #fff; width: 929px; height: 675px; box-sizing: border-box;
+            position: absolute; top: 1px; left: 14px; right: 0; margin-top: 12px; margin-right: 0; margin-left: 14px; border: 1px solid #fff; width:48.3854vw /* 929px */; height: 35.1562vw/* 675px */; box-sizing: border-box;
+            .swiper-container {width: 100%; height: 100%;}
         }
     }
     /* Heyri Project */
     .heyri {
         position: relative; 
-        .workSwiperWrap {margin: 0 auto;}
+        .workSwiperWrap {
+            margin: 0 auto;
+        .work3Swiper {
+            .swiper-container {width: 100%; height: 100%;}
+        }
+        }
+        
     }
 }

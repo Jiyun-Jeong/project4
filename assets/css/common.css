@@ -92,7 +92,7 @@ body {
   position: relative;
   overflow: hidden; }
   #wrap #header .logo {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 29px;
     left: 32px;
