@@ -2,7 +2,7 @@
 @import "_var", "_mixin";
 
 #cnt1 {
-  position: relative; width: 100%; height: 150vh; background: linear-gradient(#00E4F3,#005B61, #011D1F, #000000); 
+  position: relative; width: 100%; height: 150vh; background: linear-gradient($goproBlue,#005B61, #011D1F, #000000); 
   .project1Main {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
     .mainCircleWrap {
@@ -37,20 +37,103 @@
       .explainText {
         float: right; width: 1020.5px; height: 114.5px;
         span {
-          display: inline-block; font-size: 17px; font-family: "Fugaz one"; padding-right: 87px; color: #fff;
+          display: inline-block; font-size: 17px; font-family: "Fugaz one"; padding-right: 87px; color: #fff; line-height: 0;
         }
-        p {text-align: left; font-size: 17px; font-family: "Fugaz one"; color: #fff; }
+        p {display: block; text-align: left; font-size: 17px; font-family: "Fugaz one"; color: #fff; }
   
       }
     }
   }
 }
 
-h3 {font-family: KoreanDREAM5; font-size: 28px;}
-p { font-family: KoreanDREAM3; font-size: 15px; line-height: 22px;}
+/* cnt2 common */
+h3 {font-family: KoreanDREAM5; font-size: 28px; padding-bottom: 24px;}
+p.content {
+  font-family: KoreanDREAM3; font-size: 15px; line-height: 22px; display: block; padding-bottom: 130px;
+}
+
+/* cnt2 CSS */
 #cnt2 {
-  background: #F6F6F6; width: 100%; height: 100%;
+  position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; background: #F6F6F6; width: 100%; height: 100vh;
   .designLeft {
-    h3 {}
+    margin-left: 167px; margin-top: 141px; position: relative;
+    img:first-child {
+      position: absolute; top: -15px; left: -15px; width: 18.16px; height: 18.36px;
+    }
+    img:last-child {width: 360px; height: 500px;}
+  }
+  .designRight {
+    margin-left: 268px; margin-top: 141px; 
+    .designColor {
+      > p {padding-bottom: 29px;}
+      .colorWrap {
+        display: flex; flex-direction: row; flex-wrap: nowrap; padding-left: 17px;
+        .colorCubeWrap {margin-right: 45px;}
+        .colorCube {
+          width: 206px; height: 101px;
+          & + div {padding-right: 45px;}
+        }
+        .mainBlue {background: $goproBlue;}
+        .subBlue {background: #096A8A;}
+        .mainGrey1 {background: #505050}
+        .mainGrey2 {background: #c2c2c2; }
+        p {
+          font-family: KoreanDREAM3; font-size: 15px; line-height: 24px; letter-spacing: 0.05em; 
+        }
+      }
+    }
+    .designTypo {
+      margin-top: 141px;
+      > p {padding-bottom: 29px;}
+      img {padding-left: 17px;}
+    }
+  }
+}
+
+#cnt3 {
+  position: relative; width: 100%; height: 100vh; overflow: hidden; background: #F6F6F6; 
+  .bgLine {
+    position: absolute; width: 100%; height: 302px; background: $goproBlue; top: calc(50% - 148.5px); left: 0;
+    > p {
+      font-family: KoreaDREAM5; font-size: 62px; letter-spacing: -0.27px; line-height: 79px; font-weight: 900; padding: 73px 0 73px 1066px;
+    }
+  }
+  .originalHomepage {
+    position: relative; display: inline;
+    p {
+      display: inline-block; font-family: KoreanDREAM5; padding: 60px 0 50px 400px;
+    }
+    img {position: absolute; top: 126px; left: 189px; width: 503px;}
+  }
+  .analysisText {
+    position: relative; width: 690px; height: 171px; float: right; padding-right: 206px; margin-top: 168px;
+    img {
+      position: absolute; top: -15px; left: -15px; width: 18.16px; height: 18.36px;
+    }
+    p {
+      padding-bottom: 0;
+      span {color: #16aec0;}
+    }
+  }
+}
+
+#cnt4 {
+  position: relative; width: 100%; height: 100vh; overflow: hidden; background: #F6F6F6; 
+  .wireframe {
+    display: inline-block; margin-left: 0; position: relative; margin: 80px auto 0;
+    > img:first-child {
+      position: absolute; top: -15px; left: 41%; width: 18.16px; height: 18.36px;
+    }
+    h3 {text-align: center;}
+    .content {
+      padding-bottom: 0; text-align: center;
+      span {color: #16aec0;}
+    }
+  }
+  .wireframeWrap {
+    width: 1257px; height: 373px; margin-top: 222px;
+    > img { padding-right: 42px; vertical-align: bottom;}
+    > img:last-child {padding-right: 0;}
+    span {font-family: KoreaDREAM5; font-size: 22px; color: #c4c4c4;}
   }
 }

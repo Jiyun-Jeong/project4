@@ -89,25 +89,173 @@
           font-size: 17px;
           font-family: "Fugaz one";
           padding-right: 87px;
-          color: #fff; }
+          color: #fff;
+          line-height: 0; }
         #cnt1 .simpleExplain .sicssor .explainText p {
+          display: block;
           text-align: left;
           font-size: 17px;
           font-family: "Fugaz one";
           color: #fff; }
 
+/* cnt2 common */
 h3 {
   font-family: KoreanDREAM5;
-  font-size: 28px; }
+  font-size: 28px;
+  padding-bottom: 24px; }
 
-p {
+p.content {
   font-family: KoreanDREAM3;
   font-size: 15px;
-  line-height: 22px; }
+  line-height: 22px;
+  display: block;
+  padding-bottom: 130px; }
 
+/* cnt2 CSS */
 #cnt2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   background: #F6F6F6;
   width: 100%;
-  height: 100%; }
+  height: 100vh; }
+  #cnt2 .designLeft {
+    margin-left: 167px;
+    margin-top: 141px;
+    position: relative; }
+    #cnt2 .designLeft img:first-child {
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      width: 18.16px;
+      height: 18.36px; }
+    #cnt2 .designLeft img:last-child {
+      width: 360px;
+      height: 500px; }
+  #cnt2 .designRight {
+    margin-left: 268px;
+    margin-top: 141px; }
+    #cnt2 .designRight .designColor > p {
+      padding-bottom: 29px; }
+    #cnt2 .designRight .designColor .colorWrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding-left: 17px; }
+      #cnt2 .designRight .designColor .colorWrap .colorCubeWrap {
+        margin-right: 45px; }
+      #cnt2 .designRight .designColor .colorWrap .colorCube {
+        width: 206px;
+        height: 101px; }
+        #cnt2 .designRight .designColor .colorWrap .colorCube + div {
+          padding-right: 45px; }
+      #cnt2 .designRight .designColor .colorWrap .mainBlue {
+        background: #00E4F3; }
+      #cnt2 .designRight .designColor .colorWrap .subBlue {
+        background: #096A8A; }
+      #cnt2 .designRight .designColor .colorWrap .mainGrey1 {
+        background: #505050; }
+      #cnt2 .designRight .designColor .colorWrap .mainGrey2 {
+        background: #c2c2c2; }
+      #cnt2 .designRight .designColor .colorWrap p {
+        font-family: KoreanDREAM3;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.05em; }
+    #cnt2 .designRight .designTypo {
+      margin-top: 141px; }
+      #cnt2 .designRight .designTypo > p {
+        padding-bottom: 29px; }
+      #cnt2 .designRight .designTypo img {
+        padding-left: 17px; }
+
+#cnt3 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #F6F6F6; }
+  #cnt3 .bgLine {
+    position: absolute;
+    width: 100%;
+    height: 302px;
+    background: #00E4F3;
+    top: calc(50% - 148.5px);
+    left: 0; }
+    #cnt3 .bgLine > p {
+      font-family: KoreaDREAM5;
+      font-size: 62px;
+      letter-spacing: -0.27px;
+      line-height: 79px;
+      font-weight: 900;
+      padding: 73px 0 73px 1066px; }
+  #cnt3 .originalHomepage {
+    position: relative;
+    display: inline; }
+    #cnt3 .originalHomepage p {
+      display: inline-block;
+      font-family: KoreanDREAM5;
+      padding: 60px 0 50px 400px; }
+    #cnt3 .originalHomepage img {
+      position: absolute;
+      top: 126px;
+      left: 189px;
+      width: 503px; }
+  #cnt3 .analysisText {
+    position: relative;
+    width: 690px;
+    height: 171px;
+    float: right;
+    padding-right: 206px;
+    margin-top: 168px; }
+    #cnt3 .analysisText img {
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      width: 18.16px;
+      height: 18.36px; }
+    #cnt3 .analysisText p {
+      padding-bottom: 0; }
+      #cnt3 .analysisText p span {
+        color: #16aec0; }
+
+#cnt4 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #F6F6F6; }
+  #cnt4 .wireframe {
+    display: inline-block;
+    margin-left: 0;
+    position: relative;
+    margin: 80px auto 0; }
+    #cnt4 .wireframe > img:first-child {
+      position: absolute;
+      top: -15px;
+      left: 41%;
+      width: 18.16px;
+      height: 18.36px; }
+    #cnt4 .wireframe h3 {
+      text-align: center; }
+    #cnt4 .wireframe .content {
+      padding-bottom: 0;
+      text-align: center; }
+      #cnt4 .wireframe .content span {
+        color: #16aec0; }
+  #cnt4 .wireframeWrap {
+    width: 1257px;
+    height: 373px;
+    margin-top: 222px; }
+    #cnt4 .wireframeWrap > img {
+      padding-right: 42px;
+      vertical-align: bottom; }
+    #cnt4 .wireframeWrap > img:last-child {
+      padding-right: 0; }
+    #cnt4 .wireframeWrap span {
+      font-family: KoreaDREAM5;
+      font-size: 22px;
+      color: #c4c4c4; }
 
 /*# sourceMappingURL=gopro.css.map */
