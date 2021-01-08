@@ -244,17 +244,19 @@
         width: 31.25vw;
         height: 41.6667vw;
         background: #fff;
-        font-family: DXPnM;
+        font-family: Seongsil;
         font-size: 23px;
         text-align: right; }
         #cnt3 .swiper-container .slide:nth-child(odd) .diary strong {
           display: block;
-          font-size: 25px;
+          font-size: 38px;
           padding-top: 53px;
           padding-right: 55px; }
         #cnt3 .swiper-container .slide:nth-child(odd) .diary p {
           padding-top: 42px;
-          padding-right: 55px; }
+          padding-right: 55px;
+          font-size: 32px;
+          line-height: 41px; }
           #cnt3 .swiper-container .slide:nth-child(odd) .diary p::before {
             content: "";
             position: absolute;
@@ -305,17 +307,19 @@
         width: 31.25vw;
         height: 41.6667vw;
         background: #fff;
-        font-family: DXPnM;
+        font-family: Seongsil;
         font-size: 23px;
         text-align: left; }
         #cnt3 .swiper-container .slide2 .secondDiary .diary strong {
           display: block;
-          font-size: 25px;
+          font-size: 38px;
           padding-top: 53px;
           padding-left: 55px; }
         #cnt3 .swiper-container .slide2 .secondDiary .diary p {
           padding-top: 42px;
-          padding-left: 55px; }
+          padding-left: 55px;
+          font-size: 32px;
+          line-height: 41px; }
           #cnt3 .swiper-container .slide2 .secondDiary .diary p::before {
             content: "";
             position: absolute;
@@ -329,12 +333,35 @@
           left: 0;
           padding-left: 17px;
           padding-bottom: 17px; }
-      #cnt3 .swiper-container .slide2 .secondDiary .diaryImg {
+      #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco {
         position: absolute;
         top: 0;
         right: 250px;
-        width: 26.25vw;
-        height: 41.6667vw; }
+        width: 31.25vw;
+        height: 41.6667vw;
+        background: #fff; }
+        #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco .diaryImg {
+          position: absolute;
+          top: 73px;
+          right: 0;
+          left: 0;
+          margin: 0 auto; }
+        #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco .decoTape1 {
+          position: absolute;
+          top: 18px;
+          right: 31px; }
+        #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco .decoTape2 {
+          position: absolute;
+          bottom: 18px;
+          left: 31px; }
+        #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco .drawnArrow {
+          position: absolute;
+          bottom: 40%;
+          right: -9%; }
+        #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco .handwrite {
+          position: absolute;
+          bottom: 52%;
+          right: -20%; }
     #cnt3 .swiper-container .slide3 {
       background: #FAF2A7; }
       #cnt3 .swiper-container .slide3 .thirdDiary {
@@ -357,7 +384,7 @@
             width: 300px;
             height: 87px; }
       #cnt3 .swiper-container .slide3 .diary .bold {
-        font-size: 29px !important;
+        font-size: 36px !important;
         padding-top: 0 !important;
         padding-right: 0 !important; }
 
