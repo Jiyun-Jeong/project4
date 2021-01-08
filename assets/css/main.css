@@ -763,7 +763,7 @@
     #work .workSwiperWrap .workText {
       position: relative;
       border: 1px solid #fff;
-      width: 960px;
+      width: 929px;
       height: 675px;
       margin-top: 12px;
       margin-left: 14px;
@@ -805,14 +805,14 @@
       text-align: left; }
     #work .workSwiperWrap .workText.right a {
       left: 51px; }
-    #work .workSwiperWrap .work1Swiper {
+    #work .workSwiperWrap .workSwiper {
       position: absolute;
       top: 1px;
       right: 14px;
       margin-top: 12px;
       margin-right: 14px;
       border: 1px solid #fff;
-      width: 882px;
+      width: 929px;
       height: 675px;
       box-sizing: border-box; }
     #work .workSwiperWrap .controller {
@@ -834,17 +834,44 @@
 
 #work {
   /* GoPro Porject */
-  /* Helinox Project */ }
+  /* Helinox Project */
+  /* Heyri Project */ }
   #work .gopro .decoCircles img:first-child {
     position: absolute;
-    top: -76%;
+    top: -45%;
     right: -1%; }
-  #work .gopro .decoCircles img:last-child {
+  #work .gopro .decoCircles img:nth-child(2) {
     position: absolute;
     top: 15%;
     left: -38%; }
-  #work .helinox .workSwiperWrap {
-    text-align: left;
-    margin: 0; }
+  #work .gopro .decoCircles img:last-child {
+    position: absolute;
+    top: 65%;
+    right: -15%; }
+  #work .helinox {
+    position: relative; }
+    #work .helinox .workSwiperWrap {
+      text-align: left;
+      margin: 0 auto; }
+    #work .helinox .workText.right {
+      position: absolute;
+      top: 0;
+      right: 14px;
+      margin-left: 0;
+      margin-right: 14px; }
+    #work .helinox .work2Swiper {
+      position: absolute;
+      top: 1px;
+      right: 14px;
+      margin-top: 12px;
+      margin-right: 14px;
+      border: 1px solid #fff;
+      width: 929px;
+      height: 675px;
+      box-sizing: border-box; }
+  #work .heyri {
+    position: relative; }
+    #work .heyri .workSwiperWrap {
+      margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

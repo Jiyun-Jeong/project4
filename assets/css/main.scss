@@ -360,7 +360,7 @@
     .workSwiperWrap {
         border: 1px solid #fff; width: 1890px; height: 700px; text-align: right; margin:360px auto 0;
         .workText {
-            position: relative; border: 1px solid #fff; width: 960px; height: 675px; margin-top: 12px; margin-left: 14px; box-sizing: border-box;
+            position: relative; border: 1px solid #fff; width: 929px; height: 675px; margin-top: 12px; margin-left: 14px; box-sizing: border-box;
             h3 {
                 font-family: Chonburi; font-size: 46px; padding-bottom: 69px; padding-top: 44px; 
             }
@@ -382,8 +382,8 @@
             p { padding-left: 53px; text-align: left; }
             a { left: 51px; }
         }
-        .work1Swiper {
-            position: absolute; top: 1px; right: 14px; margin-top: 12px; margin-right: 14px; border: 1px solid #fff; width: 882px; height: 675px; box-sizing: border-box;
+        .workSwiper {
+            position: absolute; top: 1px; right: 14px; margin-top: 12px; margin-right: 14px; border: 1px solid #fff; width: 929px; height: 675px; box-sizing: border-box;
         }
         .controller {
             position: absolute; 
@@ -403,14 +403,25 @@
     .gopro {
         
         .decoCircles {
-            img:first-child {position: absolute; top: -76%; right: -1%;}
-            img:last-child {position: absolute; top: 15% ; left: -38%;}
+            img:first-child {position: absolute; top: -45%; right: -1%;}
+            img:nth-child(2) {position: absolute; top: 15% ; left: -38%;}
+            img:last-child {position: absolute; top: 65% ; right: -15%;}
         }
     }
     /* Helinox Project */
     .helinox {
-
-        .workSwiperWrap {text-align: left; margin: 0;
+        position: relative; 
+        .workSwiperWrap {text-align: left; margin: 0 auto;}
+        .workText.right {
+            position: absolute; top: 0; right: 14px; margin-left: 0; margin-right: 14px;
+        }
+        .work2Swiper {
+            position: absolute; top: 1px; right: 14px; margin-top: 12px; margin-right: 14px; border: 1px solid #fff; width: 929px; height: 675px; box-sizing: border-box;
+        }
     }
-}
+    /* Heyri Project */
+    .heyri {
+        position: relative; 
+        .workSwiperWrap {margin: 0 auto;}
+    }
 }
