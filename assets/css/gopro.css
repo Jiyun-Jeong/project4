@@ -25,7 +25,14 @@
         width: 100%;
         height: 100%;
         background: #fff;
-        margin: 217px auto 0; }
+        margin: 217px auto 0;
+        overflow: hidden; }
+        #cnt1 .project1Main .mainCircleWrap div.bigMainCircle img {
+          /* position: absolute; t */
+          op: 0;
+          left: 0;
+          top: 17%;
+          left: -18%; }
         #cnt1 .project1Main .mainCircleWrap div.bigMainCircle::before {
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
@@ -34,12 +41,6 @@
           border: 1px solid #fff;
           top: 0;
           left: 420px; }
-      #cnt1 .project1Main .mainCircleWrap img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        top: 17%;
-        left: -18%; }
     #cnt1 .project1Main p {
       position: absolute;
       display: fixed;
