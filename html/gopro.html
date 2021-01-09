@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> GoPro Responsive web project  </title>
+  <title> GoPro Responsive web project </title>
   <!-- favicon -->
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../assets/css/swiper-bundle.css">
@@ -12,9 +12,10 @@
   <!-- Jquery CDN -->
   <script src="../assets/js/jquery-1.12.4.min.js"></script>
   <!-- Swiper js -->
+  <!-- <script src="../assets/js/swiper-bundle.min.js"></script> -->
   <script src="../assets/js/swiper.min.js"></script>
-  <script src="../assets/js/swiper-bundle.min.js"></script>
   <!-- Custom JS -->
+  <script src="../assets/js/main.js"></script>
 </head>
 <body>
   <div id="skip">
@@ -239,7 +240,7 @@
 
     <section class="section" id="cnt5">
       <div class="blind-b">메인 페이지 프리뷰</div>
-      <div class="previewText">
+      <div class="previewText"> <!-- bg , background: fixed; -->
         <img class="pageBlurImg" src="../assets/img/main/previewImg@2x.png" alt="프리뷰 이미지">
         <img src="../assets/img/icon/cross.svg" alt="포인트">
         <h3>MAIN PAGE Preview</h3>
@@ -284,5 +285,84 @@
           <div></div>
           <div></div>
         </div>
+      </div>
+    </div>
+
+    <div class="section" id="gopro7">
+      <div class="blind-b">표준 웹 접근성 디테일 보기</div>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide goproSlide1">
+            <h2 class="blind-b">detail view page1</h2>
+            <div class="detailText">
+              <img src="../assets/img/icon/cross.svg" alt="포인트">
+              <h3>DETAIL VIEW</h3>
+              <p class="detailTitle">
+                <strong>운용의 용이성(Operable)</strong><br>
+                2.2 충분한 시간 제공 - 2.2.2. (정지 기능제공) 자동으로 변경되는 콘텐츠는 움직임을 제어할 수 있어야 한다.
+              </p>
+              <div class="compare compare1">
+                <div class="goproAutoJsWrap">
+                  <img src="../assets/img/main/gopromain@2x.jpg" alt="메인화면 이미지">
+                  <img src="../assets/img/main/goprojs@2x.jpg" alt="고프로 자동재생 자바스크립트">
+                </div>
+                <img src="../assets/img/main/goprojsAuto_c@2x.png" alt="확대된 자동재생 자바스크립트">
+                <p>
+                  자동재생 슬라이더에 정지버튼과 재생버튼을 추가하여<br>
+                  사용자가 콘텐츠를 스스로 제어할 수 있도록 하였습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide goproSlide2">
+          <h2 class="blind-b">detail view page2</h2>
+              <div class="detailText">
+                <img src="../assets/img/icon/cross.svg" alt="포인트">
+                <h3>DETAIL VIEW</h3>
+                <p class="detailTitle">
+                  <strong>운용의 용이성(Operable)</strong><br>
+                  2.4 쉬운 내비게이션 2.4.2 제목 제공 - 페이지, 프레임, 콘텐츠 블록에는 적절한 제목을 제공해야한다.
+                </p>
+                <div class="compare compare2">
+                  <div class="goproIframeWrap">
+                    <img src="../assets/img/main/goproiframeScreen@2x.jpg" alt="아이프레임 이미지">
+                    <img src="../assets/img/main/goproiframe@2x.jpg" alt="고프로 아이프레임 자바스크립트">
+                  </div>
+                  <img src="../assets/img/main/ggoprojsIframe_c@2x.png" alt="확대된 아이프레임 자바스크립트">
+                  <p>
+                    프레임에 title이 없을 경우 시각장애환경에서 웹페이지 사용에 어려움이 있기 때문에<br>
+                    <span>Title속성을 넣어주어 스크린리더기에서 읽혀질 수 있도록</span> 하였습니다.
+                  </p>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide goproSlide3">
+          <h2 class="blind-b">detail view page3</h2>
+            <div class="detailText">
+              <img src="../assets/img/icon/cross.svg" alt="포인트">
+              <h3>DETAIL VIEW</h3>
+              <p class="detailTitle">
+                <strong>운용의 용이성(Operable)</strong><br>
+                2.1 입력장치 접근성 2.1.1 키보드 사용 보장 - 모든 기능은 키보드만으로 사용할 수 있어야 한다.
+              </p>
+              <div class="compare compare3">
+                <div class="goproKeyJsWrap">
+                  <img src="../assets/img/main/goproKey@2x.jpg" alt="네비게이션 키보드 조작 이미지">
+                  <img src="../assets/img/main/goproKeycode@2x.jpg" alt="고프로 네비게이션 자바스크립트">
+                </div>
+                <img src="../assets/img/main/goproKeyMouseenter@2x.png" alt="확대된 네비게이션 마우스엔터부분 자바스크립트">
+                <img src="../assets/img/main/goproKeyBlur@2x.png" alt="확대된 네비게이션 블러 자바스크립트">
+                <p>
+                  키보드 만으로도 네비게이션 내에서의 이동이 가능하도록<br>
+                  <span>focus와 blur 속성의 스크립트를  적용</span>하였습니다.
+                </p>
+              </div>
+          </div>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>

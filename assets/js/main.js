@@ -20,7 +20,7 @@ $(document).ready(function () {
         }
     });
 
-    //cnt4 "swiper"
+    //cnt3 "swiper"
     var storySwiper = new Swiper('#cnt3 .swiper-container', {
         //direction: 'vertical',
         pagination: {
@@ -81,6 +81,22 @@ $(document).ready(function () {
         pagination: {
           el: '.swiper-pagination',
         },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 'auto',
+        a11y: {
+            prevSlideMessage: '이전 슬라이드 보기',
+            nextSlideMessage: '다음 슬라이드 보기',
+          },
+      })
+
+      //project1-GoPro page "swiper"
+      var gopro7Swiper = new Swiper('#gopro7 .swiper-container', {
+        /* pagination: {
+          el: '.swiper-pagination',
+        }, */
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
