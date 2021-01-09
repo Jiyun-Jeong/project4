@@ -150,13 +150,14 @@ p.content {
     > img:nth-child(2) {
       position: absolute; top: 17%; left: 42%; width: 18.16px; height: 18.36px;
     }
-    h3 {color: #fff; text-align: center; font-weight: 400;}
+    h3 {position: relative; color: #fff; text-align: center; font-weight: 400;}
     .content {
-      padding-bottom: 0; text-align: center; color: #fff; font-size: 24px; line-height: 34px;
+      position: relative; padding-bottom: 0; text-align: center; color: #fff; font-size: 24px; line-height: 34px;
       span {color: #16aec0;}
     }
     a {
       @include border-radius(50px);
+      position: relative;
       display: block; background: #fff; width: 252px; height: 74px; line-height: 74px; font-family: "Fugaz one"; font-size: 24px; color: #000; text-align: center; margin: 151px auto 128px; 
     }
     
@@ -183,25 +184,90 @@ p.content {
   .openWaxImg {
     position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; width: 1297px; height: 590px; text-align: center; margin: 0 auto; margin-top: 93px;
     .originalPage {
-      position: relative; display: inline-block;
+      position: relative; display: inline-block; z-index: 10;
       > img:first-child {padding-bottom: 46px;}
       .circleScore1 {position: absolute; top: -10%; left: 5%;}
       span {display: inline-block; font-family: KoreanDREAM3; color: #fff;}
     }
     .projectPage {
-      position: relative; display: inline-block;
+      position: relative; display: inline-block; z-index: 10;
       > img:first-child {padding-bottom: 46px;}
       .circleScore2 {position: absolute; top: -10%; left: 5%;}
       span {display: inline-block; font-family: KoreanDREAM3; color: #fff;}
     }
   }
   .decoBlueCircle {
-    
+    position: static;
     div {
       @include border-radius(50%);
       position: absolute; top: 0; left: calc(50% - 289px); width: 590px; height: 590px; border: 1px solid $goproBlue; box-sizing: border-box; 
     }
     div:nth-child(2) {left: calc(50% - 333px);}
     div:nth-child(3) {left: calc(50% - 245px);}
+  }
+}
+
+/* gopro7 CSS */
+#gopro7 {
+  width: 100%; height: 100vh; background: #F6F6F6;
+  .swiper-slide {
+    position: relative; display: inline-block; margin-left: 0; padding-top: 111px; width: 100%; height: 100vh;
+      .detailText {
+        position: relative; width: 100%; height: 81px; 
+        > img:first-child {
+          position: absolute; top: -15px; left: 5%; width: 18.16px; height: 18.36px;
+        }
+        h3 {display: inline-block; padding: 0 0 0 113px; vertical-align: top;}
+        > p {display: inline-block; padding-left: 105px;}
+        .detailTitle {
+          font-size: 21px; line-height: 32px;
+          strong {font-size: 25px; padding-bottom: 20px;}
+        }
+      }
+      .compare {
+        position: relative; font-size: 0; margin-top: 137px;
+        .goproAutoJsWrap {text-align: center;}
+        > img {position: absolute; top: 22%; left: 54%;}
+        > p {font-size: 21px; text-align: center; line-height: 36px; padding-top: 63px;}
+      }
+  }
+  /* .goproSlide1 {
+      position: relative; display: inline-block; margin-left: 0; padding-top: 111px; width: 100%; height: 100vh;
+      .detailText {
+        position: relative; width: 100%; height: 81px; 
+        > img:first-child {
+          position: absolute; top: -15px; left: 5%; width: 18.16px; height: 18.36px;
+        }
+        h3 {display: inline-block; padding: 0 0 0 113px; vertical-align: top;}
+        > p {display: inline-block; padding-left: 105px;}
+        .detailTitle {
+          font-size: 21px; line-height: 32px;
+          strong {font-size: 25px; padding-bottom: 20px;}
+        }
+      }
+      .compare1 {
+        position: relative; font-size: 0; margin-top: 137px;
+        .goproAutoJsWrap {text-align: center;}
+        > img {position: absolute; top: 22%; left: 54%;}
+        > p {font-size: 21px; text-align: center; line-height: 36px; padding-top: 63px;}
+      }
+  } */
+  .goproSlide2 {
+    .compare2 {
+      position: relative; font-size: 0; margin-top: 137px;
+      .goproIframeWrap {text-align: center;}
+      > img {position: absolute; top: 22%; left: 54%;}
+      > p {font-size: 21px; text-align: center; line-height: 36px; padding-top: 63px;}
+      > span {color: $goproBlue;}
+    }
+  }
+  .goproSlide3 {
+    .compare3 {
+      .goproKeyJsWrap {text-align: center;}
+      > img:first-child {position: absolute; top: 22%; left: 75;}
+      > img:last-child {position: absolute; top: 42%; left: 54%;}
+      > p {font-size: 21px; text-align: center; line-height: 36px; padding-top: 63px;}
+      > span {color: $goproBlue;}
+    }
   }
 }

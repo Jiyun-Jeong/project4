@@ -293,10 +293,12 @@ p.content {
       width: 18.16px;
       height: 18.36px; }
     #cnt5 .previewText h3 {
+      position: relative;
       color: #fff;
       text-align: center;
       font-weight: 400; }
     #cnt5 .previewText .content {
+      position: relative;
       padding-bottom: 0;
       text-align: center;
       color: #fff;
@@ -308,6 +310,7 @@ p.content {
       -webkit-border-radius: 50px;
       -moz-border-radius: 50px;
       border-radius: 50px;
+      position: relative;
       display: block;
       background: #fff;
       width: 252px;
@@ -374,7 +377,8 @@ p.content {
     margin-top: 93px; }
     #cnt6 .openWaxImg .originalPage {
       position: relative;
-      display: inline-block; }
+      display: inline-block;
+      z-index: 10; }
       #cnt6 .openWaxImg .originalPage > img:first-child {
         padding-bottom: 46px; }
       #cnt6 .openWaxImg .originalPage .circleScore1 {
@@ -387,7 +391,8 @@ p.content {
         color: #fff; }
     #cnt6 .openWaxImg .projectPage {
       position: relative;
-      display: inline-block; }
+      display: inline-block;
+      z-index: 10; }
       #cnt6 .openWaxImg .projectPage > img:first-child {
         padding-bottom: 46px; }
       #cnt6 .openWaxImg .projectPage .circleScore2 {
@@ -398,20 +403,128 @@ p.content {
         display: inline-block;
         font-family: KoreanDREAM3;
         color: #fff; }
-  #cnt6 .decoBlueCircle div {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+  #cnt6 .decoBlueCircle {
+    position: static; }
+    #cnt6 .decoBlueCircle div {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: calc(50% - 289px);
+      width: 590px;
+      height: 590px;
+      border: 1px solid #00E4F3;
+      box-sizing: border-box; }
+    #cnt6 .decoBlueCircle div:nth-child(2) {
+      left: calc(50% - 333px); }
+    #cnt6 .decoBlueCircle div:nth-child(3) {
+      left: calc(50% - 245px); }
+
+/* gopro7 CSS */
+#gopro7 {
+  width: 100%;
+  height: 100vh;
+  background: #F6F6F6;
+  /* .goproSlide1 {
+      position: relative; display: inline-block; margin-left: 0; padding-top: 111px; width: 100%; height: 100vh;
+      .detailText {
+        position: relative; width: 100%; height: 81px; 
+        > img:first-child {
+          position: absolute; top: -15px; left: 5%; width: 18.16px; height: 18.36px;
+        }
+        h3 {display: inline-block; padding: 0 0 0 113px; vertical-align: top;}
+        > p {display: inline-block; padding-left: 105px;}
+        .detailTitle {
+          font-size: 21px; line-height: 32px;
+          strong {font-size: 25px; padding-bottom: 20px;}
+        }
+      }
+      .compare1 {
+        position: relative; font-size: 0; margin-top: 137px;
+        .goproAutoJsWrap {text-align: center;}
+        > img {position: absolute; top: 22%; left: 54%;}
+        > p {font-size: 21px; text-align: center; line-height: 36px; padding-top: 63px;}
+      }
+  } */ }
+  #gopro7 .swiper-slide {
+    position: relative;
+    display: inline-block;
+    margin-left: 0;
+    padding-top: 111px;
+    width: 100%;
+    height: 100vh; }
+    #gopro7 .swiper-slide .detailText {
+      position: relative;
+      width: 100%;
+      height: 81px; }
+      #gopro7 .swiper-slide .detailText > img:first-child {
+        position: absolute;
+        top: -15px;
+        left: 5%;
+        width: 18.16px;
+        height: 18.36px; }
+      #gopro7 .swiper-slide .detailText h3 {
+        display: inline-block;
+        padding: 0 0 0 113px;
+        vertical-align: top; }
+      #gopro7 .swiper-slide .detailText > p {
+        display: inline-block;
+        padding-left: 105px; }
+      #gopro7 .swiper-slide .detailText .detailTitle {
+        font-size: 21px;
+        line-height: 32px; }
+        #gopro7 .swiper-slide .detailText .detailTitle strong {
+          font-size: 25px;
+          padding-bottom: 20px; }
+    #gopro7 .swiper-slide .compare {
+      position: relative;
+      font-size: 0;
+      margin-top: 137px; }
+      #gopro7 .swiper-slide .compare .goproAutoJsWrap {
+        text-align: center; }
+      #gopro7 .swiper-slide .compare > img {
+        position: absolute;
+        top: 22%;
+        left: 54%; }
+      #gopro7 .swiper-slide .compare > p {
+        font-size: 21px;
+        text-align: center;
+        line-height: 36px;
+        padding-top: 63px; }
+  #gopro7 .goproSlide2 .compare2 {
+    position: relative;
+    font-size: 0;
+    margin-top: 137px; }
+    #gopro7 .goproSlide2 .compare2 .goproIframeWrap {
+      text-align: center; }
+    #gopro7 .goproSlide2 .compare2 > img {
+      position: absolute;
+      top: 22%;
+      left: 54%; }
+    #gopro7 .goproSlide2 .compare2 > p {
+      font-size: 21px;
+      text-align: center;
+      line-height: 36px;
+      padding-top: 63px; }
+    #gopro7 .goproSlide2 .compare2 > span {
+      color: #00E4F3; }
+  #gopro7 .goproSlide3 .compare3 .goproKeyJsWrap {
+    text-align: center; }
+  #gopro7 .goproSlide3 .compare3 > img:first-child {
     position: absolute;
-    top: 0;
-    left: calc(50% - 289px);
-    width: 590px;
-    height: 590px;
-    border: 1px solid #00E4F3;
-    box-sizing: border-box; }
-  #cnt6 .decoBlueCircle div:nth-child(2) {
-    left: calc(50% - 333px); }
-  #cnt6 .decoBlueCircle div:nth-child(3) {
-    left: calc(50% - 245px); }
+    top: 22%;
+    left: 75; }
+  #gopro7 .goproSlide3 .compare3 > img:last-child {
+    position: absolute;
+    top: 42%;
+    left: 54%; }
+  #gopro7 .goproSlide3 .compare3 > p {
+    font-size: 21px;
+    text-align: center;
+    line-height: 36px;
+    padding-top: 63px; }
+  #gopro7 .goproSlide3 .compare3 > span {
+    color: #00E4F3; }
 
 /*# sourceMappingURL=gopro.css.map */
