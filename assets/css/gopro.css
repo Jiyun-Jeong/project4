@@ -101,7 +101,8 @@
 h3 {
   font-family: KoreanDREAM5;
   font-size: 28px;
-  padding-bottom: 24px; }
+  padding-bottom: 24px;
+  font-weight: 400; }
 
 p.content {
   font-family: KoreanDREAM3;
@@ -184,7 +185,7 @@ p.content {
     top: calc(50% - 148.5px);
     left: 0; }
     #cnt3 .bgLine > p {
-      font-family: KoreaDREAM5;
+      font-family: KoreaDREAM3;
       font-size: 62px;
       letter-spacing: -0.27px;
       line-height: 79px;
@@ -195,7 +196,7 @@ p.content {
     display: inline; }
     #cnt3 .originalHomepage p {
       display: inline-block;
-      font-family: KoreanDREAM5;
+      font-family: KoreanDREAM3;
       padding: 60px 0 50px 400px; }
     #cnt3 .originalHomepage img {
       position: absolute;
@@ -273,24 +274,34 @@ p.content {
     display: inline-block;
     margin-left: 0;
     position: relative;
-    margin: 128px 0 0;
+    /* margin: 128px 0 0; */
+    padding-top: 128px;
     width: 100%;
     height: 324px;
     overflow: hidden;
     padding-bottom: 222px; }
-    #cnt5 .previewText > img:first-child {
+    #cnt5 .previewText .pageBlurImg {
       position: absolute;
-      top: -15px;
-      left: 46%;
+      top: 80%;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+    #cnt5 .previewText > img:nth-child(2) {
+      position: absolute;
+      top: 17%;
+      left: 42%;
       width: 18.16px;
       height: 18.36px; }
     #cnt5 .previewText h3 {
       color: #fff;
-      text-align: center; }
+      text-align: center;
+      font-weight: 400; }
     #cnt5 .previewText .content {
       padding-bottom: 0;
       text-align: center;
-      color: #fff; }
+      color: #fff;
+      font-size: 24px;
+      line-height: 34px; }
       #cnt5 .previewText .content span {
         color: #16aec0; }
     #cnt5 .previewText a {
@@ -307,12 +318,6 @@ p.content {
       color: #000;
       text-align: center;
       margin: 151px auto 128px; }
-    #cnt5 .previewText .pageBlurImg {
-      position: absolute;
-      top: 35%;
-      left: 0;
-      right: 0;
-      margin: 0 auto; }
   #cnt5 .deviceImg {
     position: relative;
     width: 100%;
@@ -337,21 +342,76 @@ p.content {
     position: relative;
     margin: 128px 0 0;
     width: 100%;
-    height: 324px;
-    overflow: hidden;
-    padding-bottom: 222px; }
+    height: 159px;
+    /* padding-bottom: 222px; */ }
     #cnt6 .openWax > img:first-child {
       position: absolute;
       top: -15px;
-      left: 46%;
+      left: 36.5%;
       width: 18.16px;
       height: 18.36px; }
     #cnt6 .openWax h3 {
       color: #fff;
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 50px; }
     #cnt6 .openWax .content {
       padding-bottom: 0;
       text-align: center;
-      color: #fff; }
+      color: #fff;
+      font-size: 24px;
+      line-height: 34px; }
+  #cnt6 .openWaxImg {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1297px;
+    height: 590px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 93px; }
+    #cnt6 .openWaxImg .originalPage {
+      position: relative;
+      display: inline-block; }
+      #cnt6 .openWaxImg .originalPage > img:first-child {
+        padding-bottom: 46px; }
+      #cnt6 .openWaxImg .originalPage .circleScore1 {
+        position: absolute;
+        top: -10%;
+        left: 5%; }
+      #cnt6 .openWaxImg .originalPage span {
+        display: inline-block;
+        font-family: KoreanDREAM3;
+        color: #fff; }
+    #cnt6 .openWaxImg .projectPage {
+      position: relative;
+      display: inline-block; }
+      #cnt6 .openWaxImg .projectPage > img:first-child {
+        padding-bottom: 46px; }
+      #cnt6 .openWaxImg .projectPage .circleScore2 {
+        position: absolute;
+        top: -10%;
+        left: 5%; }
+      #cnt6 .openWaxImg .projectPage span {
+        display: inline-block;
+        font-family: KoreanDREAM3;
+        color: #fff; }
+  #cnt6 .decoBlueCircle div {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 289px);
+    width: 590px;
+    height: 590px;
+    border: 1px solid #00E4F3;
+    box-sizing: border-box; }
+  #cnt6 .decoBlueCircle div:nth-child(2) {
+    left: calc(50% - 333px); }
+  #cnt6 .decoBlueCircle div:nth-child(3) {
+    left: calc(50% - 245px); }
 
 /*# sourceMappingURL=gopro.css.map */
