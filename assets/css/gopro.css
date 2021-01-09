@@ -169,6 +169,7 @@ p.content {
       #cnt2 .designRight .designTypo img {
         padding-left: 17px; }
 
+/* cnt3 CSS */
 #cnt3 {
   position: relative;
   width: 100%;
@@ -219,6 +220,7 @@ p.content {
       #cnt3 .analysisText p span {
         color: #16aec0; }
 
+/* cnt4 CSS */
 #cnt4 {
   position: relative;
   width: 100%;
@@ -261,5 +263,95 @@ p.content {
       color: #c4c4c4;
       text-align: center;
       padding-top: 77px; }
+
+#cnt5 {
+  position: relative;
+  width: 100%;
+  height: 125.9vh;
+  background: #000000; }
+  #cnt5 .previewText {
+    display: inline-block;
+    margin-left: 0;
+    position: relative;
+    margin: 128px 0 0;
+    width: 100%;
+    height: 324px;
+    overflow: hidden;
+    padding-bottom: 222px; }
+    #cnt5 .previewText > img:first-child {
+      position: absolute;
+      top: -15px;
+      left: 46%;
+      width: 18.16px;
+      height: 18.36px; }
+    #cnt5 .previewText h3 {
+      color: #fff;
+      text-align: center; }
+    #cnt5 .previewText .content {
+      padding-bottom: 0;
+      text-align: center;
+      color: #fff; }
+      #cnt5 .previewText .content span {
+        color: #16aec0; }
+    #cnt5 .previewText a {
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+      display: block;
+      background: #fff;
+      width: 252px;
+      height: 74px;
+      line-height: 74px;
+      font-family: "Fugaz one";
+      font-size: 24px;
+      color: #000;
+      text-align: center;
+      margin: 151px auto 128px; }
+    #cnt5 .previewText .pageBlurImg {
+      position: absolute;
+      top: 35%;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+  #cnt5 .deviceImg {
+    position: relative;
+    width: 100%;
+    height: 686px;
+    background: #ffffff; }
+    #cnt5 .deviceImg img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+
+/* cnt6 CSS */
+#cnt6 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #000000; }
+  #cnt6 .openWax {
+    display: inline-block;
+    margin-left: 0;
+    position: relative;
+    margin: 128px 0 0;
+    width: 100%;
+    height: 324px;
+    overflow: hidden;
+    padding-bottom: 222px; }
+    #cnt6 .openWax > img:first-child {
+      position: absolute;
+      top: -15px;
+      left: 46%;
+      width: 18.16px;
+      height: 18.36px; }
+    #cnt6 .openWax h3 {
+      color: #fff;
+      text-align: center; }
+    #cnt6 .openWax .content {
+      padding-bottom: 0;
+      text-align: center;
+      color: #fff; }
 
 /*# sourceMappingURL=gopro.css.map */

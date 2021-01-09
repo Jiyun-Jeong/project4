@@ -90,6 +90,7 @@ p.content {
   }
 }
 
+/* cnt3 CSS */
 #cnt3 {
   position: relative; width: 100%; height: 100vh; overflow: hidden; background: #F6F6F6; 
   .bgLine {
@@ -117,6 +118,7 @@ p.content {
   }
 }
 
+/* cnt4 CSS */
 #cnt4 {
   position: relative; width: 100%; height: 100vh; overflow: hidden; background: #F6F6F6; 
   .wireframe {
@@ -135,5 +137,44 @@ p.content {
     span {
       display: block; font-family: KoreaDREAM5; font-size: 22px; color: #c4c4c4; text-align: center; padding-top: 77px;
     }
+  }
+}
+
+#cnt5 {
+  position: relative; width: 100%; height: 125.9vh; background: #000000;
+  .previewText {
+    display: inline-block; margin-left: 0; position: relative; margin: 128px 0 0; width: 100%; height: 324px; overflow: hidden; padding-bottom: 222px;
+    > img:first-child {
+      position: absolute; top: -15px; left: 46%; width: 18.16px; height: 18.36px;
+    }
+    h3 {color: #fff; text-align: center;}
+    .content {
+      padding-bottom: 0; text-align: center; color: #fff; 
+      span {color: #16aec0;}
+    }
+    a {
+      @include border-radius(50px);
+      display: block; background: #fff; width: 252px; height: 74px; line-height: 74px; font-family: "Fugaz one"; font-size: 24px; color: #000; text-align: center; margin: 151px auto 128px; 
+    }
+    .pageBlurImg {
+      position: absolute; top: 35%; left: 0; right: 0; margin: 0 auto;
+    }
+  }
+  .deviceImg {
+    position: relative; width: 100%; height: 686px; background: #ffffff;
+    img {position: absolute; bottom: 0; left: 0; right: 0; margin: 0 auto;}
+  }
+}
+
+/* cnt6 CSS */
+#cnt6 {
+  position: relative; width: 100%; height: 100vh; background: #000000;
+  .openWax {
+    display: inline-block; margin-left: 0; position: relative; margin: 128px 0 0; width: 100%; height: 324px; overflow: hidden; padding-bottom: 222px;
+    > img:first-child {
+      position: absolute; top: -15px; left: 46%; width: 18.16px; height: 18.36px;
+    }
+    h3 {color: #fff; text-align: center;}
+    .content {padding-bottom: 0; text-align: center; color: #fff;}
   }
 }
