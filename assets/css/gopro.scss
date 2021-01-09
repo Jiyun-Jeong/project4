@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import "_var", "_mixin";
 
-#cnt1 {
+#gopro1 {
   position: relative; width: 100%; height: 150vh; background: linear-gradient($goproBlue,#005B61, #011D1F, #000000); 
   .project1Main {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
@@ -46,14 +46,14 @@
   }
 }
 
-/* cnt2 common */
+/* gopro2 common */
 h3 {font-family: KoreanDREAM5; font-size: 28px; padding-bottom: 24px; font-weight: 400;}
 p.content {
   font-family: KoreanDREAM3; font-size: 15px; line-height: 22px; display: block; padding-bottom: 130px;
 }
 
-/* cnt2 CSS */
-#cnt2 {
+/* gopro2 CSS */
+#gopro2 {
   position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; background: #F6F6F6; width: 100%; height: 100vh;
   .designLeft {
     margin-left: 167px; margin-top: 141px; position: relative;
@@ -90,8 +90,8 @@ p.content {
   }
 }
 
-/* cnt3 CSS */
-#cnt3 {
+/* gopro3 CSS */
+#gopro3 {
   position: relative; width: 100%; height: 100vh; overflow: hidden; background: #F6F6F6; 
   .bgLine {
     position: absolute; width: 100%; height: 302px; background: $goproBlue; top: calc(50% - 148.5px); left: 0;
@@ -118,8 +118,8 @@ p.content {
   }
 }
 
-/* cnt4 CSS */
-#cnt4 {
+/* gopro4 CSS */
+#gopro4 {
   position: relative; width: 100%; height: 100vh; overflow: hidden; background: #F6F6F6; 
   .wireframe {
     display: inline-block; margin-left: 0; position: relative; margin: 80px 0 222px; width: 100%;
@@ -140,7 +140,7 @@ p.content {
   }
 }
 
-#cnt5 {
+#gopro5 {
   position: relative; width: 100%; height: 125.9vh; background: #000000;
   .previewText {
     display: inline-block; margin-left: 0; position: relative; /* margin: 128px 0 0; */ padding-top: 128px; width: 100%; height: 324px; overflow: hidden; padding-bottom: 222px;
@@ -168,8 +168,8 @@ p.content {
   }
 }
 
-/* cnt6 CSS */
-#cnt6 {
+/* gopro6 CSS */
+#gopro6 {
   position: relative; width: 100%; height: 100vh; background: #000000;
   .openWax {
     display: inline-block; margin-left: 0; position: relative; margin: 128px 0 0; width: 100%; height: 159px; /* padding-bottom: 222px; */

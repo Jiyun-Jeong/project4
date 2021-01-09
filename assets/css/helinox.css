@@ -1,0 +1,168 @@
+#helinox1 {
+  position: relative;
+  width: 100%;
+  height: 150vh;
+  background: #000; }
+  #helinox1 .project2Main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    #helinox1 .project2Main .mainCircleWrap {
+      position: relative;
+      width: 670px;
+      height: 670px;
+      margin: 0 auto;
+      /* .empty {
+       @include border-radius(50%);
+       width: 670px; height: 670px; border: 1px solid #fff; position: absolute; 
+      } */ }
+      #helinox1 .project2Main .mainCircleWrap div.bigMainCircle {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        margin: 217px auto 0;
+        overflow: hidden; }
+        #helinox1 .project2Main .mainCircleWrap div.bigMainCircle img {
+          position: absolute;
+          top: -20%;
+          left: 14%; }
+        #helinox1 .project2Main .mainCircleWrap div.bigMainCircle::before {
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          position: absolute;
+          border: 1px solid #fff;
+          top: 0;
+          left: 420px; }
+    #helinox1 .project2Main p {
+      position: absolute;
+      display: fixed;
+      top: 455px;
+      right: 106px;
+      font-family: "Fugaz one";
+      font-size: 130px;
+      color: #fff; }
+  #helinox1 .simpleExplain {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: 190px; }
+    #helinox1 .simpleExplain .sicssor {
+      position: relative;
+      height: 224px;
+      line-height: 224px;
+      width: 100%; }
+      #helinox1 .simpleExplain .sicssor::before {
+        content: "";
+        clear: both;
+        position: absolute;
+        border-top: 3px dashed #fff;
+        top: -2px;
+        right: 0;
+        width: 97%; }
+      #helinox1 .simpleExplain .sicssor img {
+        position: absolute;
+        top: -32px;
+        left: 0;
+        fill: #fff; }
+      #helinox1 .simpleExplain .sicssor img.helinoxLogo {
+        position: absolute;
+        top: 58px;
+        left: 265px;
+        width: 367px;
+        height: 79px; }
+      #helinox1 .simpleExplain .sicssor .explainText {
+        float: right;
+        width: 1020.5px;
+        height: 114.5px; }
+        #helinox1 .simpleExplain .sicssor .explainText span {
+          display: inline-block;
+          font-size: 17px;
+          font-family: "Fugaz one";
+          padding-right: 87px;
+          color: #fff;
+          line-height: 0; }
+        #helinox1 .simpleExplain .sicssor .explainText p {
+          display: block;
+          text-align: left;
+          font-size: 17px;
+          font-family: "Fugaz one";
+          color: #fff; }
+
+/* helinox2 common */
+h3 {
+  font-family: KoreanDREAM5;
+  font-size: 28px;
+  padding-bottom: 24px;
+  font-weight: 400; }
+
+p.content {
+  font-family: KoreanDREAM3;
+  font-size: 15px;
+  line-height: 22px;
+  display: block;
+  padding-bottom: 130px; }
+
+/* helinox2 CSS */
+#helinox2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: #F6F6F6;
+  width: 100%;
+  height: 100vh; }
+  #helinox2 .designLeft {
+    margin-left: 167px;
+    margin-top: 141px;
+    position: relative; }
+    #helinox2 .designLeft img:first-child {
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      width: 18.16px;
+      height: 18.36px; }
+  #helinox2 .designRight {
+    margin-left: 268px;
+    margin-top: 141px; }
+    #helinox2 .designRight .designColor > p {
+      padding-bottom: 29px; }
+    #helinox2 .designRight .designColor .colorWrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding-left: 17px; }
+      #helinox2 .designRight .designColor .colorWrap .colorCubeWrap {
+        margin-right: 45px; }
+      #helinox2 .designRight .designColor .colorWrap .colorCube {
+        width: 206px;
+        height: 101px; }
+        #helinox2 .designRight .designColor .colorWrap .colorCube + div {
+          padding-right: 45px; }
+      #helinox2 .designRight .designColor .colorWrap .mainBlue {
+        background: #1C98D6; }
+      #helinox2 .designRight .designColor .colorWrap .subBlue {
+        background: #333; }
+      #helinox2 .designRight .designColor .colorWrap .mainGrey1 {
+        background: #505050; }
+      #helinox2 .designRight .designColor .colorWrap p {
+        font-family: KoreanDREAM3;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.05em; }
+    #helinox2 .designRight .designTypo {
+      margin-top: 141px; }
+      #helinox2 .designRight .designTypo > p {
+        padding-bottom: 29px; }
+      #helinox2 .designRight .designTypo img {
+        padding-left: 17px; }
+
+/*# sourceMappingURL=helinox.css.map */

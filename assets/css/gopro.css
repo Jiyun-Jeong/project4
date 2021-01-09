@@ -1,15 +1,15 @@
-#cnt1 {
+#gopro1 {
   position: relative;
   width: 100%;
   height: 150vh;
   background: linear-gradient(#00E4F3, #005B61, #011D1F, #000000); }
-  #cnt1 .project1Main {
+  #gopro1 .project1Main {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; }
-    #cnt1 .project1Main .mainCircleWrap {
+    #gopro1 .project1Main .mainCircleWrap {
       position: relative;
       width: 670px;
       height: 670px;
@@ -18,7 +18,7 @@
        @include border-radius(50%);
        width: 670px; height: 670px; border: 1px solid #fff; position: absolute; 
       } */ }
-      #cnt1 .project1Main .mainCircleWrap div.bigMainCircle {
+      #gopro1 .project1Main .mainCircleWrap div.bigMainCircle {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
@@ -28,11 +28,11 @@
         background: #fff;
         margin: 217px auto 0;
         overflow: hidden; }
-        #cnt1 .project1Main .mainCircleWrap div.bigMainCircle img {
+        #gopro1 .project1Main .mainCircleWrap div.bigMainCircle img {
           position: absolute;
           top: 17%;
           left: -20%; }
-        #cnt1 .project1Main .mainCircleWrap div.bigMainCircle::before {
+        #gopro1 .project1Main .mainCircleWrap div.bigMainCircle::before {
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
@@ -40,7 +40,7 @@
           border: 1px solid #fff;
           top: 0;
           left: 420px; }
-    #cnt1 .project1Main p {
+    #gopro1 .project1Main p {
       position: absolute;
       display: fixed;
       top: 455px;
@@ -48,19 +48,19 @@
       font-family: "Fugaz one";
       font-size: 130px;
       color: #fff; }
-  #cnt1 .simpleExplain {
+  #gopro1 .simpleExplain {
     position: absolute;
     bottom: 0;
     left: 0;
     background: #000;
     width: 100%;
     height: 190px; }
-    #cnt1 .simpleExplain .sicssor {
+    #gopro1 .simpleExplain .sicssor {
       position: relative;
       height: 224px;
       line-height: 224px;
       width: 100%; }
-      #cnt1 .simpleExplain .sicssor::before {
+      #gopro1 .simpleExplain .sicssor::before {
         content: "";
         clear: both;
         position: absolute;
@@ -68,36 +68,36 @@
         top: -2px;
         right: 0;
         width: 97%; }
-      #cnt1 .simpleExplain .sicssor img {
+      #gopro1 .simpleExplain .sicssor img {
         position: absolute;
         top: -32px;
         left: 0;
         fill: #fff; }
-      #cnt1 .simpleExplain .sicssor img.goproLogo {
+      #gopro1 .simpleExplain .sicssor img.goproLogo {
         position: absolute;
         top: 30.5px;
         left: 241px;
         width: 283px;
         height: 161px; }
-      #cnt1 .simpleExplain .sicssor .explainText {
+      #gopro1 .simpleExplain .sicssor .explainText {
         float: right;
         width: 1020.5px;
         height: 114.5px; }
-        #cnt1 .simpleExplain .sicssor .explainText span {
+        #gopro1 .simpleExplain .sicssor .explainText span {
           display: inline-block;
           font-size: 17px;
           font-family: "Fugaz one";
           padding-right: 87px;
           color: #fff;
           line-height: 0; }
-        #cnt1 .simpleExplain .sicssor .explainText p {
+        #gopro1 .simpleExplain .sicssor .explainText p {
           display: block;
           text-align: left;
           font-size: 17px;
           font-family: "Fugaz one";
           color: #fff; }
 
-/* cnt2 common */
+/* gopro2 common */
 h3 {
   font-family: KoreanDREAM5;
   font-size: 28px;
@@ -111,8 +111,8 @@ p.content {
   display: block;
   padding-bottom: 130px; }
 
-/* cnt2 CSS */
-#cnt2 {
+/* gopro2 CSS */
+#gopro2 {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -120,134 +120,134 @@ p.content {
   background: #F6F6F6;
   width: 100%;
   height: 100vh; }
-  #cnt2 .designLeft {
+  #gopro2 .designLeft {
     margin-left: 167px;
     margin-top: 141px;
     position: relative; }
-    #cnt2 .designLeft img:first-child {
+    #gopro2 .designLeft img:first-child {
       position: absolute;
       top: -15px;
       left: -15px;
       width: 18.16px;
       height: 18.36px; }
-    #cnt2 .designLeft img:last-child {
+    #gopro2 .designLeft img:last-child {
       width: 360px;
       height: 500px; }
-  #cnt2 .designRight {
+  #gopro2 .designRight {
     margin-left: 268px;
     margin-top: 141px; }
-    #cnt2 .designRight .designColor > p {
+    #gopro2 .designRight .designColor > p {
       padding-bottom: 29px; }
-    #cnt2 .designRight .designColor .colorWrap {
+    #gopro2 .designRight .designColor .colorWrap {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       padding-left: 17px; }
-      #cnt2 .designRight .designColor .colorWrap .colorCubeWrap {
+      #gopro2 .designRight .designColor .colorWrap .colorCubeWrap {
         margin-right: 45px; }
-      #cnt2 .designRight .designColor .colorWrap .colorCube {
+      #gopro2 .designRight .designColor .colorWrap .colorCube {
         width: 206px;
         height: 101px; }
-        #cnt2 .designRight .designColor .colorWrap .colorCube + div {
+        #gopro2 .designRight .designColor .colorWrap .colorCube + div {
           padding-right: 45px; }
-      #cnt2 .designRight .designColor .colorWrap .mainBlue {
+      #gopro2 .designRight .designColor .colorWrap .mainBlue {
         background: #00E4F3; }
-      #cnt2 .designRight .designColor .colorWrap .subBlue {
+      #gopro2 .designRight .designColor .colorWrap .subBlue {
         background: #096A8A; }
-      #cnt2 .designRight .designColor .colorWrap .mainGrey1 {
+      #gopro2 .designRight .designColor .colorWrap .mainGrey1 {
         background: #505050; }
-      #cnt2 .designRight .designColor .colorWrap .mainGrey2 {
+      #gopro2 .designRight .designColor .colorWrap .mainGrey2 {
         background: #c2c2c2; }
-      #cnt2 .designRight .designColor .colorWrap p {
+      #gopro2 .designRight .designColor .colorWrap p {
         font-family: KoreanDREAM3;
         font-size: 15px;
         line-height: 24px;
         letter-spacing: 0.05em; }
-    #cnt2 .designRight .designTypo {
+    #gopro2 .designRight .designTypo {
       margin-top: 141px; }
-      #cnt2 .designRight .designTypo > p {
+      #gopro2 .designRight .designTypo > p {
         padding-bottom: 29px; }
-      #cnt2 .designRight .designTypo img {
+      #gopro2 .designRight .designTypo img {
         padding-left: 17px; }
 
-/* cnt3 CSS */
-#cnt3 {
+/* gopro3 CSS */
+#gopro3 {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   background: #F6F6F6; }
-  #cnt3 .bgLine {
+  #gopro3 .bgLine {
     position: absolute;
     width: 100%;
     height: 302px;
     background: #00E4F3;
     top: calc(50% - 148.5px);
     left: 0; }
-    #cnt3 .bgLine > p {
+    #gopro3 .bgLine > p {
       font-family: KoreaDREAM3;
       font-size: 62px;
       letter-spacing: -0.27px;
       line-height: 79px;
       font-weight: 900;
       padding: 73px 0 73px 1066px; }
-  #cnt3 .originalHomepage {
+  #gopro3 .originalHomepage {
     position: relative;
     display: inline; }
-    #cnt3 .originalHomepage p {
+    #gopro3 .originalHomepage p {
       display: inline-block;
       font-family: KoreanDREAM3;
       padding: 60px 0 50px 400px; }
-    #cnt3 .originalHomepage img {
+    #gopro3 .originalHomepage img {
       position: absolute;
       top: 126px;
       left: 189px;
       width: 503px; }
-  #cnt3 .analysisText {
+  #gopro3 .analysisText {
     position: relative;
     width: 690px;
     height: 171px;
     float: right;
     padding-right: 206px;
     margin-top: 168px; }
-    #cnt3 .analysisText img {
+    #gopro3 .analysisText img {
       position: absolute;
       top: -15px;
       left: -15px;
       width: 18.16px;
       height: 18.36px; }
-    #cnt3 .analysisText p {
+    #gopro3 .analysisText p {
       padding-bottom: 0; }
-      #cnt3 .analysisText p span {
+      #gopro3 .analysisText p span {
         color: #16aec0; }
 
-/* cnt4 CSS */
-#cnt4 {
+/* gopro4 CSS */
+#gopro4 {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   background: #F6F6F6; }
-  #cnt4 .wireframe {
+  #gopro4 .wireframe {
     display: inline-block;
     margin-left: 0;
     position: relative;
     margin: 80px 0 222px;
     width: 100%; }
-    #cnt4 .wireframe > img:first-child {
+    #gopro4 .wireframe > img:first-child {
       position: absolute;
       top: -15px;
       left: 44.5%;
       width: 18.16px;
       height: 18.36px; }
-    #cnt4 .wireframe h3 {
+    #gopro4 .wireframe h3 {
       text-align: center; }
-    #cnt4 .wireframe .content {
+    #gopro4 .wireframe .content {
       padding-bottom: 0;
       text-align: center; }
-      #cnt4 .wireframe .content span {
+      #gopro4 .wireframe .content span {
         color: #16aec0; }
-  #cnt4 .wireframeWrap {
+  #gopro4 .wireframeWrap {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -257,7 +257,7 @@ p.content {
     height: 476px;
     text-align: center;
     margin: 0 auto; }
-    #cnt4 .wireframeWrap span {
+    #gopro4 .wireframeWrap span {
       display: block;
       font-family: KoreaDREAM5;
       font-size: 22px;
@@ -265,12 +265,12 @@ p.content {
       text-align: center;
       padding-top: 77px; }
 
-#cnt5 {
+#gopro5 {
   position: relative;
   width: 100%;
   height: 125.9vh;
   background: #000000; }
-  #cnt5 .previewText {
+  #gopro5 .previewText {
     display: inline-block;
     margin-left: 0;
     position: relative;
@@ -280,33 +280,33 @@ p.content {
     height: 324px;
     overflow: hidden;
     padding-bottom: 222px; }
-    #cnt5 .previewText .pageBlurImg {
+    #gopro5 .previewText .pageBlurImg {
       position: absolute;
       top: 80%;
       left: 0;
       right: 0;
       margin: 0 auto; }
-    #cnt5 .previewText > img:nth-child(2) {
+    #gopro5 .previewText > img:nth-child(2) {
       position: absolute;
       top: 17%;
       left: 42%;
       width: 18.16px;
       height: 18.36px; }
-    #cnt5 .previewText h3 {
+    #gopro5 .previewText h3 {
       position: relative;
       color: #fff;
       text-align: center;
       font-weight: 400; }
-    #cnt5 .previewText .content {
+    #gopro5 .previewText .content {
       position: relative;
       padding-bottom: 0;
       text-align: center;
       color: #fff;
       font-size: 24px;
       line-height: 34px; }
-      #cnt5 .previewText .content span {
+      #gopro5 .previewText .content span {
         color: #16aec0; }
-    #cnt5 .previewText a {
+    #gopro5 .previewText a {
       -webkit-border-radius: 50px;
       -moz-border-radius: 50px;
       border-radius: 50px;
@@ -321,25 +321,25 @@ p.content {
       color: #000;
       text-align: center;
       margin: 151px auto 128px; }
-  #cnt5 .deviceImg {
+  #gopro5 .deviceImg {
     position: relative;
     width: 100%;
     height: 686px;
     background: #ffffff; }
-    #cnt5 .deviceImg img {
+    #gopro5 .deviceImg img {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       margin: 0 auto; }
 
-/* cnt6 CSS */
-#cnt6 {
+/* gopro6 CSS */
+#gopro6 {
   position: relative;
   width: 100%;
   height: 100vh;
   background: #000000; }
-  #cnt6 .openWax {
+  #gopro6 .openWax {
     display: inline-block;
     margin-left: 0;
     position: relative;
@@ -347,23 +347,23 @@ p.content {
     width: 100%;
     height: 159px;
     /* padding-bottom: 222px; */ }
-    #cnt6 .openWax > img:first-child {
+    #gopro6 .openWax > img:first-child {
       position: absolute;
       top: -15px;
       left: 36.5%;
       width: 18.16px;
       height: 18.36px; }
-    #cnt6 .openWax h3 {
+    #gopro6 .openWax h3 {
       color: #fff;
       text-align: center;
       padding-bottom: 50px; }
-    #cnt6 .openWax .content {
+    #gopro6 .openWax .content {
       padding-bottom: 0;
       text-align: center;
       color: #fff;
       font-size: 24px;
       line-height: 34px; }
-  #cnt6 .openWaxImg {
+  #gopro6 .openWaxImg {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -375,37 +375,37 @@ p.content {
     text-align: center;
     margin: 0 auto;
     margin-top: 93px; }
-    #cnt6 .openWaxImg .originalPage {
+    #gopro6 .openWaxImg .originalPage {
       position: relative;
       display: inline-block;
       z-index: 10; }
-      #cnt6 .openWaxImg .originalPage > img:first-child {
+      #gopro6 .openWaxImg .originalPage > img:first-child {
         padding-bottom: 46px; }
-      #cnt6 .openWaxImg .originalPage .circleScore1 {
+      #gopro6 .openWaxImg .originalPage .circleScore1 {
         position: absolute;
         top: -10%;
         left: 5%; }
-      #cnt6 .openWaxImg .originalPage span {
+      #gopro6 .openWaxImg .originalPage span {
         display: inline-block;
         font-family: KoreanDREAM3;
         color: #fff; }
-    #cnt6 .openWaxImg .projectPage {
+    #gopro6 .openWaxImg .projectPage {
       position: relative;
       display: inline-block;
       z-index: 10; }
-      #cnt6 .openWaxImg .projectPage > img:first-child {
+      #gopro6 .openWaxImg .projectPage > img:first-child {
         padding-bottom: 46px; }
-      #cnt6 .openWaxImg .projectPage .circleScore2 {
+      #gopro6 .openWaxImg .projectPage .circleScore2 {
         position: absolute;
         top: -10%;
         left: 5%; }
-      #cnt6 .openWaxImg .projectPage span {
+      #gopro6 .openWaxImg .projectPage span {
         display: inline-block;
         font-family: KoreanDREAM3;
         color: #fff; }
-  #cnt6 .decoBlueCircle {
+  #gopro6 .decoBlueCircle {
     position: static; }
-    #cnt6 .decoBlueCircle div {
+    #gopro6 .decoBlueCircle div {
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
@@ -416,9 +416,9 @@ p.content {
       height: 590px;
       border: 1px solid #00E4F3;
       box-sizing: border-box; }
-    #cnt6 .decoBlueCircle div:nth-child(2) {
+    #gopro6 .decoBlueCircle div:nth-child(2) {
       left: calc(50% - 333px); }
-    #cnt6 .decoBlueCircle div:nth-child(3) {
+    #gopro6 .decoBlueCircle div:nth-child(3) {
       left: calc(50% - 245px); }
 
 /* gopro7 CSS */
