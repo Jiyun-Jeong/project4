@@ -1,4 +1,3 @@
-@charset "UTF-8";
 #helinox1 {
   position: relative;
   width: 100%;
@@ -271,6 +270,9 @@ p.content {
   margin-left: 0;
   padding-top: 111px; }
   #helinox5 .deviceDetail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
     height: 81px; }
@@ -294,6 +296,23 @@ p.content {
       line-height: 32px; }
       #helinox5 .deviceDetail .deviceExplain span {
         color: #1c98d6; }
+  #helinox5 .mockup {
+    margin: 130px auto;
+    width: 822px; }
+  #helinox5 .helinoxMockups {
+    font-size: 0; }
+    #helinox5 .helinoxMockups .mockupBg {
+      width: 411px;
+      height: 308px;
+      display: inline-block; }
+    #helinox5 .helinoxMockups .hand1Bg {
+      background: #1c98d6; }
+    #helinox5 .helinoxMockups .hand2Bg {
+      background: #ffffff; }
+    #helinox5 .helinoxMockups .hand3Bg {
+      background: #fff; }
+    #helinox5 .helinoxMockups .hand4Bg {
+      background: #1c98d6; }
 
 /* helinox6 CSS */
 #helinox6 {
@@ -301,8 +320,7 @@ p.content {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: #000;
-  /* 이미지들 넣기 */ }
+  background: #000; }
   #helinox6 .mainPagePreview {
     position: relative;
     width: 690px;
@@ -321,6 +339,11 @@ p.content {
     #helinox6 .mainPagePreview p {
       color: #fff;
       padding-bottom: 0; }
+  #helinox6 .mainPreviewImgs {
+    position: relative; }
+    #helinox6 .mainPreviewImgs img {
+      position: absolute;
+      right: -20%; }
   #helinox6 a {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -345,19 +368,18 @@ p.content {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: #000;
-  /* 이미지들 넣기 */ }
+  background: #000; }
   #helinox8 .aboutPagePreview {
     position: relative;
-    width: 690px;
+    width: 550px;
     height: 171px;
-    float: left;
-    padding-left: 206px;
-    margin-top: 168px; }
+    float: right;
+    padding-right: 10%;
+    margin-top: 34%; }
     #helinox8 .aboutPagePreview img {
       position: absolute;
       top: -15px;
-      left: 21%;
+      left: -2%;
       width: 18.16px;
       height: 18.36px; }
     #helinox8 .aboutPagePreview h3 {
@@ -367,13 +389,20 @@ p.content {
       padding-bottom: 0; }
       #helinox8 .aboutPagePreview p span {
         color: #1c98d6; }
+  #helinox8 .aboutPreviewImg {
+    font-size: 0;
+    width: 924px;
+    height: 100%;
+    padding-left: 100px; }
+    #helinox8 .aboutPreviewImg img + img {
+      padding-left: 25px; }
   #helinox8 a {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
     position: absolute;
     bottom: 75px;
-    left: 150px;
+    right: 25%;
     display: block;
     background: #fff;
     width: 252px;
