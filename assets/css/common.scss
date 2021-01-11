@@ -37,6 +37,16 @@
        url("../font/DXPnM-KSCpc-EUC-H.woff") format("woff"),
        url("../font/DXPnM-KSCpc-EUC-H.ttf") format("truetype");
 }
+@font-face {
+  font-family: Seongsil;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../font/Seongsil.eot");
+  src: url("../font/Seongsil.eot#iefix") format("embedded-opentype"),
+       url("../font/Seongsil.woff2") format("woff2"),
+       url("../font/Seongsil.woff") format("woff"),
+       url("../font/Seongsil.ttf") format("truetype");
+}
 
 /* Tag reset CSS */
 body, div, ul, h1, h2, h3, h4, h5, h6, button, p {margin: 0;padding: 0;}
@@ -68,7 +78,7 @@ body {
 #wrap {
   position: relative; overflow: hidden;
   #header {
-    .logo {display: none; position: absolute; top: 29px; left: 32px;width: 131px;height: 77px;}
+    .logo {/* display: none; */ position: absolute; top: 29px; left: 32px;width: 131px;height: 77px;}
     .util {
       position: absolute; top: 17px; right: 22px; 
       > .btn_open img {width: 44px;height: 44px;cursor: pointer; }

@@ -113,12 +113,12 @@
         .slide:nth-child(odd) {
             background: $lightyellow;
             .diary {
-                position: absolute; top: 0; right: 250px; width: 31.25vw; height: 41.6667vw; background: #fff; font-family: DXPnM; font-size: 23px; text-align: right;
+                position: absolute; top: 0; right: 250px; width: 31.25vw; height: 41.6667vw; background: #fff; font-family: Seongsil; font-size: 23px; text-align: right;
                 strong {
-                    display: block; font-size: 25px; padding-top: 53px; padding-right: 55px;
+                    display: block; font-size: 38px; padding-top: 53px; padding-right: 55px;
                 }
                 p {
-                    padding-top: 42px; padding-right: 55px;
+                    padding-top: 42px; padding-right: 55px; font-size: 32px; line-height: 41px;
                     &::before {
                         content: ""; position: absolute; clear: both; width: 100%; height: 1px; background: #444242;
                     }
@@ -145,12 +145,12 @@
             .secondDiary {
                 position: relative; margin-top: 188px; padding-left: 24.479vw/* 470px */; height: 46.3542vw/* 890px */;
                 .diary {
-                    position: absolute; top: 0; left: 470px; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; background: #fff; font-family: DXPnM; font-size: 23px; text-align: left;
+                    position: absolute; top: 0; left: 470px; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; background: #fff; font-family: Seongsil; font-size: 23px; text-align: left;
                     strong {
-                        display: block; font-size: 25px; padding-top: 53px; padding-left: 55px;
+                        display: block; font-size: 38px; padding-top: 53px; padding-left: 55px;
                     }
                     p {
-                        padding-top: 42px; padding-left: 55px;
+                        padding-top: 42px; padding-left: 55px; font-size: 32px; line-height: 41px;
                         &::before {
                             content: ""; position: absolute; clear: both; width: 50%; height: 1px; background: #444242;
                         }
@@ -159,7 +159,16 @@
                         position: absolute; bottom: 0; left: 0; padding-left: 17px; padding-bottom: 17px;
                     }
                 }
-                .diaryImg {position: absolute; top: 0; right: 250px; width: 26.25vw; height: 41.6667vw/* 800px */;}
+                .diaryDeco {
+                    position: absolute; top: 0; right: 250px; width: 31.25vw; height: 41.6667vw; background: #fff; 
+                    .diaryImg {
+                        position: absolute; top: 73px; right: 0; left: 0; margin: 0 auto;
+                    }
+                    .decoTape1 {position: absolute; top: 18px; right: 31px;}
+                    .decoTape2 {position: absolute; bottom: 18px; left: 31px;}
+                    .drawnArrow {position: absolute; bottom: 40%; right: -9%;}
+                    .handwrite {position: absolute; bottom: 52%; right: -20%;}
+                }
             }
         }
         .slide3 {
@@ -172,13 +181,12 @@
                 }
             }
             .diary {
-                .bold {font-size: 29px !important; padding-top: 0 !important; padding-right: 0 !important; }
+                .bold {font-size: 36px !important; padding-top: 0 !important; padding-right: 0 !important; }
             }
         }
 
     }
 }
-
 
 #cnt4 {
     /* position: relative;  */width: 100%; height: 67.7083vw/* 1300px */; background: $lightpurple;
@@ -353,6 +361,80 @@
 }
 
 /* Works page */
-#work1 {
-    background: $lightpurple;
+
+/* common class */
+#work {
+    background: $lightpurple; position: relative; 
+    .workSwiperWrap {
+        border: 1px solid #fff; width: 98.4375vw/* 1890px */; height: 36.4583vw/* 700px */; text-align: right; margin:360px auto 0;
+        .workText {
+            position: relative; border: 1px solid #fff; width:48.3854vw /* 929px */; height: 35.1562vw/* 675px */; margin-top: 12px; margin-left: 14px; box-sizing: border-box;
+            h3 {
+                font-family: Chonburi; font-size: 46px; padding-bottom: 69px; padding-top: 44px; 
+            }
+            p {
+                font-family: KoreaDREAM3; font-size: 27px; line-height: 57px; 
+            }
+            a {
+                @include border-radius(50px);
+                position: absolute; display: block; text-align: center; bottom: 54px; width: 252px; height: 74px; line-height: 74px; font-family: "Fugaz one"; font-size: 24px; background: #fff;
+            }
+        }
+        .workText.left {
+            h3 { padding-right: 29px; }
+            p { padding-right: 53px; text-align: right; }
+            a { right: 51px; }
+        }
+        .workText.right {
+            h3 { padding-left: 29px;}
+            p { padding-left: 53px; text-align: left; }
+            a { left: 51px; }
+        }
+        .workSwiper {
+            position: absolute; top: 1px; right: 14px; margin-top: 12px; margin-right: 14px; border: 1px solid #fff; width:48.3854vw /* 929px */; height: 35.1562vw/* 675px */; box-sizing: border-box;
+            .swiper-container {width: 100%; height: 100%;}
+            .controller {
+                position: absolute; top: 50%; left: 0; width: 100%;
+                .swiper-button-next, .swiper-button-prev {
+                    @include bgsize(cover);
+                    position: static; display: block; background: no-repeat center; width: 25px; height: 43px; top: 50%; 
+                }
+                .swiper-button-next {background-image: url("../img/icon/leftButton.svg");}
+                .swiper-button-next {background-image: url("../img/icon/rightButton.svg");}
+            }
+        }
+    }
+}
+#work {
+    /* GoPro Porject */
+    .gopro {
+        .decoCircles {
+            img:first-child {position: absolute; top: -55%; right: 0%;}
+            img:nth-child(2) {position: absolute; top: 15% ; left: -38%;}
+            img:last-child {position: absolute; top: 65% ; right: -15%;}
+        }
+    }
+    /* Helinox Project */
+    .helinox {
+        position: relative; 
+        .workSwiperWrap {text-align: left; margin: 0 auto;}
+        .workText.right {
+            position: absolute; top: 0; right: 14px; margin-left: 0; margin-right: 14px;
+        }
+        .work2Swiper {
+            position: absolute; top: 1px; left: 14px; right: 0; margin-top: 12px; margin-right: 0; margin-left: 14px; border: 1px solid #fff; width:48.3854vw /* 929px */; height: 35.1562vw/* 675px */; box-sizing: border-box;
+            .swiper-container {width: 100%; height: 100%;}
+        }
+    }
+    /* Heyri Project */
+    .heyri {
+        position: relative; 
+        .workSwiperWrap {
+            margin: 0 auto;
+        .work3Swiper {
+            .swiper-container {width: 100%; height: 100%;}
+        }
+        }
+        
+    }
 }

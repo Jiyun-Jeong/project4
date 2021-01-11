@@ -22,6 +22,12 @@
   font-style: normal;
   src: url("../font/DXPnM-KSCpc-EUC-H.eot");
   src: url("../font/DXPnM-KSCpc-EUC-H.eot#iefix") format("embedded-opentype"), url("../font/DXPnM-KSCpc-EUC-H.woff2") format("woff2"), url("../font/DXPnM-KSCpc-EUC-H.woff") format("woff"), url("../font/DXPnM-KSCpc-EUC-H.ttf") format("truetype"); }
+@font-face {
+  font-family: Seongsil;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../font/Seongsil.eot");
+  src: url("../font/Seongsil.eot#iefix") format("embedded-opentype"), url("../font/Seongsil.woff2") format("woff2"), url("../font/Seongsil.woff") format("woff"), url("../font/Seongsil.ttf") format("truetype"); }
 /* Tag reset CSS */
 body, div, ul, h1, h2, h3, h4, h5, h6, button, p {
   margin: 0;
@@ -92,7 +98,7 @@ body {
   position: relative;
   overflow: hidden; }
   #wrap #header .logo {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 29px;
     left: 32px;

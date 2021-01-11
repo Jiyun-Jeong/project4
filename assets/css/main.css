@@ -244,17 +244,19 @@
         width: 31.25vw;
         height: 41.6667vw;
         background: #fff;
-        font-family: DXPnM;
+        font-family: Seongsil;
         font-size: 23px;
         text-align: right; }
         #cnt3 .swiper-container .slide:nth-child(odd) .diary strong {
           display: block;
-          font-size: 25px;
+          font-size: 38px;
           padding-top: 53px;
           padding-right: 55px; }
         #cnt3 .swiper-container .slide:nth-child(odd) .diary p {
           padding-top: 42px;
-          padding-right: 55px; }
+          padding-right: 55px;
+          font-size: 32px;
+          line-height: 41px; }
           #cnt3 .swiper-container .slide:nth-child(odd) .diary p::before {
             content: "";
             position: absolute;
@@ -305,17 +307,19 @@
         width: 31.25vw;
         height: 41.6667vw;
         background: #fff;
-        font-family: DXPnM;
+        font-family: Seongsil;
         font-size: 23px;
         text-align: left; }
         #cnt3 .swiper-container .slide2 .secondDiary .diary strong {
           display: block;
-          font-size: 25px;
+          font-size: 38px;
           padding-top: 53px;
           padding-left: 55px; }
         #cnt3 .swiper-container .slide2 .secondDiary .diary p {
           padding-top: 42px;
-          padding-left: 55px; }
+          padding-left: 55px;
+          font-size: 32px;
+          line-height: 41px; }
           #cnt3 .swiper-container .slide2 .secondDiary .diary p::before {
             content: "";
             position: absolute;
@@ -329,12 +333,35 @@
           left: 0;
           padding-left: 17px;
           padding-bottom: 17px; }
-      #cnt3 .swiper-container .slide2 .secondDiary .diaryImg {
+      #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco {
         position: absolute;
         top: 0;
         right: 250px;
-        width: 26.25vw;
-        height: 41.6667vw; }
+        width: 31.25vw;
+        height: 41.6667vw;
+        background: #fff; }
+        #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco .diaryImg {
+          position: absolute;
+          top: 73px;
+          right: 0;
+          left: 0;
+          margin: 0 auto; }
+        #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco .decoTape1 {
+          position: absolute;
+          top: 18px;
+          right: 31px; }
+        #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco .decoTape2 {
+          position: absolute;
+          bottom: 18px;
+          left: 31px; }
+        #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco .drawnArrow {
+          position: absolute;
+          bottom: 40%;
+          right: -9%; }
+        #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco .handwrite {
+          position: absolute;
+          bottom: 52%;
+          right: -20%; }
     #cnt3 .swiper-container .slide3 {
       background: #FAF2A7; }
       #cnt3 .swiper-container .slide3 .thirdDiary {
@@ -357,7 +384,7 @@
             width: 300px;
             height: 87px; }
       #cnt3 .swiper-container .slide3 .diary .bold {
-        font-size: 29px !important;
+        font-size: 36px !important;
         padding-top: 0 !important;
         padding-right: 0 !important; }
 
@@ -750,7 +777,142 @@
                   text-align: center; }
 
 /* Works page */
-#work1 {
-  background: #B4CAFA; }
+/* common class */
+#work {
+  background: #B4CAFA;
+  position: relative; }
+  #work .workSwiperWrap {
+    border: 1px solid #fff;
+    width: 98.4375vw;
+    height: 36.4583vw;
+    text-align: right;
+    margin: 360px auto 0; }
+    #work .workSwiperWrap .workText {
+      position: relative;
+      border: 1px solid #fff;
+      width: 48.3854vw;
+      height: 35.1562vw;
+      margin-top: 12px;
+      margin-left: 14px;
+      box-sizing: border-box; }
+      #work .workSwiperWrap .workText h3 {
+        font-family: Chonburi;
+        font-size: 46px;
+        padding-bottom: 69px;
+        padding-top: 44px; }
+      #work .workSwiperWrap .workText p {
+        font-family: KoreaDREAM3;
+        font-size: 27px;
+        line-height: 57px; }
+      #work .workSwiperWrap .workText a {
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        position: absolute;
+        display: block;
+        text-align: center;
+        bottom: 54px;
+        width: 252px;
+        height: 74px;
+        line-height: 74px;
+        font-family: "Fugaz one";
+        font-size: 24px;
+        background: #fff; }
+    #work .workSwiperWrap .workText.left h3 {
+      padding-right: 29px; }
+    #work .workSwiperWrap .workText.left p {
+      padding-right: 53px;
+      text-align: right; }
+    #work .workSwiperWrap .workText.left a {
+      right: 51px; }
+    #work .workSwiperWrap .workText.right h3 {
+      padding-left: 29px; }
+    #work .workSwiperWrap .workText.right p {
+      padding-left: 53px;
+      text-align: left; }
+    #work .workSwiperWrap .workText.right a {
+      left: 51px; }
+    #work .workSwiperWrap .workSwiper {
+      position: absolute;
+      top: 1px;
+      right: 14px;
+      margin-top: 12px;
+      margin-right: 14px;
+      border: 1px solid #fff;
+      width: 48.3854vw;
+      height: 35.1562vw;
+      box-sizing: border-box; }
+      #work .workSwiperWrap .workSwiper .swiper-container {
+        width: 100%;
+        height: 100%; }
+      #work .workSwiperWrap .workSwiper .controller {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%; }
+        #work .workSwiperWrap .workSwiper .controller .swiper-button-next, #work .workSwiperWrap .workSwiper .controller .swiper-button-prev {
+          -webkit-background-size: cover !important;
+          -moz-background-size: cover !important;
+          background-size: cover !important;
+          position: static;
+          display: block;
+          background: no-repeat center;
+          width: 25px;
+          height: 43px;
+          top: 50%; }
+        #work .workSwiperWrap .workSwiper .controller .swiper-button-next {
+          background-image: url("../img/icon/leftButton.svg"); }
+        #work .workSwiperWrap .workSwiper .controller .swiper-button-next {
+          background-image: url("../img/icon/rightButton.svg"); }
+
+#work {
+  /* GoPro Porject */
+  /* Helinox Project */
+  /* Heyri Project */ }
+  #work .gopro .decoCircles img:first-child {
+    position: absolute;
+    top: -55%;
+    right: 0%; }
+  #work .gopro .decoCircles img:nth-child(2) {
+    position: absolute;
+    top: 15%;
+    left: -38%; }
+  #work .gopro .decoCircles img:last-child {
+    position: absolute;
+    top: 65%;
+    right: -15%; }
+  #work .helinox {
+    position: relative; }
+    #work .helinox .workSwiperWrap {
+      text-align: left;
+      margin: 0 auto; }
+    #work .helinox .workText.right {
+      position: absolute;
+      top: 0;
+      right: 14px;
+      margin-left: 0;
+      margin-right: 14px; }
+    #work .helinox .work2Swiper {
+      position: absolute;
+      top: 1px;
+      left: 14px;
+      right: 0;
+      margin-top: 12px;
+      margin-right: 0;
+      margin-left: 14px;
+      border: 1px solid #fff;
+      width: 48.3854vw;
+      height: 35.1562vw;
+      box-sizing: border-box; }
+      #work .helinox .work2Swiper .swiper-container {
+        width: 100%;
+        height: 100%; }
+  #work .heyri {
+    position: relative; }
+    #work .heyri .workSwiperWrap {
+      margin: 0 auto; }
+      #work .heyri .workSwiperWrap .work3Swiper .swiper-container {
+        width: 100%;
+        height: 100%; }
 
 /*# sourceMappingURL=main.css.map */

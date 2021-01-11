@@ -1,0 +1,214 @@
+@charset "utf-8";
+@import "_var", "_mixin";
+
+#helinox1 {
+  position: relative; width: 100%; height: 150vh; background: #000;
+  .project2Main {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+    .mainCircleWrap {
+      position: relative; width: 670px; height: 670px; margin: 0 auto; 
+      div.bigMainCircle {
+        @include border-radius(50%);
+        position: relative; width: 100%; height: 100%; background: #fff; margin: 217px auto 0; overflow: hidden;
+        img {position: absolute;top: -20%; left: 14%;}
+        &::before {
+          @include border-radius(50%);
+          position: absolute; border: 1px solid #fff; top: 0; left: 420px; }
+          
+       }
+       /* .empty {
+        @include border-radius(50%);
+        width: 670px; height: 670px; border: 1px solid #fff; position: absolute; 
+       } */
+    }
+    p {
+      position: absolute; display: fixed; top: 455px; right: 106px; font-family: "Fugaz one"; font-size: 130px; color: #fff;
+    }
+  }
+  .simpleExplain {
+    position: absolute; bottom: 0; left: 0; background: #000; width: 100%; height: 190px; 
+    .sicssor {
+      position: relative; height: 224px; line-height: 224px; width: 100%; 
+      &::before {
+          content:""; clear: both; position: absolute; border-top: 3px dashed #fff; top: -2px; right: 0; width: 97%;
+      }
+      img {position: absolute; top: -32px; left: 0; fill: #fff;}
+      img.helinoxLogo {position: absolute; top: 58px; left: 265px; width: 367px; height: 79px; }
+      .explainText {
+        float: right; width: 1020.5px; height: 114.5px;
+        span {
+          display: inline-block; font-size: 17px; font-family: "Fugaz one"; padding-right: 87px; color: #fff; line-height: 0;
+        }
+        p {display: block; text-align: left; font-size: 17px; font-family: "Fugaz one"; color: #fff; }
+  
+      }
+    }
+  }
+}
+
+/* helinox2 common */
+h3 {font-family: KoreanDREAM5; font-size: 28px; padding-bottom: 24px; font-weight: 400;}
+p.content {
+  font-family: KoreanDREAM3; font-size: 15px; line-height: 22px; display: block; padding-bottom: 130px;
+}
+
+/* helinox2 CSS */
+#helinox2 {
+  position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; background: #F6F6F6; width: 100%; height: 100vh;
+  .designLeft {
+    margin-left: 167px; margin-top: 141px; position: relative;
+    img:first-child {
+      position: absolute; top: -15px; left: -15px; width: 18.16px; height: 18.36px;
+    }
+    img {font-size: 137px;}
+    img + img {margin-top: -22px;}
+  }
+  .designRight {
+    margin-left: 268px; margin-top: 141px; 
+    .designColor {
+      > p {padding-bottom: 29px;}
+      .colorWrap {
+        display: flex; flex-direction: row; flex-wrap: nowrap; padding-left: 17px;
+        .colorCubeWrap {margin-right: 101px;}
+        .colorCube {width: 206px; height: 101px;}
+        .mainBlue {background: $helinoxBlue;}
+        .mainGrey1 {background: #333333;}
+        .mainGrey2 {background: #e2e2e2;}
+        p {
+          font-family: KoreanDREAM3; font-size: 15px; line-height: 24px; letter-spacing: 0.05em; 
+        }
+      }
+    }
+    .designTypo {
+      margin-top: 141px;
+      > p {padding-bottom: 29px;}
+      img {padding-left: 17px;}
+    }
+  }
+}
+
+/* helinox3 CSS */
+#helinox3 {
+  position: relative; width: 100%; height: 100vh; overflow: hidden; background: #F6F6F6; 
+  .bgLine {
+    position: absolute; width: 100%; height: 302px; background: $helinoxBlue; top: calc(50% - 148.5px); left: 0;
+    > p {
+      font-family: KoreaDREAM3; font-size: 62px; letter-spacing: -0.27px; line-height: 79px; font-weight: 900; padding: 73px 0 73px 243px; color: #fff; text-align: left;
+    }
+  }
+  .originalHomepage {
+    position: relative; display: inline-block;
+    /* p {
+      display: inline-block; font-family: KoreanDREAM3; padding: 60px 0 50px 400px;
+    } */
+    img {position: absolute; top: 202px; left: 316px; width: 503px;}
+  }
+  .analysisText {
+    position: relative; width: 690px; height: 171px; float: left; padding-left: 206px; margin-top: 168px;
+    img {
+      position: absolute; top: -15px; left: 21%; width: 18.16px; height: 18.36px;
+    }
+    p {padding-bottom: 0;}
+  }
+}
+
+/* helinox4 CSS */
+#helinox4 {
+  position: relative; width: 100%; height: 100vh; overflow: hidden; background: #F6F6F6; 
+  .wireframe {
+    display: inline-block; margin-left: 0; position: relative; margin: 80px 0 125px; width: 100%;
+    > img:first-child {
+      position: absolute; top: -15px; left: 44.5%; width: 18.16px; height: 18.36px;
+    }
+    h3 {text-align: center;}
+    .content {
+      padding-bottom: 0; text-align: center;
+      span {color: #16aec0;}
+    }
+  }
+  .wireframeWrap {
+    display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-end; width: 1675px; height: 650px; text-align: center; margin: 0 auto;
+    span {
+      display: block; font-family: KoreaDREAM5; font-size: 22px; color: #c4c4c4; text-align: center;
+    }
+  }
+}
+
+/* helinox5 CSS */
+#helinox5 {
+  position: relative; display: inline-block; width: 100%; height: 100vh; background: #000; margin-left: 0; padding-top: 111px;
+  .deviceDetail {
+    display: flex; flex-direction: row; flex-wrap: wrap; position: relative; width: 100%; height: 81px; 
+    > img:first-child {
+      position: absolute; top: -15px; left: 5%; width: 18.16px; height: 18.36px;
+    }
+    h3 {display: inline-block; padding: 0 0 0 113px; vertical-align: top; color: #fff;}
+    > p {display: inline-block; padding-left: 105px; color: #fff;}
+    .deviceExplain {
+      font-size: 21px; line-height: 32px;
+      span {color: #1c98d6;}
+    }
+  }
+  .mockup {
+    margin: 130px auto; width: 822px;
+  }
+  .helinoxMockups {
+    font-size: 0; 
+    .mockupBg {width: 411px; height: 308px; display: inline-block; }
+    .hand1Bg {background: #1c98d6;}
+    .hand2Bg {background: #ffffff;}
+    .hand3Bg {background: #fff}
+    .hand4Bg {background: #1c98d6;;}
+
+  }
+}
+
+/* helinox6 CSS */
+#helinox6 {
+  position: relative; width: 100%; height: 100vh; overflow: hidden; background: #000; 
+  .mainPagePreview {
+    position: relative; width: 690px; height: 171px; float: left; padding-left: 206px; margin-top: 168px;
+    img {
+      position: absolute; top: -15px; left: 21%; width: 18.16px; height: 18.36px;
+    }
+    h3 {color: #fff;}
+    p {color: #fff; padding-bottom: 0;}
+  }
+  .mainPreviewImgs {
+    position: relative;
+    img {position: absolute; right: -20%;}
+  }
+  a {
+    @include border-radius(50px);
+    position: absolute; bottom: 75px; left: 150px; display: block; background: #fff; width: 252px; height: 74px; line-height: 74px; font-family: "Fugaz one"; font-size: 24px; color: #000; text-align: center;
+  }
+}
+
+/* helinox7 CSS */
+#helinox7 {
+
+}
+
+/* helinox8 CSS */
+#helinox8 {
+  position: relative; width: 100%; height: 100vh; overflow: hidden; background: #000; 
+  .aboutPagePreview {
+    position: relative; width: 550px; height: 171px; float: right; padding-right: 10%; margin-top: 34%;
+    img {
+      position: absolute; top: -15px; left: -2%; width: 18.16px; height: 18.36px;
+    }
+    h3 {color: #fff;}
+    p {
+      color: #fff; padding-bottom: 0;
+      span {color: #1c98d6;}
+    }
+  }
+  .aboutPreviewImg {
+    font-size: 0; width: 924px; height: 100%; padding-left:
+    img + img {padding-left: 25px;}
+  }
+  a {
+    @include border-radius(50px);
+    position: absolute; bottom: 75px; right: 25%; display: block; background: #fff; width: 252px; height: 74px; line-height: 74px; font-family: "Fugaz one"; font-size: 24px; color: #000; text-align: center;
+  }
+}
