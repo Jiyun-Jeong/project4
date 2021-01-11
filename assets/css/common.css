@@ -98,28 +98,35 @@ body {
   position: relative;
   overflow: hidden; }
   #wrap #header .logo {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 29px;
     left: 32px;
     width: 131px;
     height: 77px; }
+    #wrap #header .logo a {
+      width: 131px;
+      height: 77px; }
   #wrap #header .util {
-    position: absolute;
+    position: relative;
+    position: fixed;
     top: 17px;
-    right: 22px; }
+    right: 22px;
+    z-index: 500; }
     #wrap #header .util > .btn_open img {
       width: 44px;
       height: 44px;
       cursor: pointer; }
   #wrap #header .navWrap {
-    display: none;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+    /* display: none; */
+    position: fixed;
+    /* width: 100vw; height: 100vh;  */
     top: 0;
-    right: 0px;
-    background: orange; }
+    left: 100%;
+    background: #B4CAFA;
+    overflow-y: auto;
+    right: 0;
+    bottom: 0; }
     #wrap #header .navWrap #gnb {
       position: absolute;
       text-align: left;
@@ -167,23 +174,11 @@ footer {
     height: 72px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-    footer .contact::before {
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      -o-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      transform: rotate(180deg);
-      content: "";
-      display: block;
-      clear: both;
-      position: absolute;
-      top: -138%;
-      left: 50%;
-      width: 1px;
-      height: 261px;
-      background: #fff;
-      z-index: 500; }
+    box-sizing: border-box;
+    /*     &::before {
+            @include transform(rotate(180deg));
+            content:""; display: block; clear: both; position: absolute; top: -138%; left: 50%; width: 1px; height: 261px; background: #fff; z-index: 500;
+        } */ }
     footer .contact button {
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;

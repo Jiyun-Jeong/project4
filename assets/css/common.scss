@@ -78,13 +78,16 @@ body {
 #wrap {
   position: relative; overflow: hidden;
   #header {
-    .logo {/* display: none; */ position: absolute; top: 29px; left: 32px;width: 131px;height: 77px;}
+    .logo {
+      display: none; position: absolute; top: 29px; left: 32px;width: 131px; height: 77px;
+      a {width: 131px; height: 77px; }
+    }
     .util {
-      position: absolute; top: 17px; right: 22px; 
+      position: relative; position: fixed; top: 17px; right: 22px; z-index: 500;
       > .btn_open img {width: 44px;height: 44px;cursor: pointer; }
     }
     .navWrap {
-        display: none; position: relative; width: 100vw;height: 100vh;top: 0; right: 0px; background: orange;
+        /* display: none; */ position: fixed; /* width: 100vw; height: 100vh;  */top: 0; left: 100%; background: $lightpurple;overflow-y: auto; right: 0; bottom: 0;
         #gnb {
             position: absolute; text-align: left; left: 204px; top: 268px; width: 901px;height: 618px;
             ul {
@@ -111,10 +114,10 @@ footer {
   .contact button, .bigEmail {font-family: "Fugaz One"; }
   .contact {
     position: absolute; top: 262px; left: 140px; width: 200px; height: 72px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
-    &::before {
+/*     &::before {
         @include transform(rotate(180deg));
         content:""; display: block; clear: both; position: absolute; top: -138%; left: 50%; width: 1px; height: 261px; background: #fff; z-index: 500;
-    }
+    } */
     button {
         @include border-radius(50%);
         font-size: 29px; border: 1px solid #fff; width: 100%; line-height: 72px; background: $lightpurple; color: #fff;
