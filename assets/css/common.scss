@@ -83,20 +83,23 @@ body {
       a {width: 131px; height: 77px; }
     }
     .util {
-      position: relative; position: fixed; top: 17px; right: 22px; z-index: 500;
-      > .btn_open img {width: 44px;height: 44px;cursor: pointer; }
+      position: relative; position: fixed; top: 17px; right: 22px; z-index: 1000;
+      > .btn_open img {width: 44px;height: 44px; cursor: pointer;}
     }
     .navWrap {
-        /* display: none; */ position: fixed; /* width: 100vw; height: 100vh;  */top: 0; left: 100%; background: $lightpurple;overflow-y: auto; right: 0; bottom: 0;
+        visibility: hidden; position: fixed; /* width: 100vw; height: 100vh;  */top: 0; left: 100%; background: $lightpurple;overflow-y: auto; right: 0; bottom: 0; overflow: hidden;
         #gnb {
             position: absolute; text-align: left; left: 204px; top: 268px; width: 901px;height: 618px;
             ul {
                 font-size: 115px;line-height: 160px;font-family: Chonburi; color: $lightyellow;
+                li {position: relative;
+                  a:hover, a:focus {content: ""; display: block; clear: both; position: absolute; width: 100%; height: 3px; background: $lightyellow;}
+                }
             }
         }
     }
     .sns, .email {position: absolute; color: #fff;left: 1245px;}
-    .sns p, .email p {padding-bottom: 18px;font-size: 21px;}
+    .sns p, .email p {padding-bottom: 18px;font-size: 21px; font-weight: bold;}
     .sns {
         top: 540px; right: 534px; 
         ul li {font-size: 32px;letter-spacing: 0.61px;}
@@ -104,7 +107,7 @@ body {
     .email{
         bottom: 221px; 
     }
-    .btn_close {display: none;}
+    .btn_close {position: fixed; top: 17px; right: 22px;}
   }
 }
 

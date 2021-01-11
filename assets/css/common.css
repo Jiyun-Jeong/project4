@@ -112,13 +112,13 @@ body {
     position: fixed;
     top: 17px;
     right: 22px;
-    z-index: 500; }
+    z-index: 1000; }
     #wrap #header .util > .btn_open img {
       width: 44px;
       height: 44px;
       cursor: pointer; }
   #wrap #header .navWrap {
-    /* display: none; */
+    visibility: hidden;
     position: fixed;
     /* width: 100vw; height: 100vh;  */
     top: 0;
@@ -126,7 +126,8 @@ body {
     background: #B4CAFA;
     overflow-y: auto;
     right: 0;
-    bottom: 0; }
+    bottom: 0;
+    overflow: hidden; }
     #wrap #header .navWrap #gnb {
       position: absolute;
       text-align: left;
@@ -139,13 +140,24 @@ body {
         line-height: 160px;
         font-family: Chonburi;
         color: #FAF2A7; }
+        #wrap #header .navWrap #gnb ul li {
+          position: relative; }
+          #wrap #header .navWrap #gnb ul li a:hover, #wrap #header .navWrap #gnb ul li a:focus {
+            content: "";
+            display: block;
+            clear: both;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: #FAF2A7; }
   #wrap #header .sns, #wrap #header .email {
     position: absolute;
     color: #fff;
     left: 1245px; }
   #wrap #header .sns p, #wrap #header .email p {
     padding-bottom: 18px;
-    font-size: 21px; }
+    font-size: 21px;
+    font-weight: bold; }
   #wrap #header .sns {
     top: 540px;
     right: 534px; }
@@ -155,7 +167,9 @@ body {
   #wrap #header .email {
     bottom: 221px; }
   #wrap #header .btn_close {
-    display: none; }
+    position: fixed;
+    top: 17px;
+    right: 22px; }
 
 /* Footer */
 footer {
