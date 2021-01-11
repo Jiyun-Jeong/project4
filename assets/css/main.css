@@ -221,7 +221,8 @@
       color: #444242; }
   #cnt3 .swiper-container {
     width: 100%;
-    /* height: 100vh; */ }
+    height: 56.1459vw;
+    /* height: 100vh */ }
     #cnt3 .swiper-container .data {
       position: relative;
       z-index: 700; }
@@ -235,6 +236,11 @@
         position: absolute;
         left: 278px;
         top: 111px; }
+    #cnt3 .swiper-container .slide .diaryMain {
+      position: relative;
+      margin-top: 9.7917vw;
+      padding-left: 24.479vw;
+      height: 46.3542vw; }
     #cnt3 .swiper-container .slide:nth-child(odd) {
       background: #FAF2A7; }
       #cnt3 .swiper-container .slide:nth-child(odd) .diary {
@@ -270,36 +276,28 @@
           right: 0;
           padding-right: 17px;
           padding-bottom: 17px; }
-    #cnt3 .swiper-container .slide1 .firstDiary {
+    #cnt3 .swiper-container .slide1 .firstDiary .windowWrap {
       position: relative;
-      margin-top: 188px;
-      padding-left: 24.479vw;
-      height: 46.3542vw; }
-      #cnt3 .swiper-container .slide1 .firstDiary .windowWrap {
-        position: relative;
-        width: 31.25vw;
-        height: 41.6667vw;
-        overflow: hidden; }
-      #cnt3 .swiper-container .slide1 .firstDiary .emptyFrame {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 10; }
-      #cnt3 .swiper-container .slide1 .firstDiary img {
-        width: 31.25vw;
-        height: 41.6667vw; }
-      #cnt3 .swiper-container .slide1 .firstDiary img:nth-child(2) {
-        position: absolute;
-        top: 0;
-        left: 0; }
-      #cnt3 .swiper-container .slide1 .firstDiary .showImg {
-        width: 208.3333vw;
-        font-size: 0; }
+      width: 31.25vw;
+      height: 41.6667vw;
+      overflow: hidden; }
+    #cnt3 .swiper-container .slide1 .firstDiary .emptyFrame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10; }
+    #cnt3 .swiper-container .slide1 .firstDiary img {
+      width: 31.25vw;
+      height: 41.6667vw; }
+    #cnt3 .swiper-container .slide1 .firstDiary img:nth-child(2) {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #cnt3 .swiper-container .slide1 .firstDiary .showImg {
+      width: 208.3333vw;
+      font-size: 0; }
     #cnt3 .swiper-container .slide2 .secondDiary {
-      position: relative;
-      margin-top: 188px;
-      padding-left: 24.479vw;
-      height: 46.3542vw; }
+      /* position: relative; margin-top: 188px; padding-left: 24.479vw; height: 46.3542vw; */ }
       #cnt3 .swiper-container .slide2 .secondDiary .diary {
         position: absolute;
         top: 0;
@@ -365,10 +363,7 @@
     #cnt3 .swiper-container .slide3 {
       background: #FAF2A7; }
       #cnt3 .swiper-container .slide3 .thirdDiary {
-        position: relative;
-        margin-top: 188px;
-        padding-left: 24.479vw;
-        height: 46.3542vw; }
+        /* position: relative; margin-top: 188px; padding-left: 24.479vw; height: 46.3542vw;  */ }
         #cnt3 .swiper-container .slide3 .thirdDiary .viewWorksWrap {
           position: relative;
           width: 31.25vw;

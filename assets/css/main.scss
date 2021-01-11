@@ -104,12 +104,15 @@
         p {text-align: center; font-size: 62px; font-family: "Fugaz one"; color: #444242;}
     }
     .swiper-container {
-        width: 100%; /* height: 100vh; */
+        width: 100%; height: 56.1459vw; /* height: 100vh */
         .data {
             position: relative; z-index: 700; 
             img {position: absolute; left: 210px; top: 100px;}
             > p {font-family: Chonburi; font-size: 29px; position: absolute; left: 278px; top: 111px;}
         }
+        .slide{
+            .diaryMain{position: relative; margin-top: 9.7917vw; padding-left: 24.479vw/* 470px */; height: 46.3542vw/* 890px */; } 
+         }
         .slide:nth-child(odd) {
             background: $lightyellow;
             .diary {
@@ -130,7 +133,6 @@
         }
         .slide1 {
             .firstDiary {
-                position: relative; margin-top: 188px; padding-left: 24.479vw/* 470px */; height: 46.3542vw/* 890px */; 
                 .windowWrap {
                     position: relative; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; overflow: hidden;
                 }
@@ -143,7 +145,7 @@
         }
         .slide2 {
             .secondDiary {
-                position: relative; margin-top: 188px; padding-left: 24.479vw/* 470px */; height: 46.3542vw/* 890px */;
+                /* position: relative; margin-top: 188px; padding-left: 24.479vw; height: 46.3542vw; */
                 .diary {
                     position: absolute; top: 0; left: 470px; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; background: #fff; font-family: Seongsil; font-size: 23px; text-align: left;
                     strong {
@@ -174,7 +176,7 @@
         .slide3 {
             background: $lightyellow;
             .thirdDiary {
-                position: relative; margin-top: 188px; padding-left: 24.479vw/* 470px */; height: 46.3542vw; 
+                /* position: relative; margin-top: 188px; padding-left: 24.479vw; height: 46.3542vw;  */
                 .viewWorksWrap {
                     position: relative; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; overflow: hidden; background: #fff;
                     button {position: absolute; top: 50%; left: 0; right: 0; margin: 0 auto; width: 300px; height: 87px;}
