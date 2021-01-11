@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> GoPro Responsive web project </title>
   <!-- favicon -->
+  <link rel="apple-touch-icon" href="assets/img/common/iphone_icon.png">
+  <link rel="shortcit icon" href="assets/img/common/androd_icon.png">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../assets/css/swiper-bundle.css">
   <link rel="stylesheet" href="../assets/css/common.css">
@@ -12,10 +14,9 @@
   <!-- Jquery CDN -->
   <script src="../assets/js/jquery-1.12.4.min.js"></script>
   <!-- Swiper js -->
-  <!-- <script src="../assets/js/swiper-bundle.min.js"></script> -->
   <script src="../assets/js/swiper.min.js"></script>
   <!-- Custom JS -->
-  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/project.js"></script>
 </head>
 <body>
   <div id="skip">
@@ -24,32 +25,31 @@
 
   <div id="wrap">
     <header id="header">
-      <h1 class="logo">
+      <h1 class="logo leftPos">
         <a href="index.html">
           <img src="../assets/img/common/JIYUNJEONG.svg" alt="로고">
           <div class="blind-b">Jiyun Jeong's portfolio</div>
         </a>
       </h1>
       <div class="util">
-        <button type="button" class="btn_open">
+        <button class="btn_open" type="button">
           <img src="../assets/img/icon/open.svg" alt="메뉴열기">
-          <span class="blind-b">메뉴열기</span>
         </button>
         <div class="navWrap">
           <div class="navigation">
             <nav id="gnb">
               <ul>
                 <li>
-                  <a href="">HOME</a>
+                  <a data-link="first" href="index.html" type="button">HOME</a>
                 </li>
                 <li>
-                  <a href="">WORKS</a>
+                  <a href="index.html #work" type="button">WORKS</a>
                 </li>
                 <li>
-                  <a href="">ABOUT</a>
+                  <a href="index.html #cnt2" type="button">ABOUT</a>
                 </li>
                 <li>
-                  <a href="">CONTACTS</a>
+                  <a href="index.html #footer" type="button">CONTACTS</a>
                 </li>
               </ul>
             </nav>
@@ -70,13 +70,13 @@
           </div>
           <div class="email">
             <p>Hit me up!</p>
-            <p><a href="mailto: rijamong0830@naver.com" title="문의메일 보내기">rijamong0830@naver.com</a></p>
+            <p><a data-link="last" href="mailto: rijamong0830@naver.com" title="문의메일 보내기">rijamong0830@naver.com</a></p>
           </div>
+          <button type="button" class="btn_close">
+            <img src="../assets/img/icon/close.svg" alt="메뉴닫기">
+          </button>
         </div>
-        <button type="button" class="btn_close">
-          <img src="../assets/img/icon/close.svg" alt="메뉴닫기">
-          <span class="blind-b">메뉴닫기</span>
-        </button>
+
       </div>
     </header>
 
@@ -88,14 +88,16 @@
           <div class="bigMainCircle">
             <img src="../assets/img/main/gopro@2x.jpg" alt="gopro 전체화면">
           </div>
-          <!-- <div class="empty emptyCircle1"></div>
-          <div class="empty emptyCircle2"></div>
-          <div class="empty emptyCircle3"></div> -->
+          <div class="emptyCircleWrap">
+            <div class="empty emptyCircle1"></div>
+            <div class="empty emptyCircle2"></div>
+            <div class="empty emptyCircle3"></div>
+          </div>
         </div>
         <p>GOPRO</p>
         <div class="simpleExplain">
           <div class="sicssor">
-            <img src="../assets/img/icon/scissorWhite.svg" alt="가위 이모티콘">
+            <img src="../assets/img/icon/scissorWhite.svg" alt="">
             <img class="goproLogo" src="../assets/img/main/GoPro_logo_white@2x.png" alt="gopro logo">
             <div class="explainText">
               <span>DATA</span>
@@ -175,7 +177,7 @@
           </div>
         </div>
         <div class="designTypo">
-          <h3>TYPOGRAPHY</h3>
+          <h3>TYPOGRAPHU</h3>
           <p class="content">
             한글은 고딕A1 Light, Regular, Bold체를 사용하였으며,<br>
             영문은 Helvetica Neue Black과 고프로 브랜드 폰트인 Neuropol Regular을 사용하였습니다.
@@ -241,8 +243,7 @@
 
     <section class="section" id="gopro5">
       <div class="blind-b">메인 페이지 프리뷰</div>
-      <div class="previewText"> <!-- bg , background: fixed; -->
-        <img class="pageBlurImg" src="../assets/img/main/previewImg@2x.png" alt="프리뷰 이미지">
+      <div class="previewText"> <!-- bg , fixed; -->
         <img src="../assets/img/icon/cross.svg" alt="포인트">
         <h3>MAIN PAGE Preview</h3>
         <p class="content">
@@ -250,7 +251,7 @@
           주 타겟층인 2-30대를 겨냥하여 <span>비주얼적인 요소를 배치하여 브랜드 이미지와 상품을 시각적으로 어필</span>하였습니다.<br>
           또한 표준 웹 접근성에 근거한 마크업 작성 및 <span>다양한 디바이스에서 효과적으로 제어되는 것을 중점</span>으로 하였습니다.
         </p>
-        <a href="" type="button">Check the site</a>
+        <a href="https://jiyun-jeong.github.io/project3/index.html" type="button">Check the site</a>
       </div>
       <div class="deviceImg">
         <img src="../assets/img/main/goproDevice@2x.jpg" alt="디바이스 별 이미지">
@@ -330,9 +331,9 @@
                     <img src="../assets/img/main/goproiframeScreen@2x.jpg" alt="아이프레임 이미지">
                     <img src="../assets/img/main/goproiframe@2x.jpg" alt="고프로 아이프레임 자바스크립트">
                   </div>
-                  <img src="../assets/img/main/ggoprojsIframe_c@2x.png" alt="확대된 아이프레임 자바스크립트">
+                  <img src="../assets/img/main/goprojsIframe_c@2x.png" alt="확대된 아이프레임 자바스크립트">
                   <p>
-                    프레임에 title이 없을 경우 시각장애환경에서 웹페이지 사용에 어려움이 있기 때문에<br>
+                    프레임에 title이 없을 경우 시각장애환경에서 웹  페이지 사용에 어려움이 있기 때문에<br>
                     <span>Title속성을 넣어주어 스크린리더기에서 읽혀질 수 있도록</span> 하였습니다.
                   </p>
                 </div>

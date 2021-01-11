@@ -98,28 +98,36 @@ body {
   position: relative;
   overflow: hidden; }
   #wrap #header .logo {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 29px;
     left: 32px;
     width: 131px;
     height: 77px; }
+    #wrap #header .logo a {
+      width: 131px;
+      height: 77px; }
   #wrap #header .util {
-    position: absolute;
+    position: relative;
+    position: fixed;
     top: 17px;
-    right: 22px; }
+    right: 22px;
+    z-index: 1000; }
     #wrap #header .util > .btn_open img {
       width: 44px;
       height: 44px;
       cursor: pointer; }
   #wrap #header .navWrap {
-    display: none;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+    visibility: hidden;
+    position: fixed;
+    /* width: 100vw; height: 100vh;  */
     top: 0;
-    right: 0px;
-    background: orange; }
+    left: 100%;
+    background: #B4CAFA;
+    overflow-y: auto;
+    right: 0;
+    bottom: 0;
+    overflow: hidden; }
     #wrap #header .navWrap #gnb {
       position: absolute;
       text-align: left;
@@ -132,13 +140,24 @@ body {
         line-height: 160px;
         font-family: Chonburi;
         color: #FAF2A7; }
+        #wrap #header .navWrap #gnb ul li {
+          position: relative; }
+          #wrap #header .navWrap #gnb ul li a:hover, #wrap #header .navWrap #gnb ul li a:focus {
+            content: "";
+            display: block;
+            clear: both;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: #FAF2A7; }
   #wrap #header .sns, #wrap #header .email {
     position: absolute;
     color: #fff;
     left: 1245px; }
   #wrap #header .sns p, #wrap #header .email p {
     padding-bottom: 18px;
-    font-size: 21px; }
+    font-size: 21px;
+    font-weight: bold; }
   #wrap #header .sns {
     top: 540px;
     right: 534px; }
@@ -148,7 +167,9 @@ body {
   #wrap #header .email {
     bottom: 221px; }
   #wrap #header .btn_close {
-    display: none; }
+    position: fixed;
+    top: 17px;
+    right: 22px; }
 
 /* Footer */
 footer {
@@ -167,23 +188,11 @@ footer {
     height: 72px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-    footer .contact::before {
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      -o-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      transform: rotate(180deg);
-      content: "";
-      display: block;
-      clear: both;
-      position: absolute;
-      top: -138%;
-      left: 50%;
-      width: 1px;
-      height: 261px;
-      background: #fff;
-      z-index: 500; }
+    box-sizing: border-box;
+    /*     &::before {
+            @include transform(rotate(180deg));
+            content:""; display: block; clear: both; position: absolute; top: -138%; left: 50%; width: 1px; height: 261px; background: #fff; z-index: 500;
+        } */ }
     footer .contact button {
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -213,10 +222,36 @@ footer {
     footer .sns a + a {
       margin-left: 130px; }
   footer .phoneImg {
+    animation: ring 3.6s linear infinite;
     position: absolute;
     width: 566px;
     height: 576px;
     top: 64px;
     right: 0; }
+@keyframes ring {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  3% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-5deg) scale(1, 1); }
+  6% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  9% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-5deg) scale(1, 1); }
+  12% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  15% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-5deg) scale(1, 1); }
+  18% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); } }
 
 /*# sourceMappingURL=common.css.map */

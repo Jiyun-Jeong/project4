@@ -13,12 +13,8 @@
       position: relative;
       width: 670px;
       height: 670px;
-      margin: 0 auto;
-      /* .empty {
-       @include border-radius(50%);
-       width: 670px; height: 670px; border: 1px solid #fff; position: absolute; 
-      } */ }
-      #heyri1 .project3Main .mainCircleWrap div.bigMainCircle {
+      margin: 0 auto; }
+      #heyri1 .project3Main .mainCircleWrap .bigMainCircle {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
@@ -28,11 +24,11 @@
         background: #fff;
         margin: 217px auto 0;
         overflow: hidden; }
-        #heyri1 .project3Main .mainCircleWrap div.bigMainCircle img {
+        #heyri1 .project3Main .mainCircleWrap .bigMainCircle img {
           position: absolute;
-          top: -20%;
-          left: 14%; }
-        #heyri1 .project3Main .mainCircleWrap div.bigMainCircle::before {
+          top: 0;
+          left: -13%; }
+        #heyri1 .project3Main .mainCircleWrap .bigMainCircle::before {
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
@@ -40,6 +36,20 @@
           border: 1px solid #fff;
           top: 0;
           left: 420px; }
+      #heyri1 .project3Main .mainCircleWrap .empty {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        position: absolute;
+        top: 0px;
+        left: 420px;
+        width: 670px;
+        height: 670px;
+        border: 1px solid #442a0d; }
+      #heyri1 .project3Main .mainCircleWrap .emptyCircle1 {
+        left: 349px; }
+      #heyri1 .project3Main .mainCircleWrap .emptyCircle3 {
+        left: 491px; }
     #heyri1 .project3Main p {
       position: absolute;
       display: fixed;
@@ -116,7 +126,7 @@ p.content {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  background: #F6F6F6;
+  background: #ffeedb;
   width: 100%;
   height: 100vh; }
   #heyri2 .designLeft {
@@ -138,39 +148,39 @@ p.content {
   #heyri2 .designRight {
     margin-left: 108px;
     margin-top: 156px; }
-    #heyri2 .designRight .designColor {
-      /* .designTypo {
-        margin-top: 111px;
-        > p {padding-bottom: 29px;}
-        img {padding-left: 17px;}
-        } */ }
-      #heyri2 .designRight .designColor > p {
-        padding-bottom: 29px; }
-      #heyri2 .designRight .designColor .colorWrap {
-        /* display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between;  */
+    #heyri2 .designRight .designColor > p {
+      padding-bottom: 29px; }
+    #heyri2 .designRight .designColor .colorWrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      padding-left: 17px; }
+      #heyri2 .designRight .designColor .colorWrap .colorCube {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        width: 137px;
+        height: 137px; }
+        #heyri2 .designRight .designColor .colorWrap .colorCube.mainBeige {
+          background: #E2CEBD; }
+        #heyri2 .designRight .designColor .colorWrap .colorCube.pointBrown {
+          background: #442A0D; }
+        #heyri2 .designRight .designColor .colorWrap .colorCube.mainText {
+          background: #333333; }
+        #heyri2 .designRight .designColor .colorWrap .colorCube.subText {
+          background: #e2e2e2; }
+        #heyri2 .designRight .designColor .colorWrap .colorCube p {
+          font-family: KoreanDREAM3;
+          font-size: 15px;
+          line-height: 24px;
+          letter-spacing: 0.05em; }
+    #heyri2 .designRight .designTypo {
+      margin-top: 112px; }
+      #heyri2 .designRight .designTypo > p {
+        padding-bottom: 27px; }
+      #heyri2 .designRight .designTypo img {
         padding-left: 17px; }
-        #heyri2 .designRight .designColor .colorWrap .colorCubeWrap {
-          margin-right: 47px;
-          /* display: inline-block; */ }
-        #heyri2 .designRight .designColor .colorWrap .colorCube {
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          border-radius: 50%;
-          width: 206px;
-          height: 101px; }
-          #heyri2 .designRight .designColor .colorWrap .colorCube.mainBeige {
-            background: #FFEEDB; }
-          #heyri2 .designRight .designColor .colorWrap .colorCube.pointBrown {
-            background: #442A0D; }
-          #heyri2 .designRight .designColor .colorWrap .colorCube.mainText {
-            background: #333333; }
-          #heyri2 .designRight .designColor .colorWrap .colorCube.subText {
-            background: #e2e2e2; }
-          #heyri2 .designRight .designColor .colorWrap .colorCube p {
-            font-family: KoreanDREAM3;
-            font-size: 15px;
-            line-height: 24px;
-            letter-spacing: 0.05em; }
 
 /* heyri3 CSS */
 #heyri3 {
@@ -178,7 +188,7 @@ p.content {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: #F6F6F6; }
+  background: #ffeedb; }
   #heyri3 .bgLine {
     position: absolute;
     width: 100%;
@@ -197,15 +207,16 @@ p.content {
       text-align: left; }
   #heyri3 .originalHomepage {
     position: relative;
-    display: inline-block;
-    /* p {
-      display: inline-block; font-family: KoreanDREAM3; padding: 60px 0 50px 400px;
-    } */ }
-    #heyri3 .originalHomepage img {
+    display: inline-block; }
+    #heyri3 .originalHomepage p {
+      display: inline-block;
+      font-family: KoreanDREAM3;
+      padding: 60px 0 50px 400px; }
+    #heyri3 .originalHomepage .mainPageIMG {
       position: absolute;
-      top: 202px;
-      left: 316px;
-      width: 503px; }
+      top: 100%;
+      left: 5%;
+      height: 423px; }
   #heyri3 .analysisText {
     position: relative;
     width: 690px;
@@ -221,5 +232,188 @@ p.content {
       height: 18.36px; }
     #heyri3 .analysisText p {
       padding-bottom: 0; }
+
+/* heyri4 CSS */
+#heyri4 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #ffeedb; }
+  #heyri4 .wireframe {
+    display: inline-block;
+    margin-left: 0;
+    position: relative;
+    margin: 80px 0 125px;
+    width: 100%; }
+    #heyri4 .wireframe > img:first-child {
+      position: absolute;
+      top: -15px;
+      left: 44.5%;
+      width: 18.16px;
+      height: 18.36px; }
+    #heyri4 .wireframe h3 {
+      text-align: center; }
+    #heyri4 .wireframe .content {
+      padding-bottom: 0;
+      text-align: center; }
+      #heyri4 .wireframe .content span {
+        color: #16aec0; }
+  #heyri4 .wireframeWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 1598px;
+    height: 538px;
+    text-align: center;
+    margin: 0 auto; }
+    #heyri4 .wireframeWrap span {
+      display: block;
+      font-family: KoreaDREAM5;
+      font-size: 22px;
+      color: #c4c4c4;
+      text-align: center; }
+
+/* heyri5 CSS */
+#heyri5 {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  background: #442A0D; }
+  #heyri5 .pagePreview {
+    display: inline-block;
+    margin-left: 0;
+    position: relative;
+    /* margin: 128px 0 0; */
+    padding-top: 68px;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    padding-bottom: 112px; }
+    #heyri5 .pagePreview .pageBlurImg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+    #heyri5 .pagePreview > img:nth-child(2) {
+      position: absolute;
+      top: 8%;
+      left: 42.5%;
+      width: 18.16px;
+      height: 18.36px; }
+    #heyri5 .pagePreview h3 {
+      position: relative;
+      color: #fff;
+      text-align: center;
+      font-weight: 400; }
+    #heyri5 .pagePreview .content {
+      position: relative;
+      padding-bottom: 0;
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      line-height: 34px; }
+      #heyri5 .pagePreview .content span {
+        color: #16aec0; }
+    #heyri5 .pagePreview a {
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+      position: relative;
+      display: block;
+      background: #fff;
+      width: 252px;
+      height: 74px;
+      line-height: 74px;
+      font-family: "Fugaz one";
+      font-size: 24px;
+      color: #000;
+      text-align: center;
+      margin: 151px auto 128px; }
+
+/* heyri6 CSS */
+#heyri6 {
+  width: 100%;
+  height: 100vh;
+  background: #ffeedb; }
+  #heyri6 .swiper-slide {
+    position: relative;
+    display: inline-block;
+    margin-left: 0;
+    padding-top: 111px;
+    width: 100%;
+    height: 100vh; }
+    #heyri6 .swiper-slide .detailText {
+      position: relative;
+      width: 100%;
+      height: 81px; }
+      #heyri6 .swiper-slide .detailText > img:first-child {
+        position: absolute;
+        top: -15px;
+        left: 5%;
+        width: 18.16px;
+        height: 18.36px; }
+      #heyri6 .swiper-slide .detailText h3 {
+        display: inline-block;
+        padding: 0 0 0 113px;
+        vertical-align: top; }
+      #heyri6 .swiper-slide .detailText > p {
+        display: inline-block;
+        padding-left: 105px; }
+      #heyri6 .swiper-slide .detailText .detailTitle {
+        font-size: 21px;
+        line-height: 32px; }
+        #heyri6 .swiper-slide .detailText .detailTitle strong {
+          font-size: 25px;
+          padding-bottom: 20px; }
+    #heyri6 .swiper-slide .compare {
+      position: relative;
+      font-size: 0;
+      margin-top: 137px; }
+      #heyri6 .swiper-slide .compare .heyriTabCode {
+        text-align: center; }
+      #heyri6 .swiper-slide .compare > img:nth-child(2) {
+        position: absolute;
+        top: -8%;
+        left: 8%; }
+      #heyri6 .swiper-slide .compare > img:nth-child(3) {
+        position: absolute;
+        top: 18%;
+        left: 32%; }
+      #heyri6 .swiper-slide .compare > img:nth-child(4) {
+        position: absolute;
+        top: 2%;
+        left: 53%; }
+      #heyri6 .swiper-slide .compare > img:nth-child(5) {
+        position: absolute;
+        top: 18%;
+        left: 72%; }
+      #heyri6 .swiper-slide .compare > p {
+        font-size: 21px;
+        text-align: center;
+        line-height: 36px;
+        padding-top: 63px; }
+      #heyri6 .swiper-slide .compare span {
+        color: #16aec0; }
+  #heyri6 .heyriSlide2 .compare2 {
+    position: relative;
+    font-size: 0;
+    margin-top: 137px; }
+    #heyri6 .heyriSlide2 .compare2 .heyrSkipWrap {
+      text-align: center; }
+    #heyri6 .heyriSlide2 .compare2 > img:nth-child(2) {
+      position: absolute;
+      top: 4%;
+      left: 54%; }
+    #heyri6 .heyriSlide2 .compare2 > p {
+      font-size: 21px;
+      text-align: center;
+      line-height: 36px;
+      padding-top: 63px; }
+    #heyri6 .heyriSlide2 .compare2 > span {
+      color: #00E4F3; }
 
 /*# sourceMappingURL=heyri.css.map */

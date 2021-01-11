@@ -1,25 +1,45 @@
 @charset "utf-8";
 @import "_var", "_mixin";
 
+#header {
+  .logo {display: block;}
+}
 #gopro1 {
   position: relative; width: 100%; height: 150vh; background: linear-gradient($goproBlue,#005B61, #011D1F, #000000); 
   .project1Main {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
     .mainCircleWrap {
       position: relative; width: 670px; height: 670px; margin: 0 auto; 
-      div.bigMainCircle {
+      .bigMainCircle {
+        @include transition(top 1s, left 2s);
+        @include transform(translate(-50%, -50%));
         @include border-radius(50%);
-        position: relative; width: 100%; height: 100%; background: #fff; margin: 217px auto 0; overflow: hidden;
-        img {position: absolute;top: 17%; left: -20%;}
+        position: absolute; top: 80%; left: 50%; width: 100%; height: 100%; background: #fff; margin: 217px auto 0; overflow: hidden;
+        img {
+          @include transition(left 0.5s 1s, transform 2s 0s);
+          position: absolute;top: 17%; left: 100%;
+        }
         &::before {
           @include border-radius(50%);
           position: absolute; border: 1px solid #fff; top: 0; left: 420px; }
-          
-       }
-       /* .empty {
+        &.up{
+          top: 50%;
+          img {left: -20%;}
+        } 
+        &.leftout{
+          left: -200%;top: 50%;
+          img {
+            @include transform(rotate(-360deg));
+            left: -20%;
+          }
+        } 
+      }
+      .empty {
         @include border-radius(50%);
-        width: 670px; height: 670px; border: 1px solid #fff; position: absolute; 
-       } */
+        position: absolute; top: 217px; left: 420px; width: 670px; height: 670px; border: 1px solid $goproBlue;
+      }
+      .emptyCircle1 {left: 349px;}
+      .emptyCircle3 {left: 491px;}
     }
     p {
       position: absolute; display: fixed; top: 455px; right: 150px; font-family: "Fugaz one"; font-size: 130px; color: #fff;
@@ -122,7 +142,7 @@ p.content {
 #gopro4 {
   position: relative; width: 100%; height: 100vh; overflow: hidden; background: #F6F6F6; 
   .wireframe {
-    display: inline-block; margin-left: 0; position: relative; margin: 80px 0 222px; width: 100%;
+    display: inline-block; margin-left: 0; position: relative; margin: 100px 0 222px; width: 100%;
     > img:first-child {
       position: absolute; top: -15px; left: 44.5%; width: 18.16px; height: 18.36px;
     }
@@ -143,12 +163,9 @@ p.content {
 #gopro5 {
   position: relative; width: 100%; height: 125.9vh; background: #000000;
   .previewText {
-    display: inline-block; margin-left: 0; position: relative; /* margin: 128px 0 0; */ padding-top: 128px; width: 100%; height: 324px; overflow: hidden; padding-bottom: 222px;
-    .pageBlurImg {
-      position: absolute; top: 80%; left: 0; right: 0; margin: 0 auto;
-    }
-    > img:nth-child(2) {
-      position: absolute; top: 17%; left: 42%; width: 18.16px; height: 18.36px;
+    display: inline-block; background: url("../img/main/previewImg@2x.png") no-repeat fixed center; margin-left: 0; /* margin: 128px 0 0; */ padding-top: 128px; width: 100%; height: 324px; overflow: hidden; padding-bottom: 222px; 
+    > img {
+      position: absolute; top: 10%; left: 39.5%; width: 18.16px; height: 18.36px;
     }
     h3 {position: relative; color: #fff; text-align: center; font-weight: 400;}
     .content {
@@ -264,8 +281,8 @@ p.content {
   .goproSlide3 {
     .compare3 {
       .goproKeyJsWrap {text-align: center;}
-      > img:first-child {position: absolute; top: 22%; left: 75;}
-      > img:last-child {position: absolute; top: 42%; left: 54%;}
+      > img:nth-child(2) {position: absolute; top: -13%; left: 65%;}
+      > img:nth-child(3) {position: absolute; top: 24%; left: 54%;}
       > p {font-size: 21px; text-align: center; line-height: 36px; padding-top: 63px;}
       > span {color: $goproBlue;}
     }

@@ -9,16 +9,24 @@
     left: 0;
     width: 100%;
     height: 100%; }
+    #helinox1 .project2Main .whiteHalf {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      position: absolute;
+      background: #fff;
+      height: 154%;
+      width: 87%;
+      top: 1%;
+      right: -22%; }
     #helinox1 .project2Main .mainCircleWrap {
       position: relative;
       width: 670px;
       height: 670px;
-      margin: 0 auto;
-      /* .empty {
-       @include border-radius(50%);
-       width: 670px; height: 670px; border: 1px solid #fff; position: absolute; 
-      } */ }
-      #helinox1 .project2Main .mainCircleWrap div.bigMainCircle {
+      margin: 0 auto; }
+      #helinox1 .project2Main .mainCircleWrap .bigMainCircle {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
@@ -28,11 +36,11 @@
         background: #fff;
         margin: 217px auto 0;
         overflow: hidden; }
-        #helinox1 .project2Main .mainCircleWrap div.bigMainCircle img {
+        #helinox1 .project2Main .mainCircleWrap .bigMainCircle img {
           position: absolute;
           top: -20%;
           left: 14%; }
-        #helinox1 .project2Main .mainCircleWrap div.bigMainCircle::before {
+        #helinox1 .project2Main .mainCircleWrap .bigMainCircle::before {
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
@@ -40,14 +48,28 @@
           border: 1px solid #fff;
           top: 0;
           left: 420px; }
-    #helinox1 .project2Main p {
-      position: absolute;
-      display: fixed;
-      top: 455px;
-      right: 106px;
-      font-family: "Fugaz one";
-      font-size: 130px;
-      color: #fff; }
+      #helinox1 .project2Main .mainCircleWrap .empty {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 420px;
+        width: 670px;
+        height: 670px;
+        border: 1px solid #000; }
+      #helinox1 .project2Main .mainCircleWrap .emptyCircle1 {
+        left: 349px; }
+      #helinox1 .project2Main .mainCircleWrap .emptyCircle3 {
+        left: 491px; }
+  #helinox1 p {
+    position: absolute;
+    display: fixed;
+    top: 455px;
+    right: 106px;
+    font-family: "Fugaz one";
+    font-size: 130px;
+    color: #000; }
   #helinox1 .simpleExplain {
     position: absolute;
     bottom: 0;

@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heyri Ceramic Art Center project</title>
+  <title> Heyri Ceramic Art Center project </title>
   <!-- favicon -->
+  <link rel="apple-touch-icon" href="assets/img/common/iphone_icon.png">
+  <link rel="shortcit icon" href="assets/img/common/androd_icon.png">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../assets/css/swiper-bundle.css">
   <link rel="stylesheet" href="../assets/css/common.css">
@@ -14,7 +16,7 @@
   <!-- Swiper js -->
   <script src="../assets/js/swiper.min.js"></script>
   <!-- Custom JS -->
-  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/project.js"></script>
 </head>
 <body>
   <div id="skip">
@@ -23,32 +25,31 @@
 
   <div id="wrap">
     <header id="header">
-      <h1 class="logo">
+      <h1 class="logo leftPos">
         <a href="index.html">
           <img src="../assets/img/common/JIYUNJEONG.svg" alt="로고">
           <div class="blind-b">Jiyun Jeong's portfolio</div>
         </a>
       </h1>
       <div class="util">
-        <button type="button" class="btn_open">
+        <button class="btn_open" type="button">
           <img src="../assets/img/icon/open.svg" alt="메뉴열기">
-          <span class="blind-b">메뉴열기</span>
         </button>
         <div class="navWrap">
           <div class="navigation">
             <nav id="gnb">
               <ul>
                 <li>
-                  <a href="index.html">HOME</a>
+                  <a data-link="first" href="index.html" type="button">HOME</a>
                 </li>
                 <li>
-                  <a href="">WORKS</a>
+                  <a href="index.html #work" type="button">WORKS</a>
                 </li>
                 <li>
-                  <a href="">ABOUT</a>
+                  <a href="index.html #cnt2" type="button">ABOUT</a>
                 </li>
                 <li>
-                  <a href="">CONTACTS</a>
+                  <a href="index.html #footer" type="button">CONTACTS</a>
                 </li>
               </ul>
             </nav>
@@ -69,23 +70,28 @@
           </div>
           <div class="email">
             <p>Hit me up!</p>
-            <p><a href="mailto: rijamong0830@naver.com" title="문의메일 보내기">rijamong0830@naver.com</a></p>
+            <p><a data-link="last" href="mailto: rijamong0830@naver.com" title="문의메일 보내기">rijamong0830@naver.com</a></p>
           </div>
+          <button type="button" class="btn_close">
+            <img src="../assets/img/icon/close.svg" alt="메뉴닫기">
+          </button>
         </div>
-        <button type="button" class="btn_close">
-          <img src="../assets/img/icon/close.svg" alt="메뉴닫기">
-          <span class="blind-b">메뉴닫기</span>
-        </button>
+
       </div>
     </header>
 
-    <!--  -->
+    <!-- heyri main Index -->
     <section id="heyri1" role="main">
       <h2 class="blind-b">세 번째 포트폴리오</h2>
       <div class="project3Main">
         <div class="mainCircleWrap">
           <div class="bigMainCircle">
-            <img src="../assets/img/main/" alt="heyri 전체화면">
+            <img src="../assets/img/main/heyriMain@2x.jpg" alt="heyri 전체화면">
+          </div>
+          <div class="emptyCircleWrap">
+            <div class="empty emptyCircle1"></div>
+            <div class="empty emptyCircle2"></div>
+            <div class="empty emptyCircle3"></div>
           </div>
         </div>
         <p>
@@ -96,11 +102,11 @@
         </p>
         <div class="simpleExplain">
           <div class="sicssor">
-            <img src="../assets/img/icon/scissor.svg" alt="가위 이모티콘">
+            <img src="../assets/img/icon/scissor.svg" alt="">
             <img class="heyriLogo" src="../assets/img/main/heyriLogo@2x.png" alt="heyri logo">
             <div class="explainText">
               <span>DATA</span>
-              <p>2020.10.19 - 11.16</p> <!-- 날짜 수정 -->
+              <p>2020.9.14 - 10.12</p> <!-- 날짜 수정 -->
               <span>DEVICE</span>
               <p>1920*1080</p>
               <span>PARTICIPATION</span>
@@ -182,7 +188,7 @@
             깔끔하면서 가독성을 높일 수 있는 고딕체를 위주로 사용하였으며,<br>
             영문은 Josefin Sans를 사용하여 도자기의 둥그스름한 모양과 매치되도록 하였습니다.
           </p>
-          <img src="../assets/img/main/" alt="헤이리 타이포그래피">
+          <img src="../assets/img/main/heyriTypo@2x.png" alt="헤이리 타이포그래피">
         </div>
       </div>
     </section>
@@ -198,7 +204,7 @@
       </div>
       <div class="originalHomepage">
         <p>&lt;기존 홈페이지&gt;</p>
-        <img src="../assets/img/main/helinoxMainpage@2x.png" alt="헬리녹스 기존 홈페이지 이미지"> 
+        <img class="mainPageIMG" src="../assets/img/main/heyriMain@2x.png" alt="헤이리 기존 홈페이지 이미지"> 
       </div>
       <div class="analysisText">
         <img src="../assets/img/icon/cross.svg" alt="포인트">
@@ -213,6 +219,113 @@
           사용자의 편의성을 높이고 이탈율을 줄이는 것을 목표로 하였습니다.
         </p>
       </div> 
+    </section>
+
+    <!-- helinox4 Wireframe -->
+    <section id="heyri4">
+      <h2 class="blind-b">헤이리세라믹아트센터 와이어프레임</h2>
+      <div class="wireframe">
+        <img src="../assets/img/icon/cross.svg" alt="포인트">
+        <h3>WIREFRAMES</h3>
+        <p class="content">
+          <span>1920px 해상도</span>를 기준으로 index와 5개의 서브페이지의 와이어프레임을 제작하였습니다.
+        </p>
+      </div>
+      <div class="wireframeWrap">
+        <div class="wire1">
+          <img class="wire" src="../assets/img/main/heyriWireframe1.png" alt="Index 와이어프레임1">
+        </div>
+        <div class="wire2">
+          <img class="wire" src="../assets/img/main/heyriWireframe2.png" alt="Index 와이어프레임2">
+        </div>
+        <div class="wire3">
+          <img class="wire" src="../assets/img/main/heyriWireframe3.png" alt="About 와이어프레임">
+        </div>
+        <div class="wire4">
+          <img class="wire" src="../assets/img/main/heyriWireframe4.png" alt="footer 와이어프레임">
+        </div>
+        <div class="wire5">
+          <img class="wire" src="../assets/img/main/heyriWireframe5.png" alt="program 와이어프레임">
+        </div>
+        <div class="wire6">
+          <img class="wire" src="../assets/img/main/heyriWireframe6.png" alt="예약 와이어프레임">
+        </div>
+    </div>
+    </section>
+
+    <!-- heyri page preview -->
+    <section id="heyri5">
+      <h2 class="blind-b">모든 페이지 프리뷰</h2> <!-- h550  -->
+      <div class="pagePreview"> <!-- bg , background: fixed; -->
+        <img class="pageBlurImg" src="../assets/img/main/heyriBlurImg.png" alt="프리뷰 이미지">
+        <img src="../assets/img/icon/cross.svg" alt="포인트">
+        <h3>ALL PAGE Preview</h3>
+        <p class="content">
+          웹페이지 주 사용 대상이 체험예약 페이지로 손쉽게 이동할 수 있도록 메인페이지에 버튼을 배치하여<br>
+          페이지의 기능성을 높였으며, <span>프로그램을 그룹화하여 네비게이션을 정돈</span>하였습니다.<br>
+          메인페이지에 <span>동영상을 사용한 비주얼적 요소를 사용</span>하여 브랜드 이미지를 고급화하였습니다.<br>
+          또한 표준 웹 접근성을 따라 마크업을 작성하였습니다.      
+        </p>
+        <a href="https://jiyun-jeong.github.io/project/" type="button">Check the site</a>
+      </div>
+    </section>
+
+    <!-- detail view -->
+    <section id="heyri6">
+      <div class="blind-b">표준 웹 접근성 디테일 보기</div>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide heyriSlide1">
+            <h2 class="blind-b">detail view page1</h2>
+            <div class="detailText">
+              <img src="../assets/img/icon/cross.svg" alt="포인트">
+              <h3>DETAIL VIEW</h3>
+              <p class="detailTitle">
+                <strong>운용의 용이성(Operable)</strong><br>
+                2.1 입력 장치 접근성 - 2.1.2 (초점 이동) 키보드에 의한 초점은 논리적으로 이동해야 하며 시각적으로 구별할 수 있어야 한다.
+              </p>
+              <div class="compare compare1">
+                <div class="heyriTabCode">
+                  <img src="../assets/img/main/heyriTab@2x.jpg" alt="탭화면 이미지">
+                  <img src="../assets/img/main/heyriTabCode@2x.png" alt="탭 속성 이미지">
+                  <img src="../assets/img/main/heyriBtnCode@2x.png" alt="버튼 role 이미지">
+                </div>
+                <img src="../assets/img/main/goprojsAuto_c@2x.png" alt="확대된 탭 이미지"> <!-- 이미지 교체 -->
+                <img src="../assets/img/main/goprojsAuto_c@2x.png" alt="확대된 버튼 자바스크립트"> <!-- 이미지 교체 -->
+                <img src="../assets/img/main/goprojsAuto_c@2x.png" alt="확대된 탭 속성 CSS"> <!-- 이미지 교체 -->
+                <img src="../assets/img/main/goprojsAuto_c@2x.png" alt="확대된 버튼 속성 role"> <!-- 이미지 교체 -->
+                <p>
+                  탭 컨텐츠에 알맞은 <span>aira 속성을 사용하고 tabIndex로 포커싱을 제어</span>하도록 스크립트를 작성하였습니다.<br>
+                  버튼으로 사용한 <span>a태그에 role="button" 속성을 적어주며 스크린리더기에서 읽힐 수 있도록 적용</span>하였습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide heyriSlide2">
+          <h2 class="blind-b">detail view page2</h2>
+              <div class="detailText">
+                <img src="../assets/img/icon/cross.svg" alt="포인트">
+                <h3>DETAIL VIEW</h3>
+                <p class="detailTitle">
+                  <strong>운용의 용이성(Operable)</strong><br>
+                  2.4 쉬운 네비게이션 - 2.4.1 (반복 영역 건너뛰기) 콘텐츠의 반복되는 영역은 건너뛸 수 있어야 한다.
+                </p>
+                <div class="compare compare2">
+                  <div class="heyrSkipWrap">
+                    <img src="../assets/img/main/heyriSkip@2x.jpg" alt="스킵네비게이션 이미지">
+                    <img src="../assets/img/main/heyriSkipCode@2x.jpg" alt="스킵네비게이션 마크업">
+                  </div>
+                  <img src="../assets/img/main/goprojsIframe_c@2x.png" alt="확대된 스킵네비게이션"> <!-- 이미지 교체 -->
+                  <p>
+                    Tab 키를 이용하여 본문으로 건너뛸 수 있도록 skip 네비게이션을 설정하였습니다.<br>
+                    마우스 사용자에게는 보이지 않도록 absolute와 left 좌표값을 주어 조정하였습니다.
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     </div>
 </body>

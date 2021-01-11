@@ -78,22 +78,28 @@ body {
 #wrap {
   position: relative; overflow: hidden;
   #header {
-    .logo {/* display: none; */ position: absolute; top: 29px; left: 32px;width: 131px;height: 77px;}
+    .logo {
+      display: none; position: absolute; top: 29px; left: 32px;width: 131px; height: 77px;
+      a {width: 131px; height: 77px; }
+    }
     .util {
-      position: absolute; top: 17px; right: 22px; 
-      > .btn_open img {width: 44px;height: 44px;cursor: pointer; }
+      position: relative; position: fixed; top: 17px; right: 22px; z-index: 1000;
+      > .btn_open img {width: 44px;height: 44px; cursor: pointer;}
     }
     .navWrap {
-        display: none; position: relative; width: 100vw;height: 100vh;top: 0; right: 0px; background: orange;
+        visibility: hidden; position: fixed; /* width: 100vw; height: 100vh;  */top: 0; left: 100%; background: $lightpurple;overflow-y: auto; right: 0; bottom: 0; overflow: hidden;
         #gnb {
             position: absolute; text-align: left; left: 204px; top: 268px; width: 901px;height: 618px;
             ul {
                 font-size: 115px;line-height: 160px;font-family: Chonburi; color: $lightyellow;
+                li {position: relative;
+                  a:hover, a:focus {content: ""; display: block; clear: both; position: absolute; width: 100%; height: 3px; background: $lightyellow;}
+                }
             }
         }
     }
     .sns, .email {position: absolute; color: #fff;left: 1245px;}
-    .sns p, .email p {padding-bottom: 18px;font-size: 21px;}
+    .sns p, .email p {padding-bottom: 18px;font-size: 21px; font-weight: bold;}
     .sns {
         top: 540px; right: 534px; 
         ul li {font-size: 32px;letter-spacing: 0.61px;}
@@ -101,7 +107,7 @@ body {
     .email{
         bottom: 221px; 
     }
-    .btn_close {display: none;}
+    .btn_close {position: fixed; top: 17px; right: 22px;}
   }
 }
 
@@ -111,10 +117,10 @@ footer {
   .contact button, .bigEmail {font-family: "Fugaz One"; }
   .contact {
     position: absolute; top: 262px; left: 140px; width: 200px; height: 72px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
-    &::before {
+/*     &::before {
         @include transform(rotate(180deg));
         content:""; display: block; clear: both; position: absolute; top: -138%; left: 50%; width: 1px; height: 261px; background: #fff; z-index: 500;
-    }
+    } */
     button {
         @include border-radius(50%);
         font-size: 29px; border: 1px solid #fff; width: 100%; line-height: 72px; background: $lightpurple; color: #fff;
@@ -128,7 +134,18 @@ footer {
     a {flex-direction: row; display: block;}
     a + a {margin-left: 130px;}
   }
-  .phoneImg { 
+  .phoneImg {
+    animation: ring 3.6s linear infinite;
     position: absolute; width: 566px; height: 576px; top: 64px; right: 0;
+  }
+  @keyframes ring {
+    0% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(0deg) scale(1,1);}
+    3% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(-5deg) scale(1,1);}
+    6% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(0deg) scale(1,1);}
+    9% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(-5deg) scale(1,1);}
+    12% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(0deg) scale(1,1);}
+    15% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(-5deg) scale(1,1);}
+    18% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(0deg) scale(1,1);}
+    100% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(0deg) scale(1,1);}
   }
 }
