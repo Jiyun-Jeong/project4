@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var scrollY;
-    var _gnb = $('#gnb')
+    var _gnb = $('.navWrap')
 
     //메뉴열기 클릭
     $('.btn_open').on('click', function () {
@@ -11,14 +11,11 @@ $(document).ready(function () {
 
             $(this).removeClass('active').find('blind-b').text('메뉴 열기');
         } else {
-            var scrollMove = scrollT;
-            console.log(scrollMove);
-
-            $(this).addClass('active').find('blind-b').text('메뉴 닫기');
+            $(this).addClass('active').find('img').attr('alt', '메뉴 닫기');
             var $first = _gnb.find('[data-link=first]');
             var $last = _gnb.find('[data-link=last]');
 
-            _gnb.css({display: 'block'}).stop().animate({left: 0}, 300, function () {
+            _gnb.css({visibility: 'visible'}).stop().animate({left: 0}, 300, function () {
                 $first.focus();
             });
 
@@ -37,5 +34,10 @@ $(document).ready(function () {
                 }
             });
         }
+
+        
+
+    });
+
 
 });

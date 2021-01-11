@@ -39,7 +39,6 @@
         </h1>
         <div class="util">
           <button class="btn_open" type="button">
-            <div class="blind-b">메뉴열기</div>
             <img src="assets/img/icon/open.svg" alt="메뉴열기">
           </button>
           <div class="navWrap">
@@ -47,16 +46,16 @@
               <nav id="gnb">
                 <ul>
                   <li>
-                    <a href="index.html">HOME</a>
+                    <a data-link="first" href="index.html" type="button">HOME</a>
                   </li>
                   <li>
-                    <a href="index.html #work">WORKS</a>
+                    <a href="index.html #work" type="button">WORKS</a>
                   </li>
                   <li>
-                    <a href="index.html #cnt2">ABOUT</a>
+                    <a href="index.html #cnt2" type="button">ABOUT</a>
                   </li>
                   <li>
-                    <a href="index.html #footer">CONTACTS</a>
+                    <a href="index.html #footer" type="button">CONTACTS</a>
                   </li>
                 </ul>
               </nav>
@@ -77,13 +76,13 @@
             </div>
             <div class="email">
               <p>Hit me up!</p>
-              <p><a href="mailto: rijamong0830@naver.com" title="문의메일 보내기">rijamong0830@naver.com</a></p>
+              <p><a data-link="last" href="mailto: rijamong0830@naver.com" title="문의메일 보내기">rijamong0830@naver.com</a></p>
             </div>
+            <button type="button" class="btn_close">
+              <img src="assets/img/icon/close.svg" alt="메뉴닫기">
+            </button>
           </div>
-          <button type="button" class="btn_close">
-            <img src="assets/img/icon/close.svg" alt="메뉴닫기">
-            <div class="blind-b">메뉴닫기</div>
-          </button>
+
         </div>
       </header>
       <!-- main screen section -->
