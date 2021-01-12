@@ -132,7 +132,7 @@ body {
       position: absolute;
       text-align: left;
       left: 10.625vw;
-      top: 13.9583vw;
+      top: 9.1146vw;
       width: 46.875vw;
       height: 32.1875vw; }
       #wrap #header .navWrap #gnb ul {
@@ -142,14 +142,14 @@ body {
         color: #FAF2A7; }
         #wrap #header .navWrap #gnb ul li {
           position: relative; }
-          #wrap #header .navWrap #gnb ul li a:hover, #wrap #header .navWrap #gnb ul li a:focus {
+          #wrap #header .navWrap #gnb ul li a:hover::before, #wrap #header .navWrap #gnb ul li a:focus::before {
             content: "";
-            display: block;
-            clear: both;
             position: absolute;
             width: 100%;
             height: 3px;
-            background: #FAF2A7; }
+            background: #FAF2A7;
+            bottom: 0;
+            left: 0; }
   #wrap #header .sns, #wrap #header .email {
     position: absolute;
     color: #fff;
@@ -159,14 +159,14 @@ body {
     font-size: 30px;
     font-weight: bold; }
   #wrap #header .sns {
-    top: 28.125vw;
+    top: 22.65625vw;
     right: 27.8125vw; }
     #wrap #header .sns ul li {
       font-size: 27px;
       letter-spacing: 0.61px;
       padding-bottom: 10px; }
   #wrap #header .email {
-    bottom: 221px; }
+    bottom: 8.8021vw; }
     #wrap #header .email p:last-child {
       font-size: 27px;
       letter-spacing: 0.61px;

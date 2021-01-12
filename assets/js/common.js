@@ -4,14 +4,6 @@ $(document).ready(function () {
 
     //메뉴열기 클릭
     $('.btn_open').on('click', function () {
-        if($(this).hasClass('active')) {
-            _gnb.stop().animate({left: '100%'}, 300, function () {
-                $(this).css({display: 'none'}).find('ul li.on').removeClass('on').children('ul').stop().slideUp();
-            });
-
-            $(this).removeClass('active').find('blind-b').text('메뉴 열기');
-        } else {
-            $(this).addClass('active').find('img').attr('alt', '메뉴 닫기');
             var $first = _gnb.find('[data-link=first]');
             var $last = _gnb.find('[data-link=last]');
 
@@ -33,11 +25,13 @@ $(document).ready(function () {
                     $('.btn_open').focus();
                 }
             });
-        }
 
-        
+        });
 
-    });
-
-
+    //메뉴닫기 클릭
+    $('.btn_close').on('click', function () {
+            _gnb.stop().animate({left: '100%'}, 500, function () {
+                    $(this).css({visibility: 'hidden'});
+                });
+    });  
 });

@@ -127,7 +127,7 @@ p.content {
     img {position: absolute; top: 126px; left: 189px; width: 503px;}
   }
   .analysisText {
-    position: relative; width: 690px; height: 171px; float: right; padding-right: 206px; margin-top: 168px;
+    position: relative; width: 690px; height: 171px; float: right; padding-right: 206px; margin-top: 70px;
     img {
       position: absolute; top: -15px; left: -15px; width: 18.16px; height: 18.36px;
     }
@@ -142,7 +142,7 @@ p.content {
 #gopro4 {
   position: relative; width: 100%; height: 100vh; overflow: hidden; background: #F6F6F6; 
   .wireframe {
-    display: inline-block; margin-left: 0; position: relative; margin: 100px 0 222px; width: 100%;
+    display: inline-block; margin-left: 0; position: relative; margin: 125px 0 125px; width: 100%;
     > img:first-child {
       position: absolute; top: -15px; left: 44.5%; width: 18.16px; height: 18.36px;
     }
@@ -161,7 +161,7 @@ p.content {
 }
 
 #gopro5 {
-  position: relative; width: 100%; height: 125.9vh; background: #000000;
+  position: relative; width: 100%; height: 145.9vh; background: #000000;
   .previewText {
     display: inline-block; background: url("../img/main/previewImg@2x.png") no-repeat fixed center; margin-left: 0; /* margin: 128px 0 0; */ padding-top: 128px; width: 100%; height: 324px; overflow: hidden; padding-bottom: 222px; 
     > img {
@@ -180,7 +180,7 @@ p.content {
     
   }
   .deviceImg {
-    position: relative; width: 100%; height: 686px; background: #ffffff;
+    position: relative; width: 100%; height: 35.4167vw/* 680px */; background: #ffffff;
     img {position: absolute; bottom: 0; left: 0; right: 0; margin: 0 auto;}
   }
 }
@@ -189,7 +189,7 @@ p.content {
 #gopro6 {
   position: relative; width: 100%; height: 100vh; background: #000000;
   .openWax {
-    display: inline-block; margin-left: 0; position: relative; margin: 128px 0 0; width: 100%; height: 159px; /* padding-bottom: 222px; */
+    display: inline-block; margin-left: 0; position: relative; margin: 100px 0 0; width: 100%; height: 159px; /* padding-bottom: 222px; */
     > img:first-child {
       position: absolute; top: -15px; left: 36.5%; width: 18.16px; height: 18.36px;
     }
@@ -199,7 +199,7 @@ p.content {
     }
   }
   .openWaxImg {
-    position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; width: 1297px; height: 590px; text-align: center; margin: 0 auto; margin-top: 93px;
+    position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; width: 1297px; height: 590px; text-align: center; margin: 0 auto; margin-top: 65px;
     .originalPage {
       position: relative; display: inline-block; z-index: 10;
       > img:first-child {padding-bottom: 46px;}

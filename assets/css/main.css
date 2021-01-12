@@ -46,7 +46,8 @@
       font-size: 1.5104vw;
       border: 1px solid #fff;
       width: 100%;
-      line-height: 3.75vw; }
+      line-height: 3.75vw;
+      background: #B4CAFA; }
       #cnt1 .pageSwipe .about button:hover, #cnt1 .pageSwipe .about button:focus {
         background: #FAF2A7;
         color: #B4CAFA; }
@@ -66,7 +67,7 @@
       position: absolute;
       top: 50%;
       left: 68%;
-      width: 108vw;
+      width: 103vw;
       height: 1px;
       background: #fff;
       z-index: 500; }
@@ -82,14 +83,15 @@
       font-size: 29px;
       border: 1px solid #fff;
       width: 200px;
-      line-height: 72px; }
+      line-height: 72px;
+      background: #B4CAFA; }
   #cnt1 svg {
     padding: 149px 280px 0 708px;
     width: 932px;
     height: 551px; }
   #cnt1 p {
     position: absolute;
-    top: 60%;
+    top: 75%;
     left: 41%;
     font-size: 1.9791vw;
     line-height: 1.9791vw;
@@ -97,9 +99,9 @@
     text-align: right; }
   #cnt1 .decorate .sunflower {
     position: absolute;
-    top: -13.5417vw;
+    top: -7.8125vw;
     left: 12.9167vw;
-    width: 27.96875vw;
+    width: 19.53125vw;
     animation: moveSunflower 5s ease-in-out infinite; }
   #cnt1 .decorate .yellowCircle {
     position: absolute;
@@ -467,6 +469,8 @@
         font-size: 36px !important;
         padding-top: 0 !important;
         padding-right: 0 !important; }
+    #cnt3 .swiper-container .swiper-button-next:after, #cnt3 .swiper-container .swiper-button-prev:after {
+      display: none; }
 
 #cnt4 {
   position: relative;
@@ -592,10 +596,7 @@
         position: relative;
         width: 16.5104vw;
         height: 15.3646vw;
-        background: #a6fcbc;
-        /* .hiddenTriangle {
-            p {display: none; font-size: 36px; top: 66%; left: calc(50% - 36.5px);}
-        } */ }
+        background: #a6fcbc; }
         #cnt4 .dashboard .middleBoard .efficiency span {
           display: block;
           font-family: KoreanDREAM5;
@@ -604,10 +605,11 @@
           padding-top: 33px; }
         #cnt4 .dashboard .middleBoard .efficiency #drop1 {
           position: absolute;
-          top: 113px;
+          top: 40%;
           left: 0;
           right: 0;
-          margin: 0 auto; }
+          margin: 0 auto;
+          width: 134px; }
         #cnt4 .dashboard .middleBoard .efficiency > p {
           position: absolute;
           font-size: 2.8646vw;
@@ -630,9 +632,9 @@
           padding-top: 33px; }
         #cnt4 .dashboard .middleBoard .producitivity #drop2 {
           position: absolute;
-          top: 34%;
-          left: calc(50% - 137.5px);
-          width: 14.3229vw; }
+          top: 45%;
+          left: calc(50% - 95.5px);
+          width: 191px; }
         #cnt4 .dashboard .middleBoard .producitivity > p {
           position: absolute;
           top: 53%;
@@ -684,25 +686,22 @@
             margin-top: 17px; }
     #cnt4 .dashboard .droppableModel {
       position: absolute;
-      bottom: 14%;
-      left: 8%;
-      width: 390px;
-      height: 158px; }
-      #cnt4 .dashboard .droppableModel .triangle #drag1Yes {
-        width: 134px; }
+      top: 30%;
+      left: 20%;
+      width: 455px;
+      height: 176px; }
       #cnt4 .dashboard .droppableModel .thunder {
-        position: relative; }
+        display: inline-block; }
         #cnt4 .dashboard .droppableModel .thunder #drag2Yes {
           position: absolute;
           top: 0;
           left: 0;
-          width: 14.3229vw; }
-        #cnt4 .dashboard .droppableModel .thunder #drag2After {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 14.3229vw;
-          /* display: none; */ }
+          width: 191px; }
+      #cnt4 .dashboard .droppableModel .triangle {
+        display: inline-block; }
+        #cnt4 .dashboard .droppableModel .triangle #drag1Yes {
+          width: 134px;
+          left: 180px; }
       #cnt4 .dashboard .droppableModel p {
         position: absolute;
         font-size: 2.8646vw;
@@ -761,7 +760,8 @@
         #cnt4 .dashboard .rightBoard .skillView .skillCircle {
           width: 540px;
           height: 390px;
-          position: relative; }
+          position: relative;
+          line-height: 390px; }
           #cnt4 .dashboard .rightBoard .skillView .skillCircle div {
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
@@ -769,7 +769,10 @@
             position: absolute;
             text-align: center;
             font-size: 14px;
-            line-height: 21px; }
+            line-height: 21px;
+            font-size: 14px;
+            text-align: center;
+            color: #000; }
           #cnt4 .dashboard .rightBoard .skillView .skillCircle .design
           .subject1, #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject3 {
             width: 156px;
@@ -946,15 +949,30 @@
   background: #B4CAFA; }
   #work .backBtn {
     position: absolute;
-    top: 12.6042vw;
-    right: 0; }
+    top: 11.4583vw;
+    right: -1.5%;
+    width: 10.4167vw;
+    height: 3.75vw;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1000; }
     #work .backBtn #backBtn {
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
-      width: 25px;
-      height: 25px;
-      background: #fff; }
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      font-family: "Fugaz One";
+      color: #fff;
+      font-size: 29px;
+      border: 1px solid #fff;
+      width: 200px;
+      line-height: 72px;
+      background: #B4CAFA; }
   #work .workSwiperWrap {
     border: 1px solid #fff;
     width: 98.4375vw;
@@ -1037,6 +1055,8 @@
           background-image: url("../img/icon/leftButton.svg"); }
         #work .workSwiperWrap .workSwiper .controller .swiper-button-next {
           background-image: url("../img/icon/rightButton.svg"); }
+      #work .workSwiperWrap .workSwiper .swiper-button-next:after, #work .workSwiperWrap .workSwiper .swiper-button-prev:after {
+        display: none; }
     #work .workSwiperWrap .swiper-slice img {
       -webkit-transition: all 0.4s;
       -moz-transition: all 0.4s;
@@ -1079,6 +1099,8 @@
     right: -1%; }
   #work .gopro .workSwiper {
     top: 19.4792vw; }
+    #work .gopro .workSwiper .swiper-button-next:after, #work .gopro .workSwiper .swiper-button-prev:after {
+      display: none; }
   #work .helinox {
     position: relative; }
     #work .helinox .workSwiperWrap {
@@ -1104,6 +1126,8 @@
       #work .helinox .work2Swiper .swiper-container {
         width: 100%;
         height: 100%; }
+      #work .helinox .work2Swiper .swiper-button-next:after, #work .helinox .work2Swiper .swiper-button-prev:after {
+        display: none; }
   #work .heyri {
     position: relative; }
     #work .heyri .workSwiperWrap {
@@ -1113,5 +1137,7 @@
         #work .heyri .workSwiperWrap .work3Swiper .swiper-container {
           width: 100%;
           height: 100%; }
+        #work .heyri .workSwiperWrap .work3Swiper .swiper-button-next:after, #work .heyri .workSwiperWrap .work3Swiper .swiper-button-prev:after {
+          display: none; }
 
 /*# sourceMappingURL=main.css.map */

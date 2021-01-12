@@ -89,11 +89,12 @@ body {
     .navWrap {
         visibility: hidden; position: fixed; /* width: 100vw; height: 100vh;  */top: 0; left: 100%; background: $lightpurple;overflow-y: auto; right: 0; bottom: 0; overflow: hidden;
         #gnb {
-            position: absolute; text-align: left; left: 10.625vw/* 204px */; top: 13.9583vw/* 268px */; width: 46.875vw/* 900px */;height: 32.1875vw/* 618px */;
+            position: absolute; text-align: left; left: 10.625vw/* 204px */; top: 9.1146vw/* 175px */; width: 46.875vw/* 90 0px */;height: 32.1875vw/* 618px */;
             ul {
                 font-size: 115px;line-height: 160px;font-family: Chonburi; color: $lightyellow;
-                li {position: relative;
-                  a:hover, a:focus {content: ""; display: block; clear: both; position: absolute; width: 100%; height: 3px; background: $lightyellow;}
+                li {
+                  position: relative;
+                  a:hover::before, a:focus::before {content: ""; position: absolute; width: 100%; height: 3px; background: $lightyellow; bottom: 0; left: 0;}
                 }
             }
         }
@@ -101,11 +102,11 @@ body {
     .sns, .email {position: absolute; color: #fff;left: 64.84375vw/* 1245px */;}
     .sns p, .email p:first-child {padding-bottom: 18px; font-size: 30px; font-weight: bold;}
     .sns {
-        top: 28.125vw/* 540px */; right: 27.8125vw/* 534px */; 
+        top: 22.65625vw/* 435px */; right: 27.8125vw/* 534px */; 
         ul li {font-size: 27px;letter-spacing: 0.61px; padding-bottom: 10px}
     }
     .email{
-        bottom: 221px;
+        bottom: 8.8021vw/* 169px */;
         p:last-child {font-size: 27px;letter-spacing: 0.61px; text-decoration: underline;}
     }
     .btn_close {position: fixed; top: 17px; right: 22px;}

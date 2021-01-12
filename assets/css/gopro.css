@@ -254,7 +254,7 @@ p.content {
     height: 171px;
     float: right;
     padding-right: 206px;
-    margin-top: 168px; }
+    margin-top: 70px; }
     #gopro3 .analysisText img {
       position: absolute;
       top: -15px;
@@ -277,7 +277,7 @@ p.content {
     display: inline-block;
     margin-left: 0;
     position: relative;
-    margin: 100px 0 222px;
+    margin: 125px 0 125px;
     width: 100%; }
     #gopro4 .wireframe > img:first-child {
       position: absolute;
@@ -313,7 +313,7 @@ p.content {
 #gopro5 {
   position: relative;
   width: 100%;
-  height: 125.9vh;
+  height: 145.9vh;
   background: #000000; }
   #gopro5 .previewText {
     display: inline-block;
@@ -363,7 +363,7 @@ p.content {
   #gopro5 .deviceImg {
     position: relative;
     width: 100%;
-    height: 686px;
+    height: 35.4167vw;
     background: #ffffff; }
     #gopro5 .deviceImg img {
       position: absolute;
@@ -382,7 +382,7 @@ p.content {
     display: inline-block;
     margin-left: 0;
     position: relative;
-    margin: 128px 0 0;
+    margin: 100px 0 0;
     width: 100%;
     height: 159px;
     /* padding-bottom: 222px; */ }
@@ -413,7 +413,7 @@ p.content {
     height: 590px;
     text-align: center;
     margin: 0 auto;
-    margin-top: 93px; }
+    margin-top: 65px; }
     #gopro6 .openWaxImg .originalPage {
       position: relative;
       display: inline-block;

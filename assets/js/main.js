@@ -134,12 +134,12 @@ $(document).ready(function () {
     var ballsize = 100; //100%일 경우 크기를 적는다
 
     //매개변수 : 선택자, 시작x좌표, 시작y좌표, 볼비율, 박스 밖으로 나갈경우 제어숫자, 가로이동크기, 세로이동크기, 고정x좌표, 고정y좌표
-    bounce('.subject1', 0, 0, 0.90, 6, 6, 6, 100, 100);
-    bounce('.subject2', 300, 100, 0.95, 4, 10, 15, 500, 500);
-    bounce('.subject3', 400, 290, 0.90, 5, 8, 12, 300, 250);
-    bounce('.subject4', 800, 150, 0.70, 2, 9, 7, 500, 650);
-    bounce('.subject5', 200, 800, 0.80, 7, 7, 10, 700, 450);
-    bounce('.subject6', 500, 650, 0.85, 6, 5, 5, 400, 150);
+    bounce('.subject1', 0, 0, 1.30, 6, 6, 6, 100, 100);
+    bounce('.subject2', 300, 100, 2, 4, 10, 15, 140, 140);
+    bounce('.subject3', 400, 290, 1.30, 5, 8, 12, 200, 170);
+    bounce('.subject4', 350, 150, 0.90, 2, 9, 7, 140, 200);
+    bounce('.subject5', 200, 350, 1.00, 7, 7, 10, 80, 150);
+    bounce('.subject6', 500, 450, 1.10, 6, 5, 5, 200, 150);
     function bounce(target, startX0, startY0, ratio, stepSize0, stepX0, stepY0, stopX, stopY) {
       var _ball = $(target);
       var startX = startX0;   //ball이 움직이기 시작하는 X 위치
@@ -165,7 +165,7 @@ $(document).ready(function () {
 
       function start(){
         if (ballTimer === 0)
-          ballTimer = setInterval(startMove, 25);
+          ballTimer = setInterval(startMove, 40);
           console.log(ballTimer);
       }
 
@@ -195,8 +195,6 @@ $(document).ready(function () {
         }
       }
     }
-  
-
 
     //work page work1 "swiper"
     var work1Swiper = new Swiper('#work .gopro .swiper-container', {
