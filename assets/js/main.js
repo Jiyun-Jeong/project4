@@ -35,7 +35,7 @@ $(document).ready(function () {
 
     if ( fixTop > 50 ) {
       console.log(fixTop);
-      _nameSvg.css({top: '29', left: '32', width: '131', height: 77}).;
+      _nameSvg.css({top: '29', left: '32', width: '131', height: 77});
     }
   });
 
@@ -122,8 +122,78 @@ $(document).ready(function () {
     }, 201);
   }
 
+  //공튀기기
+  $(document).ready(function () {
+    var _skillCircle = $("#skillCircle");
+    var panelWid = _skillCircle.width();
+    var panelHei = _skillCircle.height();
+    var ballsize = 100; //100%일 경우 크기를 적는다
 
-  출처: https: //dororongju.tistory.com/110 [웹 개발 메모장]
+    //매개변수 : 선택자, 시작x좌표, 시작y좌표, 볼비율, 박스 밖으로 나갈경우 제어숫자, 가로이동크기, 세로이동크기, 고정x좌표, 고정y좌표
+    bounce('.subject1', 0, 0, 0.90, 6, 6, 6, 100, 100);
+    bounce('.subject2', 300, 100, 0.95, 4, 10, 15, 500, 500);
+    bounce('.subject3', 400, 290, 0.90, 5, 8, 12, 300, 250);
+    bounce('.subject4', 800, 150, 0.70, 2, 9, 7, 500, 650);
+    bounce('.subject5', 200, 800, 0.80, 7, 7, 10, 700, 450);
+    bounce('.subject6', 500, 650, 0.85, 6, 5, 5, 400, 150);
+    function bounce(target, startX0, startY0, ratio, stepSize0, stepX0, stepY0, stopX, stopY) {
+      var _ball = $(target);
+      var startX = startX0;   //ball이 움직이기 시작하는 X 위치
+      var startY = startY0;   //ball이 움직이기 시작하는 Y 위치
+      var endX = panelWid - ballsize * ratio; //ball이 움직일수 있는 최대 X 위치
+      var endY = panelHei - ballsize * ratio; //ball이 움직일수 있는 최대 Y 위치
+      var stepSize = stepSize0;  
+      var stepX = stepX0; //숫자가 작을수록 느려지고, 클수록 빨라진다(시작위치에서 stepX 값을 더해 가로 다음 위치를 잡는다 )
+      var stepY = stepY0; //숫자가 작을수록 느려지고, 클수록 빨라진다(시작위치에서 stepY 값을 더해 세로 다음 위치를 잡는다 )
+      var ballTimer = 0;
+
+      start();  //먼저 시작된다
+      
+      _skillCircle.on({
+        mouseenter: function () {
+          console.log(_ball);
+          stopMove(); //패널에 진입하면 멈춘다
+        },
+        mouseleave: function () {
+          start(); // 패널에서 빠져 나오면 시작되고
+        }
+      });
+
+      function start(){
+        if (ballTimer === 0)
+          ballTimer = setInterval(startMove, 25);
+          console.log(ballTimer);
+      }
+
+      function startMove(){
+        _ball.css({width: ballsize * ratio, height: ballsize * ratio, left:startX0, top: startY0});
+        startX += stepX;  //시작위치에서 stepSize인 6만큼씩을 더해서 움직이게 한다
+        startY += stepY;
+        if (startX > endX) stepX = -stepSize;  //최대 위치를 벗어나면 빼주어 내부로 다시 들어오게 함
+        if (startX < 0) stepX = stepSize;      //최소 위치보다 더 작아지려하면 다시 초기화
+        if (startY > endY) stepY = -stepSize;
+        if (startY < 0) stepY = stepSize;
+
+        //absolute 속성을 지닌 #ball의 top과 left 값을 update한다
+        _ball.css({top: startY + "px", left: startX + "px"});
+        console.log(ballTimer);
+      }
+
+      function stopMove(){
+        if (ballTimer !== 0){
+          clearInterval(ballTimer);
+          // 고정 멈춤 위치
+          _ball.css({left:stopX, top: stopY});
+          startX = stopX; //멈춘 위치에서 다시 시작할수 있게 start값 변경
+          startY = stopY;
+
+          ballTimer = 0;
+        }
+      }
+    }
+  });
+  
+
 
     //work page work1 "swiper"
     var work1Swiper = new Swiper('#work .gopro .swiper-container', {
