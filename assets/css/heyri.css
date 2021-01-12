@@ -13,12 +13,8 @@
       position: relative;
       width: 670px;
       height: 670px;
-      margin: 0 auto;
-      /* .empty {
-       @include border-radius(50%);
-       width: 670px; height: 670px; border: 1px solid #fff; position: absolute; 
-      } */ }
-      #heyri1 .project3Main .mainCircleWrap div.bigMainCircle {
+      margin: 0 auto; }
+      #heyri1 .project3Main .mainCircleWrap .bigMainCircle {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
@@ -28,11 +24,11 @@
         background: #fff;
         margin: 217px auto 0;
         overflow: hidden; }
-        #heyri1 .project3Main .mainCircleWrap div.bigMainCircle img {
+        #heyri1 .project3Main .mainCircleWrap .bigMainCircle img {
           position: absolute;
           top: 0;
           left: -13%; }
-        #heyri1 .project3Main .mainCircleWrap div.bigMainCircle::before {
+        #heyri1 .project3Main .mainCircleWrap .bigMainCircle::before {
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
@@ -40,6 +36,20 @@
           border: 1px solid #fff;
           top: 0;
           left: 420px; }
+      #heyri1 .project3Main .mainCircleWrap .empty {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        position: absolute;
+        top: 0px;
+        left: 420px;
+        width: 670px;
+        height: 670px;
+        border: 1px solid #442a0d; }
+      #heyri1 .project3Main .mainCircleWrap .emptyCircle1 {
+        left: 349px; }
+      #heyri1 .project3Main .mainCircleWrap .emptyCircle3 {
+        left: 491px; }
     #heyri1 .project3Main p {
       position: absolute;
       display: fixed;
@@ -204,14 +214,9 @@ p.content {
       padding: 60px 0 50px 400px; }
     #heyri3 .originalHomepage .mainPageIMG {
       position: absolute;
-      top: 40%;
+      top: 100%;
       left: 5%;
       height: 423px; }
-    #heyri3 .originalHomepage .reservePageIMG {
-      position: absolute;
-      top: 196%;
-      left: 67%;
-      height: 281px; }
   #heyri3 .analysisText {
     position: relative;
     width: 690px;

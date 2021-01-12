@@ -1,13 +1,16 @@
 @charset "utf-8";
 @import "_var", "_mixin";
 
+#header {
+  .logo {display: block;}
+}
 #gopro1 {
   position: relative; width: 100%; height: 150vh; background: linear-gradient($goproBlue,#005B61, #011D1F, #000000); 
   .project1Main {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
     .mainCircleWrap {
       position: relative; width: 670px; height: 670px; margin: 0 auto; 
-      div.bigMainCircle {
+      .bigMainCircle {
         @include transition(top 1s, left 2s);
         @include transform(translate(-50%, -50%));
         @include border-radius(50%);
@@ -30,11 +33,13 @@
             left: -20%;
           }
         } 
-       }
-       /* .empty {
+      }
+      .empty {
         @include border-radius(50%);
-        width: 670px; height: 670px; border: 1px solid #fff; position: absolute; 
-       } */
+        position: absolute; top: 217px; left: 420px; width: 670px; height: 670px; border: 1px solid $goproBlue;
+      }
+      .emptyCircle1 {left: 349px;}
+      .emptyCircle3 {left: 491px;}
     }
     p {
       position: absolute; display: fixed; top: 455px; right: 150px; font-family: "Fugaz one"; font-size: 130px; color: #fff;

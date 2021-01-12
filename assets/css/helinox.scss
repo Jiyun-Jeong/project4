@@ -5,9 +5,13 @@
   position: relative; width: 100%; height: 150vh; background: #000;
   .project2Main {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+    .whiteHalf {
+      @include transform(rotate(45deg));
+      position: absolute; background: #fff; height: 154%; width: 87%; top: 1%; right: -22%; 
+    }
     .mainCircleWrap {
       position: relative; width: 670px; height: 670px; margin: 0 auto; 
-      div.bigMainCircle {
+      .bigMainCircle {
         @include border-radius(50%);
         position: relative; width: 100%; height: 100%; background: #fff; margin: 217px auto 0; overflow: hidden;
         img {position: absolute;top: -20%; left: 14%;}
@@ -16,34 +20,36 @@
           position: absolute; border: 1px solid #fff; top: 0; left: 420px; }
           
        }
-       /* .empty {
-        @include border-radius(50%);
-        width: 670px; height: 670px; border: 1px solid #fff; position: absolute; 
-       } */
+        .empty {
+          @include border-radius(50%);
+          position: absolute; top: 0; left: 420px; width: 670px; height: 670px; border: 1px solid #000;
+        }
+        .emptyCircle1 {left: 349px;}
+        .emptyCircle3 {left: 491px;}
+      }
     }
     p {
-      position: absolute; display: fixed; top: 455px; right: 106px; font-family: "Fugaz one"; font-size: 130px; color: #fff;
+      position: absolute; display: fixed; top: 455px; right: 106px; font-family: "Fugaz one"; font-size: 130px; color: #000;
     }
-  }
-  .simpleExplain {
-    position: absolute; bottom: 0; left: 0; background: #000; width: 100%; height: 190px; 
-    .sicssor {
-      position: relative; height: 224px; line-height: 224px; width: 100%; 
-      &::before {
-          content:""; clear: both; position: absolute; border-top: 3px dashed #fff; top: -2px; right: 0; width: 97%;
-      }
-      img {position: absolute; top: -32px; left: 0; fill: #fff;}
-      img.helinoxLogo {position: absolute; top: 58px; left: 265px; width: 367px; height: 79px; }
-      .explainText {
-        float: right; width: 1020.5px; height: 114.5px;
-        span {
-          display: inline-block; font-size: 17px; font-family: "Fugaz one"; padding-right: 87px; color: #fff; line-height: 0;
+    .simpleExplain {
+      position: absolute; bottom: 0; left: 0; background: #000; width: 100%; height: 190px; 
+      .sicssor {
+        position: relative; height: 224px; line-height: 224px; width: 100%; 
+        &::before {
+            content:""; clear: both; position: absolute; border-top: 3px dashed #fff; top: -2px; right: 0; width: 97%;
         }
-        p {display: block; text-align: left; font-size: 17px; font-family: "Fugaz one"; color: #fff; }
-  
+        img {position: absolute; top: -32px; left: 0; fill: #fff;}
+        img.helinoxLogo {position: absolute; top: 58px; left: 265px; width: 367px; height: 79px; }
+        .explainText {
+          float: right; width: 1020.5px; height: 114.5px;
+          span {
+            display: inline-block; font-size: 17px; font-family: "Fugaz one"; padding-right: 87px; color: #fff; line-height: 0;
+          }
+          p {display: block; text-align: left; font-size: 17px; font-family: "Fugaz one"; color: #fff; }
+    
+        }
       }
     }
-  }
 }
 
 /* helinox2 common */

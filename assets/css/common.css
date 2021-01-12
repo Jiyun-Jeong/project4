@@ -131,10 +131,10 @@ body {
     #wrap #header .navWrap #gnb {
       position: absolute;
       text-align: left;
-      left: 204px;
-      top: 268px;
-      width: 901px;
-      height: 618px; }
+      left: 10.625vw;
+      top: 13.9583vw;
+      width: 46.875vw;
+      height: 32.1875vw; }
       #wrap #header .navWrap #gnb ul {
         font-size: 115px;
         line-height: 160px;
@@ -153,19 +153,24 @@ body {
   #wrap #header .sns, #wrap #header .email {
     position: absolute;
     color: #fff;
-    left: 1245px; }
-  #wrap #header .sns p, #wrap #header .email p {
+    left: 64.84375vw; }
+  #wrap #header .sns p, #wrap #header .email p:first-child {
     padding-bottom: 18px;
-    font-size: 21px;
+    font-size: 30px;
     font-weight: bold; }
   #wrap #header .sns {
-    top: 540px;
-    right: 534px; }
+    top: 28.125vw;
+    right: 27.8125vw; }
     #wrap #header .sns ul li {
-      font-size: 32px;
-      letter-spacing: 0.61px; }
+      font-size: 27px;
+      letter-spacing: 0.61px;
+      padding-bottom: 10px; }
   #wrap #header .email {
     bottom: 221px; }
+    #wrap #header .email p:last-child {
+      font-size: 27px;
+      letter-spacing: 0.61px;
+      text-decoration: underline; }
   #wrap #header .btn_close {
     position: fixed;
     top: 17px;
@@ -182,9 +187,9 @@ footer {
     font-family: "Fugaz One"; }
   footer .contact {
     position: absolute;
-    top: 262px;
-    left: 140px;
-    width: 200px;
+    top: 13.6458vw;
+    left: 7.2916vw;
+    width: 10.4167vw;
     height: 72px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -204,15 +209,15 @@ footer {
       background: #B4CAFA;
       color: #fff; }
   footer .bigEmail {
-    font-size: 110px;
+    font-size: 5.7292vw;
     color: #444242;
     text-decoration: underline;
     padding: 410px 0 0 127px; }
   footer .sns {
     display: flex;
     position: absolute;
-    bottom: 197px;
-    left: 127px;
+    bottom: 10.2604vw;
+    left: 6.6146vw;
     font-family: "Fugaz one";
     font-size: 40px;
     color: #444242; }
@@ -220,12 +225,38 @@ footer {
       flex-direction: row;
       display: block; }
     footer .sns a + a {
-      margin-left: 130px; }
+      margin-left: 6.7708vw; }
   footer .phoneImg {
+    animation: ring 3.6s linear infinite;
     position: absolute;
-    width: 566px;
-    height: 576px;
+    width: 29.4792vw;
+    height: 30vw;
     top: 64px;
     right: 0; }
+@keyframes ring {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  3% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-5deg) scale(1, 1); }
+  6% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  9% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-5deg) scale(1, 1); }
+  12% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  15% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-5deg) scale(1, 1); }
+  18% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); } }
 
 /*# sourceMappingURL=common.css.map */

@@ -25,6 +25,20 @@ $(document).ready(function () {
     }
   });
 
+  //cnt1 스크롤에 따라 svg 사이즈 줄어들기 (top: 149px; right: 280px; padding: 708px; width: 932px; height: 551px) -> (top: 29px; left: 32px; width: 131px; height: 77px;)
+  $(window).on('scroll', function (){
+    var targetTop = $(this).scrollTop();
+    var _nameSvg = $('#name');
+    var fixTop = _nameSvg.offset().top;
+
+    console.log(targetTop, fixTop);
+
+    if ( fixTop > 50 ) {
+      console.log(fixTop);
+      _nameSvg.css({top: '29', left: '32', width: '131', height: 77}).;
+    }
+  });
+
   $('#backBtn').on('click', function () {
     $('#wrap').removeAttr('style');
     $('.wrap_inner').find('.leftPos').css('visibility', 'visible');

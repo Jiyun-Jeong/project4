@@ -79,7 +79,7 @@ body {
   position: relative; overflow: hidden;
   #header {
     .logo {
-      display: none; position: absolute; top: 29px; left: 32px;width: 131px; height: 77px;
+      display: none; position: absolute; top: 29px; left: 32px; width: 131px; height: 77px;
       a {width: 131px; height: 77px; }
     }
     .util {
@@ -89,7 +89,7 @@ body {
     .navWrap {
         visibility: hidden; position: fixed; /* width: 100vw; height: 100vh;  */top: 0; left: 100%; background: $lightpurple;overflow-y: auto; right: 0; bottom: 0; overflow: hidden;
         #gnb {
-            position: absolute; text-align: left; left: 204px; top: 268px; width: 901px;height: 618px;
+            position: absolute; text-align: left; left: 10.625vw/* 204px */; top: 13.9583vw/* 268px */; width: 46.875vw/* 900px */;height: 32.1875vw/* 618px */;
             ul {
                 font-size: 115px;line-height: 160px;font-family: Chonburi; color: $lightyellow;
                 li {position: relative;
@@ -98,14 +98,15 @@ body {
             }
         }
     }
-    .sns, .email {position: absolute; color: #fff;left: 1245px;}
-    .sns p, .email p {padding-bottom: 18px;font-size: 21px; font-weight: bold;}
+    .sns, .email {position: absolute; color: #fff;left: 64.84375vw/* 1245px */;}
+    .sns p, .email p:first-child {padding-bottom: 18px; font-size: 30px; font-weight: bold;}
     .sns {
-        top: 540px; right: 534px; 
-        ul li {font-size: 32px;letter-spacing: 0.61px;}
+        top: 28.125vw/* 540px */; right: 27.8125vw/* 534px */; 
+        ul li {font-size: 27px;letter-spacing: 0.61px; padding-bottom: 10px}
     }
     .email{
-        bottom: 221px; 
+        bottom: 221px;
+        p:last-child {font-size: 27px;letter-spacing: 0.61px; text-decoration: underline;}
     }
     .btn_close {position: fixed; top: 17px; right: 22px;}
   }
@@ -116,7 +117,7 @@ footer {
   position: relative; width: 100%; height: 46.875vw; background: $lightyellow; display: flex;
   .contact button, .bigEmail {font-family: "Fugaz One"; }
   .contact {
-    position: absolute; top: 262px; left: 140px; width: 200px; height: 72px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+    position: absolute; top: 13.6458vw/* 262px */; left: 7.2916vw/* 140px */; width: 10.4167vw/* 200px */; height: 72px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
 /*     &::before {
         @include transform(rotate(180deg));
         content:""; display: block; clear: both; position: absolute; top: -138%; left: 50%; width: 1px; height: 261px; background: #fff; z-index: 500;
@@ -127,14 +128,25 @@ footer {
     }
   }
   .bigEmail {
-    font-size: 110px; color: #444242; text-decoration: underline; padding: 410px 0 0 127px;
+    font-size: 5.7292vw/* 110px */; color: #444242; text-decoration: underline; padding: 410px 0 0 127px;
   }
   .sns {
-    display: flex; position: absolute; bottom: 197px; left: 127px; font-family: "Fugaz one"; font-size: 40px; color: #444242;
+    display: flex; position: absolute; bottom: 10.2604vw/* 197px */; left: 6.6146vw/* 127px */; font-family: "Fugaz one"; font-size: 40px; color: #444242;
     a {flex-direction: row; display: block;}
-    a + a {margin-left: 130px;}
+    a + a {margin-left: 6.7708vw/* 130px */;}
   }
-  .phoneImg { 
-    position: absolute; width: 566px; height: 576px; top: 64px; right: 0;
+  .phoneImg {
+    animation: ring 3.6s linear infinite;
+    position: absolute; width: 29.4792vw/* 566px */; height: 30vw/* 576px */; top: 64px; right: 0;
+  }
+  @keyframes ring {
+    0% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(0deg) scale(1,1);}
+    3% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(-5deg) scale(1,1);}
+    6% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(0deg) scale(1,1);}
+    9% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(-5deg) scale(1,1);}
+    12% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(0deg) scale(1,1);}
+    15% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(-5deg) scale(1,1);}
+    18% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(0deg) scale(1,1);}
+    100% {opacity: 1; transform: translateX(0px) translateY(0px) rotate(0deg) scale(1,1);}
   }
 }

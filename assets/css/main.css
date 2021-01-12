@@ -65,7 +65,7 @@
       clear: both;
       position: absolute;
       top: 50%;
-      left: 74%;
+      left: 68%;
       width: 108vw;
       height: 1px;
       background: #fff;
@@ -84,11 +84,9 @@
       width: 200px;
       line-height: 72px; }
   #cnt1 svg {
-    top: 7.7604vw;
-    right: 14.5833vw;
-    padding: 7.7604vw 14.5833vw 0 36.875vw;
-    width: 48.5417vw;
-    height: 28.6979vw; }
+    padding: 149px 280px 0 708px;
+    width: 932px;
+    height: 551px; }
   #cnt1 p {
     font-size: 1.9791vw;
     line-height: 1.9791vw;
@@ -301,9 +299,17 @@
       position: relative;
       z-index: 700; }
       #cnt3 .swiper-container .data img {
+        -webkit-animation: smile1 5s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
+        -moz-animation: smile1 5s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
+        animation: smile1 5s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
         position: absolute;
         left: 210px;
         top: 100px; }
+@keyframes smile1 {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
       #cnt3 .swiper-container .data > p {
         font-family: Chonburi;
         font-size: 29px;
@@ -326,7 +332,8 @@
         background: #fff;
         font-family: Seongsil;
         font-size: 23px;
-        text-align: right; }
+        text-align: right;
+        /* background-image: url("../assets/img/main/diaryPaper@2x.png") no-repeat center; */ }
         #cnt3 .swiper-container .slide:nth-child(odd) .diary strong {
           display: block;
           font-size: 38px;
@@ -336,14 +343,10 @@
           padding-top: 42px;
           padding-right: 55px;
           font-size: 32px;
-          line-height: 41px; }
-          #cnt3 .swiper-container .slide:nth-child(odd) .diary p::before {
-            content: "";
-            position: absolute;
-            clear: both;
-            width: 100%;
-            height: 1px;
-            background: #444242; }
+          line-height: 41px;
+          /* &::before {
+              content: ""; position: absolute; clear: both; width: 100%; height: 1px; background: #444242;
+          } */ }
         #cnt3 .swiper-container .slide:nth-child(odd) .diary span {
           position: absolute;
           bottom: 0;
@@ -371,7 +374,12 @@
       width: 208.3333vw;
       font-size: 0; }
     #cnt3 .swiper-container .slide2 .secondDiary {
-      /* position: relative; margin-top: 188px; padding-left: 24.479vw; height: 46.3542vw; */ }
+      position: relative;
+      margin-top: 188px;
+      padding-left: 24.479vw;
+      height: 46.3542vw; }
+      #cnt3 .swiper-container .slide2 .secondDiary .data > img {
+        left: 216px; }
       #cnt3 .swiper-container .slide2 .secondDiary .diary {
         position: absolute;
         top: 0;
@@ -391,14 +399,10 @@
           padding-top: 42px;
           padding-left: 55px;
           font-size: 32px;
-          line-height: 41px; }
-          #cnt3 .swiper-container .slide2 .secondDiary .diary p::before {
-            content: "";
-            position: absolute;
-            clear: both;
-            width: 50%;
-            height: 1px;
-            background: #444242; }
+          line-height: 41px;
+          /* &::before {
+              content: ""; position: absolute; clear: both; width: 50%; height: 1px; background: #444242;
+          } */ }
         #cnt3 .swiper-container .slide2 .secondDiary .diary span {
           position: absolute;
           bottom: 0;
@@ -498,7 +502,7 @@
     height: 42.2917vw;
     background: #fff;
     margin: 0 auto;
-    margin-top: 136px;
+    margin-top: 7.0833vw;
     clear: both; }
     #cnt4 .dashboard .dashboardTitle {
       display: block;
@@ -570,8 +574,8 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      width: 660px;
-      height: 650px;
+      width: 34.375vw;
+      height: 33.8542vw;
       padding-top: 53px; }
       #cnt4 .dashboard .middleBoard .efficiency {
         -webkit-border-radius: 50px;
@@ -636,11 +640,11 @@
         border-radius: 50px;
         position: relative;
         width: 34.1667vw;
-        height: 15.0521vw;
+        height: 14.0521vw;
         border: 1px solid #444242;
         background: #fff;
         box-sizing: border-box;
-        margin-top: 25px; }
+        /* margin-top: 25px; */ }
         #cnt4 .dashboard .middleBoard .relieveStress span {
           display: block;
           font-family: KoreanDREAM5;
@@ -673,6 +677,8 @@
       left: 8%;
       width: 390px;
       height: 158px; }
+      #cnt4 .dashboard .droppableModel .triangle {
+        width: 182px; }
       #cnt4 .dashboard .droppableModel .thunder {
         position: relative; }
         #cnt4 .dashboard .droppableModel .thunder #drag2Yes {
@@ -781,12 +787,13 @@
           -moz-border-radius: 50px;
           border-radius: 50px;
           position: absolute;
-          top: 552px;
+          top: 0;
           left: 0;
           width: 540px;
           height: 745px;
           background: #fff;
-          padding-top: 8px; }
+          padding-top: 8px;
+          border: 1px solid #777; }
           #cnt4 .dashboard .rightBoard .skillView .overview span {
             display: block;
             padding-left: 44px;
@@ -809,7 +816,7 @@
               -webkit-border-radius: 50px;
               -moz-border-radius: 50px;
               border-radius: 50px;
-              position: absolute;
+              position: relative;
               top: 0;
               left: 0;
               right: 0;
@@ -822,14 +829,17 @@
                 -moz-border-radius: 4px;
                 border-radius: 4px;
                 width: 6px;
-                height: 344px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div div + div {
-                  padding-left: 38px; }
+                height: 344px;
+                /* div.whiteStick + div.whiteStick {
+                    padding-left: 38px;
+                } */ }
                 #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div .whiteStick {
                   position: absolute;
                   bottom: 165px;
                   left: 50px;
-                  background: #fff; }
+                  background: #fff;
+                  height: 344px;
+                  width: 6px; }
                 #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap div .skills {
                   position: absolute;
                   bottom: 0;
@@ -873,6 +883,17 @@
   height: 300vh;
   visibility: hidden;
   background: #B4CAFA; }
+  #work .backBtn {
+    position: absolute;
+    top: 12.6042vw;
+    right: 0; }
+    #work .backBtn #backBtn {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      background: #fff; }
   #work .workSwiperWrap {
     border: 1px solid #fff;
     width: 98.4375vw;
@@ -928,9 +949,8 @@
       position: absolute;
       top: 1px;
       right: 14px;
-      margin-top: 12px;
+      /* margin-top: 12px;  */
       margin-right: 14px;
-      border: 1px solid #fff;
       width: 47.9167vw;
       height: 35.1562vw;
       box-sizing: border-box; }
@@ -956,6 +976,13 @@
           background-image: url("../img/icon/leftButton.svg"); }
         #work .workSwiperWrap .workSwiper .controller .swiper-button-next {
           background-image: url("../img/icon/rightButton.svg"); }
+    #work .workSwiperWrap .swiper-slice img {
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s; }
+      #work .workSwiperWrap .swiper-slice img:hover, #work .workSwiperWrap .swiper-slice img:focus {
+        transform: scale(1.2); }
 
 #work {
   /* GoPro Porject */
@@ -990,7 +1017,7 @@
     top: 99%;
     right: -1%; }
   #work .gopro .workSwiper {
-    top: 380px; }
+    top: 19.4792vw; }
   #work .helinox {
     position: relative; }
     #work .helinox .workSwiperWrap {
@@ -1020,8 +1047,10 @@
     position: relative; }
     #work .heyri .workSwiperWrap {
       margin: 0 auto; }
-      #work .heyri .workSwiperWrap .work3Swiper .swiper-container {
-        width: 100%;
-        height: 100%; }
+      #work .heyri .workSwiperWrap .work3Swiper {
+        margin-top: 12px; }
+        #work .heyri .workSwiperWrap .work3Swiper .swiper-container {
+          width: 100%;
+          height: 100%; }
 
 /*# sourceMappingURL=main.css.map */

@@ -7,7 +7,7 @@
     position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
     .mainCircleWrap {
       position: relative; width: 670px; height: 670px; margin: 0 auto; 
-      div.bigMainCircle {
+      .bigMainCircle {
         @include border-radius(50%);
         position: relative; width: 100%; height: 100%; background: #fff; margin: 217px auto 0; overflow: hidden;
         img {position: absolute;top: 0; left: -13%;}
@@ -16,10 +16,12 @@
           position: absolute; border: 1px solid #fff; top: 0; left: 420px; }
           
        }
-       /* .empty {
+       .empty {
         @include border-radius(50%);
-        width: 670px; height: 670px; border: 1px solid #fff; position: absolute; 
-       } */
+        position: absolute; top: 0px; left: 420px; width: 670px; height: 670px; border: 1px solid #442a0d;
+      }
+      .emptyCircle1 {left: 349px;}
+      .emptyCircle3 {left: 491px;}
     }
     p {
       position: absolute; display: fixed; top: 455px; right: 48px; font-family: "Fugaz one"; font-size: 130px; color: #000; line-height: 122px;
@@ -102,8 +104,7 @@ p.content {font-family: KoreanDREAM3; font-size: 15px; line-height: 22px; displa
     p {
       display: inline-block; font-family: KoreanDREAM3; padding: 60px 0 50px 400px;
     }
-    .mainPageIMG {position: absolute; top: 40%; left: 5%; height: 423px;}
-    .reservePageIMG {position: absolute; top: 196%; left: 67%; height: 281px;}
+    .mainPageIMG {position: absolute; top: 100%; left: 5%; height: 423px;}
   }
   .analysisText {
     position: relative; width: 690px; height: 171px; float: left; padding-left: 206px; margin-top: 168px;

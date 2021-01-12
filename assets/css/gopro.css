@@ -1,3 +1,6 @@
+#header .logo {
+  display: block; }
+
 #gopro1 {
   position: relative;
   width: 100%;
@@ -13,12 +16,8 @@
       position: relative;
       width: 670px;
       height: 670px;
-      margin: 0 auto;
-      /* .empty {
-       @include border-radius(50%);
-       width: 670px; height: 670px; border: 1px solid #fff; position: absolute; 
-      } */ }
-      #gopro1 .project1Main .mainCircleWrap div.bigMainCircle {
+      margin: 0 auto; }
+      #gopro1 .project1Main .mainCircleWrap .bigMainCircle {
         -webkit-transition: top 1s, left 2s;
         -moz-transition: top 1s, left 2s;
         -o-transition: top 1s, left 2s;
@@ -39,7 +38,7 @@
         background: #fff;
         margin: 217px auto 0;
         overflow: hidden; }
-        #gopro1 .project1Main .mainCircleWrap div.bigMainCircle img {
+        #gopro1 .project1Main .mainCircleWrap .bigMainCircle img {
           -webkit-transition: left 0.5s 1s, transform 2s 0s;
           -moz-transition: left 0.5s 1s, transform 2s 0s;
           -o-transition: left 0.5s 1s, transform 2s 0s;
@@ -47,7 +46,7 @@
           position: absolute;
           top: 17%;
           left: 100%; }
-        #gopro1 .project1Main .mainCircleWrap div.bigMainCircle::before {
+        #gopro1 .project1Main .mainCircleWrap .bigMainCircle::before {
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
@@ -55,20 +54,34 @@
           border: 1px solid #fff;
           top: 0;
           left: 420px; }
-        #gopro1 .project1Main .mainCircleWrap div.bigMainCircle.up {
+        #gopro1 .project1Main .mainCircleWrap .bigMainCircle.up {
           top: 50%; }
-          #gopro1 .project1Main .mainCircleWrap div.bigMainCircle.up img {
+          #gopro1 .project1Main .mainCircleWrap .bigMainCircle.up img {
             left: -20%; }
-        #gopro1 .project1Main .mainCircleWrap div.bigMainCircle.leftout {
+        #gopro1 .project1Main .mainCircleWrap .bigMainCircle.leftout {
           left: -200%;
           top: 50%; }
-          #gopro1 .project1Main .mainCircleWrap div.bigMainCircle.leftout img {
+          #gopro1 .project1Main .mainCircleWrap .bigMainCircle.leftout img {
             -webkit-transform: rotate(-360deg);
             -moz-transform: rotate(-360deg);
             -o-transform: rotate(-360deg);
             -ms-transform: rotate(-360deg);
             transform: rotate(-360deg);
             left: -20%; }
+      #gopro1 .project1Main .mainCircleWrap .empty {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        position: absolute;
+        top: 217px;
+        left: 420px;
+        width: 670px;
+        height: 670px;
+        border: 1px solid #00E4F3; }
+      #gopro1 .project1Main .mainCircleWrap .emptyCircle1 {
+        left: 349px; }
+      #gopro1 .project1Main .mainCircleWrap .emptyCircle3 {
+        left: 491px; }
     #gopro1 .project1Main p {
       position: absolute;
       display: fixed;

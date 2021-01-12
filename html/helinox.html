@@ -25,32 +25,31 @@
 
   <div id="wrap">
     <header id="header">
-      <h1 class="logo">
+      <h1 class="logo leftPos">
         <a href="index.html">
           <img src="../assets/img/common/JIYUNJEONG.svg" alt="로고">
           <div class="blind-b">Jiyun Jeong's portfolio</div>
         </a>
       </h1>
       <div class="util">
-        <button type="button" class="btn_open">
+        <button class="btn_open" type="button">
           <img src="../assets/img/icon/open.svg" alt="메뉴열기">
-          <span class="blind-b">메뉴열기</span>
         </button>
         <div class="navWrap">
           <div class="navigation">
             <nav id="gnb">
               <ul>
                 <li>
-                  <a href="index.html">HOME</a>
+                  <a data-link="first" href="index.html" type="button">HOME</a>
                 </li>
                 <li>
-                  <a href="">WORKS</a>
+                  <a href="index.html #work" type="button">WORKS</a>
                 </li>
                 <li>
-                  <a href="">ABOUT</a>
+                  <a href="index.html #cnt2" type="button">ABOUT</a>
                 </li>
                 <li>
-                  <a href="">CONTACTS</a>
+                  <a href="index.html #footer" type="button">CONTACTS</a>
                 </li>
               </ul>
             </nav>
@@ -71,13 +70,13 @@
           </div>
           <div class="email">
             <p>Hit me up!</p>
-            <p><a href="mailto: rijamong0830@naver.com" title="문의메일 보내기">rijamong0830@naver.com</a></p>
+            <p><a data-link="last" href="mailto: rijamong0830@naver.com" title="문의메일 보내기">rijamong0830@naver.com</a></p>
           </div>
+          <button type="button" class="btn_close">
+            <img src="../assets/img/icon/close.svg" alt="메뉴닫기">
+          </button>
         </div>
-        <button type="button" class="btn_close">
-          <img src="../assets/img/icon/close.svg" alt="메뉴닫기">
-          <span class="blind-b">메뉴닫기</span>
-        </button>
+
       </div>
     </header>
 
@@ -85,9 +84,15 @@
     <section class="section" id="helinox1">
       <h2 class="blind-b">두 번째 포트폴리오</h2>
       <div class="project2Main">
+        <div class="whiteHalf"></div>
         <div class="mainCircleWrap">
           <div class="bigMainCircle">
             <img src="../assets/img/main/helinox@2x.png" alt="Helinox 전체화면">
+          </div>
+          <div class="emptyCircleWrap">
+            <div class="empty emptyCircle1"></div>
+            <div class="empty emptyCircle2"></div>
+            <div class="empty emptyCircle3"></div>
           </div>
         </div>
         <p>Helinox</p>
