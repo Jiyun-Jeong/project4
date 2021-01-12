@@ -605,7 +605,7 @@
           font-size: 2.8646vw;
           font-family: "Fugaz one";
           top: 59%;
-          left: calc(50% - 18.5px); }
+          left: 34%; }
       #cnt4 .dashboard .middleBoard .producitivity {
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
@@ -625,13 +625,15 @@
           top: 34%;
           left: calc(50% - 137.5px);
           width: 14.3229vw; }
-        #cnt4 .dashboard .middleBoard .producitivity p {
+        #cnt4 .dashboard .middleBoard .producitivity > p {
           position: absolute;
           left: 22px;
           bottom: 17px;
           font-size: 15px;
-          font-family: KoreanDREAM3; }
+          font-family: "Fugaz one"; }
         #cnt4 .dashboard .middleBoard .producitivity p:last-child {
+          position: absolute;
+          bottom: 17px;
           left: 0;
           right: 31px; }
       #cnt4 .dashboard .middleBoard .relieveStress {
@@ -677,8 +679,8 @@
       left: 8%;
       width: 390px;
       height: 158px; }
-      #cnt4 .dashboard .droppableModel .triangle {
-        width: 182px; }
+      #cnt4 .dashboard .droppableModel .triangle #drag1Yes {
+        width: 134px; }
       #cnt4 .dashboard .droppableModel .thunder {
         position: relative; }
         #cnt4 .dashboard .droppableModel .thunder #drag2Yes {

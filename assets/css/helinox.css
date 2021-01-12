@@ -27,19 +27,34 @@
       height: 670px;
       margin: 0 auto; }
       #helinox1 .project2Main .mainCircleWrap .bigMainCircle {
+        -webkit-transition: top 1s, left 2s;
+        -moz-transition: top 1s, left 2s;
+        -o-transition: top 1s, left 2s;
+        transition: top 1s, left 2s;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
-        position: relative;
+        position: absolute;
+        top: 80%;
+        left: 50%;
         width: 100%;
         height: 100%;
         background: #fff;
         margin: 217px auto 0;
-        overflow: hidden; }
+        overflow: hidden;
+        z-index: 500; }
         #helinox1 .project2Main .mainCircleWrap .bigMainCircle img {
+          -webkit-transition: left 0.5s 1s, transform 2s 0s;
+          -moz-transition: left 0.5s 1s, transform 2s 0s;
+          -o-transition: left 0.5s 1s, transform 2s 0s;
+          transition: left 0.5s 1s, transform 2s 0s;
           position: absolute;
-          top: -20%;
-          left: 14%; }
+          top: -45%; }
         #helinox1 .project2Main .mainCircleWrap .bigMainCircle::before {
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
@@ -48,16 +63,32 @@
           border: 1px solid #fff;
           top: 0;
           left: 420px; }
+        #helinox1 .project2Main .mainCircleWrap .bigMainCircle.up {
+          top: 50%; }
+          #helinox1 .project2Main .mainCircleWrap .bigMainCircle.up img {
+            top: -15%;
+            left: 15%; }
+        #helinox1 .project2Main .mainCircleWrap .bigMainCircle.leftout {
+          left: -200%;
+          top: 50%; }
+          #helinox1 .project2Main .mainCircleWrap .bigMainCircle.leftout img {
+            -webkit-transform: rotate(-360deg);
+            -moz-transform: rotate(-360deg);
+            -o-transform: rotate(-360deg);
+            -ms-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+            /* left: -20%; */ }
       #helinox1 .project2Main .mainCircleWrap .empty {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
         position: absolute;
-        top: 0;
+        top: 217px;
         left: 420px;
         width: 670px;
         height: 670px;
-        border: 1px solid #000; }
+        border: 1px solid #000;
+        z-index: 200; }
       #helinox1 .project2Main .mainCircleWrap .emptyCircle1 {
         left: 349px; }
       #helinox1 .project2Main .mainCircleWrap .emptyCircle3 {
@@ -69,7 +100,8 @@
     right: 106px;
     font-family: "Fugaz one";
     font-size: 130px;
-    color: #000; }
+    color: #000;
+    z-index: 500; }
   #helinox1 .simpleExplain {
     position: absolute;
     bottom: 0;
@@ -415,8 +447,9 @@ p.content {
     font-size: 0;
     width: 924px;
     height: 100%;
-    padding-left: imgimg;
-      padding-left-padding-left: 25px; }
+    padding-left: 125px; }
+    #helinox8 .aboutPreviewImg img + img {
+      padding-left: 25px; }
   #helinox8 a {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;

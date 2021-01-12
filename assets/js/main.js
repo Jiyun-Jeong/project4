@@ -87,7 +87,7 @@ $(document).ready(function () {
   $('#drop2').droppable({
     accept: '#drag2Yes', //수락해줄 대상을 지정
     drop: function () { //drop이 완료된 후 실행할 실행문
-      $(this).fadeOut().next().text('80%');
+      $(this).fadeOut().next().text('90%');
       $('#drag2Yes').hide();
     }
   });

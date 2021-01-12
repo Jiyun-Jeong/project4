@@ -328,7 +328,7 @@
                 }
                 #drop1 {position: absolute; top: 113px; left: 0; right: 0; margin: 0 auto; }
                 > p {
-                    position: absolute; font-size: 2.8646vw/* 55px */; font-family: "Fugaz one"; top: 59%; left: calc(50% - 18.5px);
+                    position: absolute; font-size: 2.8646vw/* 55px */; font-family: "Fugaz one"; top: 59%; left: 34%/* calc(50% - 18.5px) */;
                 }
                 /* .hiddenTriangle {
                     p {display: none; font-size: 36px; top: 66%; left: calc(50% - 36.5px);}
@@ -341,8 +341,10 @@
                     display: block; font-family: KoreanDREAM5; font-size: 25px; padding-left: 18px; padding-top: 33px;
                 }
                 #drop2 {position: absolute; top: 34%; left: calc(50% - 137.5px); width: 14.3229vw/* 275px */;}
-                p {position: absolute; left: 22px; bottom: 17px; font-size: 15px; font-family: KoreanDREAM3;}
-                p:last-child {left: 0; right: 31px;}
+                > p {
+                    position: absolute; left: 22px; bottom: 17px; font-size: 15px; font-family: "Fugaz one"; 
+                }
+                p:last-child {position: absolute; bottom: 17px; left: 0; right: 31px;}
             }
             .relieveStress {
                 @include border-radius(50px);
@@ -369,7 +371,7 @@
         .droppableModel {
             position: absolute; bottom: 14%; left: 8%; width: 390px; height: 158px;
             .triangle {
-                width: 182px;
+                #drag1Yes {width: 134px;}
             }
             .thunder {
                 position: relative; 
