@@ -41,7 +41,7 @@
         padding: /* 7.7604vw */149px /* 14.5833vw */280px 0  /* 36.875vw */708px; width: /* 48.5417vw */932px; height: /* 28.6979vw */551px;
     }
     p {
-        font-size: 1.9791vw/* 38px */;line-height: 1.9791vw/* 38px */; padding-right: 33.0208vw/* 634px */; text-align: right;
+        position: absolute; top: 60%; left: 41%; font-size: 1.9791vw/* 38px */;line-height: 1.9791vw/* 38px */; padding-right: 33.0208vw/* 634px */; text-align: right;
     }
     .decorate {
         .sunflower {
@@ -264,7 +264,7 @@
                 /* position: relative; margin-top: 188px; padding-left: 24.479vw; height: 46.3542vw;  */
                 .viewWorksWrap {
                     position: relative; width: 31.25vw/* 600px */; height: 41.6667vw/* 800px */; overflow: hidden; background: #fff;
-                    button {position: absolute; top: 50%; left: 0; right: 0; margin: 0 auto; width: 300px; height: 87px;}
+                    button {position: absolute; top: 50%; left: 0; right: 0; margin: 0 auto; width: 300px; height: 87px; background-color: #000; font-family: "fugaz one"; font-size: 25px; color: #fff;}
                 }
             }
             .diary {
@@ -287,7 +287,7 @@
     }
     .dashboard {
         @include border-radius(50px);
-        display: flex; flex-wrap: wrap; justify-content: space-evenly; width: 91.5625vw/* 1758px */; height: 42.2917vw/* 812px */; background: #fff; margin: 0 auto; margin-top: 7.0833vw/* 136px */; clear: both;
+        display: flex; flex-wrap: wrap; justify-content: space-evenly; width: 91.5625vw/* 1758px */; height: 42.2917vw/* 812px */; background: #fff; margin: 0 auto; margin-top: 7.0833vw/* 136px */; clear: both; overflow: hidden;
         .dashboardTitle {
             display: block; width: 100%; font-family: KoreanDREAM5; font-size: 35px; /* width: 246px;  */height: 36px; padding-top: 73px; padding-left: 43px;
         }
@@ -386,11 +386,11 @@
             margin-top: -78px;
             .skillView {
                 @include border-radius(50px);
-                position: relative; display: flex; flex-wrap: wrap; flex-direction: row-reverse; width: 540px; height: 745px; background: $lightyellow; 
-                .switchWrap {margin: 0 auto; padding-bottom: 60px;}
+                position: relative; width: 540px; height: 745px; background: $lightyellow; 
+                .switchWrap {margin: 0 auto; padding-bottom: 60px; width: 198px/* 280px */;}
                 .switchToggle {
                     @include border-radius(66px);
-                    position: relative; width: 70px; height: 36px;  display: inline-block; background: #444242; border: 1px solid #fff;
+                    position: relative; width: 70px; height: 36px;  display: inline-block; background: #444242; border: 1px solid #fff; display: none;
                     button {
                         @include border-radius(50%);
                         position: absolute; width: 28px; height: 28px; background: #fff; top: 4px; left: 5px;
@@ -398,14 +398,16 @@
                 }
                 .skillTitle {
                     display: inline-block; 
-                    div {width: 190px; height: 34px; line-height: 34px; border-radius: 20px; background: #444242; color: #fff; text-align: center; }
+                    div {width: 190px; height: 34px; line-height: 34px; border-radius: 20px; background: #444242; color: #fff; text-align: center; margin: 0 auto; }
+                    .designSkills {display: none;}
                 }
                 .skillCircle {
-                    width: 540px; height: 745px; position: relative;
+                    width: 540px; height: 390px; position: relative;
                     div {
                         @include border-radius(50%);
                         position: absolute; text-align: center; font-size: 14px; line-height: 21px;
                     }
+                    .design
                     .subject1, .subject3 {width: 156px; height: 156px;}
                     .subject1 {background: #993ef3;}
                     .subject2 {width: 195px; height: 195px; background: #ff9393; }

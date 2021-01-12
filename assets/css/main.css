@@ -88,6 +88,9 @@
     width: 932px;
     height: 551px; }
   #cnt1 p {
+    position: absolute;
+    top: 60%;
+    left: 41%;
     font-size: 1.9791vw;
     line-height: 1.9791vw;
     padding-right: 33.0208vw;
@@ -455,7 +458,11 @@
             right: 0;
             margin: 0 auto;
             width: 300px;
-            height: 87px; }
+            height: 87px;
+            background-color: #000;
+            font-family: "fugaz one";
+            font-size: 25px;
+            color: #fff; }
       #cnt3 .swiper-container .slide3 .diary .bold {
         font-size: 36px !important;
         padding-top: 0 !important;
@@ -503,7 +510,8 @@
     background: #fff;
     margin: 0 auto;
     margin-top: 7.0833vw;
-    clear: both; }
+    clear: both;
+    overflow: hidden; }
     #cnt4 .dashboard .dashboardTitle {
       display: block;
       width: 100%;
@@ -708,15 +716,13 @@
         -moz-border-radius: 50px;
         border-radius: 50px;
         position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
         width: 540px;
         height: 745px;
         background: #FAF2A7; }
         #cnt4 .dashboard .rightBoard .skillView .switchWrap {
           margin: 0 auto;
-          padding-bottom: 60px; }
+          padding-bottom: 60px;
+          width: 198px; }
         #cnt4 .dashboard .rightBoard .skillView .switchToggle {
           -webkit-border-radius: 66px;
           -moz-border-radius: 66px;
@@ -726,7 +732,8 @@
           height: 36px;
           display: inline-block;
           background: #444242;
-          border: 1px solid #fff; }
+          border: 1px solid #fff;
+          display: none; }
           #cnt4 .dashboard .rightBoard .skillView .switchToggle button {
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
@@ -746,10 +753,13 @@
             border-radius: 20px;
             background: #444242;
             color: #fff;
-            text-align: center; }
+            text-align: center;
+            margin: 0 auto; }
+          #cnt4 .dashboard .rightBoard .skillView .skillTitle .designSkills {
+            display: none; }
         #cnt4 .dashboard .rightBoard .skillView .skillCircle {
           width: 540px;
-          height: 745px;
+          height: 390px;
           position: relative; }
           #cnt4 .dashboard .rightBoard .skillView .skillCircle div {
             -webkit-border-radius: 50%;
@@ -759,7 +769,8 @@
             text-align: center;
             font-size: 14px;
             line-height: 21px; }
-          #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject1, #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject3 {
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle .design
+          .subject1, #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject3 {
             width: 156px;
             height: 156px; }
           #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject1 {

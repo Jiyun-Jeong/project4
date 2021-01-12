@@ -15,7 +15,7 @@ $(document).ready(function () {
             var $first = _gnb.find('[data-link=first]');
             var $last = _gnb.find('[data-link=last]');
 
-            _gnb.css({visibility: 'visible'}).stop().animate({left: 0}, 300, function () {
+            _gnb.css({visibility: 'visible'}).stop().animate({left: 0}, 500, function () {
                 $first.focus();
             });
 

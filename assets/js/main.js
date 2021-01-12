@@ -33,11 +33,16 @@ $(document).ready(function () {
 
     console.log(targetTop, fixTop);
 
-    if ( fixTop > 50 ) {
+    if ( targetTop > 10 ) {
       console.log(fixTop);
-      _nameSvg.css({top: '29', left: '32', width: '131', height: 77});
+      _nameSvg.stop().animate({padding: '29 0 0 32', width: 131, height: 77}, 4000).css({position: fixed});
+    } else {
+      _nameSvg.stop().animate({padding: '7.7604vw 14.5833vw 0 36.875vw', width: 932, height: 551}, 2000).css({position: absolute});
     }
+
   });
+
+
 
   $('#backBtn').on('click', function () {
     $('#wrap').removeAttr('style');
@@ -123,8 +128,7 @@ $(document).ready(function () {
   }
 
   //공튀기기
-  $(document).ready(function () {
-    var _skillCircle = $("#skillCircle");
+    var _skillCircle = $(".skillCircle");
     var panelWid = _skillCircle.width();
     var panelHei = _skillCircle.height();
     var ballsize = 100; //100%일 경우 크기를 적는다
@@ -191,7 +195,6 @@ $(document).ready(function () {
         }
       }
     }
-  });
   
 
 
