@@ -76,6 +76,11 @@ $(document).ready(function () {
     },
   })
 
+  //cnt3 view more button
+  $('#cnt3 a').on('click', function () {
+    $('#workBtn').trigger('click');
+});
+
   //cnt4 "droppable"
   $('#drag1Yes,  #drag2Yes').draggable({
     revert: 'invalid'
@@ -103,6 +108,15 @@ $(document).ready(function () {
       okay2 = true;
       if (okay1 && okay2 ) {
         $('.hiddenProfile').stop().delay(0.5).fadeIn().find('.peepIt').stop().delay(0.5).fadeOut();
+        
+        //flower action
+        function reAction(){
+          $('#cnt4').fadeIn(1000);
+            setTimeout(function (){
+              $('#cnt4').fadeOut(2000);
+            }, 5000);
+        }
+        reAction();
       }
     }
 
@@ -145,12 +159,12 @@ $(document).ready(function () {
     var ballsize = 100; //100%일 경우 크기를 적는다
 
     //매개변수 : 선택자, 시작x좌표, 시작y좌표, 볼비율, 박스 밖으로 나갈경우 제어숫자, 가로이동크기, 세로이동크기, 고정x좌표, 고정y좌표
-    bounce('.subject1', 0, 0, 1.30, 6, 6, 6, 100, 100);
-    bounce('.subject2', 300, 100, 2, 4, 10, 15, 140, 140);
-    bounce('.subject3', 400, 290, 1.30, 5, 8, 12, 200, 170);
-    bounce('.subject4', 350, 150, 0.90, 2, 9, 7, 140, 200);
-    bounce('.subject5', 200, 350, 1.00, 7, 7, 10, 80, 150);
-    bounce('.subject6', 500, 450, 1.10, 6, 5, 5, 200, 150);
+    bounce('.subject1', 0, 0, 1.50, 6, 6, 6, 105, 150); //html5
+    bounce('.subject2', 300, 100, 2, 4, 10, 15, 180, 50); //CSS3
+    bounce('.subject3', 400, 290, 1.50, 5, 8, 12, 115, 20); //SCSS
+    bounce('.subject4', 350, 150, 1.30, 2, 9, 7, 270, -5); //자바
+    bounce('.subject5', 200, 350, 1.20, 7, 7, 10, 355, 90); //bootstrap
+    bounce('.subject6', 500, 450, 1.10, 6, 5, 5, 320, 190); //jquery
     function bounce(target, startX0, startY0, ratio, stepSize0, stepX0, stepY0, stopX, stopY) {
       var _ball = $(target);
       var startX = startX0;   //ball이 움직이기 시작하는 X 위치
@@ -177,7 +191,6 @@ $(document).ready(function () {
       function start(){
         if (ballTimer === 0)
           ballTimer = setInterval(startMove, 40);
-          console.log(ballTimer);
       }
 
       function startMove(){
@@ -191,7 +204,6 @@ $(document).ready(function () {
 
         //absolute 속성을 지닌 #ball의 top과 left 값을 update한다
         _ball.css({top: startY + "px", left: startX + "px"});
-        console.log(ballTimer);
       }
 
       function stopMove(){
@@ -206,6 +218,13 @@ $(document).ready(function () {
         }
       }
     }
+
+    //draggable chart
+    $('.overview').draggable({
+      axis: 'y', //y축으로만 드래그
+      containment: 'parent' //부모인 .skillView 안에서만 드래그
+    });
+
 
     //work page work1 "swiper"
     var work1Swiper = new Swiper('#work .gopro .swiper-container', {

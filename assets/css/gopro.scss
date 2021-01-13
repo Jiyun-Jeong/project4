@@ -38,8 +38,18 @@
         @include border-radius(50%);
         position: absolute; top: 217px; left: 420px; width: 670px; height: 670px; border: 1px solid $goproBlue; z-index: 200;
       }
-      .emptyCircle1 {left: 349px;}
-      .emptyCircle3 {left: 491px;}
+      .emptyCircle1 {
+        @include transition(3s opacity(1) 0.5s);
+        opacity: 0;
+      }
+      .emptyCircle1 {
+        @include transition(3.3s opacity(1) 0.5s);
+        opacity: 0; left: 349px;
+      }
+      .emptyCircle3 {
+        @include transition(3.6s opacity(1) 0.5s);
+        opacity: 0; left: 491px;
+      }
     }
     p {
       position: absolute; display: fixed; top: 455px; right: 150px; font-family: "Fugaz one"; font-size: 130px; color: #fff; z-index: 500;
@@ -55,12 +65,17 @@
       img {position: absolute; top: -32px; left: 0; fill: #fff;}
       img.goproLogo {position: absolute; top: 30.5px; left: 241px; width: 283px; height: 161px; }
       .explainText {
-        float: right; width: 1020.5px; height: 114.5px;
-        span {
-          display: inline-block; font-size: 17px; font-family: "Fugaz one"; padding-right: 87px; color: #fff; line-height: 0;
+        position: relative; float: right; width: 1020.5px; height: 114.5px;
+        p {
+          position: absolute; display: block; font-size: 17px; line-height: 27px;  font-family: "Fugaz one"; /* padding-right: 87px;  */color: #fff; text-align: left; 
+          &:nth-child(1), &:nth-child(3) {left: 0;}
+          &:nth-child(1) {top: 38.5px; }
+          &:nth-child(2) {top: 38.5px; left: 105px;}
+          &:nth-child(3) {top: 68.5px; }
+          &:nth-child(4) {top: 68.5px; left: 105px;}
+          &:nth-child(5) {top: 38.5px; left: 511px;}
+          &:nth-child(6) {top: 38.5px; left: 686px;}
         }
-        p {text-align: left; font-size: 17px; line-height: 17px; font-family: "Fugaz one"; color: #fff; }
-  
       }
     }
   }

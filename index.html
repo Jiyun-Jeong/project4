@@ -21,6 +21,10 @@
   <!-- Custom JS -->
   <script src="assets/js/common.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/confetti.js"></script>
+  <script>
+
+  </script>
 </head>
 
 <body>
@@ -379,19 +383,22 @@
                 <div class="switchToggle">
                   <button class="toggleFg" type="button"></button>
                 </div>
-                <div class="skillTitle">
-                  <!-- 위의 버튼을 누르면 변경됨 -->
-                  <div class="codingSkills">Coding skills</div>
-                  <div class="designSkills">Design skills</div>
+                <div class="flipBtnWrap">
+                  <div class="flipBtn">
+                    <!-- 위의 버튼을 누르면 변경됨 -->
+                    <div class="flipBtnInner flipBtn_front codingSkills">Coding skills</div>
+                    <div class="flipBtnInner flipBtn_mid"></div>
+                    <div class="flipBtnInner flipBtn_back designSkills">Design skills</div>
+                  </div>
                 </div>
               </div>
               <div class="skillCircle">
-                <div class="ball subject1">CSS3<br>90%</div>
-                <div class="ball subject2">HTML5<br>95%</div>
                 <div class="ball subject3">SCSS<br>90%</div>
-                <div class="ball subject4">Bootstrap<br>70%</div>
-                <div class="ball subject5">JavaScript<br>80%</div>
-                <div class="ball subject6">jQuery<br>85%</div>
+                <div class="ball subject4">JavaScript<br>80%</div>
+                <div class="ball subject5">jQuery<br>85%</div>
+                <div class="ball subject6">Bootstrap<br>70%</div>
+                <div class="ball subject2">HTML5<br>95%</div>
+                <div class="ball subject1">CSS3<br>90%</div>
               </div>
               <div class="overview">
                 <!-- draggable 위아래 길이 제한 -->

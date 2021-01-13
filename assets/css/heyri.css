@@ -117,26 +117,40 @@
       #heyri1 .simpleExplain .sicssor img.heyriLogo {
         position: absolute;
         top: 70px;
-        left: 265px;
+        left: 230px;
         width: 438x;
         height: 57px; }
       #heyri1 .simpleExplain .sicssor .explainText {
+        position: relative;
         float: right;
         width: 1020.5px;
         height: 114.5px; }
-        #heyri1 .simpleExplain .sicssor .explainText span {
-          display: inline-block;
-          font-size: 17px;
-          font-family: "Fugaz one";
-          padding-right: 87px;
-          color: #fff;
-          line-height: 0; }
         #heyri1 .simpleExplain .sicssor .explainText p {
+          position: absolute;
           display: block;
-          text-align: left;
           font-size: 17px;
+          line-height: 27px;
           font-family: "Fugaz one";
-          color: #fff; }
+          /* padding-right: 87px;  */
+          color: #fff;
+          text-align: left; }
+          #heyri1 .simpleExplain .sicssor .explainText p:nth-child(1), #heyri1 .simpleExplain .sicssor .explainText p:nth-child(3), #heyri1 .simpleExplain .sicssor .explainText p:nth-child(5) {
+            left: 0; }
+          #heyri1 .simpleExplain .sicssor .explainText p:nth-child(1) {
+            top: 40.5px; }
+          #heyri1 .simpleExplain .sicssor .explainText p:nth-child(2) {
+            top: 40.5px;
+            left: 200px; }
+          #heyri1 .simpleExplain .sicssor .explainText p:nth-child(3) {
+            top: 80.5px; }
+          #heyri1 .simpleExplain .sicssor .explainText p:nth-child(4) {
+            top: 80.5px;
+            left: 200px; }
+          #heyri1 .simpleExplain .sicssor .explainText p:nth-child(5) {
+            top: 120.5px; }
+          #heyri1 .simpleExplain .sicssor .explainText p:nth-child(6) {
+            top: 120.5px;
+            left: 200px; }
 
 /* heyri2 common */
 h3 {
@@ -149,7 +163,8 @@ p.content {
   font-family: KoreanDREAM3;
   font-size: 15px;
   line-height: 22px;
-  display: block; }
+  display: block;
+  padding-bottom: 25px; }
 
 #heyri2 {
   position: relative;
@@ -175,6 +190,8 @@ p.content {
       font-size: 0; }
     #heyri2 .designLeft .designLogo {
       margin-top: 93px; }
+      #heyri2 .designLeft .designLogo .logoImgWrap {
+        font-size: 0; }
   #heyri2 .designRight {
     margin-left: 108px;
     margin-top: 156px; }
@@ -186,12 +203,15 @@ p.content {
       flex-wrap: nowrap;
       justify-content: space-between;
       padding-left: 17px; }
+      #heyri2 .designRight .designColor .colorWrap .colorCubeWrap {
+        margin-right: 30px; }
       #heyri2 .designRight .designColor .colorWrap .colorCube {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
         width: 137px;
-        height: 137px; }
+        height: 137px;
+        margin-bottom: 21px; }
         #heyri2 .designRight .designColor .colorWrap .colorCube.mainBeige {
           background: #E2CEBD; }
         #heyri2 .designRight .designColor .colorWrap .colorCube.pointBrown {
@@ -224,7 +244,7 @@ p.content {
     width: 100%;
     height: 302px;
     background: #442A0D;
-    bottom: 120px;
+    bottom: 70px;
     left: 0; }
     #heyri3 .bgLine > p {
       font-family: KoreaDREAM3;

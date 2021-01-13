@@ -35,31 +35,61 @@ $(document).ready(function () {
                 });
     });  
 
-    $('#gnb ul li:nth-child(1) a').on('click', function () {
-        _gnb.stop().animate({left: '100%'}, 500, function () {
-            $(this).location.href='index.html';
-        });
-    });
+    $('#gnb ul li a').on('click', function (e) {
+        e.preventDefault();
 
-    $('#gnb ul li:nth-child(2) a').on('click', function () {
-        _gnb.stop().animate({left: '100%'}, 500, function () {
-            $('#workBtn').trigger('click');
-        });
-    });
+        var urlpage = $(this).attr('href');
+        var gnbNum = $(this).parent().index(); //0(HOME), 2(WORKS), 3(ABOUT), 3(CONTACT)
+        var url = location.href;
+        var isIndex = url.indexOf('index.html');
+        if (isIndex > 0) isIndex = true; //index페이지를 의미
+        else isIndex = false; //서브페이지를 의미
 
+        if (isIndex) {//index.html 페이지에서 네비게이션을 클릭한 경우
+            $('.btn_close').click();
+            setTimeout(function () {
+                if (gnbNum === 0) {
+                    if ($('#work').hasClass('view')) {
+                        $('html, body').stop().animate({scrollTop: 0}, function (){
+                            $('#backBtn').click();
+                        });
+                    }
+                    else {
+                        $('html, body').stop().animate({scrollTop: 0});
+                    }
 
-    $('#gnb ul li:nth-child(3) a').on('click', function () {
-        _gnb.stop().animate({left: '100%'}, 500, function () {
-            $(this).location.href='index.html#cnt2';
-        });
+                } else if (gnbNum === 1) {
+                    if ($(window).scrollTop() > 10) {
+                        $('html, body').stop().animate({scrollTop: 0}, function(){
+                            $('#workBtn').click();
+                        });
+                    } else {
+                        $('#workBtn').click();
+                    }
+                } else if (gnbNum === 2) {
+                    if ($('#work').hasClass('view')) {
+                        $('#backBtn').click();
+                        $('html, body').stop().delay(400).animate({scrollTop: $('#cnt2').offset().top});
+                    } else {
+                        $('#aboutBtn').click();
+                    }
+                } else if (gnbNum === 3 ) {
+                    if ($('#work').hasClass('view')) {
+                        $('#backBtn').click();
+                        $('html, body').stop().delay(400).animate({scrollTop: $('#footer').offset().top});
+                    } else {
+                        $('#aboutBtn').click();
+                        $('html, body').stop().animate({scrollTop: $('#footer').offset().top});
+                    }
+                }
+            }, 600);
+        } else { //sub페이지에서 네비게이션을 클릭한 경우
+            $('.btn_close').click();
+            setTimeout(function (){
+                location.href = urlpage;
+            }, 600);
+        }
     });
-    $('#gnb ul li:nth-child(4) a').on('click', function () {
-        _gnb.stop().animate({left: '100%'}, 500, function () {
-            $(this).css({visibility: 'hidden'});
-            $(this).location.href='index.html#footer';
-        });
-    });
-
 
 
 });

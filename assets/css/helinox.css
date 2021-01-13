@@ -134,22 +134,36 @@
         width: 367px;
         height: 79px; }
       #helinox1 .simpleExplain .sicssor .explainText {
+        position: relative;
         float: right;
         width: 1020.5px;
         height: 114.5px; }
-        #helinox1 .simpleExplain .sicssor .explainText span {
-          display: inline-block;
-          font-size: 17px;
-          font-family: "Fugaz one";
-          padding-right: 87px;
-          color: #fff;
-          line-height: 0; }
         #helinox1 .simpleExplain .sicssor .explainText p {
+          position: absolute;
           display: block;
-          text-align: left;
           font-size: 17px;
+          line-height: 27px;
           font-family: "Fugaz one";
-          color: #fff; }
+          /* padding-right: 87px;  */
+          color: #fff;
+          text-align: left; }
+          #helinox1 .simpleExplain .sicssor .explainText p:nth-child(1), #helinox1 .simpleExplain .sicssor .explainText p:nth-child(3), #helinox1 .simpleExplain .sicssor .explainText p:nth-child(5) {
+            left: 0; }
+          #helinox1 .simpleExplain .sicssor .explainText p:nth-child(1) {
+            top: 40.5px; }
+          #helinox1 .simpleExplain .sicssor .explainText p:nth-child(2) {
+            top: 40.5px;
+            left: 200px; }
+          #helinox1 .simpleExplain .sicssor .explainText p:nth-child(3) {
+            top: 80.5px; }
+          #helinox1 .simpleExplain .sicssor .explainText p:nth-child(4) {
+            top: 80.5px;
+            left: 200px; }
+          #helinox1 .simpleExplain .sicssor .explainText p:nth-child(5) {
+            top: 120.5px; }
+          #helinox1 .simpleExplain .sicssor .explainText p:nth-child(6) {
+            top: 120.5px;
+            left: 200px; }
 
 /* helinox2 common */
 h3 {

@@ -1,4 +1,16 @@
 $(document).ready(function () {
+      /* clearTimeout(timer);
+
+      timer = setTimeout(function () {
+          scrollT = $(this).scrollTop();
+          
+          $('.fade').each(function () {
+              if(scrollT > $(this).offset().top - 500) $(this).addClass('on');
+          });
+      }, 50);
+  $(window).trigger('scroll'); */
+
+  //큰원 움직이기
   $('.bigMainCircle').addClass('up');
   setTimeout(function () {
     $('.bigMainCircle').removeClass('up').addClass('leftout');

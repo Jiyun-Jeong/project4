@@ -81,8 +81,24 @@
         border: 1px solid #00E4F3;
         z-index: 200; }
       #gopro1 .project1Main .mainCircleWrap .emptyCircle1 {
+        -webkit-transition: 3s opacity(1) 0.5s;
+        -moz-transition: 3s opacity(1) 0.5s;
+        -o-transition: 3s opacity(1) 0.5s;
+        transition: 3s opacity(1) 0.5s;
+        opacity: 0; }
+      #gopro1 .project1Main .mainCircleWrap .emptyCircle1 {
+        -webkit-transition: 3.3s opacity(1) 0.5s;
+        -moz-transition: 3.3s opacity(1) 0.5s;
+        -o-transition: 3.3s opacity(1) 0.5s;
+        transition: 3.3s opacity(1) 0.5s;
+        opacity: 0;
         left: 349px; }
       #gopro1 .project1Main .mainCircleWrap .emptyCircle3 {
+        -webkit-transition: 3.6s opacity(1) 0.5s;
+        -moz-transition: 3.6s opacity(1) 0.5s;
+        -o-transition: 3.6s opacity(1) 0.5s;
+        transition: 3.6s opacity(1) 0.5s;
+        opacity: 0;
         left: 491px; }
     #gopro1 .project1Main p {
       position: absolute;
@@ -125,22 +141,37 @@
         width: 283px;
         height: 161px; }
       #gopro1 .simpleExplain .sicssor .explainText {
+        position: relative;
         float: right;
         width: 1020.5px;
         height: 114.5px; }
-        #gopro1 .simpleExplain .sicssor .explainText span {
-          display: inline-block;
-          font-size: 17px;
-          font-family: "Fugaz one";
-          padding-right: 87px;
-          color: #fff;
-          line-height: 0; }
         #gopro1 .simpleExplain .sicssor .explainText p {
-          text-align: left;
+          position: absolute;
+          display: block;
           font-size: 17px;
-          line-height: 17px;
+          line-height: 27px;
           font-family: "Fugaz one";
-          color: #fff; }
+          /* padding-right: 87px;  */
+          color: #fff;
+          text-align: left; }
+          #gopro1 .simpleExplain .sicssor .explainText p:nth-child(1), #gopro1 .simpleExplain .sicssor .explainText p:nth-child(3) {
+            left: 0; }
+          #gopro1 .simpleExplain .sicssor .explainText p:nth-child(1) {
+            top: 38.5px; }
+          #gopro1 .simpleExplain .sicssor .explainText p:nth-child(2) {
+            top: 38.5px;
+            left: 105px; }
+          #gopro1 .simpleExplain .sicssor .explainText p:nth-child(3) {
+            top: 68.5px; }
+          #gopro1 .simpleExplain .sicssor .explainText p:nth-child(4) {
+            top: 68.5px;
+            left: 105px; }
+          #gopro1 .simpleExplain .sicssor .explainText p:nth-child(5) {
+            top: 38.5px;
+            left: 511px; }
+          #gopro1 .simpleExplain .sicssor .explainText p:nth-child(6) {
+            top: 38.5px;
+            left: 686px; }
 
 /* gopro2 common */
 h3 {

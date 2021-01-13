@@ -59,7 +59,23 @@ header, nav, section, footer {display: block;}
 
 /* common class */
 .blind-b {width: 1px;height: 1px;position: absolute; overflow: none; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%);}
-.clearfix::before, .clear::after {content: ""; display: block; clear:both;}
+.clearfix::before, .clear::after {content: ""; display: block; clear: both;}
+.fade {
+  @include transition(all 1s);
+  opacity: 0;
+  &.up {@include transform(translateY(30px));}
+  &.down {@include transform(translateY(-30px));}
+  &.left {@include transform(translateX(30px));}
+  &.right {@include transform(translateX(-30px));}
+  &.smaller {@include transform(scale(1.5));}
+  &.bigger {@include transform(translateX(0.7));}
+}
+.fade.on {
+  opacity: 1;
+  &.up, &.down {@include transform(translateY(0px));}
+  &.left, &.right {@include transform(translateX(0px));}
+  &.smaller, &.bigger {@include transform(scale(1));}
+}
 
 /* Default CSS */
 body {
