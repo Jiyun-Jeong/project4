@@ -87,9 +87,25 @@ $(document).ready(function () {
             $('.btn_close').click();
             setTimeout(function (){
                 location.href = urlpage;
-            }, 600);
+            }, 700);
         }
     });
+
+    //sub에서 페이지 이동된 경우 자연스러운 스크롤 이동
+    var url = location.href;
+    var goNum = url.indexOf('target=');
+    var goTarget = url.slice(goNum+7)
+    console.log(goTarget, typeof goTarget);
+
+    if (goTarget === '#work') {
+        setTimeout(function () {
+            $('#workBtn').trigger('click');
+        }, 700);
+    } else if (goTarget === '#cnt2') {
+        $('html, body').stop().animate({scrollTop: $('#cnt2').offset().top}, 400);
+    } if (goTarget === '#footer') {
+        $('html, body').stop().animate({scrollTop: $('#footer').offset().top}, 700);
+    }
 
 
 });

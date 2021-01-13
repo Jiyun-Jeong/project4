@@ -14,7 +14,7 @@
         .about {
             position: absolute; top: 35.15625vw/* 675px */; left: 7.2917vw/* 140px */; width: 10.4167vw/* 200px */; height: 3.75vw/* 72px */; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
             &::after {
-                content:""; display: block; clear: both; position: absolute; top: 103%; left: 50%; width: 1px; height: 396.1vh; background: #fff; z-index: 500;
+                content:""; display: block; clear: both; position: absolute; top: 103%; left: 50%; width: 1px; height: 425.9vh/* 396.1vh */; background: #fff; z-index: 500;
             }
             button {
                 @include border-radius(50%);
@@ -38,7 +38,7 @@
         }
     }
     svg {
-        padding: /* 7.7604vw */149px /* 14.5833vw */280px 0  /* 36.875vw */708px; width: /* 48.5417vw */932px; height: /* 28.6979vw */551px;
+        padding: 7.7604vw/* 149px */ 14.5833vw/* 280px */ 0  36.875vw/* 708px */; width: 48.5417vw/* 932px */; height: 28.6979vw/* 551px */; z-index: 2000;
     }
     p {
         position: absolute; top: 75%; left: 41%; font-size: 1.9791vw/* 38px */;line-height: 1.9791vw/* 38px */; padding-right: 33.0208vw/* 634px */; text-align: right;
@@ -47,17 +47,19 @@
         .sunflower {
             position: absolute; top: -7.8125vw/* -150px */; left: 12.9167vw/* 248px */; width: 19.53125vw/* 375px */;animation: moveSunflower 5s ease-in-out infinite;}
         .yellowCircle {
-            position: absolute; top: 22.65625vw/* 435px */; left: 60.9375vw/* 1180px */; z-index: -1; animation: moveCircle 10s ease;transform-origin: 50% 50%;
+            position: absolute; top: 22.65625vw/* 435px */; left: 60.9375vw/* 1180px */; z-index: 1500; animation: moveCircle 10s ease; transform-origin: 50% 50%;
         }
       }
 }
 
 #cnt2 {
-    position: relative; background: $lightyellow; width: 100%; height: 100vh;
+    position: relative; background: $lightpurple; width: 100%; height: 100vh;
+    .cnt2B {width: 100%; height: 100%; position: absolute; top: 0; left: -100%; background: $lightyellow;}
     .cnt2Deco {
         position: relative;
         img {position: absolute; }
         .purpleCircle {
+            display: none;
             -webkit-animation: rotate1 10s cubic-bezier(0.4, 0, 1, 1) infinite; -moz-animation: rotate1 10s cubic-bezier(0.4, 0, 1, 1) infinite; animation: rotate1 10s cubic-bezier(0.4, 0, 1, 1) infinite; 
             /* animation: move 10s ease-in-out infinite; */
             transform-origin: 50% 50%; top: -150px; left: -150px; height: 51.0417vw/* 980px */;width: 70.3125vw/* 1350px */;  
@@ -88,7 +90,7 @@
             -webkit-animation: show1 1s ease-in-out;
             -moz-animation: show1 1s ease-in-out;
             animation: show1 1s ease-in-out;
-            top: 0; left: 850px; width: 61.9792vw/* 1190px */;
+            top: 0; left: 850px; width: 61.9792vw/* 1190px */; z-index: 1600;
         }
         @keyframes show1 {
             0% {opacity: 0; }
@@ -294,7 +296,7 @@
             display: block; width: 100%; font-family: KoreanDREAM5; font-size: 35px; /* width: 246px;  */height: 36px; padding-top: 73px; padding-left: 43px;
         }
         .leftBoard {
-            width: 21.1979vw/* 407px */; height: 31.4583vw/* 604px */; padding-top: 53px;  
+            width: 21.1979vw/* 407px */; height: 31.4583vw/* 604px */; padding-top: 53px; z-index: 1000;
             .puzzle {
                 @include border-radius(50px);
                 position: relative; width: 21.1979vw/* 407px */; height: 31.4583vw/* 604px */; line-height: 31.4583vw; box-sizing: border-box; overflow: hidden;
@@ -437,7 +439,7 @@
                 }
                 .overview {
                     @include border-radius(50px);
-                    position: absolute; top: 27.1875vw/* 522px */; left: 0; width: 28.125vw/* 540px */; height: 38.802vw/* 745px */; background: #fff; padding-top: 8px; border: 1px solid #777;
+                    position: absolute; top: 27.1875vw/* 522px */; left: 0; width: 28.125vw/* 540px */; height: 38.802vw/* 745px */; background: #fff; padding-top: 8px; border: 1px solid #777; cursor: url('../img/icon/dragUp_icon.png'), auto;
                     span {display: block; padding-left: 44px; font-size: 15px; margin-top: 7px;}
                     .overviewTitle {
                         font-family: KoreanDREAM5; font-size: 25px; padding-top: 25px;

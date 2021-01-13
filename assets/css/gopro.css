@@ -18,10 +18,10 @@
       height: 670px;
       margin: 0 auto; }
       #gopro1 .project1Main .mainCircleWrap .bigMainCircle {
-        -webkit-transition: top 1s, left 2s;
-        -moz-transition: top 1s, left 2s;
-        -o-transition: top 1s, left 2s;
-        transition: top 1s, left 2s;
+        -webkit-transition: top 1s;
+        -moz-transition: top 1s;
+        -o-transition: top 1s;
+        transition: top 1s;
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
@@ -60,14 +60,10 @@
           #gopro1 .project1Main .mainCircleWrap .bigMainCircle.up img {
             left: -20%; }
         #gopro1 .project1Main .mainCircleWrap .bigMainCircle.leftout {
-          left: -200%;
-          top: 50%; }
+          /* left: -200%; */
+          /* top: 50%; */ }
           #gopro1 .project1Main .mainCircleWrap .bigMainCircle.leftout img {
-            -webkit-transform: rotate(-360deg);
-            -moz-transform: rotate(-360deg);
-            -o-transform: rotate(-360deg);
-            -ms-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+            /* @include transform(rotate(-360deg)); */
             left: -20%; }
       #gopro1 .project1Main .mainCircleWrap .empty {
         -webkit-border-radius: 50%;
@@ -104,7 +100,7 @@
       position: absolute;
       display: fixed;
       top: 455px;
-      right: 150px;
+      right: 80px;
       font-family: "Fugaz one";
       font-size: 130px;
       color: #fff;

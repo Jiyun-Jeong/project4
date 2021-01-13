@@ -35,9 +35,9 @@ $(document).ready(function () {
 
     if ( targetTop > 10 ) {
       console.log(fixTop);
-      _nameSvg.stop().animate({padding: '29 0 0 32', width: 131, height: 77}, 4000).css({position: fixed});
+      _nameSvg.stop().animate({padding: '29 0 0 32', width: 131, height: 77}, 800).css({position: 'fixed'});
     } else {
-      _nameSvg.stop().animate({padding: '7.7604vw 14.5833vw 0 36.875vw', width: 932, height: 551}, 2000).css({position: absolute});
+      _nameSvg.stop().animate({padding: '7.7604vw 14.5833vw 0 36.875vw', width: 932, height: 551}, 800).css({position: 'absolute'});
     }
 
   });
@@ -96,7 +96,8 @@ $(document).ready(function () {
       $('#drag1Yes').hide();
       okay1 = true;
       if (okay1 && okay2 ) {
-        $('.hiddenProfile').stop().delay(0.5).fadeIn().find('.peepIt').stop().delay(0.5).fadeOut();
+        $('.hiddenProfile').stop().delay(0.5).fadeIn();
+        $('.peepIt').stop().hide()
       }
     }
   });
@@ -107,16 +108,17 @@ $(document).ready(function () {
       $('#drag2Yes').hide();
       okay2 = true;
       if (okay1 && okay2 ) {
-        $('.hiddenProfile').stop().delay(0.5).fadeIn().find('.peepIt').stop().delay(0.5).fadeOut();
+        $('.hiddenProfile').stop().delay(0.5).fadeIn()/* .find('.peepIt').stop().delay(0.5).fadeOut() */;
+        $('.peepIt').stop().hide();
         
         //flower action
-        function reAction(){
+        /* function reAction(){
           $('#cnt4').fadeIn(1000);
             setTimeout(function (){
               $('#cnt4').fadeOut(2000);
             }, 5000);
         }
-        reAction();
+        reAction(); */
       }
     }
 
@@ -220,11 +222,12 @@ $(document).ready(function () {
     }
 
     //draggable chart
+    var top = $('.skillView').offset().top; //드래그 가능한 시작위치
+    var bottom = $('.skillView').offset().top + $('.skillView').height() - 180; //종료위치
     $('.overview').draggable({
       axis: 'y', //y축으로만 드래그
-      containment: 'parent' //부모인 .skillView 안에서만 드래그
-    });
-
+      containment: [0, top, 10000, bottom] //0, top, 10000, bottom
+    })
 
     //work page work1 "swiper"
     var work1Swiper = new Swiper('#work .gopro .swiper-container', {
