@@ -12,24 +12,39 @@
     .mainCircleWrap {
       position: relative; width: 670px; height: 670px; margin: 0 auto; 
       .bigMainCircle {
+        @include transition(top 1s, left 2s);
+        @include transform(translate(-50%, -50%));
         @include border-radius(50%);
-        position: relative; width: 100%; height: 100%; background: #fff; margin: 217px auto 0; overflow: hidden;
-        img {position: absolute;top: -20%; left: 14%;}
+        position: absolute; top: 80%; left: 50%; width: 100%; height: 100%; background: #fff; margin: 217px auto 0; overflow: hidden; z-index: 500;
+        img {
+          @include transition(left 0.5s 1s, transform 2s 0s);
+          position: absolute; top: -45%; 
+        }
         &::before {
           @include border-radius(50%);
           position: absolute; border: 1px solid #fff; top: 0; left: 420px; }
-          
+        &.up{
+          top: 50%;
+          img {top: -15%; left: 15%;}
+        } 
+        &.leftout{
+          left: -200%; top: 50%;
+          img {
+            @include transform(rotate(-360deg));
+            /* left: -20%; */
+          }
+        } 
        }
         .empty {
           @include border-radius(50%);
-          position: absolute; top: 0; left: 420px; width: 670px; height: 670px; border: 1px solid #000;
+          position: absolute; top: 217px; left: 420px; width: 670px; height: 670px; border: 1px solid #000; z-index: 200;
         }
         .emptyCircle1 {left: 349px;}
         .emptyCircle3 {left: 491px;}
       }
     }
     p {
-      position: absolute; display: fixed; top: 455px; right: 106px; font-family: "Fugaz one"; font-size: 130px; color: #000;
+      position: absolute; display: fixed; top: 455px; right: 106px; font-family: "Fugaz one"; font-size: 130px; color: #000; z-index: 500;
     }
     .simpleExplain {
       position: absolute; bottom: 0; left: 0; background: #000; width: 100%; height: 190px; 
@@ -41,12 +56,17 @@
         img {position: absolute; top: -32px; left: 0; fill: #fff;}
         img.helinoxLogo {position: absolute; top: 58px; left: 265px; width: 367px; height: 79px; }
         .explainText {
-          float: right; width: 1020.5px; height: 114.5px;
-          span {
-            display: inline-block; font-size: 17px; font-family: "Fugaz one"; padding-right: 87px; color: #fff; line-height: 0;
+          position: relative; float: right; width: 1020.5px; height: 114.5px;
+          p {
+            position: absolute; display: block; font-size: 17px; line-height: 27px;  font-family: "Fugaz one"; /* padding-right: 87px;  */color: #fff; text-align: left; 
+            &:nth-child(1), &:nth-child(3), &:nth-child(5) {left: 0;}
+            &:nth-child(1) {top: 40.5px; }
+            &:nth-child(2) {top: 40.5px; left: 200px;}
+            &:nth-child(3) {top: 80.5px; }
+            &:nth-child(4) {top: 80.5px; left: 200px;}
+            &:nth-child(5) {top: 120.5px;}
+            &:nth-child(6) {top: 120.5px; left: 200px;}
           }
-          p {display: block; text-align: left; font-size: 17px; font-family: "Fugaz one"; color: #fff; }
-    
         }
       }
     }
@@ -188,6 +208,7 @@ p.content {
     @include border-radius(50px);
     position: absolute; bottom: 75px; left: 150px; display: block; background: #fff; width: 252px; height: 74px; line-height: 74px; font-family: "Fugaz one"; font-size: 24px; color: #000; text-align: center;
   }
+  
 }
 
 /* helinox7 CSS */
@@ -210,7 +231,7 @@ p.content {
     }
   }
   .aboutPreviewImg {
-    font-size: 0; width: 924px; height: 100%; padding-left:
+    font-size: 0; width: 924px; height: 100%; padding-left: 125px;
     img + img {padding-left: 25px;}
   }
   a {
