@@ -27,7 +27,7 @@
           left: -200%; top: 50%;
           img {
             @include transform(rotate(-360deg));
-            /* left: -20%; */
+            left: 10%;
           }
         } 
        }
@@ -215,5 +215,13 @@ p.content {font-family: KoreanDREAM3; font-size: 15px; line-height: 22px; displa
       > span {color: $goproBlue;}
     }
   }
+  .controller {
+    position: absolute; top: 50%; left: 0; width: 100%;
+    .swiper-button-next, .swiper-button-prev {
+        @include bgsize(cover);
+        position: static; display: block; background: no-repeat center; width: 25px; height: 43px; top: 50%; 
+    }
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {display: none;}
 }
 

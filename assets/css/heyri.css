@@ -63,7 +63,7 @@
             -o-transform: rotate(-360deg);
             -ms-transform: rotate(-360deg);
             transform: rotate(-360deg);
-            /* left: -20%; */ }
+            left: 10%; }
       #heyri1 .project3Main .mainCircleWrap .empty {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -445,5 +445,22 @@ p.content {
       padding-top: 63px; }
     #heyri6 .heyriSlide2 .compare2 > span {
       color: #00E4F3; }
+  #heyri6 .controller {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%; }
+    #heyri6 .controller .swiper-button-next, #heyri6 .controller .swiper-button-prev {
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      background-size: cover !important;
+      position: static;
+      display: block;
+      background: no-repeat center;
+      width: 25px;
+      height: 43px;
+      top: 50%; }
+  #heyri6 .swiper-button-next:after, #heyri6 .swiper-button-prev:after {
+    display: none; }
 
 /*# sourceMappingURL=heyri.css.map */

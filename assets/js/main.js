@@ -81,12 +81,18 @@ $(document).ready(function () {
     revert: 'invalid'
   });
 
+  var okay1 = false;
+  var okay2 = false;
   //드래그를 수락해주는 대상
   $('#drop1').droppable({
     accept: '#drag1Yes', //수락해줄 대상을 지정
     drop: function () { //drop이 완료된 후 실행할 실행문
       $(this).fadeOut().next().text('85%');
       $('#drag1Yes').hide();
+      okay1 = true;
+      if (okay1 && okay2 ) {
+        $('.hiddenProfile').stop().delay(0.5).fadeIn().find('.peepIt').stop().delay(0.5).fadeOut();
+      }
     }
   });
   $('#drop2').droppable({
@@ -94,7 +100,12 @@ $(document).ready(function () {
     drop: function () { //drop이 완료된 후 실행할 실행문
       $(this).fadeOut().next().text('90%');
       $('#drag2Yes').hide();
+      okay2 = true;
+      if (okay1 && okay2 ) {
+        $('.hiddenProfile').stop().delay(0.5).fadeIn().find('.peepIt').stop().delay(0.5).fadeOut();
+      }
     }
+
   });
 
 
