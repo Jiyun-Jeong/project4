@@ -11,8 +11,8 @@
     height: 100%; }
     #heyri1 .project3Main .mainCircleWrap {
       position: relative;
-      width: 670px;
-      height: 670px;
+      width: 34.8958vw;
+      height: 34.8958vw;
       margin: 0 auto; }
       #heyri1 .project3Main .mainCircleWrap .bigMainCircle {
         -webkit-transition: top 15s, left 15s;
@@ -33,8 +33,8 @@
         width: 100%;
         height: 100%;
         background: #fff;
-        margin: 217px auto 0;
-        /* overflow: hidden;  */
+        margin: 11.3021vw auto 0;
+        overflow: hidden;
         z-index: 500; }
         #heyri1 .project3Main .mainCircleWrap .bigMainCircle img {
           -webkit-transition: left 0.5s 1s, transform 2s 0s;
@@ -188,11 +188,15 @@ p.content {
     #heyri2 .designLeft .ceramicImgWrap {
       font-size: 0; }
       #heyri2 .designLeft .ceramicImgWrap img {
-        height: 10.8854vw; }
+        height: 10.8854vw;
+        width: 15.5729vw; }
     #heyri2 .designLeft .designLogo {
       margin-top: 4.84375vw; }
       #heyri2 .designLeft .designLogo .logoImgWrap {
-        font-size: 0; }
+        font-size: 0;
+        width: 29.2708vw; }
+      #heyri2 .designLeft .designLogo img {
+        width: 14.6354vw; }
   #heyri2 .designRight {
     margin-left: 108px;
     margin-top: 156px; }
@@ -262,7 +266,7 @@ p.content {
     #heyri3 .originalHomepage p {
       display: inline-block;
       font-family: KoreanDREAM3;
-      padding: 60px 0 50px 400px; }
+      padding: 60px 0 50px 20.8333vw; }
     #heyri3 .originalHomepage .mainPageIMG {
       position: absolute;
       top: 100%;
@@ -295,7 +299,7 @@ p.content {
     display: inline-block;
     margin-left: 0;
     position: relative;
-    margin: 80px 0 125px;
+    margin: 4.1667vw 0 6.5104vw;
     width: 100%; }
     #heyri4 .wireframe > img:first-child {
       position: absolute;

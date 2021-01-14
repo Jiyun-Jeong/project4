@@ -11,10 +11,10 @@
     .mainCircleWrap {
       position: relative; width: 670px; height: 670px; margin: 0 auto; 
       .bigMainCircle {
-        @include transition(top 1s/* , left 2s */);
+        @include transition(top 1s, left 2s);
         @include transform(translate(-50%, -50%));
         @include border-radius(50%);
-        position: absolute; top: 80%; left: 50%; width: 100%; height: 100%; background: #fff; margin: 217px auto 0; overflow: hidden; z-index: 500;
+        position: absolute; top: 80%; left: 50%; width: 100%; height: 100%; background: #fff; margin: 11.3021vw/* 217px */ auto 0; overflow: hidden; z-index: 500;
         img {
           @include transition(left 0.5s 1s, transform 2s 0s);
           position: absolute;top: 17%; left: 100%;
@@ -27,14 +27,20 @@
           img {left: -20%;}
         } 
         &.leftout{
-          /* left: -200%; *//* top: 50%; */
+          left: -200%; top: 50%;
           img {
-            /* @include transform(rotate(-360deg)); */
+            @include transform(rotate(-360deg));
             left: -20%;
           }
         } 
       }
       .empty {
+        @include border-radius(50%);
+        position: absolute; top: 217px; left: 420px; width: 670px; height: 670px; border: 1px solid $goproBlue; z-index: 200;
+      }
+      .emptyCircle1 {left: 349px;}
+      .emptyCircle3 {left: 491px;}
+      /* .empty {
         @include border-radius(50%);
         position: absolute; top: 217px; left: 420px; width: 670px; height: 670px; border: 1px solid $goproBlue; z-index: 200;
       }
@@ -49,7 +55,7 @@
       .emptyCircle3 {
         @include transition(3.6s opacity(1) 0.5s);
         opacity: 0; left: 491px;
-      }
+      } */
     }
     p {
       position: absolute; display: fixed; top: 455px; right: 80px; font-family: "Fugaz one"; font-size: 130px; color: #fff; z-index: 500;

@@ -161,81 +161,84 @@ body {
 #wrap {
   position: relative;
   overflow: hidden; }
-  #wrap #header .logo {
-    display: none;
-    position: absolute;
-    top: 29px;
-    left: 32px;
-    width: 131px;
-    height: 77px; }
-    #wrap #header .logo a {
-      width: 131px;
-      height: 77px;
-      cursor: url("../img/icon/cursor_icon.png"), auto; }
-  #wrap #header .util {
-    position: relative;
-    position: fixed;
-    top: 17px;
-    right: 22px;
-    z-index: 1000; }
-    #wrap #header .util > .btn_open img {
-      width: 44px;
-      height: 44px;
-      cursor: url("../img/icon/cursor_icon.png"), auto; }
-  #wrap #header .navWrap {
-    visibility: hidden;
-    position: fixed;
-    /* width: 100vw; height: 100vh;  */
-    top: 0;
-    left: 100%;
-    background: #B4CAFA;
-    overflow-y: auto;
-    right: 0;
-    bottom: 0;
-    overflow: hidden; }
-    #wrap #header .navWrap #gnb {
+  #wrap #header {
+    z-index: 2000;
+    position: relative; }
+    #wrap #header .logo {
+      display: none;
       position: absolute;
-      text-align: left;
-      left: 10.625vw;
-      top: 9.1146vw;
-      width: 46.875vw;
-      height: 32.1875vw; }
-      #wrap #header .navWrap #gnb ul {
-        font-size: 5.9895vw;
-        line-height: 8.3333vw;
-        font-family: Chonburi;
-        color: #FAF2A7; }
-        #wrap #header .navWrap #gnb ul li {
-          position: relative;
-          cursor: url("../img/icon/cursor_icon.png"), auto; }
-          #wrap #header .navWrap #gnb ul li a:hover, #wrap #header .navWrap #gnb ul li a:focus {
-            border-bottom: 4px solid #FAF2A7; }
-  #wrap #header .sns, #wrap #header .email {
-    position: absolute;
-    color: #fff;
-    left: 64.84375vw; }
-  #wrap #header .sns p, #wrap #header .email p:first-child {
-    padding-bottom: 0.9375vw;
-    font-size: 30px;
-    font-weight: bold; }
-  #wrap #header .sns {
-    top: 22.65625vw;
-    right: 27.8125vw; }
-    #wrap #header .sns ul li {
-      font-size: 27px;
-      letter-spacing: 0.61px;
-      padding-bottom: 10px; }
-  #wrap #header .email {
-    bottom: 5.8021vw; }
-    #wrap #header .email p:last-child {
-      font-size: 27px;
-      letter-spacing: 0.61px;
-      text-decoration: underline; }
-  #wrap #header .btn_close {
-    position: fixed;
-    top: 17px;
-    right: 22px;
-    cursor: url("../img/icon/cursor_icon.png"), auto; }
+      top: 29px;
+      left: 32px;
+      width: 131px;
+      height: 77px; }
+      #wrap #header .logo a {
+        width: 131px;
+        height: 77px;
+        cursor: url("../img/icon/cursor_icon.png"), auto; }
+    #wrap #header .util {
+      position: relative;
+      position: fixed;
+      top: 17px;
+      right: 22px;
+      z-index: 1000; }
+      #wrap #header .util > .btn_open img {
+        width: 44px;
+        height: 44px;
+        cursor: url("../img/icon/cursor_icon.png"), auto; }
+    #wrap #header .navWrap {
+      visibility: hidden;
+      position: fixed;
+      /* width: 100vw; height: 100vh;  */
+      top: 0;
+      left: 100%;
+      background: #B4CAFA;
+      overflow-y: auto;
+      right: 0;
+      bottom: 0;
+      overflow: hidden; }
+      #wrap #header .navWrap #gnb {
+        position: absolute;
+        text-align: left;
+        left: 10.625vw;
+        top: 9.1146vw;
+        width: 46.875vw;
+        height: 32.1875vw; }
+        #wrap #header .navWrap #gnb ul {
+          font-size: 5.9895vw;
+          line-height: 8.3333vw;
+          font-family: Chonburi;
+          color: #FAF2A7; }
+          #wrap #header .navWrap #gnb ul li {
+            position: relative;
+            cursor: url("../img/icon/cursor_icon.png"), auto; }
+            #wrap #header .navWrap #gnb ul li a:hover, #wrap #header .navWrap #gnb ul li a:focus {
+              border-bottom: 4px solid #FAF2A7; }
+    #wrap #header .sns, #wrap #header .email {
+      position: absolute;
+      color: #fff;
+      left: 64.84375vw; }
+    #wrap #header .sns p, #wrap #header .email p:first-child {
+      padding-bottom: 0.9375vw;
+      font-size: 30px;
+      font-weight: bold; }
+    #wrap #header .sns {
+      top: 22.65625vw;
+      right: 27.8125vw; }
+      #wrap #header .sns ul li {
+        font-size: 27px;
+        letter-spacing: 0.61px;
+        padding-bottom: 10px; }
+    #wrap #header .email {
+      bottom: 5.8021vw; }
+      #wrap #header .email p:last-child {
+        font-size: 27px;
+        letter-spacing: 0.61px;
+        text-decoration: underline; }
+    #wrap #header .btn_close {
+      position: fixed;
+      top: 19px;
+      right: 22px;
+      cursor: url("../img/icon/cursor_icon.png"), auto; }
 
 /* Footer */
 footer {

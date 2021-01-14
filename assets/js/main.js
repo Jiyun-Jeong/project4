@@ -131,14 +131,14 @@ $(document).ready(function () {
   var left = toggleFg.css('left');
   var right = toggleFg.css('right');
 
-  if (left == '40px') {
+  /* if (left == '40px') {
     toggleBg.css('background', ' #444242');
     toggleActionStart(toggleFg, 'TO_LEFT');
   } else if (left == '0px') {
     toggleBg.css('background', '#ffffff');
     toggleActionStart(toggleFg, 'TO_RIGHT');
-  }
-  //토글 버튼 이동 모션 함수
+  } */
+/*   //토글 버튼 이동 모션 함수
   function toggleActionStart(toggleBtn, LR) {
     // 0.01초 단위로 실행
     var intervalID = setInterval(
@@ -154,13 +154,13 @@ $(document).ready(function () {
     setTimeout(function () {
       clearInterval(intervalID);
     }, 201);
-  }
+  } */
   
-  $(toggleBg).on('click', function (){
+  $('.toggleBg').on('click', function (){
     if ($(this).hasClass('active')) {
-      $('.flipBtn_front').stop().slideUp();
+      $('.toggleFg').removeClass('left').addClass('right');
     } else {  
-      $('.flipBtn_back').stop().slideDown();
+      $('.toggleFg').removeClass('right').addClass('left');
     }
   });
 

@@ -10,12 +10,12 @@
       position: absolute; background: #fff; height: 154%; width: 87%; top: 1%; right: -22%; 
     }
     .mainCircleWrap {
-      position: relative; width: 670px; height: 670px; margin: 0 auto; 
+      position: relative; width: 34.8958vw/* 670px */; height: 34.8958vw/* 670px */; margin: 0 auto; 
       .bigMainCircle {
         @include transition(top 1s, left 2s);
         @include transform(translate(-50%, -50%));
         @include border-radius(50%);
-        position: absolute; top: 80%; left: 50%; width: 100%; height: 100%; background: #fff; margin: 217px auto 0; overflow: hidden; z-index: 500;
+        position: absolute; top: 80%; left: 50%; width: 100%; height: 100%; background: #fff; margin:  11.3021vw/* 217px */ auto 0; overflow: hidden; z-index: 500;
         img {
           @include transition(left 0.5s 1s, transform 2s 0s);
           position: absolute; top: -45%; 

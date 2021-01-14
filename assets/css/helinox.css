@@ -23,8 +23,8 @@
       right: -22%; }
     #helinox1 .project2Main .mainCircleWrap {
       position: relative;
-      width: 670px;
-      height: 670px;
+      width: 34.8958vw;
+      height: 34.8958vw;
       margin: 0 auto; }
       #helinox1 .project2Main .mainCircleWrap .bigMainCircle {
         -webkit-transition: top 1s, left 2s;
@@ -45,7 +45,7 @@
         width: 100%;
         height: 100%;
         background: #fff;
-        margin: 217px auto 0;
+        margin: 11.3021vw auto 0;
         overflow: hidden;
         z-index: 500; }
         #helinox1 .project2Main .mainCircleWrap .bigMainCircle img {

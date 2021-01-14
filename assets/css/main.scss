@@ -41,7 +41,7 @@
         }
     }
     svg {
-        padding: 7.7604vw/* 149px */ 14.5833vw/* 280px */ 0  36.875vw/* 708px */; width: 48.5417vw/* 932px */; height: 28.6979vw/* 551px */; z-index: 2000;
+        padding: 7.7604vw/* 149px */ 14.5833vw/* 280px */ 0  36.875vw/* 708px */; width: 48.5417vw/* 932px */; height: 28.6979vw/* 551px */; 
     }
     p {
         position: absolute; top: 75%; left: 41%; font-size: 1.9791vw/* 38px */;line-height: 1.9791vw/* 38px */; padding-right: 33.0208vw/* 634px */; text-align: right;
@@ -59,7 +59,7 @@
     position: relative; background: $lightpurple; width: 100%; height: 100vh;
     .cnt2B {width: 100%; height: 100%; position: absolute; top: 0; left: -100%; background: $lightyellow;}
     .cnt2Deco {
-        position: relative; z-index: 1600;
+        /* position: relative;  */z-index: 1600;
         img {position: absolute; }
         .purpleCircle {
             display: none;
@@ -89,13 +89,24 @@
             0% {transform: rotate3d(0)}
             100% {transform: rotate3d(80, 50, 40, 360deg);}
         }
+        .yellowCircle {
+            /* @include animation(show1 1s ease-in-out); */
+            top: -52%; right: -50%; 
+        }
+        /* @keyframes show1 {
+            0% {opacity: 0; }
+            100% {opacity: 1;}
+        } */
+        /* .yellowCircle {
+            position: absolute; top: 22.65625vw435px; left: 60.9375vw1180px; z-index: 1500;  animation: moveCircle 10s ease; transform-origin: 50% 50%;
+        } */
         .profile {
-            -webkit-animation: show1 1s ease-in-out;
+            -webkit-animation: show2 1s ease-in-out;
             -moz-animation: show1 1s ease-in-out;
             animation: show1 1s ease-in-out;
             top: 0; left: 44.2708vw/* 850px */; width: 61.9792vw/* 1190px */;
         }
-        @keyframes show1 {
+        @keyframes show2 {
             0% {opacity: 0; }
             100% {opacity: 1;}
         }
@@ -174,6 +185,7 @@
         }
     }
 }
+
 
 
 #cnt3 {
@@ -402,11 +414,13 @@
                 }
                 .toggleBg {
                     @include border-radius(66px);
-                    position: relative; width: 70px; height: 36px;  display: inline-block; background: #444242; border: 1px solid #fff; 
+                    position: relative; width: 70px; height: 34px;  display: inline-block; background: #444242; /* border: 1px solid #fff; */ 
                     button {
                         @include border-radius(50%);
-                        position: absolute; width: 28px; height: 28px; background: #fff; top: 4px; left: 5px;
+                        position: absolute; width: 26px; height: 26px; background: #fff; top: 4px; 
                     }
+                    button.left {left: 5px;}
+                    button.right {left: 50px;}
                 }
                 .flipBtnWrap { position: relative; display: inline-block; width: 9.8958vw/* 190px */; height: 34px; overflow: hidden;}
                 .flipBtn, .flipBtnInner  {
