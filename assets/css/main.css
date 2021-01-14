@@ -47,10 +47,11 @@
       border: 1px solid #fff;
       width: 100%;
       line-height: 3.75vw;
-      background: #B4CAFA; }
+      background: #B4CAFA;
+      cursor: url("../img/icon/cursor_icon.png"), auto; }
       #cnt1 .pageSwipe .about button:hover, #cnt1 .pageSwipe .about button:focus {
         background: #FAF2A7;
-        color: #B4CAFA; }
+        color: #000; }
   #cnt1 .pageSwipe .works {
     position: absolute;
     top: 11.4583vw;
@@ -84,7 +85,11 @@
       border: 1px solid #fff;
       width: 200px;
       line-height: 72px;
-      background: #B4CAFA; }
+      background: #B4CAFA;
+      cursor: url("../img/icon/cursor_icon.png"), auto; }
+      #cnt1 .pageSwipe .works button:hover, #cnt1 .pageSwipe .works button:focus {
+        background: #FAF2A7;
+        color: #000; }
   #cnt1 svg {
     padding: 7.7604vw 14.5833vw 0 36.875vw;
     width: 48.5417vw;
@@ -108,7 +113,7 @@
     position: absolute;
     top: 22.65625vw;
     left: 60.9375vw;
-    z-index: 1500;
+    /* z-index: 1500; */
     animation: moveCircle 10s ease;
     transform-origin: 50% 50%; }
 
@@ -126,6 +131,7 @@
     background: #FAF2A7; }
   #cnt2 .cnt2Deco {
     position: relative;
+    z-index: 1600;
     /* @keyframes move {
         0%  { transform: scale(1)   translate(10px, -30px); }
         38% { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
@@ -138,13 +144,14 @@
       position: absolute; }
     #cnt2 .cnt2Deco .purpleCircle {
       display: none;
-      -webkit-animation: rotate1 10s cubic-bezier(0.4, 0, 1, 1) infinite;
-      -moz-animation: rotate1 10s cubic-bezier(0.4, 0, 1, 1) infinite;
-      animation: rotate1 10s cubic-bezier(0.4, 0, 1, 1) infinite;
-      /* animation: move 10s ease-in-out infinite; */
+      -webkit-animation: ratate1 10s cubic-bezier(0.4, 0, 1, 1) infinite;
+      -moz-animation: ratate1 10s cubic-bezier(0.4, 0, 1, 1) infinite;
+      -o-animation: ratate1 10s cubic-bezier(0.4, 0, 1, 1) infinite;
+      animation: ratate1 10s cubic-bezier(0.4, 0, 1, 1) infinite;
+      /* -webkit-animation: rotate1 10s cubic-bezier(0.4, 0, 1, 1) infinite; -moz-animation: rotate1 10s cubic-bezier(0.4, 0, 1, 1) infinite; animation: rotate1 10s cubic-bezier(0.4, 0, 1, 1) infinite;  */
       transform-origin: 50% 50%;
-      top: -150px;
-      left: -150px;
+      top: -7.8125vw;
+      left: -7.8125vw;
       height: 51.0417vw;
       width: 70.3125vw; }
 @keyframes rotate1 {
@@ -160,7 +167,7 @@
       top: 29.9479vw;
       left: 41.9792vw;
       width: 21.3021vw;
-      height: 335px; }
+      height: 17.4479vw; }
 @keyframes rotate2 {
   0% {
     transform: rotate3d(0); }
@@ -171,33 +178,134 @@
       -moz-animation: show1 1s ease-in-out;
       animation: show1 1s ease-in-out;
       top: 0;
-      left: 850px;
-      width: 61.9792vw;
-      z-index: 1600; }
+      left: 44.2708vw;
+      width: 61.9792vw; }
 @keyframes show1 {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
     #cnt2 .cnt2Deco .ballon {
-      -webkit-animation: show2 1s ease-in-out;
-      -moz-animation: show2 1s ease-in-out;
-      animation: show2 1s ease-in-out;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+      -webkit-animation: wind 1s 1.5s ease-in-out infinite;
+      -moz-animation: wind 1s 1.5s ease-in-out infinite;
+      -o-animation: wind 1s 1.5s ease-in-out infinite;
+      animation: wind 1s 1.5s ease-in-out infinite;
       top: 94px;
       right: 47px;
-      width: 403px;
-      height: 186px; }
-@keyframes show2 {
+      width: 20.9896vw;
+      height: 9.6875vw;
+      z-index: 1650;
+      opacity: 1; }
+@-webkit-keyframes wind {
   0% {
-    opacity: 0; }
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  6% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-10deg) scale(1, 1); }
+  12% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  18% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-10deg) scale(1, 1); }
+  24% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  30% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-10deg) scale(1, 1); }
+  36% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); } }
+@-moz-keyframes wind {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  6% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-10deg) scale(1, 1); }
+  12% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  18% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-10deg) scale(1, 1); }
+  24% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  30% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-10deg) scale(1, 1); }
+  36% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); } }
+@-o-keyframes wind {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  6% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-10deg) scale(1, 1); }
+  12% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  18% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-10deg) scale(1, 1); }
+  24% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  30% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-10deg) scale(1, 1); }
+  36% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); } }
+@keyframes wind {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  6% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-10deg) scale(1, 1); }
+  12% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  18% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-10deg) scale(1, 1); }
+  24% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  30% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(-10deg) scale(1, 1); }
+  36% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) rotate(0deg) scale(1, 1); } }
     #cnt2 .cnt2Deco .twinkle1 {
       -webkit-animation: blink1 2.5s ease-in-out infinite;
       -moz-animation: blink1 2.5s ease-in-out infinite;
       animation: blink1 2.5s ease-in-out infinite;
-      top: 77.5px;
-      left: 150px; }
+      top: 4.0365vw;
+      left: 7.8125vw; }
 @keyframes blink1 {
   0% {
     opacity: 0; }
@@ -206,11 +314,11 @@
   100% {
     opacity: 0; } }
     #cnt2 .cnt2Deco .twinkle2 {
-      -webkit-animation: blink2 1s ease-in-out infinite;
-      -moz-animation: blink2 1s ease-in-out infinite;
-      animation: blink2 1s ease-in-out infinite;
-      top: 206px;
-      right: 804.5px; }
+      -webkit-animation: blink2 2s ease-in-out infinite;
+      -moz-animation: blink2 2s ease-in-out infinite;
+      animation: blink2 2s ease-in-out infinite;
+      top: 10.7291vw;
+      right: 41.901vw; }
 @keyframes blink2 {
   0% {
     opacity: 1; }
@@ -222,8 +330,8 @@
       -webkit-animation: blink3 1.5s ease-in-out infinite;
       -moz-animation: blink3 1.5s ease-in-out infinite;
       animation: blink3 1.5s ease-in-out infinite;
-      top: 826px;
-      right: 752px; }
+      top: 43.0208vw;
+      right: 39.1667vw; }
 @keyframes blink3 {
   0% {
     opacity: 1; }
@@ -235,8 +343,8 @@
       -webkit-animation: blink4 0.7s ease-in-out infinite;
       -moz-animation: blink4 0.7s ease-in-out infinite;
       animation: blink4 0.7s ease-in-out infinite;
-      top: 837px;
-      right: 134px; }
+      top: 43.59375vw;
+      right: 6.9797vw; }
 @keyframes blink4 {
   0% {
     opacity: 1; }
@@ -245,10 +353,12 @@
   100% {
     opacity: 1; } }
     #cnt2 .cnt2Deco .beam {
-      top: -15px;
-      right: 560px; }
+      top: -0.78125vw;
+      right: 29.1667vw;
+      /* z-index: 1700; */ }
   #cnt2 .profileText {
-    position: absolute; }
+    position: absolute;
+    z-index: 1800; }
     #cnt2 .profileText .aboutMe {
       -webkit-transform: rotate(8deg);
       -moz-transform: rotate(8deg);
@@ -256,29 +366,29 @@
       -ms-transform: rotate(8deg);
       transform: rotate(8deg);
       position: absolute;
-      top: 239px;
-      left: 414px;
-      width: 529px;
+      top: 12.4479vw;
+      left: 21.5625vw;
+      width: 27.5521vw;
       font-family: "Fugaz one";
-      font-size: 110px;
+      font-size: 5.7292vw;
       color: #222; }
     #cnt2 .profileText span {
       display: block;
-      padding-left: 154px;
-      margin-top: 317.5px;
-      font-size: 150px;
+      padding-left: 8.0208vw;
+      margin-top: 16.5364vw;
+      font-size: 7.8125vw;
       font-family: "Fugaz one"; }
     #cnt2 .profileText p:last-child {
       position: absolute;
-      top: 411px;
-      left: 169px;
-      width: 650px;
+      top: 21.40625vw;
+      left: 8.8021vw;
+      width: 33.8542vw;
       z-index: 700;
-      font-size: 29px;
-      line-height: 55px;
+      font-size: 1.5104vw;
+      line-height: 2.8645vw;
       text-align: right; }
       #cnt2 .profileText p:last-child strong {
-        font-size: 36px; }
+        font-size: 1.875vw; }
 
 #cnt3 {
   width: 100%;
@@ -351,14 +461,14 @@
         /* background-image: url("../assets/img/main/diaryPaper@2x.png") no-repeat center; */ }
         #cnt3 .swiper-container .slide:nth-child(odd) .diary strong {
           display: block;
-          font-size: 38px;
+          font-size: 1.9792vw;
           padding-top: 53px;
           padding-right: 55px; }
         #cnt3 .swiper-container .slide:nth-child(odd) .diary p {
           padding-top: 42px;
           padding-right: 55px;
-          font-size: 32px;
-          line-height: 41px;
+          font-size: 1.6667vw;
+          line-height: 2.1354vw;
           /* &::before {
               content: ""; position: absolute; clear: both; width: 100%; height: 1px; background: #444242;
           } */ }
@@ -390,15 +500,15 @@
       font-size: 0; }
     #cnt3 .swiper-container .slide2 .secondDiary {
       position: relative;
-      margin-top: 188px;
+      margin-top: 9.7917vw;
       padding-left: 24.479vw;
       height: 46.3542vw; }
       #cnt3 .swiper-container .slide2 .secondDiary .data > img {
-        left: 216px; }
+        left: 11.25vw; }
       #cnt3 .swiper-container .slide2 .secondDiary .diary {
         position: absolute;
         top: 0;
-        left: 470px;
+        left: 24.4792vw;
         width: 31.25vw;
         height: 41.6667vw;
         background: #fff;
@@ -407,14 +517,14 @@
         text-align: left; }
         #cnt3 .swiper-container .slide2 .secondDiary .diary strong {
           display: block;
-          font-size: 38px;
+          font-size: 1.9792vw;
           padding-top: 53px;
           padding-left: 55px; }
         #cnt3 .swiper-container .slide2 .secondDiary .diary p {
           padding-top: 42px;
           padding-left: 55px;
-          font-size: 32px;
-          line-height: 41px;
+          font-size: 1.6667vw;
+          line-height: 2.1354vw;
           /* &::before {
               content: ""; position: absolute; clear: both; width: 50%; height: 1px; background: #444242;
           } */ }
@@ -427,16 +537,17 @@
       #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco {
         position: absolute;
         top: 0;
-        right: 250px;
+        right: 13.0208vw;
         width: 31.25vw;
         height: 41.6667vw;
         background: #fff; }
         #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco .diaryImg {
           position: absolute;
-          top: 73px;
+          top: 3.8021vw;
           right: 0;
           left: 0;
-          margin: 0 auto; }
+          margin: 0 auto;
+          width: 21.5104vw; }
         #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco .decoTape1 {
           position: absolute;
           top: 18px;
@@ -448,11 +559,13 @@
         #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco .drawnArrow {
           position: absolute;
           bottom: 40%;
-          right: -9%; }
+          right: -9%;
+          width: 4.9479vw; }
         #cnt3 .swiper-container .slide2 .secondDiary .diaryDeco .handwrite {
           position: absolute;
           bottom: 52%;
-          right: -20%; }
+          right: -20%;
+          width: 7.3958vw; }
     #cnt3 .swiper-container .slide3 {
       background: #FAF2A7; }
       #cnt3 .swiper-container .slide3 .thirdDiary {
@@ -469,14 +582,17 @@
             left: 0;
             right: 0;
             margin: 0 auto;
-            width: 300px;
-            height: 87px;
-            line-height: 87px;
+            width: 15.625vw;
+            height: 4.53125vw;
+            line-height: 4.53125vw;
             background-color: #000;
             font-family: "fugaz one";
             font-size: 25px;
             color: #fff;
-            text-align: center; }
+            text-align: center;
+            cursor: url("../img/icon/cursor_icon.png"), auto; }
+            #cnt3 .swiper-container .slide3 .thirdDiary .viewWorksWrap a:focus {
+              border: 4px solid #FAF2A7; }
       #cnt3 .swiper-container .slide3 .diary .bold {
         font-size: 36px !important;
         padding-top: 0 !important;
@@ -491,8 +607,8 @@
   background: #B4CAFA; }
   #cnt4 .stats {
     position: relative;
-    height: 224px;
-    line-height: 224px;
+    height: 11.6667vw;
+    line-height: 11.6667vw;
     width: 100%;
     background: #fff; }
     #cnt4 .stats::before {
@@ -527,16 +643,16 @@
     margin: 0 auto;
     margin-top: 7.0833vw;
     clear: both;
-    overflow: hidden; }
+    overflow: hidden;
+    z-index: 1200; }
     #cnt4 .dashboard .dashboardTitle {
       display: block;
       width: 100%;
       font-family: KoreanDREAM5;
       font-size: 35px;
-      /* width: 246px;  */
       height: 36px;
-      padding-top: 73px;
-      padding-left: 43px; }
+      padding-top: 3.8021vw;
+      padding-left: 2.2396vw; }
     #cnt4 .dashboard .leftBoard {
       width: 21.1979vw;
       height: 31.4583vw;
@@ -552,80 +668,69 @@
         line-height: 31.4583vw;
         box-sizing: border-box;
         overflow: hidden; }
-        #cnt4 .dashboard .leftBoard .puzzle span, #cnt4 .dashboard .leftBoard .puzzle p {
+        #cnt4 .dashboard .leftBoard .puzzle p {
           font-family: "fugaz one";
           text-align: center; }
-        #cnt4 .dashboard .leftBoard .puzzle span {
+        #cnt4 .dashboard .leftBoard .puzzle .peepIt {
           display: block;
           font-size: 40px;
           line-height: 47px;
-          padding-top: 248px; }
+          padding-top: 12.9167vw;
+          position: relative; }
         #cnt4 .dashboard .leftBoard .puzzle .stripe {
-          -webkit-transform: rotate(135deg);
-          -moz-transform: rotate(135deg);
-          -o-transform: rotate(135deg);
-          -ms-transform: rotate(135deg);
-          transform: rotate(135deg);
-          -webkit-transition: left 5s;
-          -moz-transition: left 5s;
-          -o-transition: left 5s;
-          transition: left 5s;
           position: absolute;
           top: -8%;
           left: -35%;
           width: 36.4583vw;
           height: 36.5104vw;
           font-size: 0; }
-          #cnt4 .dashboard .leftBoard .puzzle .stripe div {
-            -webkit-animation: stripes 3s linear infinite;
-            -moz-animation: stripes 3s linear infinite;
-            -o-animation: stripes 3s linear infinite;
-            animation: stripes 3s linear infinite;
-            width: 60px;
-            height: 706px;
-            display: inline-block;
-            background: #b89eff; }
+          #cnt4 .dashboard .leftBoard .puzzle .stripe .line {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-animation: stripes 1s linear infinite;
+            -moz-animation: stripes 1s linear infinite;
+            -o-animation: stripes 1s linear infinite;
+            animation: stripes 1s linear infinite;
+            width: 100%;
+            height: 100%;
+            background-size: 100% 32px;
+            background-image: linear-gradient(#b89eff 50%, transparent 50%);
+            background-position: 0 0;
+            background-repeat: repeat; }
 @-webkit-keyframes stripes {
-  0% {
-    background-position: 0px 0px; }
   100% {
-    background-position: -30px 0px; } }
+    background-position: 0 -30px; } }
 @-moz-keyframes stripes {
-  0% {
-    background-position: 0px 0px; }
   100% {
-    background-position: -30px 0px; } }
+    background-position: 0 -30px; } }
 @-o-keyframes stripes {
-  0% {
-    background-position: 0px 0px; }
   100% {
-    background-position: -30px 0px; } }
+    background-position: 0 -30px; } }
 @keyframes stripes {
-  0% {
-    background-position: 0px 0px; }
   100% {
-    background-position: -30px 0px; } }
-          #cnt4 .dashboard .leftBoard .puzzle .stripe .line + .line {
-            margin-left: 20px; }
+    background-position: 0 -30px; } }
         #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile {
           display: none;
-          width: 285px;
+          width: 14.84375vw;
           height: 21.1979vw;
           margin: 0 auto;
           position: absolute;
           top: 0;
           left: 0;
           right: 0;
-          margin-top: 75px; }
+          margin-top: 3.90625vw; }
           #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile img {
             text-align: center;
             padding-left: 6px;
-            padding-bottom: 60px; }
+            padding-bottom: 3.125vw; }
           #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile > p {
             position: absolute;
             bottom: 0;
-            font-size: 29px;
-            line-height: 42px; }
+            font-size: 1.5104vw;
+            line-height: 2.1875vw; }
     #cnt4 .dashboard .middleBoard {
       display: flex;
       flex-direction: row;
@@ -633,7 +738,7 @@
       justify-content: space-between;
       width: 34.375vw;
       height: 33.8542vw;
-      padding-top: 53px; }
+      padding-top: 2.7604vw; }
       #cnt4 .dashboard .middleBoard .efficiency {
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
@@ -699,7 +804,7 @@
         position: relative;
         width: 34.1667vw;
         height: 14.0521vw;
-        border: 1px solid #444242;
+        border: 1px solid #777;
         background: #fff;
         box-sizing: border-box;
         /* margin-top: 25px; */ }
@@ -715,13 +820,13 @@
             -webkit-border-radius: 50px;
             -moz-border-radius: 50px;
             border-radius: 50px;
-            width: 416px;
-            height: 62px;
+            width: 21.6667vw;
+            height: 3.2292vw;
             font-family: "Fugaz one";
-            font-size: 21px;
-            line-height: 62px;
+            font-size: 1.09375vw;
+            line-height: 3.2292vw;
             margin: 0 auto;
-            padding-left: 39px; }
+            padding-left: 2.03125vw; }
           #cnt4 .dashboard .middleBoard .relieveStress .stressWrap img {
             display: none; }
           #cnt4 .dashboard .middleBoard .relieveStress .stressWrap .stressReliever1 {
@@ -731,10 +836,10 @@
             margin-top: 17px; }
     #cnt4 .dashboard .droppableModel {
       position: absolute;
-      top: 30%;
-      left: 20%;
-      width: 455px;
-      height: 176px; }
+      top: 32.5%;
+      left: 23.5%;
+      width: 23.6979vw;
+      height: 9.1667vw; }
       #cnt4 .dashboard .droppableModel .thunder {
         display: inline-block;
         cursor: url("../img/icon/cursor_icon.png"), auto; }
@@ -742,13 +847,13 @@
           position: absolute;
           top: 0;
           left: 0;
-          width: 191px; }
+          width: 9.9479vw; }
       #cnt4 .dashboard .droppableModel .triangle {
         display: inline-block;
         cursor: url("../img/icon/cursor_icon.png"), auto; }
         #cnt4 .dashboard .droppableModel .triangle #drag1Yes {
-          width: 134px;
-          left: 180px; }
+          width: 6.9792vw;
+          left: 9.375vw; }
       #cnt4 .dashboard .droppableModel p {
         position: absolute;
         font-size: 2.8646vw;
@@ -772,9 +877,10 @@
         .flipBtn_mid {width: 190px; height:2px;} */ }
         #cnt4 .dashboard .rightBoard .skillView .switchWrap {
           margin: 0 auto;
-          padding-bottom: 60px;
-          width: 280px; }
-        #cnt4 .dashboard .rightBoard .skillView .switchToggle {
+          padding-top: 20px;
+          padding-bottom: 45px;
+          width: 14.5833vw; }
+        #cnt4 .dashboard .rightBoard .skillView .toggleBg {
           -webkit-border-radius: 66px;
           -moz-border-radius: 66px;
           border-radius: 66px;
@@ -784,7 +890,7 @@
           display: inline-block;
           background: #444242;
           border: 1px solid #fff; }
-          #cnt4 .dashboard .rightBoard .skillView .switchToggle button {
+          #cnt4 .dashboard .rightBoard .skillView .toggleBg button {
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
             border-radius: 50%;
@@ -796,8 +902,10 @@
             left: 5px; }
         #cnt4 .dashboard .rightBoard .skillView .flipBtnWrap {
           position: relative;
-          width: 190px;
-          height: 34px; }
+          display: inline-block;
+          width: 9.8958vw;
+          height: 34px;
+          overflow: hidden; }
         #cnt4 .dashboard .rightBoard .skillView .flipBtn, #cnt4 .dashboard .rightBoard .skillView .flipBtnInner {
           width: 100%;
           height: 100%; }
@@ -853,29 +961,17 @@
             text-align: center;
             color: #000;
             font-family: "fugaz one"; }
-          #cnt4 .dashboard .rightBoard .skillView .skillCircle .design
-          .subject1, #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject3 {
-            width: 156px;
-            height: 156px; }
           #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject1 {
             background: #993ef3; }
           #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject2 {
-            width: 195px;
-            height: 195px;
             background: #ff9393; }
           #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject3 {
             background: #bd3ef3; }
           #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject4 {
-            width: 100px;
-            height: 100px;
             background: #a6fcbc; }
           #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject5 {
-            width: 120px;
-            height: 120px;
             background: #ffe393; }
           #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject6 {
-            width: 128px;
-            height: 128px;
             background: #ffc293; }
         #cnt4 .dashboard .rightBoard .skillView .overview {
           -webkit-border-radius: 50px;
@@ -901,12 +997,12 @@
             padding-top: 25px; }
           #cnt4 .dashboard .rightBoard .skillView .overview > span:nth-child(2) {
             font-family: KoreanDREAM3;
-            font-size: 15px;
+            font-size: 0.78125vw;
             padding-top: 8px;
             color: #858585; }
           #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph {
             position: relative;
-            margin-top: 26px;
+            margin-top: 1.3542vw;
             z-index: 100; }
             #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap {
               -webkit-border-radius: 50px;
@@ -926,7 +1022,8 @@
                 border-radius: 4px;
                 width: 466px;
                 height: 344px;
-                margin: 0 auto; }
+                margin: 0 auto;
+                /* div.skills + div.skills { margin-left: 42px; } */ }
                 #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .whiteStick {
                   position: absolute;
                   bottom: 165px;
@@ -967,7 +1064,7 @@
                   position: absolute;
                   background: #7ea0e9;
                   width: 6px;
-                  bottom: 165px;
+                  bottom: 8.59375vw;
                   height: 344px; }
                 #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #html5 {
                   left: 35px;
@@ -1009,7 +1106,7 @@
                   text-align: center; }
               #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsText {
                 position: absolute;
-                bottom: 107px;
+                bottom: 5.5729vw;
                 left: 0;
                 right: 0;
                 text-align: center; }
@@ -1029,10 +1126,10 @@
   visibility: hidden;
   background: #B4CAFA; }
   #work .backBtn {
-    -webkit-animation: blinkBtn 1.2s ease-in-out infinite;
-    -moz-animation: blinkBtn 1.2s ease-in-out infinite;
-    -o-animation: blinkBtn 1.2s ease-in-out infinite;
-    animation: blinkBtn 1.2s ease-in-out infinite;
+    -webkit-animation: blinkBtn 2s ease-in-out infinite;
+    -moz-animation: blinkBtn 2s ease-in-out infinite;
+    -o-animation: blinkBtn 2s ease-in-out infinite;
+    animation: blinkBtn 2s ease-in-out infinite;
     position: absolute;
     top: 11.4583vw;
     right: -2.9%;
@@ -1085,7 +1182,11 @@
       border: 1px solid #fff;
       width: 145px;
       line-height: 72px;
-      background: #B4CAFA; }
+      background: #B4CAFA;
+      cursor: url("../img/icon/cursor_icon.png"), auto; }
+      #work .backBtn #backBtn:hover, #work .backBtn #backBtn:focus {
+        background: #FAF2A7;
+        color: #000; }
   #work .workSwiperWrap {
     display: flex;
     flex-wrap: nowrap;
@@ -1236,7 +1337,6 @@
     #work .helinox .work2Swiper {
       margin-top: 12px;
       margin-left: 14px;
-      border: 1px solid #fff;
       box-sizing: border-box;
       width: 47.9167vw;
       height: 35.1562vw; }

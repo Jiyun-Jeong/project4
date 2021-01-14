@@ -47,14 +47,14 @@
       position: absolute; display: fixed; top: 455px; right: 106px; font-family: "Fugaz one"; font-size: 130px; color: #000; z-index: 500;
     }
     .simpleExplain {
-      position: absolute; bottom: 0; left: 0; background: #000; width: 100%; height: 190px; 
+      position: absolute; bottom: 0; left: 0; background: #000; width: 100%; height: 9.8958vw/* 190px */; 
       .sicssor {
-        position: relative; height: 224px; line-height: 224px; width: 100%; 
+        position: relative; height: 11.6666vw/* 224px */; line-height: 11.6666vw/* 224px */; width: 100%; 
         &::before {
             content:""; clear: both; position: absolute; border-top: 3px dashed #fff; top: -2px; right: 0; width: 97%;
         }
         img {position: absolute; top: -32px; left: 0; fill: #fff;}
-        img.helinoxLogo {position: absolute; top: 58px; left: 265px; width: 367px; height: 79px; }
+        img.helinoxLogo {position: absolute; top: 3.0208vw/* 58px */; left: 13.8020vw/* 265px */; width: 19.1146vw/* 367px */; height: 4.1146vw/* 79px */; }
         .explainText {
           position: relative; float: right; width: 1020.5px; height: 114.5px;
           p {
@@ -73,16 +73,16 @@
 }
 
 /* helinox2 common */
-h3 {font-family: KoreanDREAM5; font-size: 28px; padding-bottom: 24px; font-weight: 400;}
+h3 {font-family: KoreanDREAM5; font-size: 1.4583vw/* 28px */; padding-bottom: 1.25vw/* 24px */; font-weight: 400;}
 p.content {
-  font-family: KoreanDREAM3; font-size: 15px; line-height: 22px; display: block; padding-bottom: 130px;
+  font-family: KoreanDREAM3; font-size: 0.78125vw/* 15px */; line-height: 1.25vw/* 24px */; display: block; padding-bottom: 130px;
 }
 
 /* helinox2 CSS */
 #helinox2 {
   position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; background: #F6F6F6; width: 100%; height: 100vh;
   .designLeft {
-    margin-left: 167px; margin-top: 141px; position: relative;
+    margin-left: 8.6979vw/* 167px */; margin-top: 7.34375vw/* 141px */; position: relative;
     img:first-child {
       position: absolute; top: -15px; left: -15px; width: 18.16px; height: 18.36px;
     }
@@ -101,12 +101,12 @@ p.content {
         .mainGrey1 {background: #333333;}
         .mainGrey2 {background: #e2e2e2;}
         p {
-          font-family: KoreanDREAM3; font-size: 15px; line-height: 24px; letter-spacing: 0.05em; 
+          font-family: KoreanDREAM3; font-size: 0.78125vw/* 15px */; line-height: 1.25vw/* 24px */; letter-spacing: 0.05em; padding-top: 0.78125vw/* 15px */;
         }
       }
     }
     .designTypo {
-      margin-top: 141px;
+      margin-top: 7.34375vw/* 141px */;
       > p {padding-bottom: 29px;}
       img {padding-left: 17px;}
     }
@@ -119,7 +119,7 @@ p.content {
   .bgLine {
     position: absolute; width: 100%; height: 302px; background: $helinoxBlue; top: calc(50% - 148.5px); left: 0;
     > p {
-      font-family: KoreaDREAM3; font-size: 62px; letter-spacing: -0.27px; line-height: 79px; font-weight: 900; padding: 73px 0 73px 243px; color: #fff; text-align: left;
+      font-family: KoreaDREAM3; font-size: 3.2292vw/* 62px */; letter-spacing: -0.27px; line-height: 4.1146vw/* 79px */; font-weight: 900; padding: 73px 0 73px 12.65625vw/* 243px */; color: #fff; text-align: left;
     }
   }
   .originalHomepage {
@@ -127,10 +127,10 @@ p.content {
     /* p {
       display: inline-block; font-family: KoreanDREAM3; padding: 60px 0 50px 400px;
     } */
-    img {position: absolute; top: 202px; left: 316px; width: 503px;}
+    img {position: absolute; top: 10.5208vw/* 202px */; left: 16.4583vw/* 316px */; width: 26.1979vw/* 503px */;}
   }
   .analysisText {
-    position: relative; width: 690px; height: 171px; float: left; padding-left: 206px; margin-top: 168px;
+    position: relative; width: 35.9375vw/* 690px */; height: 171px; float: left; padding-left: 206px; margin-top: 168px;
     img {
       position: absolute; top: -15px; left: 21%; width: 18.16px; height: 18.36px;
     }
@@ -142,7 +142,7 @@ p.content {
 #helinox4 {
   position: relative; width: 100%; height: 100vh; overflow: hidden; background: #F6F6F6; 
   .wireframe {
-    display: inline-block; margin-left: 0; position: relative; margin: 80px 0 125px; width: 100%;
+    display: inline-block; margin-left: 0; position: relative; margin: 4.1666vw/* 80px */ 0 4.1666vw/* 80px */; width: 100%;
     > img:first-child {
       position: absolute; top: -15px; left: 44.5%; width: 18.16px; height: 18.36px;
     }
@@ -153,7 +153,8 @@ p.content {
     }
   }
   .wireframeWrap {
-    display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-end; width: 1675px; height: 650px; text-align: center; margin: 0 auto;
+    display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-end; width: 87.2396vw/* 1675px */; height: 33.8541vw/* 650px */; text-align: center; margin: 0 auto;
+    img {width: 21.5104vw/* 413px */; height: 33.8541vw/* 650px */; }
     span {
       display: block; font-family: KoreaDREAM5; font-size: 22px; color: #c4c4c4; text-align: center;
     }
@@ -171,16 +172,19 @@ p.content {
     h3 {display: inline-block; padding: 0 0 0 113px; vertical-align: top; color: #fff;}
     > p {display: inline-block; padding-left: 105px; color: #fff;}
     .deviceExplain {
-      font-size: 21px; line-height: 32px;
+      font-size: 0.78125vw/* 15px */; line-height: 1.25vw/* 24px */;
       span {color: #1c98d6;}
     }
   }
   .mockup {
-    margin: 130px auto; width: 822px;
+    margin: 6.7708vw/* 130px */ auto; width: 42.8125vw/* 822px */;
   }
   .helinoxMockups {
     font-size: 0; 
-    .mockupBg {width: 411px; height: 308px; display: inline-block; }
+    .mockupBg {
+      width: 21.40625vw/* 411px */; height: 16.0417vw/* 308px */; display: inline-block; 
+      img {width: 21.40625vw/* 411px */;}
+    }
     .hand1Bg {background: #1c98d6;}
     .hand2Bg {background: #ffffff;}
     .hand3Bg {background: #fff}
@@ -211,16 +215,12 @@ p.content {
   
 }
 
-/* helinox7 CSS */
-#helinox7 {
-
-}
 
 /* helinox8 CSS */
 #helinox8 {
   position: relative; width: 100%; height: 100vh; overflow: hidden; background: #000; 
   .aboutPagePreview {
-    position: relative; width: 550px; height: 171px; float: right; padding-right: 10%; margin-top: 34%;
+    position: relative; width: 550px; height: 171px; float: right; padding-right: 10%; margin-top: 28%;
     img {
       position: absolute; top: -15px; left: -2%; width: 18.16px; height: 18.36px;
     }

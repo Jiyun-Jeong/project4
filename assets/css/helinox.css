@@ -108,11 +108,11 @@
     left: 0;
     background: #000;
     width: 100%;
-    height: 190px; }
+    height: 9.8958vw; }
     #helinox1 .simpleExplain .sicssor {
       position: relative;
-      height: 224px;
-      line-height: 224px;
+      height: 11.6666vw;
+      line-height: 11.6666vw;
       width: 100%; }
       #helinox1 .simpleExplain .sicssor::before {
         content: "";
@@ -129,10 +129,10 @@
         fill: #fff; }
       #helinox1 .simpleExplain .sicssor img.helinoxLogo {
         position: absolute;
-        top: 58px;
-        left: 265px;
-        width: 367px;
-        height: 79px; }
+        top: 3.0208vw;
+        left: 13.802vw;
+        width: 19.1146vw;
+        height: 4.1146vw; }
       #helinox1 .simpleExplain .sicssor .explainText {
         position: relative;
         float: right;
@@ -168,14 +168,14 @@
 /* helinox2 common */
 h3 {
   font-family: KoreanDREAM5;
-  font-size: 28px;
-  padding-bottom: 24px;
+  font-size: 1.4583vw;
+  padding-bottom: 1.25vw;
   font-weight: 400; }
 
 p.content {
   font-family: KoreanDREAM3;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 0.78125vw;
+  line-height: 1.25vw;
   display: block;
   padding-bottom: 130px; }
 
@@ -189,8 +189,8 @@ p.content {
   width: 100%;
   height: 100vh; }
   #helinox2 .designLeft {
-    margin-left: 167px;
-    margin-top: 141px;
+    margin-left: 8.6979vw;
+    margin-top: 7.34375vw;
     position: relative; }
     #helinox2 .designLeft img:first-child {
       position: absolute;
@@ -225,11 +225,12 @@ p.content {
         background: #e2e2e2; }
       #helinox2 .designRight .designColor .colorWrap p {
         font-family: KoreanDREAM3;
-        font-size: 15px;
-        line-height: 24px;
-        letter-spacing: 0.05em; }
+        font-size: 0.78125vw;
+        line-height: 1.25vw;
+        letter-spacing: 0.05em;
+        padding-top: 0.78125vw; }
     #helinox2 .designRight .designTypo {
-      margin-top: 141px; }
+      margin-top: 7.34375vw; }
       #helinox2 .designRight .designTypo > p {
         padding-bottom: 29px; }
       #helinox2 .designRight .designTypo img {
@@ -251,11 +252,11 @@ p.content {
     left: 0; }
     #helinox3 .bgLine > p {
       font-family: KoreaDREAM3;
-      font-size: 62px;
+      font-size: 3.2292vw;
       letter-spacing: -0.27px;
-      line-height: 79px;
+      line-height: 4.1146vw;
       font-weight: 900;
-      padding: 73px 0 73px 243px;
+      padding: 73px 0 73px 12.65625vw;
       color: #fff;
       text-align: left; }
   #helinox3 .originalHomepage {
@@ -266,12 +267,12 @@ p.content {
     } */ }
     #helinox3 .originalHomepage img {
       position: absolute;
-      top: 202px;
-      left: 316px;
-      width: 503px; }
+      top: 10.5208vw;
+      left: 16.4583vw;
+      width: 26.1979vw; }
   #helinox3 .analysisText {
     position: relative;
-    width: 690px;
+    width: 35.9375vw;
     height: 171px;
     float: left;
     padding-left: 206px;
@@ -296,7 +297,7 @@ p.content {
     display: inline-block;
     margin-left: 0;
     position: relative;
-    margin: 80px 0 125px;
+    margin: 4.1666vw 0 4.1666vw;
     width: 100%; }
     #helinox4 .wireframe > img:first-child {
       position: absolute;
@@ -317,10 +318,13 @@ p.content {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-end;
-    width: 1675px;
-    height: 650px;
+    width: 87.2396vw;
+    height: 33.8541vw;
     text-align: center;
     margin: 0 auto; }
+    #helinox4 .wireframeWrap img {
+      width: 21.5104vw;
+      height: 33.8541vw; }
     #helinox4 .wireframeWrap span {
       display: block;
       font-family: KoreaDREAM5;
@@ -360,19 +364,21 @@ p.content {
       padding-left: 105px;
       color: #fff; }
     #helinox5 .deviceDetail .deviceExplain {
-      font-size: 21px;
-      line-height: 32px; }
+      font-size: 0.78125vw;
+      line-height: 1.25vw; }
       #helinox5 .deviceDetail .deviceExplain span {
         color: #1c98d6; }
   #helinox5 .mockup {
-    margin: 130px auto;
-    width: 822px; }
+    margin: 6.7708vw auto;
+    width: 42.8125vw; }
   #helinox5 .helinoxMockups {
     font-size: 0; }
     #helinox5 .helinoxMockups .mockupBg {
-      width: 411px;
-      height: 308px;
+      width: 21.40625vw;
+      height: 16.0417vw;
       display: inline-block; }
+      #helinox5 .helinoxMockups .mockupBg img {
+        width: 21.40625vw; }
     #helinox5 .helinoxMockups .hand1Bg {
       background: #1c98d6; }
     #helinox5 .helinoxMockups .hand2Bg {
@@ -429,7 +435,6 @@ p.content {
     color: #000;
     text-align: center; }
 
-/* helinox7 CSS */
 /* helinox8 CSS */
 #helinox8 {
   position: relative;
@@ -443,7 +448,7 @@ p.content {
     height: 171px;
     float: right;
     padding-right: 10%;
-    margin-top: 34%; }
+    margin-top: 28%; }
     #helinox8 .aboutPagePreview img {
       position: absolute;
       top: -15px;

@@ -108,7 +108,7 @@ $(document).ready(function () {
       $('#drag2Yes').hide();
       okay2 = true;
       if (okay1 && okay2 ) {
-        $('.hiddenProfile').stop().delay(0.5).fadeIn()/* .find('.peepIt').stop().delay(0.5).fadeOut() */;
+        $('.hiddenProfile').stop().delay(0.5).fadeIn()
         $('.peepIt').stop().hide();
         
         //flower action
@@ -129,9 +129,11 @@ $(document).ready(function () {
   var toggleBg = $('.toggleBg');
   var toggleFg = $('.toggleBg').find('.toggleFg');
   var left = toggleFg.css('left');
+  var right = toggleFg.css('right');
+
   if (left == '40px') {
     toggleBg.css('background', ' #444242');
-    toggleActionStart(toggleGf, 'TO_LEFT');
+    toggleActionStart(toggleFg, 'TO_LEFT');
   } else if (left == '0px') {
     toggleBg.css('background', '#ffffff');
     toggleActionStart(toggleFg, 'TO_RIGHT');
@@ -153,6 +155,14 @@ $(document).ready(function () {
       clearInterval(intervalID);
     }, 201);
   }
+  
+  $(toggleBg).on('click', function (){
+    if ($(this).hasClass('active')) {
+      $('.flipBtn_front').stop().slideUp();
+    } else {  
+      $('.flipBtn_back').stop().slideDown();
+    }
+  });
 
   //공튀기기
     var _skillCircle = $(".skillCircle");

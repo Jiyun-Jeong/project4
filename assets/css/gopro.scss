@@ -62,8 +62,8 @@
       &::before {
           content:""; clear: both; position: absolute; border-top: 3px dashed #fff; top: -2px; right: 0; width: 97%;
       }
-      img {position: absolute; top: -32px; left: 0; fill: #fff;}
-      img.goproLogo {position: absolute; top: 30.5px; left: 241px; width: 283px; height: 161px; }
+      img {position: absolute; top: -1.6667vw/* -32px */; left: 0; fill: #fff;}
+      img.goproLogo {position: absolute; top: 1.5885vw/* 30.5px */; left: 12.5521vw/* 241px */; width: 14.7395vw/* 283px */; height: 8.3854vw/* 161px */; }
       .explainText {
         position: relative; float: right; width: 1020.5px; height: 114.5px;
         p {
@@ -93,9 +93,9 @@ p.content {
   .designLeft {
     margin-left: 167px; margin-top: 141px; position: relative;
     img:first-child {
-      position: absolute; top: -15px; left: -15px; width: 18.16px; height: 18.36px;
+      position: absolute; top: -0.78125vw/* -15px */; left: -0.78125vw/* -15px */; width: 18.16px; height: 18.36px;
     }
-    img:last-child {width: 360px; height: 500px;}
+    img:last-child {height: 26.0417vw/* 500px */;}
   }
   .designRight {
     margin-left: 268px; margin-top: 141px; 
@@ -113,12 +113,12 @@ p.content {
         .mainGrey1 {background: #505050}
         .mainGrey2 {background: #c2c2c2; }
         p {
-          font-family: KoreanDREAM3; font-size: 15px; line-height: 24px; letter-spacing: 0.05em; 
+          font-family: KoreanDREAM3; font-size: 0.78125vw/* 15px */; line-height: 1.25vw/* 24px */; letter-spacing: 0.05em; padding-top: 0.78125vw/* 15px */;
         }
       }
     }
     .designTypo {
-      margin-top: 141px;
+      margin-top: 7.34375vw/* 141px */;
       > p {padding-bottom: 29px;}
       img {padding-left: 17px;}
     }
@@ -131,20 +131,20 @@ p.content {
   .bgLine {
     position: absolute; width: 100%; height: 302px; background: $goproBlue; top: 50%; left: 0;
     > p {
-      font-family: KoreaDREAM3; font-size: 62px; letter-spacing: -0.27px; line-height: 79px; font-weight: 900; padding: 73px 0 73px 1066px;
+      font-family: KoreaDREAM3; font-size: 3.2292vw/* 62px */; letter-spacing: -0.27px; line-height: 4.1146vw/* 79px */; font-weight: 900; padding: 73px 0 73px 55.5208vw/* 1066px */;
     }
   }
   .originalHomepage {
     position: relative; display: inline;
     p {
-      display: inline-block; font-family: KoreanDREAM3; padding: 134px 0 0 400px;
+      display: inline-block; font-family: KoreanDREAM3; padding: 6.9792vw/* 134px */ 0 0 20.8333vw/* 400px */;
     }
-    img {position: absolute; top: 50px; left: 189px; width: 503px;}
+    img {position: absolute; top: 50px; left: 9.84375vw/* 189px */; width: 26.1979vw/* 503px */;}
   }
   .analysisText {
-    position: relative; width: 690px; height: 171px; float: right; padding-right: 206px; margin-top: 170px;
+    position: relative; width: 35.9375/* 690px */; height: 8.90625vw/* 171px */; float: right; padding-right: 206px; margin-top: 170px;
     img {
-      position: absolute; top: -15px; left: -15px; width: 18.16px; height: 18.36px;
+      position: absolute; top: -0.78125vw/* -15px */; left: -0.78125vw/* -15px */; width: 18.16px; height: 18.36px;
     }
     p {
       padding-bottom: 0;
@@ -159,7 +159,7 @@ p.content {
   .wireframe {
     display: inline-block; margin-left: 0; position: relative; margin: 125px 0 125px; width: 100%;
     > img:first-child {
-      position: absolute; top: -15px; left: 44.5%; width: 18.16px; height: 18.36px;
+      position: absolute; top: -0.78125vw/* -15px */; left: 44.5%; width: 18.16px; height: 18.36px;
     }
     h3 {text-align: center;}
     .content {
@@ -178,7 +178,7 @@ p.content {
 #gopro5 {
   position: relative; width: 100%; height: 145.9vh; background: #000000;
   .previewText {
-    display: inline-block; background: url("../img/main/previewImg@2x.png") no-repeat fixed center; margin-left: 0; /* margin: 128px 0 0; */ padding-top: 128px; width: 100%; height: 324px; overflow: hidden; padding-bottom: 222px; 
+    display: inline-block; background: url("../img/main/previewImg@2x.png") no-repeat fixed center; margin-left: 0; /* margin: 128px 0 0; */ padding-top: 6.6667vw/* 128px */; width: 100%; height: 16.875vw/* 324px */; overflow: hidden; padding-bottom: 11.5625vw/* 222px */; 
     > img {
       position: absolute; top: 10%; left: 39.5%; width: 18.16px; height: 18.36px;
     }
@@ -190,13 +190,13 @@ p.content {
     a {
       @include border-radius(50px);
       position: relative;
-      display: block; background: #fff; width: 252px; height: 74px; line-height: 74px; font-family: "Fugaz one"; font-size: 24px; color: #000; text-align: center; margin: 151px auto 128px; 
+      display: block; background: #fff; width: 13.125vw/* 252px */; height: 74px; line-height: 74px; font-family: "Fugaz one"; font-size: 24px; color: #000; text-align: center; margin: 151px auto 128px; 
     }
     
   }
   .deviceImg {
     position: relative; width: 100%; height: 35.4167vw/* 680px */; background: #ffffff;
-    img {position: absolute; bottom: 0; left: 0; right: 0; margin: 0 auto;}
+    img {position: absolute; bottom: 0; left: 0; right: 0; margin: 0 auto; width: 58.3854vw/* 1121px */;}
   }
 }
 
@@ -214,16 +214,16 @@ p.content {
     }
   }
   .openWaxImg {
-    position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; width: 1297px; height: 590px; text-align: center; margin: 0 auto; margin-top: 65px;
+    position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; width: 67.5521vw/* 1297px */; height: 30.7292vw/* 590px */; text-align: center; margin: 0 auto; margin-top: 65px;
     .originalPage {
       position: relative; display: inline-block; z-index: 10;
-      > img:first-child {padding-bottom: 46px;}
+      > img:first-child {padding-bottom: 46px; height: 14.21875vw/* 273px */;}
       .circleScore1 {position: absolute; top: -10%; left: 5%;}
       span {display: inline-block; font-family: KoreanDREAM3; color: #fff;}
     }
     .projectPage {
       position: relative; display: inline-block; z-index: 10;
-      > img:first-child {padding-bottom: 46px;}
+      > img:first-child {padding-bottom: 46px; height: 14.21875vw/* 273px */;}
       .circleScore2 {position: absolute; top: -10%; left: 5%;}
       span {display: inline-block; font-family: KoreanDREAM3; color: #fff;}
     }
@@ -232,10 +232,10 @@ p.content {
     position: static;
     div {
       @include border-radius(50%);
-      position: absolute; top: 0; left: calc(50% - 289px); width: 500px; height: 500px; border: 1px solid $goproBlue; box-sizing: border-box; 
+      position: absolute; top: 0; left: calc(50% - 15.0520vw/* 289px */); width: 26.0416vw/* 500px */; height: 26.0416vw/* 500px */; border: 1px solid $goproBlue; box-sizing: border-box; 
     }
-    div:nth-child(2) {left: calc(50% - 333px);}
-    div:nth-child(3) {left: calc(50% - 245px);}
+    div:nth-child(2) {left: calc(50% - 17.34375vw/* 333px */);}
+    div:nth-child(3) {left: calc(50% - 12.7604vw/* 245px */);}
   }
 }
 
@@ -243,7 +243,7 @@ p.content {
 #gopro7 {
   width: 100%; height: 100vh; background: #F6F6F6;
   .swiper-slide {
-    position: relative; display: inline-block; margin-left: 0; padding-top: 111px; width: 100%; height: 100vh;
+    position: relative; display: inline-block; margin-left: 0; padding-top: 5.78125vw/* 111px */; width: 100%; height: 100vh;
       .detailText {
         position: relative; width: 100%; height: 81px; 
         > img:first-child {
@@ -257,33 +257,14 @@ p.content {
         }
       }
       .compare {
-        position: relative; font-size: 0; margin-top: 137px;
+        position: relative; font-size: 0; margin-top: 7.1354vw/* 137px */;
         .goproAutoJsWrap {text-align: center;}
-        > img {position: absolute; top: 22%; left: 54%;}
+        > img {position: absolute; top: 22%; left: 54%; height: 22.03125vw/* 423px */;}
+        > img:first-child {width: 39.1667vw/* 752px */;}
+        > img:last-child {width: 39.9479vw/* 767px */;}
         > p {font-size: 21px; text-align: center; line-height: 36px; padding-top: 63px;}
       }
   }
-  /* .goproSlide1 {
-      position: relative; display: inline-block; margin-left: 0; padding-top: 111px; width: 100%; height: 100vh;
-      .detailText {
-        position: relative; width: 100%; height: 81px; 
-        > img:first-child {
-          position: absolute; top: -15px; left: 5%; width: 18.16px; height: 18.36px;
-        }
-        h3 {display: inline-block; padding: 0 0 0 113px; vertical-align: top;}
-        > p {display: inline-block; padding-left: 105px;}
-        .detailTitle {
-          font-size: 21px; line-height: 32px;
-          strong {font-size: 25px; padding-bottom: 20px;}
-        }
-      }
-      .compare1 {
-        position: relative; font-size: 0; margin-top: 137px;
-        .goproAutoJsWrap {text-align: center;}
-        > img {position: absolute; top: 22%; left: 54%;}
-        > p {font-size: 21px; text-align: center; line-height: 36px; padding-top: 63px;}
-      }
-  } */
   .goproSlide2 {
     .compare2 {
       position: relative; font-size: 0; margin-top: 137px;
