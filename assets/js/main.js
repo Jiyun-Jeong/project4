@@ -168,11 +168,12 @@ $(document).ready(function () {
   $('.toggleFg').on('click', function (){
     if ($(this).hasClass('left')) {
       $(this).removeClass('left').addClass('right');
-      $('.flipBtn_front').addClass('flip');
+      $('.flipBtn').addClass('flip');
     } else {
       $(this).removeClass('right').addClass('left');
-      $('.flipBtn_front').removeClass('flip').next().addClass('flip');
+      $('.flipBtn').removeClass('flip');
     }
+
   });
 
   //공튀기기
@@ -217,7 +218,7 @@ $(document).ready(function () {
       }
 
       function startMove(){
-        _ball.css({width: ballsize * ratio, height: ballsize * ratio, left:startX0, top: startY0});
+        _ball.css({width: ballsize * ratio, height: ballsize * ratio, "line-height": ballsize * 1/3 + "px", left:startX0, top: startY0});
         startX += stepX;  //시작위치에서 stepSize인 6만큼씩을 더해서 움직이게 한다
         startY += stepY;
         if (startX > endX) stepX = -stepSize;  //최대 위치를 벗어나면 빼주어 내부로 다시 들어오게 함

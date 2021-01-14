@@ -90,8 +90,12 @@
             100% {transform: rotate3d(80, 50, 40, 360deg);}
         }
         .yellowCircle {
-            /* @include animation(show1 1s ease-in-out); */
+            @include animation(rotate1 10s cubic-bezier(0.4, 0, 1, 1));
             top: -52%; right: -50%; 
+        }
+        @include keyframes(rotate1) {
+            0% {transform: rotateY(0);}
+            100% {transform: rotateY(360deg);}
         }
         /* @keyframes show1 {
             0% {opacity: 0; }
@@ -423,9 +427,16 @@
                     .toggleFg.left {left: 5px;}
                     .toggleFg.right {left: 40px;}
                 }
-                .flipBtnWrap { position: relative; display: inline-block; width: 9.8958vw/* 190px */; height: 34px; overflow: hidden;}
+                .flipBtnWrap { 
+                    position: relative; display: inline-block; width: 9.8958vw/* 190px */; height: 34px; /* overflow: hidden; */
+                    .flipBtn {position: relative; }
+                }
                 .flipBtn, .flipBtnInner  {
                     width: 100%; height: 100%;
+                }
+                .flipBtn.flip {
+                    .flipBtn_front {transform: rotateX(90deg) translateZ(17px);}
+                    .flipBtn_back {transform: rotateX(0deg) translateZ(17px);}
                 }
                 .flipBtn_front, .flipBtn_back {
                     width: 190px; height: 34px; line-height: 34px; border-radius: 20px; background: #444242; color: #fff; text-align: center; margin: 0 auto; position: absolute; top: 0; left: 0;
@@ -435,14 +446,12 @@
                     @include transform(rotateX(0deg) translateZ(17px));
                     @include transition(transform 1s);
                 }
-                .flipBtn_front.flip {transform: rotateX(90deg) translateZ(17px);}
                 .flipBtn_back {
                     /* @include transform(translateZ(-10px)); */
                     @include transform(rotateX(-90deg) translateZ(17px));
                     @include transition(transform 1s);
                     /* position: absolute; top: 0; left: 0; */
                 }
-                .flipBtn_back.flip {transform: rotateX(0deg) translateZ(17px);}
                 .skillCircle {
                     width: 28.125vw/* 540px */; height: 20.3125vw/* 390px */; position: relative; line-height: 20.3125vw/* 390px */;
                     .ball {
