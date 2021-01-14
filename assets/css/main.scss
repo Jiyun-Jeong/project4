@@ -417,31 +417,32 @@
                     position: relative; width: 70px; height: 34px;  display: inline-block; background: #444242; /* border: 1px solid #fff; */ 
                     button {
                         @include border-radius(50%);
+                        @include transition(all 0.5s);
                         position: absolute; width: 26px; height: 26px; background: #fff; top: 4px; 
                     }
-                    button.left {left: 5px;}
-                    button.right {left: 50px;}
+                    .toggleFg.left {left: 5px;}
+                    .toggleFg.right {left: 40px;}
                 }
                 .flipBtnWrap { position: relative; display: inline-block; width: 9.8958vw/* 190px */; height: 34px; overflow: hidden;}
                 .flipBtn, .flipBtnInner  {
                     width: 100%; height: 100%;
                 }
+                .flipBtn_front, .flipBtn_back {
+                    width: 190px; height: 34px; line-height: 34px; border-radius: 20px; background: #444242; color: #fff; text-align: center; margin: 0 auto; position: absolute; top: 0; left: 0;
+                }
                 .flipBtn_front {
-                    @include transform(translateZ(10px));
-                    line-height: 34px; border-radius: 20px; background: #444242; color: #fff; text-align: center; margin: 0 auto; backface-visibility: hidden;
+                    /* @include transform(translateZ(10px)); */
+                    @include transform(rotateX(0deg) translateZ(17px));
+                    @include transition(transform 1s);
                 }
+                .flipBtn_front.flip {transform: rotateX(90deg) translateZ(17px);}
                 .flipBtn_back {
-                    @include transform(translateZ(-10px));
-                    line-height: 34px; border-radius: 20px; background: #444242; color: #fff; text-align: center; margin: 0 auto;
+                    /* @include transform(translateZ(-10px)); */
+                    @include transform(rotateX(-90deg) translateZ(17px));
+                    @include transition(transform 1s);
+                    /* position: absolute; top: 0; left: 0; */
                 }
-                .flipBtn_mid {
-                    @include transform(rotateX(90deg));
-                    width: 190px;height: 2px; background: #444242; top: -10px;
-                }
-                /* .flipBtn_front, .flipBtn_back {
-                    width: 190px; height: 34px; line-height: 34px; border-radius: 20px; background: #444242; color: #fff; text-align: center; margin: 0 auto;
-                }
-                .flipBtn_mid {width: 190px; height:2px;} */
+                .flipBtn_back.flip {transform: rotateX(0deg) translateZ(17px);}
                 .skillCircle {
                     width: 28.125vw/* 540px */; height: 20.3125vw/* 390px */; position: relative; line-height: 20.3125vw/* 390px */;
                     .ball {

@@ -36,12 +36,12 @@ $(document).ready(function () {
   }); */
 
 
-  window.addEventListener('scroll', () => {
+  /* window.addEventListener('scroll', () => {
     var scrollLocation = parseInt(document.documentElement.scrollTop); // 현재 스크롤바 위치 
     var fullHeight = parseInt(document.body.scrollHeight); // 전체 높이(margin 포함 x)
     var repeat = 10; // 얼마나 빠르게 회전할지
     var degree = parseInt((scrollLocation)/fullHeight * 360) * repeat;
-    var _deg = degree + 'deg'; $('.bigMainCircle').css('transform','rotate('+ _deg +')'); })
+    var _deg = degree + 'deg'; $('.bigMainCircle').css('transform','rotate('+ _deg +')'); }) */
 
   
   // gopro swiper

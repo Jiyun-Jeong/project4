@@ -880,11 +880,7 @@
         position: relative;
         width: 28.125vw;
         height: 38.8021vw;
-        background: #FAF2A7;
-        /* .flipBtn_front, .flipBtn_back {
-            width: 190px; height: 34px; line-height: 34px; border-radius: 20px; background: #444242; color: #fff; text-align: center; margin: 0 auto;
-        }
-        .flipBtn_mid {width: 190px; height:2px;} */ }
+        background: #FAF2A7; }
         #cnt4 .dashboard .rightBoard .skillView .switchWrap {
           margin: 0 auto;
           padding-top: 20px;
@@ -904,15 +900,19 @@
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
             border-radius: 50%;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
             position: absolute;
             width: 26px;
             height: 26px;
             background: #fff;
             top: 4px; }
-          #cnt4 .dashboard .rightBoard .skillView .toggleBg button.left {
+          #cnt4 .dashboard .rightBoard .skillView .toggleBg .toggleFg.left {
             left: 5px; }
-          #cnt4 .dashboard .rightBoard .skillView .toggleBg button.right {
-            left: 50px; }
+          #cnt4 .dashboard .rightBoard .skillView .toggleBg .toggleFg.right {
+            left: 40px; }
         #cnt4 .dashboard .rightBoard .skillView .flipBtnWrap {
           position: relative;
           display: inline-block;
@@ -922,41 +922,45 @@
         #cnt4 .dashboard .rightBoard .skillView .flipBtn, #cnt4 .dashboard .rightBoard .skillView .flipBtnInner {
           width: 100%;
           height: 100%; }
-        #cnt4 .dashboard .rightBoard .skillView .flipBtn_front {
-          -webkit-transform: translateZ(10px);
-          -moz-transform: translateZ(10px);
-          -o-transform: translateZ(10px);
-          -ms-transform: translateZ(10px);
-          transform: translateZ(10px);
+        #cnt4 .dashboard .rightBoard .skillView .flipBtn_front, #cnt4 .dashboard .rightBoard .skillView .flipBtn_back {
+          width: 190px;
+          height: 34px;
           line-height: 34px;
           border-radius: 20px;
           background: #444242;
           color: #fff;
           text-align: center;
           margin: 0 auto;
-          backface-visibility: hidden; }
+          position: absolute;
+          top: 0;
+          left: 0; }
+        #cnt4 .dashboard .rightBoard .skillView .flipBtn_front {
+          /* @include transform(translateZ(10px)); */
+          -webkit-transform: rotateX(0deg) translateZ(17px);
+          -moz-transform: rotateX(0deg) translateZ(17px);
+          -o-transform: rotateX(0deg) translateZ(17px);
+          -ms-transform: rotateX(0deg) translateZ(17px);
+          transform: rotateX(0deg) translateZ(17px);
+          -webkit-transition: transform 1s;
+          -moz-transition: transform 1s;
+          -o-transition: transform 1s;
+          transition: transform 1s; }
+        #cnt4 .dashboard .rightBoard .skillView .flipBtn_front.flip {
+          transform: rotateX(90deg) translateZ(17px); }
         #cnt4 .dashboard .rightBoard .skillView .flipBtn_back {
-          -webkit-transform: translateZ(-10px);
-          -moz-transform: translateZ(-10px);
-          -o-transform: translateZ(-10px);
-          -ms-transform: translateZ(-10px);
-          transform: translateZ(-10px);
-          line-height: 34px;
-          border-radius: 20px;
-          background: #444242;
-          color: #fff;
-          text-align: center;
-          margin: 0 auto; }
-        #cnt4 .dashboard .rightBoard .skillView .flipBtn_mid {
-          -webkit-transform: rotateX(90deg);
-          -moz-transform: rotateX(90deg);
-          -o-transform: rotateX(90deg);
-          -ms-transform: rotateX(90deg);
-          transform: rotateX(90deg);
-          width: 190px;
-          height: 2px;
-          background: #444242;
-          top: -10px; }
+          /* @include transform(translateZ(-10px)); */
+          -webkit-transform: rotateX(-90deg) translateZ(17px);
+          -moz-transform: rotateX(-90deg) translateZ(17px);
+          -o-transform: rotateX(-90deg) translateZ(17px);
+          -ms-transform: rotateX(-90deg) translateZ(17px);
+          transform: rotateX(-90deg) translateZ(17px);
+          -webkit-transition: transform 1s;
+          -moz-transition: transform 1s;
+          -o-transition: transform 1s;
+          transition: transform 1s;
+          /* position: absolute; top: 0; left: 0; */ }
+        #cnt4 .dashboard .rightBoard .skillView .flipBtn_back.flip {
+          transform: rotateX(0deg) translateZ(17px); }
         #cnt4 .dashboard .rightBoard .skillView .skillCircle {
           width: 28.125vw;
           height: 20.3125vw;

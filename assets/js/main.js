@@ -156,16 +156,27 @@ $(document).ready(function () {
     }, 201);
   } */
   
-  $('.toggleBg').on('click', function (){
-    if ($(this).hasClass('active')) {
-      $('.toggleFg').removeClass('left').addClass('right');
-    } else {  
-      $('.toggleFg').removeClass('right').addClass('left');
+  /* $('.toggleFg.left').on('click', function (){
+    $(this).removeClass('left').addClass('right');
+    $('.flipBtn_front').stop().slideUp();
+  });
+  $('.toggleFg.right').on('click', function (){
+    $(this).removeClass('right').addClass('left');
+    $('.flipBtn_back').stop().slideDown();
+  }); */
+
+  $('.toggleFg').on('click', function (){
+    if ($(this).hasClass('left')) {
+      $(this).removeClass('left').addClass('right');
+      $('.flipBtn_front').addClass('flip');
+    } else {
+      $(this).removeClass('right').addClass('left');
+      $('.flipBtn_front').removeClass('flip').next().addClass('flip');
     }
   });
 
   //공튀기기
-    var _skillCircle = $(".skillCircle");
+    var _skillCircle = $('.skillCircle');
     var panelWid = _skillCircle.width();
     var panelHei = _skillCircle.height();
     var ballsize = 100; //100%일 경우 크기를 적는다
