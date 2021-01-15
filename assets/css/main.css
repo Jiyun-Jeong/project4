@@ -964,28 +964,25 @@
           top: 0;
           left: 0; }
         #cnt4 .dashboard .rightBoard .skillView .flipBtn_front {
-          /* @include transform(translateZ(10px)); */
           -webkit-transform: rotateX(0deg) translateZ(17px);
           -moz-transform: rotateX(0deg) translateZ(17px);
           -o-transform: rotateX(0deg) translateZ(17px);
           -ms-transform: rotateX(0deg) translateZ(17px);
           transform: rotateX(0deg) translateZ(17px);
-          -webkit-transition: transform 1s;
-          -moz-transition: transform 1s;
-          -o-transition: transform 1s;
-          transition: transform 1s; }
+          -webkit-transition: transform 0.4s;
+          -moz-transition: transform 0.4s;
+          -o-transition: transform 0.4s;
+          transition: transform 0.4s; }
         #cnt4 .dashboard .rightBoard .skillView .flipBtn_back {
-          /* @include transform(translateZ(-10px)); */
           -webkit-transform: rotateX(-90deg) translateZ(17px);
           -moz-transform: rotateX(-90deg) translateZ(17px);
           -o-transform: rotateX(-90deg) translateZ(17px);
           -ms-transform: rotateX(-90deg) translateZ(17px);
           transform: rotateX(-90deg) translateZ(17px);
-          -webkit-transition: transform 1s;
-          -moz-transition: transform 1s;
-          -o-transition: transform 1s;
-          transition: transform 1s;
-          /* position: absolute; top: 0; left: 0; */ }
+          -webkit-transition: transform 0.4s;
+          -moz-transition: transform 0.4s;
+          -o-transition: transform 0.4s;
+          transition: transform 0.4s; }
         #cnt4 .dashboard .rightBoard .skillView .skillCircle {
           width: 28.125vw;
           height: 20.3125vw;
@@ -1062,16 +1059,16 @@
                 -webkit-border-radius: 4px;
                 -moz-border-radius: 4px;
                 border-radius: 4px;
-                width: 466px;
-                height: 344px;
+                width: 24.2708vw;
+                height: 17.9166vw;
                 margin: 0 auto;
                 /* div.skills + div.skills { margin-left: 42px; } */ }
                 #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .whiteStick {
                   position: absolute;
-                  bottom: 165px;
+                  bottom: 8.59375vw;
                   left: 50px;
                   background: #fff;
-                  height: 344px;
+                  height: 17.9166vw;
                   width: 6px; }
                 #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .html5 {
                   left: 35px; }
@@ -1151,12 +1148,16 @@
                 bottom: 5.5729vw;
                 left: 0;
                 right: 0;
-                text-align: center; }
+                /* text-align: left; */
+                width: 24.1667vw;
+                margin: 0 auto; }
                 #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsText > span {
+                  /* @include transform(rotate(270deg)); */
                   display: inline-block;
-                  padding-left: 4px;
-                  font-size: 5px;
-                  text-align: center; }
+                  padding-left: 8px;
+                  font-size: 7px;
+                  text-align: center;
+                  font-weight: bold; }
 
 /* Works page */
 /* common class */

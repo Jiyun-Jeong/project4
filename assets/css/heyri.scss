@@ -81,7 +81,7 @@ p.content {font-family: KoreanDREAM3; font-size: 0.78125vw/* 15px */; line-heigh
     }
     > p {padding-bottom: 46px; }
     .ceramicImgWrap {
-      font-size: 0;
+      font-size: 0; width: 31.1458vw/* 598px */;
       img {height: 10.8854vw/* 209px */;width: 15.5729vw/* 299px */;}
     }
     .designLogo {
@@ -96,7 +96,7 @@ p.content {font-family: KoreanDREAM3; font-size: 0.78125vw/* 15px */; line-heigh
       > p {padding-bottom: 29px;}
       .colorWrap {
         display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; padding-left: 17px;
-        .colorCubeWrap {margin-right: 5.1042vw/* 30px */; }
+        .colorCubeWrap {margin-right: 1.5625vw/* 30px */; }
         .colorCube {
           @include border-radius(50%);
           width: 137px; height: 137px; margin-bottom: 21px;

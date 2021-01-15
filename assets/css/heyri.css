@@ -188,7 +188,8 @@ p.content {
     #heyri2 .designLeft > p {
       padding-bottom: 46px; }
     #heyri2 .designLeft .ceramicImgWrap {
-      font-size: 0; }
+      font-size: 0;
+      width: 31.1458vw; }
       #heyri2 .designLeft .ceramicImgWrap img {
         height: 10.8854vw;
         width: 15.5729vw; }
@@ -211,7 +212,7 @@ p.content {
       justify-content: space-between;
       padding-left: 17px; }
       #heyri2 .designRight .designColor .colorWrap .colorCubeWrap {
-        margin-right: 5.1042vw; }
+        margin-right: 1.5625vw; }
       #heyri2 .designRight .designColor .colorWrap .colorCube {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;

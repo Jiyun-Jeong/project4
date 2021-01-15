@@ -25,7 +25,7 @@ $(document).ready(function () {
     }
   });
 
-  //cnt1 스크롤에 따라 svg 사이즈 줄어들기 (top: 149px; right: 280px; padding: 708px; width: 932px; height: 551px) -> (top: 29px; left: 32px; width: 131px; height: 77px;)
+  //cnt1 스크롤에 따라 svg 사이즈 줄어들기
   $(window).on('scroll', function (){
     var targetTop = $(this).scrollTop();
     var _nameSvg = $('#name');
@@ -39,10 +39,7 @@ $(document).ready(function () {
     } else {
       _nameSvg.stop().animate({padding: '7.7604vw 14.5833vw 0 36.875vw', width: 932, height: 551}, 800).css({position: 'absolute'});
     }
-
   });
-
-
 
   $('#backBtn').on('click', function () {
     $('#wrap').removeAttr('style');
@@ -66,7 +63,6 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    //spaceBetween: 10, //각 슬라이더 사이 공간
     slidesPerView: 'auto',
     a11y: {
       prevSlideMessage: '이전 슬라이드 보기',
@@ -75,6 +71,23 @@ $(document).ready(function () {
       lastSlideMessage: '마지막 슬라이드',
     },
   })
+
+  //cnt3 emptyWindow /* 4jQueryDOM제어 하나씩이동 */
+  var _emptyWindow = $('windowWrap .showImg');
+
+  function ariaHidden() {
+    _emptyWindow.children().eq(0).addBack().attr('aria-hidden', false);
+  }
+  ariaHidden();
+  _emptyWindow.on('mouseenter focus', function (){
+    if (_emptyWindow.is(':animated')) return false;
+
+    _emptyWindow.prepend( _emptyWindow.children().last().clone()).css({marginLeft: '-31.25vw'}).animate(PmarginLeft: 0), function () {
+      console.log($(this));
+      $(this).children().last().remove();
+      ariaHidden();
+    }
+  });
 
   //cnt3 view more button
   $('#cnt3 a').on('click', function () {
@@ -131,40 +144,6 @@ $(document).ready(function () {
   var left = toggleFg.css('left');
   var right = toggleFg.css('right');
 
-  /* if (left == '40px') {
-    toggleBg.css('background', ' #444242');
-    toggleActionStart(toggleFg, 'TO_LEFT');
-  } else if (left == '0px') {
-    toggleBg.css('background', '#ffffff');
-    toggleActionStart(toggleFg, 'TO_RIGHT');
-  } */
-/*   //토글 버튼 이동 모션 함수
-  function toggleActionStart(toggleBtn, LR) {
-    // 0.01초 단위로 실행
-    var intervalID = setInterval(
-      function () {
-        // 버튼 이동
-        var left = parseInt(toggleBtn.css('left'));
-        left += (LR == 'TO_RIGHT') ? 5 : -5;
-        if (left >= 0 && left <= 40) {
-          left += 'px';
-          toggleBtn.css('left', left);
-        }
-      }, 10);
-    setTimeout(function () {
-      clearInterval(intervalID);
-    }, 201);
-  } */
-  
-  /* $('.toggleFg.left').on('click', function (){
-    $(this).removeClass('left').addClass('right');
-    $('.flipBtn_front').stop().slideUp();
-  });
-  $('.toggleFg.right').on('click', function (){
-    $(this).removeClass('right').addClass('left');
-    $('.flipBtn_back').stop().slideDown();
-  }); */
-
   $('.toggleFg').on('click', function (){
     if ($(this).hasClass('left')) {
       $(this).removeClass('left').addClass('right');
@@ -173,7 +152,6 @@ $(document).ready(function () {
       $(this).removeClass('right').addClass('left');
       $('.flipBtn').removeClass('flip');
     }
-
   });
 
   //공튀기기

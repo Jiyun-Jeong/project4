@@ -170,11 +170,11 @@ body {
       top: 29px;
       left: 32px;
       width: 131px;
-      height: 77px; }
+      height: 77px;
+      cursor: url("../img/icon/cursor_icon.png"), auto; }
       #wrap #header .logo a {
         width: 131px;
-        height: 77px;
-        cursor: url("../img/icon/cursor_icon.png"), auto; }
+        height: 77px; }
     #wrap #header .util {
       position: relative;
       position: fixed;
@@ -209,10 +209,11 @@ body {
           font-family: Chonburi;
           color: #FAF2A7; }
           #wrap #header .navWrap #gnb ul li {
-            position: relative;
-            cursor: url("../img/icon/cursor_icon.png"), auto; }
-            #wrap #header .navWrap #gnb ul li a:hover, #wrap #header .navWrap #gnb ul li a:focus {
-              border-bottom: 4px solid #FAF2A7; }
+            position: relative; }
+            #wrap #header .navWrap #gnb ul li a {
+              cursor: url("../img/icon/cursor_icon.png"), auto; }
+              #wrap #header .navWrap #gnb ul li a:hover, #wrap #header .navWrap #gnb ul li a:focus {
+                border-bottom: 4px solid #FAF2A7; }
     #wrap #header .sns, #wrap #header .email {
       position: absolute;
       color: #fff;
@@ -228,12 +229,16 @@ body {
         font-size: 27px;
         letter-spacing: 0.61px;
         padding-bottom: 10px; }
+        #wrap #header .sns ul li a {
+          cursor: url("../img/icon/cursor_icon.png"), auto; }
     #wrap #header .email {
       bottom: 5.8021vw; }
       #wrap #header .email p:last-child {
         font-size: 27px;
         letter-spacing: 0.61px;
         text-decoration: underline; }
+        #wrap #header .email p:last-child a {
+          cursor: url("../img/icon/cursor_icon.png"), auto; }
     #wrap #header .btn_close {
       position: fixed;
       top: 19px;
@@ -247,18 +252,18 @@ footer {
   height: 46.875vw;
   background: #FAF2A7;
   display: flex; }
-  footer .contact button, footer .bigEmail {
+  footer .contact div, footer .bigEmail {
     font-family: "Fugaz One"; }
   footer .contact {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     position: absolute;
     top: 13.6458vw;
     left: 7.2916vw;
     width: 10.4167vw;
-    height: 3.75vw;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-    footer .contact button {
+    height: 3.75vw; }
+    footer .contact > div {
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
@@ -267,7 +272,8 @@ footer {
       width: 100%;
       line-height: 3.75vw;
       background: #B4CAFA;
-      color: #fff; }
+      color: #fff;
+      text-align: center; }
   footer .bigEmail {
     font-size: 5.7292vw;
     color: #444242;
