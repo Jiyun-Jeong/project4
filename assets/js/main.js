@@ -35,7 +35,7 @@ $(document).ready(function () {
 
     if ( targetTop > 10 ) {
       console.log(fixTop);
-      _nameSvg.stop().animate({padding: '29 0 0 32', width: 131, height: 77}, 800).css({position: 'fixed'});
+      _nameSvg.stop().animate({padding: '29 0 0 32', width: '131', height: '77'}, 800).css({position: 'fixed'});
     } else {
       _nameSvg.stop().animate({padding: '7.7604vw 14.5833vw 0 36.875vw', width: 932, height: 551}, 800).css({position: 'absolute'});
     }
@@ -49,6 +49,14 @@ $(document).ready(function () {
     }, function () {
       $(this).children('#work').css('visibility', 'hidden').siblings().removeAttr('aria-hidden inert');
     });
+  });
+
+  $(window).on('scroll', function () {
+    if ($(this).scrollTop() >= 200) {
+      $('#cnt2 .yellowCircle').stop().animate({left: '-79%', top: '-8%', width: '250%'}, 800)/* find('#cnt2 .cnt2B').stop().animate({left: 0}, 1000) */;
+    } else {
+      $('#cnt2 .yellowCircle').stop().animate({top: '-42%', left: '59%', right: '-50%', width: '87.96875vw'}, 800);
+    }
   });
 
   //cnt3 "swiper"
@@ -82,7 +90,7 @@ $(document).ready(function () {
   _emptyWindow.on('mouseenter focus', function (){
     if (_emptyWindow.is(':animated')) return false;
 
-    _emptyWindow.prepend( _emptyWindow.children().last().clone()).css({marginLeft: '-31.25vw'}).animate(PmarginLeft: 0), function () {
+    _emptyWindow.prepend( _emptyWindow.children().last().clone()).css({marginLeft: '-31.25vw'}).animate({marginLeft: 0}), function () {
       console.log($(this));
       $(this).children().last().remove();
       ariaHidden();
