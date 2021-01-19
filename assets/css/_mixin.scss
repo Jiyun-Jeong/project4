@@ -35,3 +35,9 @@
     -o-animation:$value;
     animation:$value;
 }
+@mixin flex{
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    display: flex;
+}
