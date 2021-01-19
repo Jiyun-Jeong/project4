@@ -138,7 +138,7 @@
         position: absolute; z-index: 1800;
         .aboutMe {
             @include transform(rotate(8deg));
-            position: absolute; top: 12.4479vw/* 239px */; left: 21.5625vw/* 414px */; width: 27.5521vw/* 529px */;font-family: "Fugaz one"; font-size: 5.7292vw/* 110px */; color: #222;
+            position: absolute; top: 12.4479vw/* 239px */; left: 21.5625vw/* 414px */; width: 27.5521vw/* 529px */; font-family: "Fugaz one"; font-size: 5.7292vw/* 110px */; color: #222;
         }
         span {display: block; padding-left: 8.0208vw/* 154px */; margin-top: 16.5364vw/* 317.5px */; font-size: 7.8125vw/* 150px */; font-family: "Fugaz one";}
         p:last-child {
@@ -687,7 +687,7 @@
                 100% {transform: rotate3d(80, 50, 40, 360deg);}
             }
             .yellowCircle {
-                top: -42%; left: 59%; /* right: -50%; */ width: 87.96875vw/* 1689px */; height: 63.125vw/* 1212px */;
+                top: -42%; left: 59%;  width: 87.96875vw/* 1689px */; height: 63.125vw/* 1212px */;
             }
             .profile {
                 @include animation(show2 1s ease-in-out);
@@ -752,12 +752,12 @@
         .profileText {
             .aboutMe {
                 @include transform(rotate(8deg));
-                top: 12.4479vw/* 239px */; left: 21.5625vw/* 414px */; width: 27.5521vw/* 529px */;font-size: 5.7292vw/* 110px */;
+                top: 209px; left: 324px; width: 529px; font-size: 69px;
             }
-            span {padding-left: 8.0208vw/* 154px */; margin-top: 16.5364vw/* 317.5px */; font-size: 7.8125vw/* 150px */;}
+            span {padding-left: 185px; margin-top: 265.5px; font-size: 78px;}
             p:last-child {
-               top: 21.40625vw/* 411px */; left: 8.8021vw/* 169px */; width: 33.8542vw/* 650px */; z-index: 700; font-size: 1.5104vw/* 29px */; line-height: 2.8645vw/* 55px */;
-               strong {font-size: 1.875vw/* 36px */;}
+               top: 313px; left: 121px; width: 505px; font-size: 20px; line-height: 40px;
+               strong {font-size: 27px;}
             }
         }
     }

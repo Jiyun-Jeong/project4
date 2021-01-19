@@ -1466,7 +1466,6 @@
   #cnt2 .cnt2Deco .yellowCircle {
     top: -42%;
     left: 59%;
-    /* right: -50%; */
     width: 87.96875vw;
     height: 63.125vw; }
   #cnt2 .cnt2Deco .profile {
@@ -1658,22 +1657,21 @@
     -o-transform: rotate(8deg);
     -ms-transform: rotate(8deg);
     transform: rotate(8deg);
-    top: 12.4479vw;
-    left: 21.5625vw;
-    width: 27.5521vw;
-    font-size: 5.7292vw; }
+    top: 209px;
+    left: 324px;
+    width: 529px;
+    font-size: 69px; }
   #cnt2 .profileText span {
-    padding-left: 8.0208vw;
-    margin-top: 16.5364vw;
-    font-size: 7.8125vw; }
+    padding-left: 185px;
+    margin-top: 265.5px;
+    font-size: 78px; }
   #cnt2 .profileText p:last-child {
-    top: 21.40625vw;
-    left: 8.8021vw;
-    width: 33.8542vw;
-    z-index: 700;
-    font-size: 1.5104vw;
-    line-height: 2.8645vw; }
+    top: 313px;
+    left: 121px;
+    width: 505px;
+    font-size: 20px;
+    line-height: 40px; }
     #cnt2 .profileText p:last-child strong {
-      font-size: 1.875vw; } }
+      font-size: 27px; } }
 
 /*# sourceMappingURL=main.css.map */
