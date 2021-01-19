@@ -453,7 +453,7 @@
                     width: 28.125vw/* 540px */; height: 20.3125vw/* 390px */; position: relative; line-height: 20.3125vw/* 390px */;
                     .ball {
                         @include border-radius(50%);
-                        position: absolute; text-align: center; font-size: 14px; line-height: 21px; font-size: 14px; text-align: center; color: #000; font-family: "fugaz one";
+                        display: flex; justify-content: center; align-items: center; position: absolute; text-align: center; font-size: 14px; line-height: 21px; font-size: 14px; text-align: center; color: #000; font-family: "fugaz one";
                     }
                     .subject1 {background: #993ef3;}
                     .subject2 {background: #ff9393; }
@@ -461,6 +461,18 @@
                     .subject4 {background: #a6fcbc;}
                     .subject5 {background: #ffe393;}
                     .subject6 {background: #ffc293;}
+                }
+                .designCircle {
+                     display: none;/*  position: absolute; left: 0; */ width: 28.125vw; height: 20.3125vw; position: relative; line-height: 20.3125vw; 
+                    .ball {
+                        @include border-radius(50%);
+                        display: flex; justify-content: center; align-items: center; position: absolute; text-align: center; font-size: 14px; line-height: 21px; font-size: 14px; text-align: center; color: #000; font-family: "fugaz one";
+                    }
+                    .design1 {background: #993ef3;}
+                    .design2 {background: #ff9393; }
+                    .design3 {background: #ffc293;}
+                    .design4 {background: #a6fcbc;}
+                    .design5 {background: #ffe393;}
                 }
                 .overview {
                     @include border-radius(50px);

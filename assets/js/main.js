@@ -156,25 +156,37 @@ $(document).ready(function () {
     if ($(this).hasClass('left')) {
       $(this).removeClass('left').addClass('right');
       $('.flipBtn').addClass('flip');
+      $('.skillCircle').stop().fadeOut().next('.designCircle').stop().fadeIn();
     } else {
       $(this).removeClass('right').addClass('left');
       $('.flipBtn').removeClass('flip');
+      $('.designCircle').stop().fadeOut().prev('.skillCircle').stop().fadeIn();
     }
   });
+  
+
 
   //공튀기기
     var _skillCircle = $('.skillCircle');
+    var _designCircle = $('.designCircle');
     var panelWid = _skillCircle.width();
     var panelHei = _skillCircle.height();
+    var designWid = _designCircle.width();
+    var designHei = _designCircle.height();
     var ballsize = 100; //100%일 경우 크기를 적는다
 
     //매개변수 : 선택자, 시작x좌표, 시작y좌표, 볼비율, 박스 밖으로 나갈경우 제어숫자, 가로이동크기, 세로이동크기, 고정x좌표, 고정y좌표
-    bounce('.subject1', 0, 0, 1.50, 6, 6, 6, 105, 150); //html5
-    bounce('.subject2', 300, 100, 2, 4, 10, 15, 180, 50); //CSS3
+    bounce('.subject1', 0, 0, 1.50, 6, 6, 6, 105, 180); //css3
+    bounce('.subject2', 300, 100, 2, 4, 10, 15, 180, 80); //html5
     bounce('.subject3', 400, 290, 1.50, 5, 8, 12, 115, 20); //SCSS
-    bounce('.subject4', 350, 150, 1.30, 2, 9, 7, 270, -5); //자바
-    bounce('.subject5', 200, 350, 1.20, 7, 7, 10, 355, 90); //bootstrap
-    bounce('.subject6', 500, 450, 1.10, 6, 5, 5, 320, 190); //jquery
+    bounce('.subject4', 350, 150, 1.30, 2, 9, 7, 270, 0); //java
+    bounce('.subject5', 200, 350, 1.20, 7, 7, 10, 355, 90); //jquery
+    bounce('.subject6', 500, 450, 1.10, 6, 5, 5, 320, 210); //bootstrap
+    bounce('.design1', 0, 0, 1.50, 6, 6, 6, 75, 170); //Photoshop
+    bounce('.design2', 350, 150, 1.30, 2, 9, 7, 300, 20); //Illurstrator
+    bounce('.design4', 150, 80, 2, 5, 2, 7, 170, 100); //Zeplin
+    bounce('.design3', 200, 100, 2, 4, 10, 15, 280, 190); //Adobe XD
+    bounce('.design5', 100, 120, 1.30, 4, 7, 9, 130, 20); //Premiere
     function bounce(target, startX0, startY0, ratio, stepSize0, stepX0, stepY0, stopX, stopY) {
       var _ball = $(target);
       var startX = startX0;   //ball이 움직이기 시작하는 X 위치
@@ -197,6 +209,15 @@ $(document).ready(function () {
           start(); // 패널에서 빠져 나오면 시작되고
         }
       });
+      _designCircle.on({
+        mouseenter: function () {
+          console.log(_ball);
+          stopMove(); 
+        },
+        mouseleave: function () {
+          start(); 
+        }
+      });
 
       function start(){
         if (ballTimer === 0)
@@ -204,7 +225,7 @@ $(document).ready(function () {
       }
 
       function startMove(){
-        _ball.css({width: ballsize * ratio, height: ballsize * ratio, "line-height": ballsize * 1/3 + "px", left:startX0, top: startY0});
+        _ball.css({width: ballsize * ratio, height: ballsize * ratio, left:startX0, top: startY0});
         startX += stepX;  //시작위치에서 stepSize인 6만큼씩을 더해서 움직이게 한다
         startY += stepY;
         if (startX > endX) stepX = -stepSize;  //최대 위치를 벗어나면 빼주어 내부로 다시 들어오게 함
@@ -228,6 +249,7 @@ $(document).ready(function () {
         }
       }
     }
+    
 
     //draggable chart
     var top = $('.skillView').offset().top; //드래그 가능한 시작위치
