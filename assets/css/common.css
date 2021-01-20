@@ -63,6 +63,16 @@ header, nav, section, footer {
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%); }
 
+.max1440 {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto; }
+
+.max768 {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto; }
+
 .clearfix::before, .clear::after {
   content: "";
   display: block;
@@ -245,6 +255,56 @@ body {
       right: 22px;
       cursor: url("../img/icon/cursor_icon.png"), auto; }
 
+@media screen and (max-width: 1440px) {
+  #header .logo {
+    top: 29px;
+    left: 32px;
+    width: 131px;
+    height: 77px; }
+    #header .logo a {
+      width: 131px;
+      height: 77px; }
+  #header .util {
+    top: 17px;
+    right: 22px; }
+    #header .util > .btn_open img {
+      width: 44px;
+      height: 44px; }
+  #header .navWrap {
+    top: 0;
+    left: 100%;
+    right: 0;
+    bottom: 0; }
+    #header .navWrap #gnb {
+      left: 10.625vw;
+      top: 9.1146vw;
+      width: 46.875vw;
+      height: 32.1875vw; }
+      #header .navWrap #gnb ul {
+        font-size: 5.9895vw;
+        line-height: 8.3333vw; }
+        #header .navWrap #gnb ul li a:hover, #header .navWrap #gnb ul li a:focus {
+          border-bottom: 4px solid #FAF2A7; }
+  #header .sns, #header .email {
+    left: 64.84375vw; }
+  #header .sns p, #header .email p:first-child {
+    padding-bottom: 0.9375vw;
+    font-size: 30px; }
+  #header .sns {
+    top: 22.65625vw;
+    right: 27.8125vw; }
+    #header .sns ul li {
+      font-size: 27px;
+      letter-spacing: 0.61px;
+      padding-bottom: 10px; }
+  #header .email {
+    bottom: 5.8021vw; }
+    #header .email p:last-child {
+      font-size: 27px;
+      letter-spacing: 0.61px; }
+  #header .btn_close {
+    top: 19px;
+    right: 22px; } }
 /* Footer */
 footer {
   position: relative;

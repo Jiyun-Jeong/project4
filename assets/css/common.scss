@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "_var", "_mixin";
+@import "_var", "_mixin", "_function";
 
 /* Google Web font CDN */
 @import url(https://fonts.googleapis.com/css?family=VT323:regular);
@@ -59,6 +59,8 @@ header, nav, section, footer {display: block;}
 
 /* common class */
 .blind-b {width: 1px;height: 1px;position: absolute; overflow: none; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%);}
+.max1440 {max-width: 1440px; width: 100%; margin: 0 auto;}
+.max768 {max-width: 768px; width: 100%; margin: 0 auto;}
 .clearfix::before, .clear::after {content: ""; display: block; clear: both;}
 .fade {
   @include transition(all 1s);
@@ -89,6 +91,7 @@ body {
     left: 0; width: 100%; background: #FAF2A7; color: #000; text-align: center;font-weight: 400;font-size: 25px;height: 50px;line-height: 50px; 
   }
 }
+
 
 /* Logo & navigation */
 #wrap {
@@ -136,6 +139,48 @@ body {
         }
     }
     .btn_close {position: fixed; top: 19px; right: 22px; cursor: url('../img/icon/cursor_icon.png'), auto;}
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #header {
+    .logo {
+      top: 29px; left: 32px; width: 131px; height: 77px;
+      a {width: 131px; height: 77px;}
+    }
+    .util {
+      top: 17px; right: 22px;
+      > .btn_open img {width: 44px; height: 44px;}
+    }
+    .navWrap {
+        top: 0; left: 100%; right: 0; bottom: 0;
+        #gnb {
+            left: 10.625vw/* 204px */; top: 9.1146vw/* 175px */; width: 46.875vw/* 90 0px */;height: 32.1875vw/* 618px */;
+            ul {
+                font-size: 5.9895vw/* 115px */; line-height: 8.3333vw/* 160px */;
+                li {
+                  a {
+                    &:hover, &:focus {border-bottom: 4px solid $lightyellow; }
+                  }
+                }
+            }
+        }
+    }
+    .sns, .email {left: 64.84375vw/* 1245px */;}
+    .sns p, .email p:first-child {padding-bottom: 0.9375vw/* 18px */; font-size: 30px;}
+    .sns {
+        top: 22.65625vw/* 435px */; right: 27.8125vw/* 534px */; 
+        ul li {
+          font-size: 27px;letter-spacing: 0.61px; padding-bottom: 10px; 
+        }
+    }
+    .email{
+        bottom: 5.8021vw/* 8.8021vw *//* 169px */;
+        p:last-child {
+          font-size: 27px; letter-spacing: 0.61px;
+        }
+    }
+    .btn_close {top: 19px; right: 22px;}
   }
 }
 
