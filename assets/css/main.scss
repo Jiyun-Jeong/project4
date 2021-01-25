@@ -371,21 +371,21 @@
                 @include border-radius(50px);
                 position: relative; width: 28.125vw/* 540px */; height: 38.8021vw/* 745px */; background: $lightyellow; 
                 .switchWrap {
-                    margin: 0 auto; padding-top: 20px; padding-bottom: 45px; width: 14.5833vw/* 280px */;
+                    margin: 0 auto; padding-top: 30px; padding-bottom: 45px; width: 237px;
                 }
                 .toggleBg {
                     @include border-radius(66px);
-                    position: relative; width: 70px; height: 34px;  display: inline-block; background: #444242; /* border: 1px solid #fff; */ 
+                    position: relative; width: 60px; height: 34px;  display: inline-block; background: #444242; /* border: 1px solid #fff; */ 
                     button {
                         @include border-radius(50%);
                         @include transition(all 0.5s);
                         position: absolute; width: 26px; height: 26px; background: #fff; top: 4px; 
                     }
                     .toggleFg.left {left: 5px;}
-                    .toggleFg.right {left: 40px;}
+                    .toggleFg.right {left: 29px;}
                 }
                 .flipBtnWrap { 
-                    position: relative; display: inline-block; width: 9.8958vw/* 190px */; height: 34px; /* overflow: hidden; */
+                    position: relative; display: inline-block; width: 170px; height: 34px;
                     .flipBtn {position: relative; }
                 }
                 .flipBtn, .flipBtnInner  {
@@ -396,7 +396,7 @@
                     .flipBtn_back {transform: rotateX(0deg) translateZ(17px);}
                 }
                 .flipBtn_front, .flipBtn_back {
-                    width: 190px; height: 34px; line-height: 34px; border-radius: 20px; background: #444242; color: #fff; text-align: center; margin: 0 auto; position: absolute; top: 0; left: 0;
+                    width: 170px; height: 34px; line-height: 34px; border-radius: 20px; background: #444242; color: #fff; text-align: center; margin: 0 auto; position: absolute; top: 0; left: 0;
                 }
                 .flipBtn_front {
                     @include transform(rotateX(0deg) translateZ(17px));
@@ -407,7 +407,7 @@
                     @include transition(transform 0.4s);
                 }
                 .skillCircle {
-                    width: 28.125vw/* 540px */; height: 20.3125vw/* 390px */; position: relative; line-height: 20.3125vw/* 390px */;
+                    width: 540px; height: 20.3125vw/* 390px */; position: relative; line-height: 20.3125vw/* 390px */;
                     .ball {
                         @include border-radius(50%);
                         @include flex;
@@ -436,7 +436,7 @@
                 .overview {
                     @include border-radius(50px);
                     position: absolute; top: 27.1875vw/* 522px */; left: 0; width: 28.125vw/* 540px */; height: 38.802vw/* 745px */; background: #fff; padding-top: 8px; border: 1px solid #777; cursor: url('../img/icon/dragUp_icon.png'), auto;
-                    span {display: block; padding-left: 44px; font-size: 15px; margin-top: 7px;}
+                    > span {display: block; padding-left: 44px; font-size: 15px; margin-top: 7px;}
                     .overviewTitle {
                         font-family: KoreanDREAM5; font-size: 25px; padding-top: 25px;
                     }
@@ -447,52 +447,42 @@
                         position: relative; margin-top: 1.3542vw/* 26px */; z-index: 100;
                         .stickWrap {
                             @include border-radius(50px);
-                            position: relative; top: 0; left: 0; right: 0; width: 26.1458vw/* 502px */; height: 31.09375vw/* 597px */; background: $lightyellow; margin: 0 auto;
+                            display: flex; align-items: center; position: relative; top: 0; left: 0; right: 0; width: 26.1458vw/* 502px */; height: 31.09375vw/* 597px */; background: $lightyellow; margin: 0 auto;
                             .whiteStickWrap {
                                 @include border-radius(4px);
-                                width: 24.2708vw/* 466px */; height: 17.9166vw/* 344px */; margin: 0 auto;
+                                display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 21.2708vw; height: 17.9166vw/* 344px */; margin: 0 auto;
                                 
                             .whiteStick {
-                                position: absolute; bottom: 8.59375vw/* 165px */; left: 50px; background: #fff; height: 17.9166vw/* 344px */; width: 6px;
+                                /* position: absolute;  bottom: 165px; left: 50px; */background: #fff; height: 344px; width: 6px;
                             }
-                            .html5 {left: 35px;}
-                            .css3 {left: 77px;}
-                            .scss {left: 119px;}
-                            .javaScript {left: 161px;}
-                            .jQuery {left: 203px;}
-                            .bootstrap {left: 245px;}
-                            .ps {left: 287px;}
-                            .ai {left: 329px;}
-                            .xd {left: 371px;}
-                            .zeplin {left: 413px;}
-                            .pr {left: 455px;}
-                            .skillsStickWrap {
-                                @include border-radius(4px);
-                                width: 466px; height: 344px; margin: 0 auto;
-                            }
-                            .skills {
-                                position: absolute;  background: #7ea0e9; width: 6px; bottom: 8.59375vw/* 165px */; height: 344px;
-                            }
+                            
                             /* div.skills + div.skills { margin-left: 42px; } */
-                            #html5 {left: 35px; height: 330px;}
-                            #css3 {left: 77px; height: 325px;}
-                            #scss {left: 119px; height: 330px;}
-                            #javaScript {left: 161px; height: 245px;}
-                            #jQuery {left: 203px; height: 280px;}
-                            #bootstrap {left: 245px; height: 195px;}
-                            #ps {left: 287px; height: 310px;}
-                            #ai {left: 329px; height: 335px;}
-                            #xd {left: 371px; height: 280px;}
-                            #zeplin {left: 413px; height: 280px;}
-                            #pr {left: 455px; height: 285px;}
-                            span {font-family: KoreanDREAM5; font-size: 11px; line-height: 13px; text-align: center;}
+
+                        }
+                        .skillsStickWrap {
+                            @include border-radius(4px);
+                            position: absolute; left: 47px; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end; width: 21.2708vw; height: 344px; margin: 0 auto;
+                            .skills {
+                                /* position: absolute;   */background: #7ea0e9; width: 6px; bottom: 8.59375vw/* 165px */; height: 344px;
+                            }
+                            #html5 {height: 300px;}
+                            #css3 {height: 310px;}
+                            #scss {height: 310px;}
+                            #javaScript {height: 280px;}
+                            #jQuery {height: 275px;}
+                            #bootstrap {height: 240px;}
+                            #ps {height: 310px;}
+                            #ai {height: 290px;}
+                            #xd {height: 320px;}
+                            #zeplin {height: 320px;}
+                            #pr {height: 290px;}
                         }
                         .skillsText {
-                            position: absolute; bottom: 5.5729vw/* 107px */; left: 0; right: 0; /* text-align: left; */ width: 24.1667vw/* 464px */; margin: 0 auto;
+                            display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; position: absolute; bottom: 72px; left: 27px; text-align: left; width: 24.1667vw; margin: 0 auto;
                             > span {
-                                /* @include transform(rotate(270deg)); */
-                                display: inline-block; padding-left: 8px; font-size: 7px; text-align: center; font-weight: bold;
-                        }
+                                @include transform(rotate(270deg));
+                                display: inline-block; font-family: KoreanDREAM5; font-size: 7px;
+                            }
                         }
                     }
                 }
@@ -850,244 +840,6 @@
             }
         }
     }
+
 }
 
-#cnt4 {
-    .stats {
-        height: 180px; line-height: 180px;
-        &::before {top: -1px; width: 96%;}
-        img {top: -35px;}
-        p {font-size: 45px;}
-    }
-    .dashboard {
-        @include border-radius(50px);
-        @include flex;
-        flex-wrap: wrap; justify-content: space-evenly; width: 91.5625vw/* 1758px */; height: 42.2917vw/* 812px */; background: #fff; margin: 0 auto; margin-top: 7.0833vw/* 136px */; clear: both; overflow: hidden; z-index: 1200;
-        .dashboardTitle {
-            display: block; width: 100%; font-family: KoreanDREAM5; font-size: 35px; height: 36px; padding-top: 3.8021vw/* 73px */; padding-left: 2.2396vw/* 43px */;
-        }
-        .leftBoard {
-            width: 21.1979vw/* 407px */; height: 31.4583vw/* 604px */; padding-top: 53px; z-index: 1000;
-            .puzzle {
-                @include border-radius(50px);
-                position: relative; width: 21.1979vw/* 407px */; height: 31.4583vw/* 604px */; line-height: 31.4583vw; box-sizing: border-box; overflow: hidden;
-                p {font-family: "fugaz one"; text-align: center; }
-                .peepIt {
-                    display: block; font-size: 40px; line-height: 47px; padding-top: 12.9167vw/* 248px */; position: relative;
-                }
-                .stripe {
-                    position: absolute; top: -8%; left: -35%; width: 36.4583vw/* 700px */; height: 36.5104vw/* 701px */; font-size: 0;
-                    .line {
-                        @include transform(rotate(45deg));
-                        @include animation(stripes 1s linear infinite);
-                        @include keyframes(stripes) {
-                            100% {background-position: 0 -30px}
-                        };
-                        width: 100%; height: 100%; background-size: 100% 32px; background-image: linear-gradient(#b89eff 50%, transparent 50%); background-position: 0 0; background-repeat: repeat;  
-                    }
-                }
-                .hiddenProfile {
-                    display: none; width: 14.84375vw/* 285px */; height: 21.1979vw/* 407px */; margin: 0 auto; position: absolute; top: 0; left: 0; right: 0; margin-top: 3.90625vw/* 75px */;
-                    img {text-align: center; padding-left: 6px; padding-bottom: 3.125vw/* 60px */;}
-                    > p {position: absolute; bottom: 0; font-size: 1.5104vw/* 29px */; line-height: 2.1875vw/* 42px */;}
-                }
-            }
-        }
-        .middleBoard {
-            @include flex;
-            flex-direction: row; flex-wrap: wrap; justify-content: space-between; width: 34.375vw/* 660px */; height: 33.8542vw/* 650px */; padding-top: 2.7604vw/* 53px */;
-            .efficiency {
-                @include border-radius(50px);
-                position: relative; width: 16.5104vw/* 317px */; height: 15.3646vw/* 295px */; background: #a6fcbc;
-                span {
-                    display: block; font-family: KoreanDREAM5; font-size: 25px; padding-left: 18px; padding-top: 33px;
-                }
-                #drop1 {position: absolute; top: 40%; left: 0; right: 0; margin: 0 auto; width: 134px; }
-                > p {
-                    position: absolute; font-size: 2.8646vw/* 55px */; font-family: "Fugaz one"; top: 53%; left: 34%/* calc(50% - 18.5px) */;
-                }
-            }
-            .producitivity {
-                @include border-radius(50px);
-                position: relative; width: 16.5104vw/* 317px */; height: 15.3646vw/* 295px */; background: #ffcfcf;
-                span {
-                    display: block; font-family: KoreanDREAM5; font-size: 25px; padding-left: 18px; padding-top: 33px;
-                }
-                #drop2 {position: absolute; top: 45%; left: calc(50% - 95.5px); width: 191px;}
-                > p {
-                    position: absolute; top: 53%; left: 34% ;/* font-size: 15px;  */font-family: "Fugaz one"; font-size: 2.8646vw/* 55px */;
-                }
-                > span:last-child {position: absolute; bottom: 17px; left: 0; right: 31px;}
-            }
-            .relieveStress {
-                @include border-radius(50px);
-                position: relative; width: 34.1667vw/* 656px */; height: 14.0521vw; border: 1px solid #777; background: #fff; box-sizing: border-box; /* margin-top: 25px; */
-                span {
-                    display: block; font-family: KoreanDREAM5; font-size: 25px; padding-left: 18px; padding-top: 1.71875vw/* 33px */;
-                }
-                .stressWrap {
-                    padding-top: 25px;
-                    .stressReliever1, .stressReliever2 {
-                        @include border-radius(50px);
-                        width: 21.6667vw/* 416px */; height: 3.2292vw/* 62px */; font-family: "Fugaz one"; font-size: 1.09375vw/* 21px */; line-height: 3.2292vw/* 62px */; margin: 0 auto; padding-left: 2.03125vw/* 39px */;
-                    }
-                    img {display: none;}
-                    .stressReliever1 {
-                        background: #ffd28d; 
-                    }
-                    .stressReliever2 {
-                        background: #c2e4ff; margin-top: 17px;
-                    }
-                }
-            }
-        }
-        .droppableModel {
-            position: absolute; top: 32.5%; left: 23.5%; width: 23.6979vw/* 455px */; height: 9.1667vw/* 176px */;
-            .thunder {
-                display: inline-block; cursor: url('../img/icon/cursor_icon.png'), auto;
-                #drag2Yes {position: absolute; top: 0; left: 0; width: 9.9479vw/* 191px */;}
-            }
-            .triangle {
-                display: inline-block; cursor: url('../img/icon/cursor_icon.png'), auto;
-                #drag1Yes {width: 6.9792vw/* 134px */; left: 9.375vw/* 180px */;}
-            }
-            p {
-                position: absolute; font-size: 2.8646vw/* 55px */; font-family: "Fugaz one"; top: 48%; left: 8%; display: none;
-            }
-        }
-        .rightBoard {
-            margin-top: -78px;
-            .skillView {
-                @include border-radius(50px);
-                position: relative; width: 28.125vw/* 540px */; height: 38.8021vw/* 745px */; background: $lightyellow; 
-                .switchWrap {
-                    margin: 0 auto; padding-top: 20px; padding-bottom: 45px; width: 14.5833vw/* 280px */;
-                }
-                .toggleBg {
-                    @include border-radius(66px);
-                    position: relative; width: 70px; height: 34px;  display: inline-block; background: #444242; /* border: 1px solid #fff; */ 
-                    button {
-                        @include border-radius(50%);
-                        @include transition(all 0.5s);
-                        position: absolute; width: 26px; height: 26px; background: #fff; top: 4px; 
-                    }
-                    .toggleFg.left {left: 5px;}
-                    .toggleFg.right {left: 40px;}
-                }
-                .flipBtnWrap { 
-                    position: relative; display: inline-block; width: 9.8958vw/* 190px */; height: 34px; /* overflow: hidden; */
-                    .flipBtn {position: relative; }
-                }
-                .flipBtn, .flipBtnInner  {
-                    width: 100%; height: 100%;
-                }
-                .flipBtn.flip {
-                    .flipBtn_front {transform: rotateX(90deg) translateZ(17px);}
-                    .flipBtn_back {transform: rotateX(0deg) translateZ(17px);}
-                }
-                .flipBtn_front, .flipBtn_back {
-                    width: 190px; height: 34px; line-height: 34px; border-radius: 20px; background: #444242; color: #fff; text-align: center; margin: 0 auto; position: absolute; top: 0; left: 0;
-                }
-                .flipBtn_front {
-                    @include transform(rotateX(0deg) translateZ(17px));
-                    @include transition(transform 0.4s);
-                }
-                .flipBtn_back {
-                    @include transform(rotateX(-90deg) translateZ(17px));
-                    @include transition(transform 0.4s);
-                }
-                .skillCircle {
-                    width: 28.125vw/* 540px */; height: 20.3125vw/* 390px */; position: relative; line-height: 20.3125vw/* 390px */;
-                    .ball {
-                        @include border-radius(50%);
-                        @include flex;
-                        justify-content: center; align-items: center; position: absolute; text-align: center; font-size: 14px; line-height: 21px; font-size: 14px; text-align: center; color: #000; font-family: "fugaz one";
-                    }
-                    .subject1 {background: #993ef3;}
-                    .subject2 {background: #ff9393; }
-                    .subject3 {background: #bd3ef3;}
-                    .subject4 {background: #a6fcbc;}
-                    .subject5 {background: #ffe393;}
-                    .subject6 {background: #ffc293;}
-                }
-                .designCircle {
-                     display: none;/*  position: absolute; left: 0; */ width: 28.125vw; height: 20.3125vw; position: relative; line-height: 20.3125vw; 
-                    .ball {
-                        @include border-radius(50%);
-                        @include flex;
-                        justify-content: center; align-items: center; position: absolute; text-align: center; font-size: 14px; line-height: 21px; font-size: 14px; text-align: center; color: #000; font-family: "fugaz one";
-                    }
-                    .design1 {background: #993ef3;}
-                    .design2 {background: #ff9393; }
-                    .design3 {background: #ffc293;}
-                    .design4 {background: #a6fcbc;}
-                    .design5 {background: #ffe393;}
-                }
-                .overview {
-                    @include border-radius(50px);
-                    position: absolute; top: 27.1875vw/* 522px */; left: 0; width: 28.125vw/* 540px */; height: 38.802vw/* 745px */; background: #fff; padding-top: 8px; border: 1px solid #777; cursor: url('../img/icon/dragUp_icon.png'), auto;
-                    span {display: block; padding-left: 44px; font-size: 15px; margin-top: 7px;}
-                    .overviewTitle {
-                        font-family: KoreanDREAM5; font-size: 25px; padding-top: 25px;
-                    }
-                    > span:nth-child(2) {
-                        font-family: KoreanDREAM3; font-size: 0.78125vw/* 15px */; padding-top: 8px; color: #858585;
-                    }
-                    .stickGraph {
-                        position: relative; margin-top: 1.3542vw/* 26px */; z-index: 100;
-                        .stickWrap {
-                            @include border-radius(50px);
-                            position: relative; top: 0; left: 0; right: 0; width: 26.1458vw/* 502px */; height: 31.09375vw/* 597px */; background: $lightyellow; margin: 0 auto;
-                            .whiteStickWrap {
-                                @include border-radius(4px);
-                                width: 24.2708vw/* 466px */; height: 17.9166vw/* 344px */; margin: 0 auto;
-                                
-                            .whiteStick {
-                                position: absolute; bottom: 8.59375vw/* 165px */; left: 50px; background: #fff; height: 17.9166vw/* 344px */; width: 6px;
-                            }
-                            .html5 {left: 35px;}
-                            .css3 {left: 77px;}
-                            .scss {left: 119px;}
-                            .javaScript {left: 161px;}
-                            .jQuery {left: 203px;}
-                            .bootstrap {left: 245px;}
-                            .ps {left: 287px;}
-                            .ai {left: 329px;}
-                            .xd {left: 371px;}
-                            .zeplin {left: 413px;}
-                            .pr {left: 455px;}
-                            .skillsStickWrap {
-                                @include border-radius(4px);
-                                width: 466px; height: 344px; margin: 0 auto;
-                            }
-                            .skills {
-                                position: absolute;  background: #7ea0e9; width: 6px; bottom: 8.59375vw/* 165px */; height: 344px;
-                            }
-                            /* div.skills + div.skills { margin-left: 42px; } */
-                            #html5 {left: 35px; height: 330px;}
-                            #css3 {left: 77px; height: 325px;}
-                            #scss {left: 119px; height: 330px;}
-                            #javaScript {left: 161px; height: 245px;}
-                            #jQuery {left: 203px; height: 280px;}
-                            #bootstrap {left: 245px; height: 195px;}
-                            #ps {left: 287px; height: 310px;}
-                            #ai {left: 329px; height: 335px;}
-                            #xd {left: 371px; height: 280px;}
-                            #zeplin {left: 413px; height: 280px;}
-                            #pr {left: 455px; height: 285px;}
-                            span {font-family: KoreanDREAM5; font-size: 11px; line-height: 13px; text-align: center;}
-                        }
-                        .skillsText {
-                            position: absolute; bottom: 5.5729vw/* 107px */; left: 0; right: 0; /* text-align: left; */ width: 24.1667vw/* 464px */; margin: 0 auto;
-                            > span {
-                                /* @include transform(rotate(270deg)); */
-                                display: inline-block; padding-left: 8px; font-size: 7px; text-align: center; font-weight: bold;
-                        }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-}

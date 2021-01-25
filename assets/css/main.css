@@ -866,15 +866,15 @@
         background: #FAF2A7; }
         #cnt4 .dashboard .rightBoard .skillView .switchWrap {
           margin: 0 auto;
-          padding-top: 20px;
+          padding-top: 30px;
           padding-bottom: 45px;
-          width: 14.5833vw; }
+          width: 237px; }
         #cnt4 .dashboard .rightBoard .skillView .toggleBg {
           -webkit-border-radius: 66px;
           -moz-border-radius: 66px;
           border-radius: 66px;
           position: relative;
-          width: 70px;
+          width: 60px;
           height: 34px;
           display: inline-block;
           background: #444242;
@@ -895,13 +895,12 @@
           #cnt4 .dashboard .rightBoard .skillView .toggleBg .toggleFg.left {
             left: 5px; }
           #cnt4 .dashboard .rightBoard .skillView .toggleBg .toggleFg.right {
-            left: 40px; }
+            left: 29px; }
         #cnt4 .dashboard .rightBoard .skillView .flipBtnWrap {
           position: relative;
           display: inline-block;
-          width: 9.8958vw;
-          height: 34px;
-          /* overflow: hidden; */ }
+          width: 170px;
+          height: 34px; }
           #cnt4 .dashboard .rightBoard .skillView .flipBtnWrap .flipBtn {
             position: relative; }
         #cnt4 .dashboard .rightBoard .skillView .flipBtn, #cnt4 .dashboard .rightBoard .skillView .flipBtnInner {
@@ -912,7 +911,7 @@
         #cnt4 .dashboard .rightBoard .skillView .flipBtn.flip .flipBtn_back {
           transform: rotateX(0deg) translateZ(17px); }
         #cnt4 .dashboard .rightBoard .skillView .flipBtn_front, #cnt4 .dashboard .rightBoard .skillView .flipBtn_back {
-          width: 190px;
+          width: 170px;
           height: 34px;
           line-height: 34px;
           border-radius: 20px;
@@ -944,7 +943,7 @@
           -o-transition: transform 0.4s;
           transition: transform 0.4s; }
         #cnt4 .dashboard .rightBoard .skillView .skillCircle {
-          width: 28.125vw;
+          width: 540px;
           height: 20.3125vw;
           position: relative;
           line-height: 20.3125vw; }
@@ -1026,7 +1025,7 @@
           padding-top: 8px;
           border: 1px solid #777;
           cursor: url("../img/icon/dragUp_icon.png"), auto; }
-          #cnt4 .dashboard .rightBoard .skillView .overview span {
+          #cnt4 .dashboard .rightBoard .skillView .overview > span {
             display: block;
             padding-left: 44px;
             font-size: 15px;
@@ -1048,6 +1047,8 @@
               -webkit-border-radius: 50px;
               -moz-border-radius: 50px;
               border-radius: 50px;
+              display: flex;
+              align-items: center;
               position: relative;
               top: 0;
               left: 0;
@@ -1060,105 +1061,80 @@
                 -webkit-border-radius: 4px;
                 -moz-border-radius: 4px;
                 border-radius: 4px;
-                width: 24.2708vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 21.2708vw;
                 height: 17.9166vw;
                 margin: 0 auto;
                 /* div.skills + div.skills { margin-left: 42px; } */ }
                 #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .whiteStick {
-                  position: absolute;
-                  bottom: 8.59375vw;
-                  left: 50px;
+                  /* position: absolute;  bottom: 165px; left: 50px; */
                   background: #fff;
-                  height: 17.9166vw;
-                  width: 6px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .html5 {
-                  left: 35px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .css3 {
-                  left: 77px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .scss {
-                  left: 119px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .javaScript {
-                  left: 161px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .jQuery {
-                  left: 203px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .bootstrap {
-                  left: 245px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .ps {
-                  left: 287px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .ai {
-                  left: 329px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .xd {
-                  left: 371px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .zeplin {
-                  left: 413px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .pr {
-                  left: 455px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .skillsStickWrap {
-                  -webkit-border-radius: 4px;
-                  -moz-border-radius: 4px;
-                  border-radius: 4px;
-                  width: 466px;
                   height: 344px;
-                  margin: 0 auto; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .skills {
-                  position: absolute;
+                  width: 6px; }
+              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap {
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+                position: absolute;
+                left: 47px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+                width: 21.2708vw;
+                height: 344px;
+                margin: 0 auto; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap .skills {
+                  /* position: absolute;   */
                   background: #7ea0e9;
                   width: 6px;
                   bottom: 8.59375vw;
                   height: 344px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #html5 {
-                  left: 35px;
-                  height: 330px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #css3 {
-                  left: 77px;
-                  height: 325px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #scss {
-                  left: 119px;
-                  height: 330px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #javaScript {
-                  left: 161px;
-                  height: 245px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #jQuery {
-                  left: 203px;
-                  height: 280px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #bootstrap {
-                  left: 245px;
-                  height: 195px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #ps {
-                  left: 287px;
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #html5 {
+                  height: 300px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #css3 {
                   height: 310px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #ai {
-                  left: 329px;
-                  height: 335px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #xd {
-                  left: 371px;
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #scss {
+                  height: 310px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #javaScript {
                   height: 280px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #zeplin {
-                  left: 413px;
-                  height: 280px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #pr {
-                  left: 455px;
-                  height: 285px; }
-                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap span {
-                  font-family: KoreanDREAM5;
-                  font-size: 11px;
-                  line-height: 13px;
-                  text-align: center; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #jQuery {
+                  height: 275px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #bootstrap {
+                  height: 240px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #ps {
+                  height: 310px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #ai {
+                  height: 290px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #xd {
+                  height: 320px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #zeplin {
+                  height: 320px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #pr {
+                  height: 290px; }
               #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsText {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
                 position: absolute;
-                bottom: 5.5729vw;
-                left: 0;
-                right: 0;
-                /* text-align: left; */
+                bottom: 72px;
+                left: 27px;
+                text-align: left;
                 width: 24.1667vw;
                 margin: 0 auto; }
                 #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsText > span {
-                  /* @include transform(rotate(270deg)); */
+                  -webkit-transform: rotate(270deg);
+                  -moz-transform: rotate(270deg);
+                  -o-transform: rotate(270deg);
+                  -ms-transform: rotate(270deg);
+                  transform: rotate(270deg);
                   display: inline-block;
-                  padding-left: 8px;
-                  font-size: 7px;
-                  text-align: center;
-                  font-weight: bold; }
+                  font-family: KoreanDREAM5;
+                  font-size: 7px; }
 
 /* Works page */
 /* common class */
@@ -1790,557 +1766,5 @@
         font-size: 36px !important;
         padding-top: 0 !important;
         padding-right: 0 !important; } }
-#cnt4 .stats {
-  height: 180px;
-  line-height: 180px; }
-  #cnt4 .stats::before {
-    top: -1px;
-    width: 96%; }
-  #cnt4 .stats img {
-    top: -35px; }
-  #cnt4 .stats p {
-    font-size: 45px; }
-#cnt4 .dashboard {
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  -webkit-display: flex;
-  -moz-display: flex;
-  -ms-display: flex;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 91.5625vw;
-  height: 42.2917vw;
-  background: #fff;
-  margin: 0 auto;
-  margin-top: 7.0833vw;
-  clear: both;
-  overflow: hidden;
-  z-index: 1200; }
-  #cnt4 .dashboard .dashboardTitle {
-    display: block;
-    width: 100%;
-    font-family: KoreanDREAM5;
-    font-size: 35px;
-    height: 36px;
-    padding-top: 3.8021vw;
-    padding-left: 2.2396vw; }
-  #cnt4 .dashboard .leftBoard {
-    width: 21.1979vw;
-    height: 31.4583vw;
-    padding-top: 53px;
-    z-index: 1000; }
-    #cnt4 .dashboard .leftBoard .puzzle {
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-      border-radius: 50px;
-      position: relative;
-      width: 21.1979vw;
-      height: 31.4583vw;
-      line-height: 31.4583vw;
-      box-sizing: border-box;
-      overflow: hidden; }
-      #cnt4 .dashboard .leftBoard .puzzle p {
-        font-family: "fugaz one";
-        text-align: center; }
-      #cnt4 .dashboard .leftBoard .puzzle .peepIt {
-        display: block;
-        font-size: 40px;
-        line-height: 47px;
-        padding-top: 12.9167vw;
-        position: relative; }
-      #cnt4 .dashboard .leftBoard .puzzle .stripe {
-        position: absolute;
-        top: -8%;
-        left: -35%;
-        width: 36.4583vw;
-        height: 36.5104vw;
-        font-size: 0; }
-        #cnt4 .dashboard .leftBoard .puzzle .stripe .line {
-          -webkit-transform: rotate(45deg);
-          -moz-transform: rotate(45deg);
-          -o-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-          -webkit-animation: stripes 1s linear infinite;
-          -moz-animation: stripes 1s linear infinite;
-          -o-animation: stripes 1s linear infinite;
-          animation: stripes 1s linear infinite;
-          width: 100%;
-          height: 100%;
-          background-size: 100% 32px;
-          background-image: linear-gradient(#b89eff 50%, transparent 50%);
-          background-position: 0 0;
-          background-repeat: repeat; }
-@-webkit-keyframes stripes {
-  100% {
-    background-position: 0 -30px; } }
-@-moz-keyframes stripes {
-  100% {
-    background-position: 0 -30px; } }
-@-o-keyframes stripes {
-  100% {
-    background-position: 0 -30px; } }
-@keyframes stripes {
-  100% {
-    background-position: 0 -30px; } }
-      #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile {
-        display: none;
-        width: 14.84375vw;
-        height: 21.1979vw;
-        margin: 0 auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin-top: 3.90625vw; }
-        #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile img {
-          text-align: center;
-          padding-left: 6px;
-          padding-bottom: 3.125vw; }
-        #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile > p {
-          position: absolute;
-          bottom: 0;
-          font-size: 1.5104vw;
-          line-height: 2.1875vw; }
-  #cnt4 .dashboard .middleBoard {
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 34.375vw;
-    height: 33.8542vw;
-    padding-top: 2.7604vw; }
-    #cnt4 .dashboard .middleBoard .efficiency {
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-      border-radius: 50px;
-      position: relative;
-      width: 16.5104vw;
-      height: 15.3646vw;
-      background: #a6fcbc; }
-      #cnt4 .dashboard .middleBoard .efficiency span {
-        display: block;
-        font-family: KoreanDREAM5;
-        font-size: 25px;
-        padding-left: 18px;
-        padding-top: 33px; }
-      #cnt4 .dashboard .middleBoard .efficiency #drop1 {
-        position: absolute;
-        top: 40%;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        width: 134px; }
-      #cnt4 .dashboard .middleBoard .efficiency > p {
-        position: absolute;
-        font-size: 2.8646vw;
-        font-family: "Fugaz one";
-        top: 53%;
-        left: 34%; }
-    #cnt4 .dashboard .middleBoard .producitivity {
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-      border-radius: 50px;
-      position: relative;
-      width: 16.5104vw;
-      height: 15.3646vw;
-      background: #ffcfcf; }
-      #cnt4 .dashboard .middleBoard .producitivity span {
-        display: block;
-        font-family: KoreanDREAM5;
-        font-size: 25px;
-        padding-left: 18px;
-        padding-top: 33px; }
-      #cnt4 .dashboard .middleBoard .producitivity #drop2 {
-        position: absolute;
-        top: 45%;
-        left: calc(50% - 95.5px);
-        width: 191px; }
-      #cnt4 .dashboard .middleBoard .producitivity > p {
-        position: absolute;
-        top: 53%;
-        left: 34%;
-        /* font-size: 15px;  */
-        font-family: "Fugaz one";
-        font-size: 2.8646vw; }
-      #cnt4 .dashboard .middleBoard .producitivity > span:last-child {
-        position: absolute;
-        bottom: 17px;
-        left: 0;
-        right: 31px; }
-    #cnt4 .dashboard .middleBoard .relieveStress {
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-      border-radius: 50px;
-      position: relative;
-      width: 34.1667vw;
-      height: 14.0521vw;
-      border: 1px solid #777;
-      background: #fff;
-      box-sizing: border-box;
-      /* margin-top: 25px; */ }
-      #cnt4 .dashboard .middleBoard .relieveStress span {
-        display: block;
-        font-family: KoreanDREAM5;
-        font-size: 25px;
-        padding-left: 18px;
-        padding-top: 1.71875vw; }
-      #cnt4 .dashboard .middleBoard .relieveStress .stressWrap {
-        padding-top: 25px; }
-        #cnt4 .dashboard .middleBoard .relieveStress .stressWrap .stressReliever1, #cnt4 .dashboard .middleBoard .relieveStress .stressWrap .stressReliever2 {
-          -webkit-border-radius: 50px;
-          -moz-border-radius: 50px;
-          border-radius: 50px;
-          width: 21.6667vw;
-          height: 3.2292vw;
-          font-family: "Fugaz one";
-          font-size: 1.09375vw;
-          line-height: 3.2292vw;
-          margin: 0 auto;
-          padding-left: 2.03125vw; }
-        #cnt4 .dashboard .middleBoard .relieveStress .stressWrap img {
-          display: none; }
-        #cnt4 .dashboard .middleBoard .relieveStress .stressWrap .stressReliever1 {
-          background: #ffd28d; }
-        #cnt4 .dashboard .middleBoard .relieveStress .stressWrap .stressReliever2 {
-          background: #c2e4ff;
-          margin-top: 17px; }
-  #cnt4 .dashboard .droppableModel {
-    position: absolute;
-    top: 32.5%;
-    left: 23.5%;
-    width: 23.6979vw;
-    height: 9.1667vw; }
-    #cnt4 .dashboard .droppableModel .thunder {
-      display: inline-block;
-      cursor: url("../img/icon/cursor_icon.png"), auto; }
-      #cnt4 .dashboard .droppableModel .thunder #drag2Yes {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 9.9479vw; }
-    #cnt4 .dashboard .droppableModel .triangle {
-      display: inline-block;
-      cursor: url("../img/icon/cursor_icon.png"), auto; }
-      #cnt4 .dashboard .droppableModel .triangle #drag1Yes {
-        width: 6.9792vw;
-        left: 9.375vw; }
-    #cnt4 .dashboard .droppableModel p {
-      position: absolute;
-      font-size: 2.8646vw;
-      font-family: "Fugaz one";
-      top: 48%;
-      left: 8%;
-      display: none; }
-  #cnt4 .dashboard .rightBoard {
-    margin-top: -78px; }
-    #cnt4 .dashboard .rightBoard .skillView {
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-      border-radius: 50px;
-      position: relative;
-      width: 28.125vw;
-      height: 38.8021vw;
-      background: #FAF2A7; }
-      #cnt4 .dashboard .rightBoard .skillView .switchWrap {
-        margin: 0 auto;
-        padding-top: 20px;
-        padding-bottom: 45px;
-        width: 14.5833vw; }
-      #cnt4 .dashboard .rightBoard .skillView .toggleBg {
-        -webkit-border-radius: 66px;
-        -moz-border-radius: 66px;
-        border-radius: 66px;
-        position: relative;
-        width: 70px;
-        height: 34px;
-        display: inline-block;
-        background: #444242;
-        /* border: 1px solid #fff; */ }
-        #cnt4 .dashboard .rightBoard .skillView .toggleBg button {
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          border-radius: 50%;
-          -webkit-transition: all 0.5s;
-          -moz-transition: all 0.5s;
-          -o-transition: all 0.5s;
-          transition: all 0.5s;
-          position: absolute;
-          width: 26px;
-          height: 26px;
-          background: #fff;
-          top: 4px; }
-        #cnt4 .dashboard .rightBoard .skillView .toggleBg .toggleFg.left {
-          left: 5px; }
-        #cnt4 .dashboard .rightBoard .skillView .toggleBg .toggleFg.right {
-          left: 40px; }
-      #cnt4 .dashboard .rightBoard .skillView .flipBtnWrap {
-        position: relative;
-        display: inline-block;
-        width: 9.8958vw;
-        height: 34px;
-        /* overflow: hidden; */ }
-        #cnt4 .dashboard .rightBoard .skillView .flipBtnWrap .flipBtn {
-          position: relative; }
-      #cnt4 .dashboard .rightBoard .skillView .flipBtn, #cnt4 .dashboard .rightBoard .skillView .flipBtnInner {
-        width: 100%;
-        height: 100%; }
-      #cnt4 .dashboard .rightBoard .skillView .flipBtn.flip .flipBtn_front {
-        transform: rotateX(90deg) translateZ(17px); }
-      #cnt4 .dashboard .rightBoard .skillView .flipBtn.flip .flipBtn_back {
-        transform: rotateX(0deg) translateZ(17px); }
-      #cnt4 .dashboard .rightBoard .skillView .flipBtn_front, #cnt4 .dashboard .rightBoard .skillView .flipBtn_back {
-        width: 190px;
-        height: 34px;
-        line-height: 34px;
-        border-radius: 20px;
-        background: #444242;
-        color: #fff;
-        text-align: center;
-        margin: 0 auto;
-        position: absolute;
-        top: 0;
-        left: 0; }
-      #cnt4 .dashboard .rightBoard .skillView .flipBtn_front {
-        -webkit-transform: rotateX(0deg) translateZ(17px);
-        -moz-transform: rotateX(0deg) translateZ(17px);
-        -o-transform: rotateX(0deg) translateZ(17px);
-        -ms-transform: rotateX(0deg) translateZ(17px);
-        transform: rotateX(0deg) translateZ(17px);
-        -webkit-transition: transform 0.4s;
-        -moz-transition: transform 0.4s;
-        -o-transition: transform 0.4s;
-        transition: transform 0.4s; }
-      #cnt4 .dashboard .rightBoard .skillView .flipBtn_back {
-        -webkit-transform: rotateX(-90deg) translateZ(17px);
-        -moz-transform: rotateX(-90deg) translateZ(17px);
-        -o-transform: rotateX(-90deg) translateZ(17px);
-        -ms-transform: rotateX(-90deg) translateZ(17px);
-        transform: rotateX(-90deg) translateZ(17px);
-        -webkit-transition: transform 0.4s;
-        -moz-transition: transform 0.4s;
-        -o-transition: transform 0.4s;
-        transition: transform 0.4s; }
-      #cnt4 .dashboard .rightBoard .skillView .skillCircle {
-        width: 28.125vw;
-        height: 20.3125vw;
-        position: relative;
-        line-height: 20.3125vw; }
-        #cnt4 .dashboard .rightBoard .skillView .skillCircle .ball {
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          border-radius: 50%;
-          -webkit-display: flex;
-          -moz-display: flex;
-          -ms-display: flex;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: absolute;
-          text-align: center;
-          font-size: 14px;
-          line-height: 21px;
-          font-size: 14px;
-          text-align: center;
-          color: #000;
-          font-family: "fugaz one"; }
-        #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject1 {
-          background: #993ef3; }
-        #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject2 {
-          background: #ff9393; }
-        #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject3 {
-          background: #bd3ef3; }
-        #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject4 {
-          background: #a6fcbc; }
-        #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject5 {
-          background: #ffe393; }
-        #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject6 {
-          background: #ffc293; }
-      #cnt4 .dashboard .rightBoard .skillView .designCircle {
-        display: none;
-        /*  position: absolute; left: 0; */
-        width: 28.125vw;
-        height: 20.3125vw;
-        position: relative;
-        line-height: 20.3125vw; }
-        #cnt4 .dashboard .rightBoard .skillView .designCircle .ball {
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          border-radius: 50%;
-          -webkit-display: flex;
-          -moz-display: flex;
-          -ms-display: flex;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: absolute;
-          text-align: center;
-          font-size: 14px;
-          line-height: 21px;
-          font-size: 14px;
-          text-align: center;
-          color: #000;
-          font-family: "fugaz one"; }
-        #cnt4 .dashboard .rightBoard .skillView .designCircle .design1 {
-          background: #993ef3; }
-        #cnt4 .dashboard .rightBoard .skillView .designCircle .design2 {
-          background: #ff9393; }
-        #cnt4 .dashboard .rightBoard .skillView .designCircle .design3 {
-          background: #ffc293; }
-        #cnt4 .dashboard .rightBoard .skillView .designCircle .design4 {
-          background: #a6fcbc; }
-        #cnt4 .dashboard .rightBoard .skillView .designCircle .design5 {
-          background: #ffe393; }
-      #cnt4 .dashboard .rightBoard .skillView .overview {
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        border-radius: 50px;
-        position: absolute;
-        top: 27.1875vw;
-        left: 0;
-        width: 28.125vw;
-        height: 38.802vw;
-        background: #fff;
-        padding-top: 8px;
-        border: 1px solid #777;
-        cursor: url("../img/icon/dragUp_icon.png"), auto; }
-        #cnt4 .dashboard .rightBoard .skillView .overview span {
-          display: block;
-          padding-left: 44px;
-          font-size: 15px;
-          margin-top: 7px; }
-        #cnt4 .dashboard .rightBoard .skillView .overview .overviewTitle {
-          font-family: KoreanDREAM5;
-          font-size: 25px;
-          padding-top: 25px; }
-        #cnt4 .dashboard .rightBoard .skillView .overview > span:nth-child(2) {
-          font-family: KoreanDREAM3;
-          font-size: 0.78125vw;
-          padding-top: 8px;
-          color: #858585; }
-        #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph {
-          position: relative;
-          margin-top: 1.3542vw;
-          z-index: 100; }
-          #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap {
-            -webkit-border-radius: 50px;
-            -moz-border-radius: 50px;
-            border-radius: 50px;
-            position: relative;
-            top: 0;
-            left: 0;
-            right: 0;
-            width: 26.1458vw;
-            height: 31.09375vw;
-            background: #FAF2A7;
-            margin: 0 auto; }
-            #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap {
-              -webkit-border-radius: 4px;
-              -moz-border-radius: 4px;
-              border-radius: 4px;
-              width: 24.2708vw;
-              height: 17.9166vw;
-              margin: 0 auto;
-              /* div.skills + div.skills { margin-left: 42px; } */ }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .whiteStick {
-                position: absolute;
-                bottom: 8.59375vw;
-                left: 50px;
-                background: #fff;
-                height: 17.9166vw;
-                width: 6px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .html5 {
-                left: 35px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .css3 {
-                left: 77px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .scss {
-                left: 119px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .javaScript {
-                left: 161px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .jQuery {
-                left: 203px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .bootstrap {
-                left: 245px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .ps {
-                left: 287px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .ai {
-                left: 329px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .xd {
-                left: 371px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .zeplin {
-                left: 413px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .pr {
-                left: 455px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .skillsStickWrap {
-                -webkit-border-radius: 4px;
-                -moz-border-radius: 4px;
-                border-radius: 4px;
-                width: 466px;
-                height: 344px;
-                margin: 0 auto; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .skills {
-                position: absolute;
-                background: #7ea0e9;
-                width: 6px;
-                bottom: 8.59375vw;
-                height: 344px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #html5 {
-                left: 35px;
-                height: 330px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #css3 {
-                left: 77px;
-                height: 325px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #scss {
-                left: 119px;
-                height: 330px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #javaScript {
-                left: 161px;
-                height: 245px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #jQuery {
-                left: 203px;
-                height: 280px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #bootstrap {
-                left: 245px;
-                height: 195px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #ps {
-                left: 287px;
-                height: 310px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #ai {
-                left: 329px;
-                height: 335px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #xd {
-                left: 371px;
-                height: 280px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #zeplin {
-                left: 413px;
-                height: 280px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap #pr {
-                left: 455px;
-                height: 285px; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap span {
-                font-family: KoreanDREAM5;
-                font-size: 11px;
-                line-height: 13px;
-                text-align: center; }
-            #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsText {
-              position: absolute;
-              bottom: 5.5729vw;
-              left: 0;
-              right: 0;
-              /* text-align: left; */
-              width: 24.1667vw;
-              margin: 0 auto; }
-              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsText > span {
-                /* @include transform(rotate(270deg)); */
-                display: inline-block;
-                padding-left: 8px;
-                font-size: 7px;
-                text-align: center;
-                font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
