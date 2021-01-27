@@ -961,8 +961,6 @@
             text-align: center;
             font-size: 14px;
             line-height: 21px;
-            font-size: 14px;
-            text-align: center;
             color: #000;
             font-family: "fugaz one"; }
           #cnt4 .dashboard .rightBoard .skillView .skillCircle .subject1 {
@@ -998,8 +996,6 @@
             text-align: center;
             font-size: 14px;
             line-height: 21px;
-            font-size: 14px;
-            text-align: center;
             color: #000;
             font-family: "fugaz one"; }
           #cnt4 .dashboard .rightBoard .skillView .designCircle .design1 {
@@ -1067,10 +1063,8 @@
                 align-items: center;
                 width: 21.2708vw;
                 height: 17.9166vw;
-                margin: 0 auto;
-                /* div.skills + div.skills { margin-left: 42px; } */ }
+                margin: 0 auto; }
                 #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .whiteStick {
-                  /* position: absolute;  bottom: 165px; left: 50px; */
                   background: #fff;
                   height: 344px;
                   width: 6px; }
@@ -1079,7 +1073,7 @@
                 -moz-border-radius: 4px;
                 border-radius: 4px;
                 position: absolute;
-                left: 47px;
+                left: 2.4479166667vw;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -1136,8 +1130,7 @@
                   font-family: KoreanDREAM5;
                   font-size: 7px; }
 
-/* Works page */
-/* common class */
+/* Works common */
 #work {
   position: absolute;
   right: 0;
@@ -1384,12 +1377,12 @@
 @media screen and (max-width: 1440px) {
   #cnt1 .pageSwipe .about {
     top: 682px;
-    left: 140px;
+    left: 6.89vw;
     width: 165px;
     height: 72px; }
     #cnt1 .pageSwipe .about::after {
       top: 78%;
-      height: 318.9vh; }
+      height: 369.8vh; }
     #cnt1 .pageSwipe .about button {
       font-size: 20px;
       line-height: 52px; }
@@ -1765,6 +1758,273 @@
       #cnt3 .swiper-container .slide3 .diary .bold {
         font-size: 36px !important;
         padding-top: 0 !important;
-        padding-right: 0 !important; } }
+        padding-right: 0 !important; }
+
+  #cnt4 {
+    height: 71.8542vw; }
+    #cnt4 .stats {
+      height: 180px;
+      line-height: 180px; }
+      #cnt4 .stats::before {
+        top: -1px;
+        width: 96%; }
+      #cnt4 .stats img {
+        top: -35px; }
+      #cnt4 .stats p {
+        font-size: 45px; }
+    #cnt4 .dashboard {
+      width: 91.5625vw;
+      height: 42.2917vw;
+      margin-top: 7.0833vw; }
+      #cnt4 .dashboard .dashboardTitle {
+        font-size: 35px;
+        height: 36px;
+        padding-top: 3.8021vw;
+        padding-left: 2.2396vw; }
+      #cnt4 .dashboard .leftBoard {
+        width: 21.1979vw;
+        height: 31.4583vw;
+        padding-top: 53px; }
+        #cnt4 .dashboard .leftBoard .puzzle {
+          width: 21.1979vw;
+          height: 31.4583vw;
+          line-height: 31.4583vw; }
+          #cnt4 .dashboard .leftBoard .puzzle .peepIt {
+            font-size: 40px;
+            line-height: 47px;
+            padding-top: 12.9167vw; }
+          #cnt4 .dashboard .leftBoard .puzzle .stripe {
+            top: -8%;
+            left: -35%;
+            width: 36.4583vw;
+            height: 36.5104vw; }
+            #cnt4 .dashboard .leftBoard .puzzle .stripe .line {
+              -webkit-animation: stripes 1s linear infinite;
+              -moz-animation: stripes 1s linear infinite;
+              -o-animation: stripes 1s linear infinite;
+              animation: stripes 1s linear infinite;
+              width: 100%;
+              height: 100%;
+              background-size: 100% 32px; }
+  @-webkit-keyframes stripes {
+    100% {
+      background-position: 0 -30px; } }
+  @-moz-keyframes stripes {
+    100% {
+      background-position: 0 -30px; } }
+  @-o-keyframes stripes {
+    100% {
+      background-position: 0 -30px; } }
+  @keyframes stripes {
+    100% {
+      background-position: 0 -30px; } }
+          #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile {
+            width: 14.84375vw;
+            height: 21.1979vw;
+            margin-top: 3.90625vw; }
+            #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile img {
+              padding-left: 6px;
+              padding-bottom: 3.125vw; }
+            #cnt4 .dashboard .leftBoard .puzzle .hiddenProfile > p {
+              font-size: 1.5104vw;
+              line-height: 2.1875vw; }
+      #cnt4 .dashboard .middleBoard {
+        width: 34.375vw;
+        height: 33.8542vw;
+        padding-top: 2.7604vw; }
+        #cnt4 .dashboard .middleBoard .efficiency {
+          width: 16.5104vw;
+          height: 15.3646vw; }
+          #cnt4 .dashboard .middleBoard .efficiency span {
+            font-size: 25px;
+            padding-left: 18px;
+            padding-top: 33px; }
+          #cnt4 .dashboard .middleBoard .efficiency #drop1 {
+            width: 134px; }
+          #cnt4 .dashboard .middleBoard .efficiency > p {
+            font-size: 2.8646vw;
+            top: 53%;
+            left: 34%; }
+        #cnt4 .dashboard .middleBoard .producitivity {
+          width: 16.5104vw;
+          height: 15.3646vw; }
+          #cnt4 .dashboard .middleBoard .producitivity span {
+            font-size: 25px;
+            padding-left: 18px;
+            padding-top: 33px; }
+          #cnt4 .dashboard .middleBoard .producitivity #drop2 {
+            top: 45%;
+            left: calc(50% - 95.5px);
+            width: 191px; }
+          #cnt4 .dashboard .middleBoard .producitivity > p {
+            top: 53%;
+            left: 34%;
+            /* font-size: 15px;  */
+            font-size: 2.8646vw; }
+          #cnt4 .dashboard .middleBoard .producitivity > span:last-child {
+            position: absolute;
+            bottom: 17px;
+            left: 0;
+            right: 31px; }
+        #cnt4 .dashboard .middleBoard .relieveStress {
+          width: 34.1667vw;
+          height: 14.0521vw; }
+          #cnt4 .dashboard .middleBoard .relieveStress span {
+            font-size: 25px;
+            padding-left: 18px;
+            padding-top: 1.71875vw; }
+          #cnt4 .dashboard .middleBoard .relieveStress .stressWrap {
+            padding-top: 25px; }
+            #cnt4 .dashboard .middleBoard .relieveStress .stressWrap .stressReliever1, #cnt4 .dashboard .middleBoard .relieveStress .stressWrap .stressReliever2 {
+              width: 21.6667vw;
+              height: 3.2292vw;
+              font-size: 1.09375vw;
+              line-height: 3.2292vw;
+              padding-left: 2.03125vw; }
+            #cnt4 .dashboard .middleBoard .relieveStress .stressWrap .stressReliever2 {
+              margin-top: 17px; }
+      #cnt4 .dashboard .droppableModel {
+        top: 32.5%;
+        left: 23.5%;
+        width: 23.6979vw;
+        height: 9.1667vw; }
+        #cnt4 .dashboard .droppableModel .thunder #drag2Yes {
+          width: 9.9479vw; }
+        #cnt4 .dashboard .droppableModel .triangle #drag1Yes {
+          width: 6.9792vw;
+          left: 9.375vw; }
+        #cnt4 .dashboard .droppableModel p {
+          font-size: 2.8646vw;
+          top: 48%;
+          left: 8%; }
+      #cnt4 .dashboard .rightBoard {
+        margin-top: -78px; }
+        #cnt4 .dashboard .rightBoard .skillView {
+          width: 28.125vw;
+          height: 38.8021vw; }
+          #cnt4 .dashboard .rightBoard .skillView .switchWrap {
+            padding-top: 30px;
+            padding-bottom: 45px;
+            width: 237px; }
+          #cnt4 .dashboard .rightBoard .skillView .toggleBg {
+            width: 60px;
+            height: 34px; }
+            #cnt4 .dashboard .rightBoard .skillView .toggleBg button {
+              width: 26px;
+              height: 26px;
+              top: 4px; }
+            #cnt4 .dashboard .rightBoard .skillView .toggleBg .toggleFg.left {
+              left: 5px; }
+            #cnt4 .dashboard .rightBoard .skillView .toggleBg .toggleFg.right {
+              left: 29px; }
+          #cnt4 .dashboard .rightBoard .skillView .flipBtnWrap {
+            width: 170px;
+            height: 34px; }
+          #cnt4 .dashboard .rightBoard .skillView .flipBtn, #cnt4 .dashboard .rightBoard .skillView .flipBtnInner {
+            width: 100%;
+            height: 100%; }
+          #cnt4 .dashboard .rightBoard .skillView .flipBtn.flip .flipBtn_front {
+            transform: rotateX(90deg) translateZ(17px); }
+          #cnt4 .dashboard .rightBoard .skillView .flipBtn.flip .flipBtn_back {
+            transform: rotateX(0deg) translateZ(17px); }
+          #cnt4 .dashboard .rightBoard .skillView .flipBtn_front, #cnt4 .dashboard .rightBoard .skillView .flipBtn_back {
+            width: 170px;
+            height: 34px;
+            line-height: 34px;
+            border-radius: 20px; }
+          #cnt4 .dashboard .rightBoard .skillView .flipBtn_front {
+            -webkit-transform: rotateX(0deg) translateZ(17px);
+            -moz-transform: rotateX(0deg) translateZ(17px);
+            -o-transform: rotateX(0deg) translateZ(17px);
+            -ms-transform: rotateX(0deg) translateZ(17px);
+            transform: rotateX(0deg) translateZ(17px);
+            -webkit-transition: transform 0.4s;
+            -moz-transition: transform 0.4s;
+            -o-transition: transform 0.4s;
+            transition: transform 0.4s; }
+          #cnt4 .dashboard .rightBoard .skillView .flipBtn_back {
+            -webkit-transform: rotateX(-90deg) translateZ(17px);
+            -moz-transform: rotateX(-90deg) translateZ(17px);
+            -o-transform: rotateX(-90deg) translateZ(17px);
+            -ms-transform: rotateX(-90deg) translateZ(17px);
+            transform: rotateX(-90deg) translateZ(17px);
+            -webkit-transition: transform 0.4s;
+            -moz-transition: transform 0.4s;
+            -o-transition: transform 0.4s;
+            transition: transform 0.4s; }
+          #cnt4 .dashboard .rightBoard .skillView .skillCircle {
+            width: 405px;
+            height: 21.3125vw; }
+            #cnt4 .dashboard .rightBoard .skillView .skillCircle .ball {
+              font-size: 12px;
+              line-height: 19px; }
+          #cnt4 .dashboard .rightBoard .skillView .designCircle {
+            width: 405px;
+            height: 21.3125vw; }
+            #cnt4 .dashboard .rightBoard .skillView .designCircle .ball {
+              font-size: 12px;
+              line-height: 19px; }
+          #cnt4 .dashboard .rightBoard .skillView .overview {
+            top: 27.1875vw;
+            width: 28.125vw;
+            height: 38.802vw;
+            padding-top: 8px; }
+            #cnt4 .dashboard .rightBoard .skillView .overview > span {
+              padding-left: 44px;
+              font-size: 15px;
+              margin-top: 7px; }
+            #cnt4 .dashboard .rightBoard .skillView .overview .overviewTitle {
+              font-size: 25px;
+              padding-top: 25px; }
+            #cnt4 .dashboard .rightBoard .skillView .overview > span:nth-child(2) {
+              font-size: 0.78125vw;
+              padding-top: 8px; }
+            #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph {
+              margin-top: 1.3542vw; }
+              #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap {
+                width: 26.1458vw;
+                height: 31.09375vw; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap {
+                  width: 21.2708vw;
+                  height: 17.9166vw; }
+                  #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .whiteStickWrap .whiteStick {
+                    height: 344px;
+                    width: 6px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap {
+                  left: 2.4479166667vw;
+                  width: 21.2708vw;
+                  height: 344px; }
+                  #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap .skills {
+                    width: 6px;
+                    bottom: 8.59375vw;
+                    height: 344px; }
+                  #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #html5 {
+                    height: 300px; }
+                  #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #css3 {
+                    height: 310px; }
+                  #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #scss {
+                    height: 310px; }
+                  #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #javaScript {
+                    height: 280px; }
+                  #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #jQuery {
+                    height: 275px; }
+                  #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #bootstrap {
+                    height: 240px; }
+                  #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #ps {
+                    height: 310px; }
+                  #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #ai {
+                    height: 290px; }
+                  #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #xd {
+                    height: 320px; }
+                  #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #zeplin {
+                    height: 320px; }
+                  #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsStickWrap #pr {
+                    height: 290px; }
+                #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsText {
+                  bottom: 72px;
+                  left: 27px;
+                  width: 24.1667vw; }
+                  #cnt4 .dashboard .rightBoard .skillView .overview .stickGraph .stickWrap .skillsText > span {
+                    font-size: 7px; } }
 
 /*# sourceMappingURL=main.css.map */

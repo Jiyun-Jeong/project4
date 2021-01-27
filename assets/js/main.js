@@ -39,6 +39,15 @@ $(document).ready(function () {
     } else {
       _nameSvg.stop().animate({padding: '7.7604vw 14.5833vw 0 36.875vw', width: 932, height: 551}, 800).css({position: 'absolute'});
     }
+
+    if($(this).width() < 1441) {
+      if ( targetTop > 10 ) {
+        console.log(fixTop);
+        _nameSvg.stop().animate({padding: '11 0 0 20', width: '100', height: '77'}, 800).css({position: 'fixed'});
+      } else {
+        _nameSvg.stop().animate({padding: '9vw 14.5833vw 0px 32.875vw', width: 800, height: 551}, 800).css({position: 'absolute'});
+      }
+    }
   });
 
   $('#backBtn').on('click', function () {
@@ -187,6 +196,20 @@ $(document).ready(function () {
     bounce('.design4', 150, 80, 2, 5, 2, 7, 170, 100); //Zeplin
     bounce('.design3', 200, 100, 2, 4, 10, 15, 280, 190); //Adobe XD
     bounce('.design5', 100, 120, 1.30, 4, 7, 9, 130, 20); //Premiere
+    /* 반응형 위치 제어 */
+    if($(window).width() < 1441) {
+      bounce('.subject1', 0, 0, 1.20, 6, 6, 6, 45, 130); //css3
+      bounce('.subject2', 300, 100, 1.70, 4, 10, 15, 120, 30); //html5
+      bounce('.subject3', 400, 290, 1.20, 5, 8, 12, 35, 0); //SCSS
+      bounce('.subject4', 350, 150, 1.10, 2, 9, 7, 250, -10); //java
+      bounce('.subject5', 200, 350, 1.00, 7, 7, 10, 265, 90); //jquery
+      bounce('.subject6', 500, 450, 0.90, 6, 5, 5, 220, 170); //bootstrap
+      bounce('.design1', 0, 0, 1.30, 6, 6, 6, 75, 170); //Photoshop
+      bounce('.design2', 350, 150, 1.10, 2, 9, 7, 300, 20); //Illurstrator
+      bounce('.design4', 150, 80, 1.70, 5, 2, 7, 170, 100); //Zeplin
+      bounce('.design3', 200, 100, 1.70, 4, 10, 15, 280, 190); //Adobe XD
+      bounce('.design5', 100, 120, 1.10, 4, 7, 9, 130, 20); //Premiere
+    }
     function bounce(target, startX0, startY0, ratio, stepSize0, stepX0, stepY0, stopX, stopY) {
       var _ball = $(target);
       var startX = startX0;   //ball이 움직이기 시작하는 X 위치
