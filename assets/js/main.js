@@ -31,8 +31,6 @@ $(document).ready(function () {
     var _nameSvg = $('#name');
     var fixTop = _nameSvg.offset().top;
 
-    console.log(targetTop, fixTop);
-
     if ( targetTop > 10 ) {
       console.log(fixTop);
       _nameSvg.stop().animate({padding: '29 0 0 32', width: '131', height: '77'}, 800).css({position: 'fixed'});
@@ -70,11 +68,8 @@ $(document).ready(function () {
 
   //cnt3 "swiper"
   var storySwiper = new Swiper('#cnt3 .swiper-container', {
-    //direction: 'vertical',
     pagination: {
       el: '.swiper-pagination',
-      //type: 'fraction',
-      //clickable: true, //bullet 타입일 경우 버튼 클릭시 이동 가능함
     },
     navigation: {
       nextEl: '.swiper-button-next',
@@ -89,7 +84,7 @@ $(document).ready(function () {
     },
   })
 
-  //cnt3 emptyWindow /* 4jQueryDOM제어 하나씩이동 */
+  //cnt3 emptyWindow */
   var _emptyWindow = $('windowWrap .showImg');
 
   function ariaHidden() {
@@ -106,7 +101,6 @@ $(document).ready(function () {
     }
   });
 
-  //cnt3 view more button
   $('#cnt3 a').on('click', function () {
     $('#workBtn').trigger('click');
 });
@@ -154,7 +148,6 @@ $(document).ready(function () {
 
   });
 
-
   //toggle button
   var toggleBg = $('.toggleBg');
   var toggleFg = $('.toggleBg').find('.toggleFg');
@@ -172,8 +165,6 @@ $(document).ready(function () {
       $('.designCircle').stop().fadeOut().prev('.skillCircle').stop().fadeIn();
     }
   });
-  
-
 
   //공튀기기
     var _skillCircle = $('.skillCircle');
@@ -221,11 +212,10 @@ $(document).ready(function () {
       var stepY = stepY0; //숫자가 작을수록 느려지고, 클수록 빨라진다(시작위치에서 stepY 값을 더해 세로 다음 위치를 잡는다 )
       var ballTimer = 0;
 
-      start();  //먼저 시작된다
+      start();
       
       _skillCircle.on({
         mouseenter: function () {
-          console.log(_ball);
           stopMove(); //패널에 진입하면 멈춘다
         },
         mouseleave: function () {
@@ -234,7 +224,6 @@ $(document).ready(function () {
       });
       _designCircle.on({
         mouseenter: function () {
-          console.log(_ball);
           stopMove(); 
         },
         mouseleave: function () {
@@ -284,11 +273,8 @@ $(document).ready(function () {
 
     //work page work1 "swiper"
     var work1Swiper = new Swiper('#work .gopro .swiper-container', {
-      //direction: 'vertical',
       pagination: {
         el: '.swiper-pagination',
-        //type: 'fraction',
-        //clickable: true, //bullet 타입일 경우 버튼 클릭시 이동 가능함
       },
       navigation: {
         nextEl: '.swiper-button-next',
@@ -304,7 +290,6 @@ $(document).ready(function () {
   var work2Swiper = new Swiper('#work .helinox .swiper-container', {
     pagination: {
       el: '.swiper-pagination',
-      //clickable: true, //bullet 타입일 경우 버튼 클릭시 이동 가능함
     },
     navigation: {
       nextEl: '.swiper-button-next',
@@ -331,6 +316,5 @@ $(document).ready(function () {
       nextSlideMessage: '다음 슬라이드 보기',
     },
   })
-
 
 });
