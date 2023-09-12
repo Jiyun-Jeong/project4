@@ -81,7 +81,7 @@ header, nav, section, footer {display: block;}
 
 /* Default CSS */
 body {
-  font-family: KoreanDREAM3, "맑은 고딕", "Malgun Gothic"; font-weight: 400; background-color: #B4CAFA;color: #000; overflow-x: hidden; 
+  font-family: KoreanDREAM3, "맑은 고딕", "Malgun Gothic"; font-weight: 400; background-color: #B4CAFA; color: #000; overflow-x: hidden; 
 }
 
 /* Skip navigation */
@@ -133,10 +133,7 @@ body {
     }
     .email{
         bottom: 5.8021vw;
-        p:last-child {
-          font-size: 27px; letter-spacing: 0.61px; text-decoration: underline; 
-          a {cursor: url('../img/icon/cursor_icon.png'), auto;}
-        }
+        a.link {font-size: 27px; letter-spacing: 0.61px; text-decoration: underline; cursor: url('../img/icon/cursor_icon.png'), auto;}
     }
     .btn_close {position: fixed; top: 19px; right: 22px; cursor: url('../img/icon/cursor_icon.png'), auto;}
   }
@@ -158,7 +155,7 @@ footer {
   }
   .bigEmail {
     font-size: 5.7292vw; color: #444242; text-decoration: underline; padding: 21.3542vw 0 0 6.6145vw;
-    a { cursor: url('../img/icon/cursor_icon.png'), auto;}
+    a {cursor: url('../img/icon/cursor_icon.png'), auto;}
   }
   .sns {
     display: flex; position: absolute; bottom: 10.2604vw; left: 6.6146vw; font-family: "Fugaz one"; font-size: 40px; color: #444242;
@@ -210,15 +207,11 @@ footer {
       }
       .sns p, .email p:first-child {font-size: 28px;}
       .sns {
-          ul li {
-            font-size: 25px;
-          }
+          ul li {font-size: 25px;}
       }
       .email{
           bottom: 195px;
-          p:last-child {
-            font-size: 25px;
-          }
+          p:last-child {font-size: 25px;}
       }
       .btn_close {top: 22px;}
     }
@@ -228,9 +221,7 @@ footer {
   footer {
     height: 46.875vw;
     .bigEmail {font-size: 4.7292vw;}
-    .sns {
-      font-size: 38px; bottom: 11.2604vw;
-    }
+    .sns {font-size: 38px; bottom: 11.2604vw;}
     .phoneImg {
       @include animation(ring 3.6s linear infinite);
     }

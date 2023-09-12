@@ -12,7 +12,6 @@ $(document).ready(function () {
             });
 
             $first.on('keydown', function (e) {
-                console.log(e.keycode);
                 if(e.shiftKey && e.keyCode == 9) {
                     e.preventDefault();
                     $last.focus();
@@ -30,9 +29,9 @@ $(document).ready(function () {
 
     //메뉴닫기 클릭
     $('.btn_close').on('click', function () {
-            _gnb.stop().animate({left: '100%'}, 500, function () {
-                    $(this).css({visibility: 'hidden'});
-                });
+        _gnb.stop().animate({left: '100%'}, 500, function () {
+                $(this).css({visibility: 'hidden'});
+            });
     });  
 
     $('#gnb ul li a').on('click', function (e) {
@@ -53,8 +52,7 @@ $(document).ready(function () {
                         $('html, body').stop().animate({scrollTop: 0}, function (){
                             $('#backBtn').click();
                         });
-                    }
-                    else {
+                    } else {
                         $('html, body').stop().animate({scrollTop: 0});
                     }
 
@@ -106,6 +104,4 @@ $(document).ready(function () {
     } if (goTarget === '#footer') {
         $('html, body').stop().animate({scrollTop: $('#footer').offset().top}, 700);
     }
-
-
 });
